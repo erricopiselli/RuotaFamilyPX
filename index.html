@@ -167,6 +167,21 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-vi
 .mini .c{font-size:clamp(12px,3.6vh,52px)}
 .c.typed{background:#fff1b8;color:#1d1640}
 .c.cur{box-shadow:inset 0 0 0 3px var(--pri);background:#fff}
+kbd{display:inline-grid;place-items:center;min-width:1.7em;height:1.7em;padding:0 .3em;border-radius:.4em;background:rgba(124,77,255,.15);font-family:var(--ff-d);font-size:.85em}
+.tvbar .tb{padding:.25em .55em;font-size:.8em;background:transparent;color:var(--tx);box-shadow:none;border:2px solid var(--bd)}
+.fin{display:flex;flex-direction:column;align-items:center;gap:2.2vh;margin-top:2vh}
+.clues{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.cl{background:var(--card);border-radius:14px;padding:.45em .9em;font-family:var(--ff-d);font-weight:700;font-size:clamp(16px,3vh,44px);box-shadow:0 2px 0 var(--bd);min-width:4.2em;text-align:center}
+.cl.e{color:var(--mut);opacity:.55}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:3vw;width:min(100%,110vh)}
+.pw{font-size:clamp(22px,5.5vh,72px);padding:3vh 1vw;display:flex;align-items:center;justify-content:center;gap:.5em;background:var(--card);color:var(--tx);box-shadow:0 5px 0 var(--bd)}
+.pw.ok{background:var(--ok);color:#fff}.pw.ko{background:var(--ko);color:#fff;animation:shake .4s}
+@keyframes shake{20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+.ans{font-family:var(--ff-d);font-weight:700;font-size:clamp(26px,6vh,80px);letter-spacing:.12em;min-width:6em;text-align:center;border-bottom:4px solid var(--pri);padding:0 .3em;min-height:1.3em}
+.fin .tmr{width:min(100%,100vh)}
+.fin .card{width:min(100%,640px)}
+#scov .rank{font-size:clamp(16px,3vh,40px)}
+@media (max-width:520px){.tvbar .mn{display:none}.tvbar{gap:8px;font-size:15px;padding:8px 10px}.pw{font-size:1.4rem;padding:18px 6px}.cl{font-size:1rem;min-width:0}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* orizzontale */
 @media (orientation:landscape) and (min-width:640px){
@@ -236,7 +251,7 @@ function focusables(){return Array.prototype.filter.call(scopeEl().querySelector
 function focusFirst(){
   var sc=scopeEl(),a=document.activeElement;
   if(a&&a!==document.body&&sc.contains(a))return;
-  var pref=sc.querySelector('.picker button:not(:disabled),#bSpin:not(:disabled),#bVow:not(:disabled),#bSol:not(:disabled),#go,#again');
+  var pref=sc.querySelector('.pw:not(:disabled),.picker button:not(:disabled),#bSpin:not(:disabled),#bVow:not(:disabled),#bSol:not(:disabled),#go,#again');
   var el=pref||focusables()[0];
   if(el&&el.tagName==='BUTTON')try{el.focus({preventScroll:true});}catch(e){}
 }
@@ -256,17 +271,54 @@ document.addEventListener('keydown',function(e){
   var k=e.key,kc=e.keyCode,t=e.target,typing=t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA');
   if(typing){if(k==='Escape'){var b0=document.getElementById('bBack');if(b0)b0.click();}return;}
   if(e.ctrlKey||e.metaKey||e.altKey)return;
+  if(document.getElementById('scov')){if(k==='0'||k==='Escape'||k==='Backspace'||k==='GoBack'||kc===461||kc===10009||k==='Enter'){e.preventDefault();toggleScores();}return;}
   if(/^Arrow/.test(k)){e.preventDefault();nav(k.slice(5).toLowerCase());return;}
+  if(F&&F.typing){
+    if(/^[a-zA-Z]$/.test(k)){e.preventDefault();typeF(k.toUpperCase());okFocus();return;}
+    if(k==='Backspace'){e.preventDefault();typeF('DEL');okFocus();return;}
+    if(k==='Enter'&&!(document.activeElement&&document.activeElement.dataset&&document.activeElement.dataset.k)){e.preventDefault();typeF('OK');return;}
+  }
+  var dk=document.querySelector('[data-key="'+k+'"]:not(:disabled)');
+  if(dk&&!/^[a-zA-Z]$/.test(k)){e.preventDefault();dk.click();return;}
   var solving=!!document.getElementById('solveov');
-  if(solving&&/^[a-zA-Z]$/.test(k)){e.preventDefault();typeL(k.toUpperCase());return;}
-  if(solving&&k==='Backspace'){e.preventDefault();typeL('DEL');return;}
-  if(/^[a-zA-Z]$/.test(k)){var lb=document.querySelector('.picker button[data-l="'+k.toUpperCase()+'"]:not(:disabled),.kb button[data-l="'+k.toUpperCase()+'"]:not(:disabled)');if(lb){e.preventDefault();lb.click();}return;}
+  if(solving&&/^[a-zA-Z]$/.test(k)){e.preventDefault();typeL(k.toUpperCase());okFocus();return;}
+  if(solving&&k==='Backspace'){e.preventDefault();typeL('DEL');okFocus();return;}
+  if(/^[a-zA-Z]$/.test(k)){var lb=document.querySelector('.picker button[data-l="'+k.toUpperCase()+'"]:not(:disabled),.kb button[data-l="'+k.toUpperCase()+'"]:not(:disabled)');if(lb){e.preventDefault();lb.click();return;}
+    if(document.querySelector('.picker,.kb'))return;
+    if(k==='f'||k==='F'){e.preventDefault();toggleFS();return;}
+    if(k==='m'||k==='M'){e.preventDefault();setSnd(!SND);return;}
+    return;}
+  if(k==='0'&&P.length&&(M||F)){e.preventDefault();toggleScores();return;}
   var num={'1':'bSpin','2':'bVow','3':'bSol'}[k];
   if(num){var nb=document.getElementById(num);if(nb&&!nb.disabled){e.preventDefault();nb.click();}return;}
   if(k==='Escape'||k==='GoBack'||k==='BrowserBack'||kc===461||kc===10009||k==='Backspace'){var bb=document.getElementById('bBack');if(bb){e.preventDefault();bb.click();}return;}
   if(k==='Enter'&&(!document.activeElement||document.activeElement===document.body)){var g=document.getElementById('go')||document.getElementById('bOk');if(g){e.preventDefault();g.click();}}
 });
 var LASTMSG='';
+function okFocus(){var o=document.querySelector('button[data-k="OK"]');if(o)try{o.focus({preventScroll:true});}catch(e){}}
+// suoni sintetizzati (niente file esterni)
+var SND=true;try{SND=localStorage.getItem('rf_snd')!=='0';}catch(e){}
+var AC=null;
+function ac(){if(!AC){try{AC=new (window.AudioContext||window.webkitAudioContext)();}catch(e){return null;}}if(AC.state==='suspended')AC.resume();return AC;}
+function tone(fq,d,type,vol,when){var a=ac();if(!a)return;var t=a.currentTime+(when||0),o=a.createOscillator(),g=a.createGain();o.type=type||'sine';o.frequency.value=fq;g.gain.setValueAtTime(vol||.15,t);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g);g.connect(a.destination);o.start(t);o.stop(t+d+.05);}
+function sfx(n){
+  if(!SND)return;
+  if(n==='spin'){var t=0,dt=.045;while(t<3.3){tone(1500,.025,'square',.04,t);t+=dt;dt*=1.07;}}
+  else if(n==='ding'){tone(880,.25,'sine',.18);tone(1320,.3,'sine',.1,.07);}
+  else if(n==='no'){tone(220,.3,'sawtooth',.1);tone(160,.45,'sawtooth',.09,.18);}
+  else if(n==='win'){[523,659,784,1047,1319].forEach(function(fq,i){tone(fq,.4,'triangle',.16,i*.11);});}
+  else if(n==='cut'){tone(1800,.06,'square',.12);tone(110,.5,'sawtooth',.14,.05);}
+}
+function setSnd(v){SND=v;try{localStorage.setItem('rf_snd',v?'1':'0');}catch(e){}document.querySelectorAll('.bsnd').forEach(function(b){b.textContent=v?'🔊':'🔇';});if(v)sfx('ding');}
+function toggleFS(){try{if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen();}catch(e){}}
+function toggleScores(){
+  var o=document.getElementById('scov');if(o){o.remove();focusFirst();return;}
+  if(!P.length)return;
+  var s=P.slice().sort(function(a,b){return b.tot-a.tot;});
+  var d=document.createElement('div');d.className='ov';d.id='scov';
+  d.innerHTML='<div class="ovt">Punteggi<small>Manche '+(Math.min(MAN+1,NM))+' di '+NM+'</small></div><div class="card" style="width:min(100%,720px)">'+s.map(function(p){return '<div class="rank"><span class="av">'+p.av+'</span><span class="nm">'+esc(p.n)+'</span><span style="color:var(--ok);font-weight:800;margin-right:12px">'+eur(p.bank)+'</span><b>In cassa '+eur(p.tot)+'</b></div>';}).join('')+'</div><button class="sec" id="scclose">Chiudi (0 o Esc)</button>';
+  document.body.appendChild(d);d.querySelector('#scclose').addEventListener('click',toggleScores);d.querySelector('#scclose').focus();
+}
 window.matchMedia('(orientation: landscape) and (min-width: 640px)').addEventListener('change',function(){if(M&&M.state==='choose'&&document.getElementById('msg'))play(LASTMSG);});
 function rnd(a){return a[Math.floor(Math.random()*a.length)];}
 function cleanPhrase(s){return s.toUpperCase().replace(/[’`]/g,"'").replace(/[^A-ZÀÈÉÌÒÙ' ]/g,' ').replace(/\s+/g,' ').trim();}
@@ -354,7 +406,7 @@ function revealAnim(L,done){
     if(tk!==TOK)return;
     if(i>=cells.length){setTimeout(function(){if(tk===TOK)done(cells.length);},cells.length?250:0);return;}
     var e=document.getElementById('c'+cells[i][0]+'_'+cells[i][1]);
-    if(e){e.className='c flash';(function(el,ch){setTimeout(function(){el.className='c show';el.textContent=ch;},320);})(e,cells[i][2]);}
+    if(e){sfx('ding');e.className='c flash';(function(el,ch){setTimeout(function(){el.className='c show';el.textContent=ch;},320);})(e,cells[i][2]);}
     i++;setTimeout(nx,380);
   })();
 }
@@ -382,7 +434,7 @@ function spinTo(cb){
   var center=idx*step+step/2,jit=(Math.random()-.5)*step*.7;
   var cur=((wheelRot%360)+360)%360;
   var target=(360-center-jit-cur+720)%360;
-  wheelRot+=360*4+target;
+  wheelRot+=360*4+target;sfx('spin');
   var el=document.getElementById('wh');if(el){el.getBoundingClientRect();el.style.transform='rotate('+wheelRot+'deg)';}
   var tk=TOK;setTimeout(function(){if(tk===TOK)cb(SEG[idx]);},3500);
 }
@@ -407,6 +459,8 @@ function setup(){
       '<p class="hint" id="mh"></p>'+
       '<div class="lbl">Quante manche?</div>'+
       '<div class="switch" id="nman">'+[3,5,7,10].map(function(n){return '<button data-v="'+n+'" class="'+(S.nMan===n?'on':'')+'">'+n+'</button>';}).join('')+'</div>'+
+      '<div class="lbl">Suoni</div>'+
+      '<div class="switch" id="snd"><button data-v="1" class="'+(SND?'on':'')+'">🔊 Sì</button><button data-v="0" class="'+(SND?'':'on')+'">🔇 No</button></div>'+
       '<div class="lbl">Finalissima per chi vince?</div>'+
       '<div class="switch" id="fin"><button data-v="1" class="'+(S.fin?'on':'')+'">Sì</button><button data-v="0" class="'+(S.fin?'':'on')+'">No</button></div>'+
     '</div>'+
@@ -416,7 +470,8 @@ function setup(){
       '<p style="margin-top:8px">Al tuo turno puoi <b>girare la ruota</b>, <b>comprare una vocale</b> (400 €) o <b>dare la soluzione</b>.</p>'+
       '<p style="margin-top:6px">Se giri e scegli una consonante, vinci l\'importo uscito per ogni volta che compare nella frase e giochi ancora. Se non c\'è, il turno passa.</p>'+
       '<p style="margin-top:6px"><b>PASSA</b>: tocca al prossimo. <b>PERDE</b>: perdi i soldi di questa manche. <b>JOLLY</b>: scegli una consonante, vale 1000 € per ogni volta che c\'è e poi il tuo montepremi della manche <b>raddoppia</b>.</p>'+
-      '<p style="margin-top:6px">Chi indovina la frase mette in cassa i soldi della manche (minimo 1000 €); gli altri li perdono. Alla fine vince chi ha più soldi in cassa e, se attiva, gioca la <b>finalissima</b>.</p>'+
+      '<p style="margin-top:6px">Chi indovina la frase mette in cassa i soldi della manche (minimo 1000 €); gli altri li perdono. Alla fine vince chi ha più soldi in cassa e, se attiva, gioca la <b>finalissima</b>: 5 coppie di parole, in ognuna scegli quella giusta (se sbagli il premio si dimezza), poi hai 1 minuto per scrivere la parola che le lega tutte.</p>'+
+      '<p style="margin-top:6px">Da TV o computer: <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> per le mosse, frecce e OK per scegliere, <kbd>0</kbd> punteggi, <kbd>F</kbd> schermo intero, <kbd>M</kbd> suoni.</p>'+
     '</details>'
   );
   function sw(id,fn){document.querySelectorAll('#'+id+' button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('#'+id+' button').forEach(function(x){x.classList.toggle('on',x===b);});fn(b.dataset.v);saveSetup();upd();});});}
@@ -424,6 +479,7 @@ function setup(){
   sw('mode',function(v){S.mode=v;});
   sw('nman',function(v){S.nMan=+v;});
   sw('fin',function(v){S.fin=v==='1';});
+  sw('snd',function(v){setSnd(v==='1');});
   function list(){
     var hs=S.ps.filter(function(p){return !p.cpu;});
     document.getElementById('pl').innerHTML=hs.map(function(p,i){
@@ -563,14 +619,14 @@ function play(msg){
       '<div class="row" style="margin-top:8px"><button class="sec" id="bBack">Annulla</button><button id="bOk">Conferma</button></div></div>';
   }
   render(
-    '<div class="top"><span class="pill">Manche '+(MAN+1)+'/'+NM+'</span>'+brand(true)+'<span class="pill">'+(S.mode==='ply'?'🎤':'🎲')+'</span></div>'+
+    '<div class="top"><span class="pill">Manche '+(MAN+1)+'/'+NM+'</span>'+brand(true)+'<button class="pill bsnd" style="border:0">'+(SND?'🔊':'🔇')+'</button></div>'+
     '<div class="play"><div>'+boardHTML()+scoresHTML()+'</div><div class="side'+(human&&M.state!=='choose'?'':' big')+'">'+
     '<div class="wheelbox"><div class="ptr"></div><div class="wclip">'+wheelSVG()+'</div></div>'+
     '<div class="msg" id="msg">'+(msg||'')+'</div><div class="ctl">'+ctl+
     (human||M.state==='done'?'':'<p class="hint">'+p.av+' '+esc(p.n)+' sta pensando…</p>')+
     '</div></div></div>'
   );
-  var b;
+  var b;wireTB();
   if((b=document.getElementById('bSpin')))b.addEventListener('click',doSpin);
   if((b=document.getElementById('bVow')))b.addEventListener('click',function(){M.state='vow';play('Quale vocale compri, <b>'+esc(p.n)+'</b>?');});
   if((b=document.getElementById('bSol')))b.addEventListener('click',function(){M.state='solve';play('Qual è la frase, <b>'+esc(p.n)+'</b>?');var i=document.getElementById('sol');if(i)i.focus();});
@@ -605,18 +661,21 @@ function playTV(msg){
   }
   var side='';
   if(st==='choose'&&human){
-    side='<button class="tvb" id="bSpin"'+(canSpin?'':' disabled')+'><kbd>1</kbd><span>🎡 Gira la ruota<small>'+(anyC?'e scegli una consonante':'consonanti finite')+'</small></span></button>'+
-      '<button class="tvb" id="bVow"'+(canVow?'':' disabled')+'><kbd>2</kbd><span>🛒 Compra una vocale<small>'+(!anyV?'vocali finite':p.bank>=VOWEL_COST?'costa 400 €':'servono almeno 400 €')+'</small></span></button>'+
-      '<button class="tvb" id="bSol"><kbd>3</kbd><span>💡 Do la soluzione<small>la so!</small></span></button>';
+    side='<button class="tvb" id="bSpin" data-key="1"'+(canSpin?'':' disabled')+'><kbd>1</kbd><span>🎡 Gira la ruota<small>'+(anyC?'e scegli una consonante':'consonanti finite')+'</small></span></button>'+
+      '<button class="tvb" id="bVow" data-key="2"'+(canVow?'':' disabled')+'><kbd>2</kbd><span>🛒 Compra una vocale<small>'+(!anyV?'vocali finite':p.bank>=VOWEL_COST?'costa 400 €':'servono almeno 400 €')+'</small></span></button>'+
+      '<button class="tvb" id="bSol" data-key="3"><kbd>3</kbd><span>💡 Do la soluzione<small>la so!</small></span></button>'+
+      '<button class="sec" id="bScore" style="font-size:clamp(14px,2vh,28px)"><kbd>0</kbd> Punteggi di tutti</button>';
   } else if(!human&&st!=='done'){side='<p class="hint" style="text-align:left">'+p.av+' '+esc(p.n)+' sta pensando…</p>';}
   render(
     '<div class="tv"><div class="tvbar"><span class="mn">Manche '+(MAN+1)+'/'+NM+'</span><span class="who">'+who+'</span>'+
     (M.solo?'<span class="err">Errori '+'❌'.repeat(M.err)+'⬜'.repeat(3-M.err)+'</span>':'')+
-    '<span class="money">'+eur(p.bank)+'</span></div>'+
+    '<span class="money">'+eur(p.bank)+'</span>'+tbButtons()+'</div>'+
     '<div class="tvmain"><div>'+boardHTML()+'</div><aside class="tvside">'+(ov?'':mh)+side+'</aside></div></div>'+ov
   );
   var b;
   if((b=document.getElementById('bSpin')))b.addEventListener('click',doSpin);
+  if((b=document.getElementById('bScore')))b.addEventListener('click',toggleScores);
+  wireTB();
   if((b=document.getElementById('bVow')))b.addEventListener('click',function(){M.state='vow';play();});
   if((b=document.getElementById('bSol')))b.addEventListener('click',function(){M.state='solve';M.fill=[];play();});
   if((b=document.getElementById('bBack')))b.addEventListener('click',function(){M.state='choose';play('Tocca a <b>'+esc(p.n)+'</b>');});
@@ -624,6 +683,8 @@ function playTV(msg){
   document.querySelectorAll('#solveov .picker button[data-k]').forEach(function(k){k.addEventListener('click',function(){typeL(k.dataset.k);});});
   if(!human&&st==='choose')cpuTurn();
 }
+function tbButtons(){return '<button class="tb bsnd" title="Suoni (M)">'+(SND?'🔊':'🔇')+'</button><button class="tb bfs" title="Schermo intero (F)">⛶</button>';}
+function wireTB(){document.querySelectorAll('.bsnd').forEach(function(b){b.onclick=function(){setSnd(!SND);};});document.querySelectorAll('.bfs').forEach(function(b){b.onclick=toggleFS;});}
 // caselle nascoste da riempire per dare la soluzione
 function slots(){var o=[];for(var r=0;r<4;r++)for(var c=0;c<14;c++){var ch=M.cells[r][c];if(ch&&ch!==' '&&/[A-Z]/.test(base(ch))&&!M.rev[base(ch)])o.push([r,c]);}return o;}
 function miniHTML(){
@@ -663,6 +724,7 @@ function typeL(k){
 }
 function setMsg(h){var m=document.getElementById('msg');if(m)m.innerHTML=h;}
 function nextPlayer(why){
+  if(why)sfx('no');
   if(M.solo){
     M.err++;M.state='choose';
     if(M.err>=3){var tk0=TOK;setMsg((why||'')+'<br>Terzo errore!');setTimeout(function(){if(tk0===TOK)loseManche();},1300);return;}
@@ -723,7 +785,7 @@ function trySolve(txt){
   else{M.state='x';nextPlayer('❌ «'+esc(txt.toUpperCase()||'…')+'» non è giusta.');}
 }
 function loseManche(){
-  TOK++;M.state='done';
+  TOK++;M.state='done';sfx('no');
   var p=cur();p.bank=0;
   'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){M.rev[L]=true;});
   render(
@@ -741,7 +803,7 @@ function winManche(p){
   'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){M.rev[L]=true;});
   var prize=Math.max(p.bank,1000);
   P.forEach(function(q){q.bank=0;});
-  p.tot+=prize;
+  p.tot+=prize;sfx('win');
   render(
     '<div class="top"><span class="pill">Manche '+(MAN+1)+'/'+NM+'</span>'+brand(true)+'<span class="pill">🏁</span></div>'+
     '<div class="play"><div>'+boardHTML()+'</div><div>'+
@@ -787,73 +849,99 @@ function cpuCons(){
   },1300);
 }
 
-// ── FINALISSIMA ────────────────────────────────────────────────────────────
+// ── FINALISSIMA: LA PAROLA FINALE ──────────────────────────────────────────
+// 5 coppie di parole: una è un indizio, l'altra no. Se sbagli il premio si dimezza.
+// Poi 60 secondi per scrivere la parola che lega i 5 indizi.
 var F=null;
+var FIN=window.FINALE||[];
+var FIN_START=20000;
+var FIN_LV={e:{pick:.55,solve:.35},m:{pick:.7,solve:.55},h:{pick:.85,solve:.75}};
+var FUSED=[];try{FUSED=JSON.parse(localStorage.getItem('rf_fin_used')||'[]');}catch(e){}
 function leader(){return P.slice().sort(function(a,b){return b.tot-a.tot;})[0];}
+function finHead(){return '<div class="tvbar"><span class="mn">⭐ Finalissima</span><span class="who"><span class="av">'+F.p.av+'</span>'+esc(F.p.n)+'</span><span class="money" id="fprize">'+eur(F.prize)+'</span>'+tbButtons()+'</div>';}
+function cluesHTML(){var h='<div class="clues" id="clues">';for(var i=0;i<5;i++)h+=F.clues[i]?'<span class="cl">'+esc(F.clues[i])+'</span>':'<span class="cl e">?</span>';return h+'</div>';}
 function finalIntro(){
-  TOK++;
+  TOK++;M=null;
   var w=leader();
-  render(brand(true)+'<div class="card cover pop"><div class="big">⭐</div><h2>Finalissima!</h2>'+
+  if(!FIN.length){end();return;}
+  render(brand(true)+'<div class="card cover pop"><div class="big">✂️</div><h2>Finalissima: la parola finale</h2>'+
     '<p style="font-weight:800">'+w.av+' '+esc(w.n)+' va in finale con '+eur(w.tot)+'</p>'+
-    '<p class="hint">Ti regaliamo le consonanti R S T L N. Poi scegli 3 consonanti e 1 vocale, e hai 30 secondi per dare la soluzione. In palio una busta segreta!</p>'+
+    '<p style="margin-top:8px">In palio ci sono <b>'+eur(FIN_START)+'</b>. Ti mostro 5 coppie di parole: in ogni coppia scegli quella collegata alla parola finale. Se sbagli il montepremi <b>si dimezza</b>, ma la parola giusta ti viene mostrata lo stesso.</p>'+
+    '<p style="margin-top:6px">Alla fine hai <b>1 minuto</b> per scrivere la parola che lega tutti e 5 gli indizi.</p>'+
     '<button class="wide cta" id="go" style="margin-top:16px">Inizia la finalissima</button></div>');
   document.getElementById('go').addEventListener('click',function(){
-    var f=pickPhrase();
-    M={hint:f.hint,ph:f.ph,cells:layout(f.ph),rev:{},used:{},active:[w],t:0,setter:null,state:'final'};
-    F={p:w,picks:[],prize:rnd(PRIZES)};
-    'RSTLN'.split('').forEach(function(L){M.rev[L]=true;M.used[L]=true;});
-    finalPick();
+    var pool=FIN.filter(function(z){return FUSED.indexOf(z.a)<0;});if(!pool.length){FUSED=[];pool=FIN;}
+    var z=rnd(pool);FUSED.push(z.a);try{localStorage.setItem('rf_fin_used',JSON.stringify(FUSED));}catch(e){}
+    F={p:w,z:z,k:0,prize:FIN_START,clues:[],txt:'',typing:false};
+    finalPair();
   });
 }
-function finalPick(){
+function finalPair(){
   TOK++;
-  var p=F.p,nc=F.picks.filter(function(L){return CONS.indexOf(L)>=0;}).length,nv=F.picks.length-nc;
-  var need=nc<3?'cons':(nv<1?'vow':null);
-  render(brand(true)+boardHTML()+
-    '<div class="msg">'+(need==='cons'?'Scegli la consonante '+(nc+1)+' di 3':need==='vow'?'Ora scegli 1 vocale':'')+'</div>'+
-    '<div class="kb">'+(need==='cons'?CONS:VOW).split('').map(function(L){return '<button class="'+(need==='vow'?'v':'')+'" data-l="'+L+'"'+(M.used[L]||F.picks.indexOf(L)>=0?' disabled':'')+'>'+L+'</button>';}).join('')+'</div>'+
-    '<p class="hint">Scelte: '+(F.picks.join(' ')||'—')+'</p>');
-  if(p.cpu){
-    var tk=TOK;setTimeout(function(){if(tk!==TOK)return;var src=need==='cons'?FREQ:VFREQ;F.picks.push(src.split('').filter(function(x){return !M.used[x]&&F.picks.indexOf(x)<0;})[0]);finalNext();},900);
-    return;
-  }
-  document.querySelectorAll('.kb button').forEach(function(k){k.addEventListener('click',function(){F.picks.push(k.dataset.l);finalNext();});});
+  var p=F.p,pair=F.z.c[F.k],order=Math.random()<.5?[0,1]:[1,0];
+  render(finHead()+'<div class="fin">'+cluesHTML()+
+    '<div class="ovt">Coppia '+(F.k+1)+' di 5<small>Quale parola è collegata alla parola finale?</small></div>'+
+    '<div class="pair">'+order.map(function(i,j){return '<button class="pw" data-key="'+(j+1)+'" data-i="'+i+'"><kbd>'+(j+1)+'</kbd>'+esc(pair[i])+'</button>';}).join('')+'</div>'+
+    '<div class="msg" id="msg">'+(p.cpu?p.av+' '+esc(p.n)+' sta scegliendo…':'')+'</div></div>');
+  wireTB();
+  if(p.cpu){var tk=TOK;setTimeout(function(){if(tk===TOK)finalChoose(Math.random()<FIN_LV[p.lvl].pick?0:1);},1400);return;}
+  document.querySelectorAll('.pw').forEach(function(b){b.addEventListener('click',function(){finalChoose(+b.dataset.i);});});
 }
-function finalNext(){
-  if(F.picks.length<4){finalPick();return;}
-  F.picks.forEach(function(L){M.rev[L]=true;M.used[L]=true;});
+function finalChoose(i){
   TOK++;
-  var p=F.p,limit=30,deadline=Date.now()+limit*1000,tk=TOK;
-  render(brand(true)+boardHTML()+
-    '<div class="msg">Hai 30 secondi, '+esc(p.n)+'!</div><div class="tmr"><i id="tb" style="width:100%"></i></div>'+
-    (p.cpu?'<p class="hint">'+p.av+' sta pensando…</p>':'<input id="sol" placeholder="Scrivi la soluzione" autocomplete="off" style="text-transform:uppercase"><button class="wide cta" id="ok" style="margin-top:10px">Conferma</button>'));
+  var pair=F.z.c[F.k],ok=i===0;
+  document.querySelectorAll('.pw').forEach(function(b){b.disabled=true;var bi=+b.dataset.i;if(bi===0)b.classList.add('ok');else if(bi===i)b.classList.add('ko');});
+  if(ok){sfx('ding');setMsg('✅ Giusto! <b>'+esc(pair[0])+'</b> è un indizio.');}
+  else{F.prize=Math.round(F.prize/2);sfx('cut');setMsg('✂️ Sbagliato! L\'indizio era <b>'+esc(pair[0])+'</b>. Il montepremi scende a <b>'+eur(F.prize)+'</b>');}
+  F.clues.push(pair[0]);
+  var c=document.getElementById('clues');if(c)c.outerHTML=cluesHTML();
+  var fp=document.getElementById('fprize');if(fp)fp.textContent=eur(F.prize);
+  var tk=TOK;setTimeout(function(){if(tk!==TOK)return;F.k++;if(F.k<5)finalPair();else finalWord();},ok?1400:2200);
+}
+function finalWord(){
+  TOK++;F.txt='';
+  var p=F.p,limit=60,deadline=Date.now()+limit*1000,tk=TOK;
+  render(finHead()+'<div class="fin">'+cluesHTML()+
+    '<div class="ovt">Qual è la parola che lega tutti gli indizi?<small>Hai 60 secondi · in palio '+eur(F.prize)+'</small></div>'+
+    '<div class="tmr"><i id="tb" style="width:100%"></i></div><div class="ans" id="ans">&nbsp;</div>'+
+    (p.cpu?'<p class="hint">'+p.av+' '+esc(p.n)+' sta pensando…</p>':
+      '<div class="picker sk">'+'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(function(L){return '<button data-k="'+L+'">'+L+'</button>';}).join('')+
+      '<button data-k="DEL" aria-label="Cancella">⌫</button><button data-k="OK" class="ok" aria-label="Conferma">✓</button></div>'+
+      '<p class="hint">Scrivi con la tastiera o scegli le lettere con le frecce. ✓ o Invio per confermare.</p>')+'</div>');
+  wireTB();
+  F.typing=!p.cpu;
   var iv=setInterval(function(){
     if(tk!==TOK){clearInterval(iv);return;}
     var left=Math.max(0,deadline-Date.now()),b=document.getElementById('tb');if(b)b.style.width=(left/(limit*10))+'%';
-    if(left<=0){clearInterval(iv);finalResult(false);}
+    if(left<=0){clearInterval(iv);F.typing=false;finalResult(false);}
   },250);
-  if(p.cpu){var ok=revealRatio()>=LV[p.lvl].solve-.1;setTimeout(function(){if(tk===TOK){clearInterval(iv);finalResult(ok);}},ok?4000:limit*1000+200);return;}
-  var go=function(){clearInterval(iv);finalResult(letters(document.getElementById('sol').value)===letters(M.ph));};
-  document.getElementById('ok').addEventListener('click',go);
-  document.getElementById('sol').addEventListener('keydown',function(e){if(e.key==='Enter')go();});
-  document.getElementById('sol').focus();
+  if(p.cpu){var ok=Math.random()<FIN_LV[p.lvl].solve;setTimeout(function(){if(tk===TOK){clearInterval(iv);if(ok)F.txt=F.z.a;finalResult(ok);}},ok?6000:limit*1000+200);return;}
+  document.querySelectorAll('.picker button[data-k]').forEach(function(k){k.addEventListener('click',function(){typeF(k.dataset.k);});});
+}
+function typeF(k){
+  if(!F||!F.typing)return;
+  if(k==='DEL')F.txt=F.txt.slice(0,-1);
+  else if(k==='OK'){if(!F.txt)return;F.typing=false;finalResult(letters(F.txt)===letters(F.z.a));return;}
+  else if(F.txt.length<16)F.txt+=k;
+  var a=document.getElementById('ans');if(a)a.textContent=F.txt||' ';
 }
 function finalResult(ok){
-  TOK++;
-  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){M.rev[L]=true;});
+  TOK++;F.typing=false;
   if(ok)F.p.tot+=F.prize;
   F.ok=ok;
-  render(brand(true)+boardHTML()+'<div class="card cover pop"><div class="big">'+(ok?'🏆':'😮')+'</div>'+
-    '<h2>'+(ok?'Evviva! '+esc(F.p.n)+' vince la busta':'Peccato! Non era la frase giusta')+'</h2>'+'<p style="font-family:var(--ff-d);font-weight:600;margin-top:6px">'+esc(M.ph)+'</p>'+
-    '<p style="font-weight:800">Nella busta c\'erano <span style="color:var(--ok)">'+eur(F.prize)+'</span></p>'+
-    '<button class="wide cta" id="go" style="margin-top:14px">🏆 Classifica finale</button></div>');
-  if(ok)confetti();
+  render(finHead()+'<div class="fin">'+cluesHTML()+'<div class="card cover pop"><div class="big">'+(ok?'🏆':'😮')+'</div>'+
+    '<h2>'+(ok?'Esatto! '+esc(F.p.n)+' vince '+eur(F.prize):'Peccato, niente premio!')+'</h2>'+
+    '<p style="margin-top:6px">La parola finale era</p><div class="ans" style="margin:8px auto">'+esc(F.z.a)+'</div>'+
+    (!ok&&F.txt?'<p class="hint">Hai scritto: '+esc(F.txt)+'</p>':'')+
+    '<button class="wide cta" id="go" style="margin-top:14px">🏆 Classifica finale</button></div></div>');
+  wireTB();
+  if(ok){sfx('win');confetti();}else sfx('no');
   document.getElementById('go').addEventListener('click',end);
 }
 
 // ── FINE ───────────────────────────────────────────────────────────────────
 function end(){
-  TOK++;M=null;
+  TOK++;M=null;F=null;
   var s=P.slice().sort(function(a,b){return b.tot-a.tot;}),md=['🥇','🥈','🥉'];
   render(brand(true)+'<div class="card" style="text-align:center"><h2 style="font-size:1.7rem;margin:0">🏆 Classifica</h2>'+
     '<p style="font-weight:800;margin-top:6px">'+s[0].av+' '+esc(s[0].n)+' vince con '+eur(s[0].tot)+'!</p></div>'+
@@ -866,6 +954,7 @@ function end(){
 
 // ── AVVIO ──────────────────────────────────────────────────────────────────
 render(brand()+'<div class="card" style="text-align:center">Carico le frasi…</div>');
+if(!FIN.length)fetch('finale.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){FIN=d;}).catch(function(){});
 if(FR.length)setup();
 else fetch('frasi.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){FR=d;setup();})
   .catch(function(){render(brand()+'<div class="card" style="text-align:center"><h2>Non riesco a caricare le frasi 😕</h2><p style="margin-top:8px">Il file <b>frasi.json</b> deve stare nella stessa cartella di questa pagina.</p></div>');});
