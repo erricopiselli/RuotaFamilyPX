@@ -466,7 +466,6 @@ function setup(){
     '</div>'+
     '</div></div>'+
     '<button id="go" class="wide cta">▶ Inizia la partita!</button>'+
-    '<button id="tryFin" class="sec wide" style="margin-top:10px">⭐ Prova solo la finalissima</button>'+
     '<details class="card" style="font-size:.95rem"><summary style="font-weight:800;cursor:pointer">📖 Come si gioca</summary>'+
       '<p style="margin-top:8px">Al tuo turno puoi <b>girare la ruota</b>, <b>comprare una vocale</b> (400 €) o <b>dare la soluzione</b>.</p>'+
       '<p style="margin-top:6px">Se giri e scegli una consonante, vinci l\'importo uscito per ogni volta che compare nella frase e giochi ancora. Se non c\'è, il turno passa.</p>'+
@@ -500,10 +499,6 @@ function setup(){
     S.ps.push({n:v,av:AV[S.ps.length]});nm.value='';saveSetup();list();upd();nm.focus();
   });
   document.getElementById('nm').addEventListener('keydown',function(e){if(e.key==='Enter')document.getElementById('add').click();});
-  document.getElementById('tryFin').addEventListener('click',function(){
-    var nm=(S.ps[0]&&S.ps[0].n)||'Giocatore';
-    P=[{n:nm,av:AV[0],cpu:false,tot:0,bank:0}];MAN=0;NM=1;TRY=true;finalIntro();
-  });
   document.getElementById('go').addEventListener('click',function(){
     var er=document.getElementById('er');
     if(!S.ps.length){er.textContent='Aggiungi almeno un giocatore!';document.getElementById('nm').focus();return;}
