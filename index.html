@@ -191,6 +191,9 @@ kbd{display:inline-grid;place-items:center;min-width:1.7em;height:1.7em;padding:
 .ovright .picker button{font-size:clamp(20px,5vh,68px)}
 .ovright .wheelbox{width:min(62vh,40vw)}
 @media (orientation:portrait){.ov.split{flex-direction:column;gap:2vh}.ovboard{max-width:100%;width:100%}.ovboard .c{font-size:clamp(11px,4vw,28px)}.ovright .wheelbox{width:min(70vw,45vh)}.ovright{width:100%}}
+.tt{font-family:var(--ff-d);font-weight:700;background:var(--card2);border-radius:99px;padding:.15em .6em;white-space:nowrap}
+.tt.low{background:var(--ko);color:#fff}
+.ttrow{display:flex;justify-content:center;margin-top:6px;font-size:1.1rem}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* orizzontale */
 @media (orientation:landscape) and (min-width:640px){
@@ -239,9 +242,9 @@ var PRIZES=[5000,10000,15000,25000];
 var USED=[];try{USED=JSON.parse(localStorage.getItem('rf_used')||'[]')}catch(e){}
 function markUsed(p){USED.push(p);if(USED.length>FR.length-20)USED=USED.slice(-Math.floor(FR.length/2));try{localStorage.setItem('rf_used',JSON.stringify(USED))}catch(e){}}
 
-var S={ps:[],cpu:false,lvl:'m',mode:'sys',nMan:5,fin:true};
-try{var sv=JSON.parse(localStorage.getItem('rf_setup')||'null');if(sv){S.cpu=!!sv.cpu;S.lvl=sv.lvl||'m';S.mode=sv.mode||'sys';S.nMan=sv.nMan||5;S.fin=sv.fin!==false;S.ps=(sv.names||[]).map(function(n,i){return {n:n,av:AV[i]};});}}catch(e){}
-function saveSetup(){try{localStorage.setItem('rf_setup',JSON.stringify({cpu:S.cpu,lvl:S.lvl,mode:S.mode,nMan:S.nMan,fin:S.fin,names:S.ps.filter(function(p){return !p.cpu}).map(function(p){return p.n})}))}catch(e){}}
+var S={ps:[],cpu:false,lvl:'m',mode:'sys',nMan:5,fin:true,tmr:30};
+try{var sv=JSON.parse(localStorage.getItem('rf_setup')||'null');if(sv){S.cpu=!!sv.cpu;S.lvl=sv.lvl||'m';S.mode=sv.mode||'sys';S.nMan=sv.nMan||5;S.fin=sv.fin!==false;S.tmr=(sv.tmr===undefined?30:sv.tmr);S.ps=(sv.names||[]).map(function(n,i){return {n:n,av:AV[i]};});}}catch(e){}
+function saveSetup(){try{localStorage.setItem('rf_setup',JSON.stringify({cpu:S.cpu,lvl:S.lvl,mode:S.mode,nMan:S.nMan,fin:S.fin,tmr:S.tmr,names:S.ps.filter(function(p){return !p.cpu}).map(function(p){return p.n})}))}catch(e){}}
 
 var app=document.getElementById('app');
 var M=null;            // manche in corso
@@ -316,6 +319,7 @@ function sfx(n){
   else if(n==='ding'){tone(880,.25,'sine',.18);tone(1320,.3,'sine',.1,.07);}
   else if(n==='no'){tone(220,.3,'sawtooth',.1);tone(160,.45,'sawtooth',.09,.18);}
   else if(n==='win'){[523,659,784,1047,1319].forEach(function(fq,i){tone(fq,.4,'triangle',.16,i*.11);});}
+  else if(n==='buzz'){tone(95,.7,'sawtooth',.22);tone(100,.7,'square',.08);}
   else if(n==='cut'){tone(1800,.06,'square',.12);tone(110,.5,'sawtooth',.14,.05);}
 }
 function setSnd(v){SND=v;try{localStorage.setItem('rf_snd',v?'1':'0');}catch(e){}document.querySelectorAll('.bsnd').forEach(function(b){b.textContent=v?'🔊':'🔇';});if(v)sfx('ding');}
@@ -468,6 +472,9 @@ function setup(){
       '<p class="hint" id="mh"></p>'+
       '<div class="lbl">Quante manche?</div>'+
       '<div class="switch" id="nman">'+[3,5,7,10].map(function(n){return '<button data-v="'+n+'" class="'+(S.nMan===n?'on':'')+'">'+n+'</button>';}).join('')+'</div>'+
+      '<div class="lbl">Tempo per decidere la mossa</div>'+
+      '<div class="switch" id="tmr">'+[[0,'No'],[15,'15 s'],[30,'30 s'],[45,'45 s'],[60,'60 s']].map(function(o){return '<button data-v="'+o[0]+'" class="'+(S.tmr===o[0]?'on':'')+'">'+o[1]+'</button>';}).join('')+'</div>'+
+      '<p class="hint">Se il tempo finisce senza una scelta, suona un buzz e la ruota gira da sola.</p>'+
       '<div class="lbl">Suoni</div>'+
       '<div class="switch" id="snd"><button data-v="1" class="'+(SND?'on':'')+'">🔊 Sì</button><button data-v="0" class="'+(SND?'':'on')+'">🔇 No</button></div>'+
       '<div class="lbl">Finalissima per chi vince?</div>'+
@@ -489,6 +496,7 @@ function setup(){
   sw('nman',function(v){S.nMan=+v;});
   sw('fin',function(v){S.fin=v==='1';});
   sw('snd',function(v){setSnd(v==='1');});
+  sw('tmr',function(v){S.tmr=+v;});
   function list(){
     var hs=S.ps.filter(function(p){return !p.cpu;});
     document.getElementById('pl').innerHTML=hs.map(function(p,i){
@@ -615,7 +623,7 @@ function play(msg){
   var canSol=human&&M.state==='choose';
   var ctl='';
   if(M.state==='choose'&&human){
-    ctl='<div class="acts">'+
+    ctl=(S.tmr?'<div class="ttrow">'+ttHTML()+'</div>':'')+'<div class="acts">'+
       '<button id="bSpin"'+(canSpin?'':' disabled')+'>🎡 Gira<small>'+(anyC?'la ruota':'consonanti finite')+'</small></button>'+
       '<button id="bVow"'+(canVow?'':' disabled')+'>🛒 Vocale<small>costa 400 €</small></button>'+
       '<button id="bSol"'+(canSol?'':' disabled')+'>💡 Soluzione<small>la so!</small></button></div>';
@@ -648,6 +656,27 @@ function play(msg){
     if(M.state==='vow')buyVowel(L);else pickCons(L);
   });});
   if(!human&&M.state==='choose')cpuTurn();
+  startTurnTimer();
+}
+// conto alla rovescia per scegliere la mossa
+var turnIv=null;
+function stopTurnTimer(){if(turnIv){clearInterval(turnIv);turnIv=null;}}
+function ttHTML(){return S.tmr?'<span class="tt" id="tt">⏱ '+S.tmr+'</span>':'';}
+function startTurnTimer(){
+  stopTurnTimer();
+  if(!S.tmr||!M||M.state!=='choose'||cur().cpu)return;
+  var deadline=Date.now()+S.tmr*1000,tk=TOK,ref=M;
+  turnIv=setInterval(function(){
+    var el=document.getElementById('tt');
+    if(tk!==TOK||M!==ref||M.state!=='choose'||!el){stopTurnTimer();return;}
+    var left=Math.max(0,Math.ceil((deadline-Date.now())/1000));
+    el.textContent='⏱ '+left;el.classList.toggle('low',left<=5);
+    if(left<=0){
+      stopTurnTimer();sfx('buzz');
+      if(Object.keys(hiddenOf(CONS)).length){setMsg('⏰ Tempo scaduto! La ruota gira da sola…');setTimeout(function(){if(tk===TOK&&M===ref&&M.state==='choose')doSpin();},900);}
+      else{M.state='x';nextPlayer('⏰ Tempo scaduto!');}
+    }
+  },250);
 }
 // schermata a tutto schermo con il tabellone in miniatura accanto (o sopra, in verticale)
 function split(right){
@@ -684,7 +713,7 @@ function playTV(msg){
   render(
     '<div class="tv"><div class="tvbar"><span class="mn">Manche '+(MAN+1)+'/'+NM+'</span><span class="who">'+who+'</span>'+
     (M.solo?'<span class="err">Errori '+'❌'.repeat(M.err)+'⬜'.repeat(3-M.err)+'</span>':'')+
-    '<span class="money">'+eur(p.bank)+'</span>'+tbButtons()+'</div>'+
+    (st==='choose'&&human?ttHTML():'')+'<span class="money">'+eur(p.bank)+'</span>'+tbButtons()+'</div>'+
     '<div class="tvmain"><div>'+boardHTML()+'</div><aside class="tvside">'+(ov?'':mh)+side+'</aside></div></div>'+ov
   );
   var b;
@@ -697,6 +726,7 @@ function playTV(msg){
   document.querySelectorAll('.picker button[data-l]').forEach(function(k){k.addEventListener('click',function(){if(M.state==='vow')buyVowel(k.dataset.l);else pickCons(k.dataset.l);});});
   document.querySelectorAll('#solveov .picker button[data-k]').forEach(function(k){k.addEventListener('click',function(){typeL(k.dataset.k);});});
   if(!human&&st==='choose')cpuTurn();
+  startTurnTimer();
 }
 function tbButtons(){return '<button class="tb bsnd" title="Suoni (M)">'+(SND?'🔊':'🔇')+'</button><button class="tb bfs" title="Schermo intero (F)">⛶</button>';}
 function wireTB(){document.querySelectorAll('.bsnd').forEach(function(b){b.onclick=function(){setSnd(!SND);};});document.querySelectorAll('.bfs').forEach(function(b){b.onclick=toggleFS;});}
