@@ -182,6 +182,15 @@ kbd{display:inline-grid;place-items:center;min-width:1.7em;height:1.7em;padding:
 .fin .card{width:min(100%,640px)}
 #scov .rank{font-size:clamp(16px,3vh,40px)}
 @media (max-width:520px){.tvbar .mn{display:none}.tvbar{gap:8px;font-size:15px;padding:8px 10px}.pw{font-size:1.4rem;padding:18px 6px}.cl{font-size:1rem;min-width:0}}
+.ov.split{flex-direction:row;align-items:center;gap:3vw}
+.ovboard{flex:1 1 50%;max-width:52%;min-width:0}
+.ovboard .c{font-size:clamp(11px,min(1.9vw,4.4vh),52px)}
+.ovboard .clue{font-size:clamp(12px,2.2vh,30px)}
+.ovright{flex:1 1 48%;min-width:0;display:flex;flex-direction:column;align-items:center;gap:2vh}
+.ovright .picker{width:100%}
+.ovright .picker button{font-size:clamp(20px,5vh,68px)}
+.ovright .wheelbox{width:min(62vh,40vw)}
+@media (orientation:portrait){.ov.split{flex-direction:column;gap:2vh}.ovboard{max-width:100%;width:100%}.ovboard .c{font-size:clamp(11px,4vw,28px)}.ovright .wheelbox{width:min(70vw,45vh)}.ovright{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* orizzontale */
 @media (orientation:landscape) and (min-width:640px){
@@ -640,6 +649,11 @@ function play(msg){
   });});
   if(!human&&M.state==='choose')cpuTurn();
 }
+// schermata a tutto schermo con il tabellone in miniatura accanto (o sopra, in verticale)
+function split(right){
+  var mini=boardHTML().replace(/ id="c\d+_\d+"/g,'');
+  return '<div class="ov split"><div class="ovboard">'+mini+'</div><div class="ovright">'+right+'</div></div>';
+}
 function playTV(msg){
   var p=cur(),human=!p.cpu,st=M.state;
   var hc=hiddenOf(CONS),hv=hiddenOf(VOW),anyC=Object.keys(hc).length>0,anyV=Object.keys(hv).length>0;
@@ -648,15 +662,15 @@ function playTV(msg){
   var ov='';
   var mh='<div class="msg" id="msg">'+(msg||'')+'</div>';
   if(st==='spin'){
-    ov='<div class="ov"><div class="ovt">'+p.av+' '+esc(p.n)+' gira la ruota…</div><div class="wheelbox"><div class="ptr"></div><div class="wclip">'+wheelSVG()+'</div></div>'+mh+'</div>';
+    ov=split('<div class="ovt">'+p.av+' '+esc(p.n)+' gira la ruota…</div><div class="wheelbox"><div class="ptr"></div><div class="wclip">'+wheelSVG()+'</div></div>'+mh);
   } else if((st==='cons'||st==='jolly')&&human){
-    ov='<div class="ov"><div class="ovt">'+(st==='jolly'?'🃏 JOLLY: 1000 € per lettera, poi il montepremi raddoppia':'Ogni consonante vale '+eur(M.val))+'<small>'+esc(p.n)+', scegli una consonante</small></div>'+
+    ov=split('<div class="ovt">'+(st==='jolly'?'🃏 JOLLY: 1000 € per lettera, poi il montepremi raddoppia':'Ogni consonante vale '+eur(M.val))+'<small>'+esc(p.n)+', scegli una consonante</small></div>'+
       '<div class="picker">'+CONS.split('').map(function(L){return '<button data-l="'+L+'"'+(M.used[L]?' disabled':'')+'>'+L+'</button>';}).join('')+'</div>'+
-      '<p class="hint">Frecce + OK, oppure premi la lettera sulla tastiera</p></div>';
+      '<p class="hint">Frecce + OK, oppure premi la lettera sulla tastiera</p>');
   } else if(st==='vow'&&human){
-    ov='<div class="ov"><div class="ovt">Quale vocale compri?<small>costa 400 € · hai '+eur(p.bank)+'</small></div>'+
+    ov=split('<div class="ovt">Quale vocale compri?<small>costa 400 € · hai '+eur(p.bank)+'</small></div>'+
       '<div class="picker v5">'+VOW.split('').map(function(L){return '<button class="v" data-l="'+L+'"'+(M.used[L]?' disabled':'')+'>'+L+'</button>';}).join('')+'</div>'+
-      '<div class="ovrow"><button class="sec" id="bBack">Annulla (Esc)</button></div></div>';
+      '<div class="ovrow"><button class="sec" id="bBack">Annulla (Esc)</button></div>');
   } else if(st==='solve'&&human){
     ov=solveOverlayHTML();
   }
@@ -818,21 +832,32 @@ function winManche(p){
 }
 
 // ── COMPUTER ───────────────────────────────────────────────────────────────
-var LV={e:{know:.25,solve:.9,vow:.2},m:{know:.5,solve:.75,vow:.35},h:{know:.75,solve:.6,vow:.5}};
+// Robo NON conosce la frase: sceglie le lettere a caso, preferendo quelle più
+// frequenti in italiano (più è bravo, più segue le frequenze). Quando sul
+// tabellone ci sono abbastanza lettere prova la soluzione, e può sbagliare.
+var LV={e:{pow:.6,att:.8,k:4,vow:.25},m:{pow:1.2,att:.7,k:3,vow:.35},h:{pow:2,att:.6,k:2,vow:.45}};
+function cpuPick(list,lv){
+  var c=list.split('').filter(function(x){return !M.used[x];});
+  if(!c.length)return null;
+  var w=c.map(function(x){return Math.pow(list.length-list.indexOf(x),lv.pow);}),t=w.reduce(function(a,b){return a+b;},0),r=Math.random()*t;
+  for(var i=0;i<c.length;i++){r-=w[i];if(r<=0)return c[i];}
+  return c[c.length-1];
+}
 function cpuTurn(){
   var p=cur(),lv=LV[p.lvl],tk=TOK;
   setTimeout(function(){
     if(tk!==TOK)return;
-    var hc=hiddenOf(CONS),hv=hiddenOf(VOW),anyC=Object.keys(hc).length,anyV=Object.keys(hv).length;
+    var anyC=Object.keys(hiddenOf(CONS)).length>0;             // visibile a tutti: "consonanti finite"
+    var vLeft=VOW.split('').some(function(x){return !M.used[x];});
+    var canVow=vLeft&&p.bank>=VOWEL_COST;
     var r=revealRatio();
-    if(r>=lv.solve||(!anyC&&(!anyV||p.bank<VOWEL_COST))){
+    if(r>=lv.att||(!anyC&&!canVow)){
       M.state='solve';setMsg(p.av+' '+esc(p.n)+': «Vorrei dare la soluzione!»');
-      setTimeout(function(){if(tk===TOK)trySolve(M.ph);},1400);return;
+      var ok=Math.random()<Math.pow(r,lv.k);
+      setTimeout(function(){if(tk!==TOK)return;if(ok)trySolve(M.ph);else{M.state='x';nextPlayer('❌ '+esc(p.n)+' ha sbagliato la soluzione.');}},1600);return;
     }
-    if(anyV&&p.bank>=VOWEL_COST&&(!anyC||Math.random()<lv.vow)){
-      var L;
-      if(Math.random()<lv.know){L=Object.keys(hv).sort(function(a,b){return hv[b]-hv[a];})[0];}
-      else L=VFREQ.split('').filter(function(x){return !M.used[x];})[0];
+    if(canVow&&(!anyC||Math.random()<lv.vow)){
+      var L=cpuPick(VFREQ,lv);
       M.state='vow';setMsg(esc(p.n)+' compra una vocale…');
       setTimeout(function(){if(tk===TOK)buyVowel(L);},900);return;
     }
@@ -843,10 +868,7 @@ function cpuCons(){
   var p=cur(),lv=LV[p.lvl],tk=TOK;
   setTimeout(function(){
     if(tk!==TOK)return;
-    var hc=hiddenOf(CONS),L;
-    if(Math.random()<lv.know&&Object.keys(hc).length)L=Object.keys(hc).sort(function(a,b){return hc[b]-hc[a]||FREQ.indexOf(a)-FREQ.indexOf(b);})[0];
-    else L=FREQ.split('').filter(function(x){return !M.used[x];})[0];
-    pickCons(L);
+    pickCons(cpuPick(FREQ,lv));
   },1300);
 }
 
