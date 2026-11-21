@@ -466,6 +466,7 @@ function setup(){
     '</div>'+
     '</div></div>'+
     '<button id="go" class="wide cta">▶ Inizia la partita!</button>'+
+    '<button id="tryFin" class="sec wide" style="margin-top:10px">⭐ Prova solo la finalissima</button>'+
     '<details class="card" style="font-size:.95rem"><summary style="font-weight:800;cursor:pointer">📖 Come si gioca</summary>'+
       '<p style="margin-top:8px">Al tuo turno puoi <b>girare la ruota</b>, <b>comprare una vocale</b> (400 €) o <b>dare la soluzione</b>.</p>'+
       '<p style="margin-top:6px">Se giri e scegli una consonante, vinci l\'importo uscito per ogni volta che compare nella frase e giochi ancora. Se non c\'è, il turno passa.</p>'+
@@ -499,6 +500,10 @@ function setup(){
     S.ps.push({n:v,av:AV[S.ps.length]});nm.value='';saveSetup();list();upd();nm.focus();
   });
   document.getElementById('nm').addEventListener('keydown',function(e){if(e.key==='Enter')document.getElementById('add').click();});
+  document.getElementById('tryFin').addEventListener('click',function(){
+    var nm=(S.ps[0]&&S.ps[0].n)||'Giocatore';
+    P=[{n:nm,av:AV[0],cpu:false,tot:0,bank:0}];MAN=0;NM=1;TRY=true;finalIntro();
+  });
   document.getElementById('go').addEventListener('click',function(){
     var er=document.getElementById('er');
     if(!S.ps.length){er.textContent='Aggiungi almeno un giocatore!';document.getElementById('nm').focus();return;}
@@ -514,6 +519,7 @@ var P=[];        // giocatori in partita
 var MAN=0;       // numero manche (0-based)
 var NM=5;        // manche effettive della partita
 function startGame(){
+  TRY=false;
   P=S.ps.map(function(p,i){return {n:p.n,av:AV[i],cpu:false,tot:0,bank:0};});
   if(S.cpu)P.push({n:'Robo',av:CPU_AV,cpu:true,lvl:S.lvl,tot:0,bank:0});
   NM=S.nMan;
@@ -853,6 +859,7 @@ function cpuCons(){
 // 5 coppie di parole: una è un indizio, l'altra no. Se sbagli il premio si dimezza.
 // Poi 60 secondi per scrivere la parola che lega i 5 indizi.
 var F=null;
+var TRY=false;     // prova della sola finalissima
 var FIN=window.FINALE||[];
 var FIN_START=20000;
 var FIN_LV={e:{pick:.55,solve:.35},m:{pick:.7,solve:.55},h:{pick:.85,solve:.75}};
@@ -865,7 +872,7 @@ function finalIntro(){
   var w=leader();
   if(!FIN.length){end();return;}
   render(brand(true)+'<div class="card cover pop"><div class="big">✂️</div><h2>Finalissima: la parola finale</h2>'+
-    '<p style="font-weight:800">'+w.av+' '+esc(w.n)+' va in finale con '+eur(w.tot)+'</p>'+
+    (TRY?'<p style="font-weight:800">Prova per '+esc(w.n)+'</p>':'<p style="font-weight:800">'+w.av+' '+esc(w.n)+' va in finale con '+eur(w.tot)+'</p>')+
     '<p style="margin-top:8px">In palio ci sono <b>'+eur(FIN_START)+'</b>. Ti mostro 5 coppie di parole: in ogni coppia scegli quella collegata alla parola finale. Se sbagli il montepremi <b>si dimezza</b>, ma la parola giusta ti viene mostrata lo stesso.</p>'+
     '<p style="margin-top:6px">Alla fine hai <b>1 minuto</b> per scrivere la parola che lega tutti e 5 gli indizi.</p>'+
     '<button class="wide cta" id="go" style="margin-top:16px">Inizia la finalissima</button></div>');
@@ -933,9 +940,12 @@ function finalResult(ok){
     '<h2>'+(ok?'Esatto! '+esc(F.p.n)+' vince '+eur(F.prize):'Peccato, niente premio!')+'</h2>'+
     '<p style="margin-top:6px">La parola finale era</p><div class="ans" style="margin:8px auto">'+esc(F.z.a)+'</div>'+
     (!ok&&F.txt?'<p class="hint">Hai scritto: '+esc(F.txt)+'</p>':'')+
-    '<button class="wide cta" id="go" style="margin-top:14px">🏆 Classifica finale</button></div></div>');
+    (TRY?'<button class="wide cta" id="again" style="margin-top:14px">🔁 Un\'altra finalissima</button><button class="sec wide" id="go" style="margin-top:10px">Torna all\'inizio</button>':
+    '<button class="wide cta" id="go" style="margin-top:14px">🏆 Classifica finale</button>')+'</div></div>');
   wireTB();
   if(ok){sfx('win');confetti();}else sfx('no');
+  if(TRY){document.getElementById('again').addEventListener('click',function(){P[0].tot=0;finalIntro();});
+    document.getElementById('go').addEventListener('click',function(){TRY=false;F=null;P=[];setup();});return;}
   document.getElementById('go').addEventListener('click',end);
 }
 
