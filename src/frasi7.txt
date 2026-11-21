@@ -1,0 +1,188 @@
+Frutta e verdura|ANGURIA FRESCA D'ESTATE
+Frutta e verdura|FRAGOLE E MIRTILLI
+Frutta e verdura|UN GRAPPOLO D'UVA
+Frutta e verdura|BANANE E ANANAS
+Frutta e verdura|ARANCE DI SICILIA
+Frutta e verdura|IL LIMONE DI SORRENTO
+Frutta e verdura|PESCHE E ALBICOCCHE
+Frutta e verdura|CILIEGIE ROSSE
+Frutta e verdura|LA MELA VERDE
+Frutta e verdura|PERE E FORMAGGIO
+Frutta e verdura|IL KIWI
+Frutta e verdura|IL MELOGRANO
+Frutta e verdura|I FICHI D'INDIA
+Frutta e verdura|NOCI E NOCCIOLE
+Frutta e verdura|MANDORLE TOSTATE
+Frutta e verdura|POMODORI DI PACHINO
+Frutta e verdura|CAROTE E SEDANO
+Frutta e verdura|PISELLI E FAGIOLINI
+Frutta e verdura|LA ZUCCA ARANCIONE
+Frutta e verdura|CIPOLLA ROSSA DI TROPEA
+Frutta e verdura|AGLIO E PREZZEMOLO
+Frutta e verdura|BASILICO PROFUMATO
+Frutta e verdura|PATATE NOVELLE
+Frutta e verdura|CAVOLFIORE E BROCCOLI
+Frutta e verdura|LATTUGA E RUCOLA
+Frutta e verdura|IL CETRIOLO
+Frutta e verdura|I PEPERONI GIALLI
+Frutta e verdura|LA MELANZANA VIOLA
+Frutta e verdura|IL MAIS
+Frutta e verdura|LE CASTAGNE
+Frutta e verdura|IL COCCO
+Frutta e verdura|L'AVOCADO
+Frutta e verdura|I LAMPONI
+Frutta e verdura|LA PRUGNA
+Frutta e verdura|IL MANGO
+Frutta e verdura|GLI ASPARAGI
+Frutta e verdura|I FUNGHI PORCINI
+Frutta e verdura|IL TARTUFO BIANCO
+Frutta e verdura|LE LENTICCHIE
+Frutta e verdura|I CECI
+Al supermercato|IL CARRELLO DELLA SPESA
+Al supermercato|LA LISTA DELLA SPESA
+Al supermercato|IL REPARTO SURGELATI
+Al supermercato|IL BANCO SALUMI
+Al supermercato|LA CASSA AUTOMATICA
+Al supermercato|LO SCONTRINO
+Al supermercato|LA BORSA DELLA SPESA
+Al supermercato|LE OFFERTE SPECIALI
+Al supermercato|IL PANE APPENA SFORNATO
+Al supermercato|LO YOGURT ALLA FRAGOLA
+Al supermercato|IL LATTE PARZIALMENTE SCREMATO
+Al supermercato|LA PASTA INTEGRALE
+Al supermercato|IL DETERSIVO PER I PIATTI
+Al supermercato|LA CARTA IGIENICA
+Al supermercato|I BISCOTTI AL CIOCCOLATO
+Al supermercato|LE PATATINE IN BUSTA
+Al supermercato|L'ACQUA FRIZZANTE
+Al supermercato|LE UOVA FRESCHE
+Al supermercato|IL TONNO IN SCATOLA
+Al supermercato|LA PASSATA DI POMODORO
+Bevande|IL CAFFÈ ESPRESSO
+Bevande|IL CAFFÈ MACCHIATO
+Bevande|IL TÈ FREDDO AL LIMONE
+Bevande|LA CAMOMILLA
+Bevande|IL SUCCO DI FRUTTA
+Bevande|LA LIMONATA
+Bevande|IL FRAPPÈ ALLA FRAGOLA
+Bevande|IL FRULLATO DI BANANA
+Bevande|LA TISANA ALLE ERBE
+Bevande|IL LATTE CON IL CACAO
+Bevande|LO SPUMANTE
+Bevande|IL VINO ROSSO
+Bevande|LA BIRRA ALLA SPINA
+Bevande|L'ACQUA TONICA
+Bevande|IL CAPPUCCINO CON LA SCHIUMA
+Formaggi e salumi|IL GORGONZOLA
+Formaggi e salumi|IL PECORINO ROMANO
+Formaggi e salumi|LA RICOTTA FRESCA
+Formaggi e salumi|IL MASCARPONE
+Formaggi e salumi|LA FONTINA
+Formaggi e salumi|LA BURRATA PUGLIESE
+Formaggi e salumi|IL GRANA PADANO
+Formaggi e salumi|LA STRACCIATELLA
+Formaggi e salumi|IL PROSCIUTTO DI PARMA
+Formaggi e salumi|LA BRESAOLA
+Formaggi e salumi|IL SALAME
+Formaggi e salumi|LA PORCHETTA DI ARICCIA
+Formaggi e salumi|LO SPECK
+Formaggi e salumi|LA NDUJA CALABRESE
+Formaggi e salumi|IL CULATELLO
+Città italiane|ROMA CAPITALE
+Città italiane|MILANO E LA MADONNINA
+Città italiane|NAPOLI E IL SUO GOLFO
+Città italiane|TORINO E IL PO
+Città italiane|PALERMO
+Città italiane|GENOVA E IL PORTO
+Città italiane|BOLOGNA LA DOTTA
+Città italiane|FIRENZE CULLA DEL RINASCIMENTO
+Città italiane|BARI E LA BASILICA DI SAN NICOLA
+Città italiane|CATANIA SOTTO L'ETNA
+Città italiane|VENEZIA LA SERENISSIMA
+Città italiane|VERONA CITTÀ DI GIULIETTA
+Città italiane|TRIESTE E PIAZZA UNITÀ
+Città italiane|PERUGIA E IL CIOCCOLATO
+Città italiane|ASSISI
+Città italiane|SPOLETO
+Città italiane|GUBBIO E LA CORSA DEI CERI
+Città italiane|SIENA E IL PALIO
+Città italiane|PISA E LA TORRE
+Città italiane|LUCCA E LE SUE MURA
+Città italiane|PARMA
+Città italiane|MODENA
+Città italiane|RAVENNA E I MOSAICI
+Città italiane|RIMINI
+Città italiane|ANCONA
+Città italiane|URBINO
+Città italiane|L'AQUILA
+Città italiane|PESCARA
+Città italiane|CAGLIARI
+Città italiane|SASSARI
+Città italiane|REGGIO CALABRIA
+Città italiane|MATERA
+Città italiane|LECCE BAROCCA
+Città italiane|TARANTO
+Città italiane|SIRACUSA E ORTIGIA
+Città italiane|AGRIGENTO
+Città italiane|TRENTO
+Città italiane|BOLZANO
+Città italiane|AOSTA
+Città italiane|COMO
+Città italiane|BERGAMO ALTA
+Città italiane|BRESCIA
+Città italiane|MANTOVA
+Città italiane|PADOVA
+Città italiane|VICENZA
+Città italiane|TREVISO
+Città italiane|UDINE
+Città italiane|LA SPEZIA
+Città italiane|SANREMO
+Città italiane|ORVIETO
+Regioni|IL TRENTINO ALTO ADIGE
+Regioni|IL FRIULI VENEZIA GIULIA
+Regioni|L'EMILIA ROMAGNA
+Regioni|LA TOSCANA
+Regioni|L'UMBRIA CUORE VERDE D'ITALIA
+Regioni|LE MARCHE
+Regioni|IL LAZIO
+Regioni|L'ABRUZZO
+Regioni|IL MOLISE
+Regioni|LA CAMPANIA
+Regioni|LA PUGLIA
+Regioni|LA BASILICATA
+Regioni|LA CALABRIA
+Regioni|LA SICILIA
+Regioni|LA LIGURIA
+Regioni|LA LOMBARDIA
+Regioni|IL PIEMONTE
+Regioni|IL VENETO
+Capitali del mondo|PARIGI CAPITALE DELLA FRANCIA
+Capitali del mondo|MADRID
+Capitali del mondo|LISBONA
+Capitali del mondo|LONDRA
+Capitali del mondo|BERLINO
+Capitali del mondo|VIENNA
+Capitali del mondo|ATENE
+Capitali del mondo|AMSTERDAM
+Capitali del mondo|BRUXELLES
+Capitali del mondo|COPENAGHEN
+Capitali del mondo|STOCCOLMA
+Capitali del mondo|OSLO
+Capitali del mondo|HELSINKI
+Capitali del mondo|DUBLINO
+Capitali del mondo|PRAGA
+Capitali del mondo|BUDAPEST
+Capitali del mondo|VARSAVIA
+Capitali del mondo|TOKYO
+Capitali del mondo|PECHINO
+Capitali del mondo|NUOVA DELHI
+Capitali del mondo|IL CAIRO
+Capitali del mondo|BUENOS AIRES
+Capitali del mondo|WASHINGTON
+Capitali del mondo|OTTAWA
+Capitali del mondo|CANBERRA
+Capitali del mondo|CITTÀ DEL MESSICO
+Capitali del mondo|BRASILIA
+Capitali del mondo|NAIROBI
+Capitali del mondo|BERNA
+Capitali del mondo|LUBIANA

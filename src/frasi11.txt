@@ -1,0 +1,173 @@
+Stagioni e mesi|LA PRIMAVERA IN FIORE
+Stagioni e mesi|L'ESTATE AL MARE
+Stagioni e mesi|L'AUTUNNO E LE CASTAGNE
+Stagioni e mesi|L'INVERNO E LA NEVE
+Stagioni e mesi|IL PRIMO GIORNO DI PRIMAVERA
+Stagioni e mesi|IL SOLSTIZIO D'ESTATE
+Stagioni e mesi|L'EQUINOZIO D'AUTUNNO
+Stagioni e mesi|GENNAIO E IL FREDDO
+Stagioni e mesi|FEBBRAIO IL MESE PIÙ CORTO
+Stagioni e mesi|IL PESCE D'APRILE
+Stagioni e mesi|IL PRIMO MAGGIO
+Stagioni e mesi|LE NOTTI DI SAN LORENZO
+Stagioni e mesi|SETTEMBRE E LA SCUOLA
+Stagioni e mesi|OTTOBRE E LA VENDEMMIA
+Stagioni e mesi|NOVEMBRE E LE FOGLIE
+Stagioni e mesi|DICEMBRE E LE FESTE
+Stagioni e mesi|L'ANNO BISESTILE
+Stagioni e mesi|L'ORA LEGALE
+Stagioni e mesi|IL CAMBIO DI STAGIONE
+Stagioni e mesi|IL FINE SETTIMANA
+Opera lirica|LA TRAVIATA
+Opera lirica|AIDA DI GIUSEPPE VERDI
+Opera lirica|IL RIGOLETTO
+Opera lirica|LA BOHÈME
+Opera lirica|TOSCA
+Opera lirica|MADAMA BUTTERFLY
+Opera lirica|IL BARBIERE DI SIVIGLIA
+Opera lirica|NABUCCO
+Opera lirica|LE NOZZE DI FIGARO
+Opera lirica|IL FLAUTO MAGICO
+Opera lirica|LA CARMEN
+Opera lirica|TURANDOT
+Invenzioni|LA RUOTA
+Invenzioni|IL TELEFONO DI MEUCCI
+Invenzioni|LA RADIO DI MARCONI
+Invenzioni|LA PILA DI VOLTA
+Invenzioni|LA LAMPADINA DI EDISON
+Invenzioni|IL MOTORE A SCOPPIO
+Invenzioni|L'AEREO DEI FRATELLI WRIGHT
+Invenzioni|IL CANNOCCHIALE DI GALILEO
+Invenzioni|LA MACCHINA DA SCRIVERE
+Invenzioni|IL TELEGRAFO
+Invenzioni|LA PENICILLINA
+Invenzioni|IL VACCINO
+Invenzioni|IL TRENO A VAPORE
+Invenzioni|LA CERNIERA LAMPO
+Invenzioni|L'OROLOGIO A PENDOLO
+Invenzioni|LA CARTA
+Invenzioni|IL PARACADUTE
+Personaggi famosi|GIACOMO LEOPARDI
+Personaggi famosi|FRANCESCO PETRARCA
+Personaggi famosi|GIOVANNI BOCCACCIO
+Personaggi famosi|LORENZO IL MAGNIFICO
+Personaggi famosi|CATERINA DE' MEDICI
+Personaggi famosi|GIOTTO
+Personaggi famosi|CARAVAGGIO
+Personaggi famosi|GIAN LORENZO BERNINI
+Personaggi famosi|ANTONIO VIVALDI
+Personaggi famosi|GIOACCHINO ROSSINI
+Personaggi famosi|ANTONIO MEUCCI
+Personaggi famosi|ENRICO CARUSO
+Personaggi famosi|TOTÒ
+Personaggi famosi|FEDERICO FELLINI
+Personaggi famosi|SOFIA LOREN
+Personaggi famosi|ALBERTO SORDI
+Personaggi famosi|LUCIANO PAVAROTTI
+Personaggi famosi|ALESSANDRO MAGNO
+Personaggi famosi|AUGUSTO IMPERATORE
+Personaggi famosi|NERONE
+Personaggi famosi|ANNIBALE E GLI ELEFANTI
+Personaggi famosi|CARLO MAGNO
+Personaggi famosi|GIOVANNA D'ARCO
+Personaggi famosi|LA REGINA ELISABETTA
+Personaggi famosi|ABRAMO LINCOLN
+Personaggi famosi|MAHATMA GANDHI
+Personaggi famosi|NELSON MANDELA
+Personaggi famosi|MARTIN LUTHER KING
+Personaggi famosi|MADRE TERESA DI CALCUTTA
+Personaggi famosi|CHARLIE CHAPLIN
+Personaggi famosi|WALT DISNEY
+Personaggi famosi|AUDREY HEPBURN
+Personaggi famosi|MARILYN MONROE
+Personaggi famosi|ELVIS PRESLEY
+Personaggi famosi|I BEATLES
+Personaggi famosi|JOHANN SEBASTIAN BACH
+Personaggi famosi|FRÉDÉRIC CHOPIN
+Personaggi famosi|CLAUDE MONET
+Personaggi famosi|FRIDA KAHLO
+Personaggi famosi|JULES VERNE
+Personaggi famosi|AGATHA CHRISTIE
+Personaggi famosi|SHERLOCK HOLMES
+Personaggi famosi|IL COMMISSARIO MONTALBANO
+Personaggi famosi|ALBERTO TOMBA
+Personaggi famosi|VALENTINO ROSSI
+Personaggi famosi|FAUSTO COPPI E GINO BARTALI
+Personaggi famosi|DIEGO ARMANDO MARADONA
+Personaggi famosi|PELÉ
+Personaggi famosi|ROBERTO BAGGIO
+Personaggi famosi|ENZO FERRARI
+Film|TITANIC
+Film|AVATAR
+Film|IL MONDO DI NARNIA
+Film|LO HOBBIT
+Film|HUNGER GAMES
+Film|FORREST GUMP
+Film|L'ATTIMO FUGGENTE
+Film|SISTER ACT
+Film|GHOSTBUSTERS
+Film|I GOONIES
+Film|KARATE KID
+Film|ROCKY
+Film|GREASE
+Film|IL DIAVOLO VESTE PRADA
+Film|PRETTY WOMAN
+Film|MAMMA MIA
+Film|IL CIELO SOPRA BERLINO
+Film|BENVENUTI AL SUD
+Film|QUO VADO
+Film|IL POSTINO
+Film|PANE E TULIPANI
+Film|LA STRADA DI FELLINI
+Film|C'ERA UNA VOLTA IN AMERICA
+Film|IL SORPASSO
+Film|MIRACOLO A MILANO
+Film|LADRI DI BICICLETTE
+Film|ROMA CITTÀ APERTA
+Film|SPIDERMAN
+Film|BATMAN IL CAVALIERE OSCURO
+Film|MATRIX
+Film|WALL E
+Film|UP
+Film|SOUL
+Film|LUCA
+Film|IL GRINCH
+Film|PADDINGTON
+Film|BABE MAIALINO CORAGGIOSO
+Film|FLUBBER
+Film|JUMANJI
+Cartoni animati|LA PRINCIPESSA E IL RANOCCHIO
+Cartoni animati|RAPUNZEL L'INTRECCIO DELLA TORRE
+Cartoni animati|POCAHONTAS
+Cartoni animati|HERCULES
+Cartoni animati|TARZAN
+Cartoni animati|LILO E STITCH
+Cartoni animati|RIO
+Cartoni animati|SPIRIT CAVALLO SELVAGGIO
+Cartoni animati|DRAGON TRAINER
+Cartoni animati|BOLT UN EROE A QUATTRO ZAMPE
+Cartoni animati|RALPH SPACCATUTTO
+Cartoni animati|BIG HERO SEI
+Cartoni animati|WISH
+Cartoni animati|ELEMENTAL
+Cartoni animati|ONWARD
+Cartoni animati|SING
+Cartoni animati|PETS VITA DA ANIMALI
+Cartoni animati|LE SUPERCHICCHE
+Cartoni animati|PIMPA
+Cartoni animati|LA FAMIGLIA ADDAMS
+Cartoni animati|BARBAPAPÀ
+Cartoni animati|GEORGE DELLA GIUNGLA
+Cartoni animati|I FLINTSTONES
+Cartoni animati|YOGI E BUBU
+Cartoni animati|GATTO SILVESTRO E TITTI
+Cartoni animati|WILLY IL COYOTE
+Cartoni animati|BEEP BEEP
+Cartoni animati|LA PANTERA ROSA
+Cartoni animati|BARBIE
+Cartoni animati|DORA L'ESPLORATRICE
+Cartoni animati|MIRACULOUS LADYBUG
+Cartoni animati|SAM IL POMPIERE
+Cartoni animati|IL TRENINO THOMAS
+Cartoni animati|PEPPA E GEORGE
+Cartoni animati|MICKEY MOUSE
