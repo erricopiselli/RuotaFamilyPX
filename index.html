@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RuotaFamilyPX</title>
+<link rel="apple-touch-icon" href="icon-512.png">
+<link rel="icon" type="image/png" href="icon-512.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ruota">
+<meta name="theme-color" content="#3b2a8f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#ffe8c7;--bg2:#e9ddff;--card:#fffdf8;--card2:#f6f0ff;--tx:#2b2540;--mut:#6d6786;
+  --pri:#7c4dff;--pri2:#5a36c9;--ok:#2ea66a;--ko:#e5484d;--bd:#ebe2d3;--gold:#ffc83d;
+  --frame:#2a1f6e;--frame2:#4a35b8;--tile:#f7f3ea;--tileoff:#5b46c9;--flash:#38bdf8;
+  --ff-d:"Fredoka","Trebuchet MS",system-ui,sans-serif;
+  --ff-b:"Nunito","Segoe UI",system-ui,sans-serif;
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg1:#1d1838;--bg2:#2a1f4f;--card:#2a2548;--card2:#332c58;--tx:#f3efff;
+    --mut:#b1aacd;--pri:#7c4dff;--pri2:#4b2bb0;--ok:#3fc384;--ko:#ff6b70;--bd:#41397a;
+    --frame:#15103a;--frame2:#3a2b95;
+  }
+}
+:root[data-theme="dark"]{
+  --bg1:#1d1838;--bg2:#2a1f4f;--card:#2a2548;--card2:#332c58;--tx:#f3efff;
+  --mut:#b1aacd;--pri:#7c4dff;--pri2:#4b2bb0;--ok:#3fc384;--ko:#ff6b70;--bd:#41397a;
+  --frame:#15103a;--frame2:#3a2b95;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;background:var(--bg2)}
+body{
+  min-height:100vh;background:linear-gradient(160deg,var(--bg1),var(--bg2)) fixed;
+  color:var(--tx);font-family:var(--ff-b);font-size:17px;line-height:1.45;
+  padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0);
+}
+#app{max-width:560px;margin:0 auto;padding:12px 16px 28px}
+h1,h2{font-family:var(--ff-d);font-weight:700;letter-spacing:-.3px}
+.brand{display:flex;align-items:center;justify-content:center;gap:10px;margin:6px 0 2px}
+.brand svg{width:44px;height:44px;flex:none}
+.brand h1{font-size:1.9rem;line-height:1}
+.brand.sm svg{width:28px;height:28px}.brand.sm h1{font-size:1.25rem}
+.sub{text-align:center;color:var(--mut);font-weight:700;margin:6px 0 2px}
+.ver{text-align:center;color:var(--mut);font-size:.75rem;font-weight:700;opacity:.8}
+.card{background:var(--card);border-radius:24px;padding:18px;margin:14px 0;box-shadow:0 2px 0 var(--bd),0 10px 30px rgba(60,30,120,.08)}
+h2{font-size:1.3rem;margin-bottom:10px}
+.lbl{font-weight:800;font-size:.85rem;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 6px}
+input,textarea{font:inherit;font-weight:700;padding:12px 14px;border-radius:14px;border:2px solid var(--bd);background:var(--card2);color:var(--tx);width:100%;outline:none}
+textarea{resize:none;text-transform:uppercase;font-family:var(--ff-d);letter-spacing:.04em}
+input:focus,textarea:focus{border-color:var(--pri)}
+button{font:inherit;font-family:var(--ff-d);font-weight:600;cursor:pointer;border:0;border-radius:16px;padding:13px 18px;background:var(--pri);color:#fff;font-size:1.05rem;box-shadow:0 4px 0 var(--pri2);transition:transform .08s,box-shadow .08s,opacity .2s;-webkit-tap-highlight-color:transparent}
+button:active{transform:translateY(3px);box-shadow:0 1px 0 var(--pri2)}
+button:disabled{opacity:.38;cursor:default;transform:none;box-shadow:0 4px 0 var(--pri2)}
+button.sec{background:transparent;color:var(--tx);border:2px solid var(--bd);box-shadow:none}
+button.wide{width:100%}
+button.cta{font-size:1.2rem;padding:15px}
+.row{display:flex;gap:8px}
+.row>*{flex:1}
+.switch{display:flex;gap:6px;background:var(--card2);border-radius:14px;padding:4px}
+.switch button{flex:1;background:transparent;color:var(--tx);box-shadow:none;padding:9px 6px;font-size:.98rem}
+.switch button.on{background:var(--pri);color:#fff}
+.players{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.pchip{display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:16px;padding:8px 8px 8px 10px}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;flex:none;background:var(--card);box-shadow:inset 0 0 0 3px var(--bd)}
+.pchip .nm{font-weight:800;flex:1;min-width:0}
+.x{padding:6px 11px;font-size:.9rem;box-shadow:none;background:transparent;color:var(--mut);border:2px solid var(--bd)}
+.hint{color:var(--mut);font-size:.9rem;text-align:center;margin-top:8px}
+.err{color:var(--ko);font-weight:800;font-size:.92rem;margin-top:8px;text-align:center}
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:2px 0 8px}
+.pill{background:var(--card);border-radius:99px;padding:4px 12px;font-weight:800;font-size:.85rem;box-shadow:0 2px 0 var(--bd)}
+/* board */
+.board{background:linear-gradient(180deg,var(--frame2),var(--frame));border-radius:22px;padding:10px;box-shadow:0 0 0 4px var(--gold),0 10px 26px rgba(30,15,90,.35)}
+.grid{display:grid;grid-template-columns:repeat(14,1fr);gap:3px}
+.c{aspect-ratio:3/4;border-radius:4px;display:grid;place-items:center;font-family:var(--ff-d);font-weight:700;font-size:clamp(12px,4.4vw,26px);line-height:1;color:#1d1640}
+.c.no{visibility:hidden}
+.c.off{background:var(--tileoff);opacity:.55}
+.c.hid,.c.show{background:var(--tile);box-shadow:inset 0 -2px 0 rgba(0,0,0,.12)}
+.c.flash{background:var(--flash);animation:fl .35s}
+@keyframes fl{0%{transform:scale(.85)}100%{transform:scale(1)}}
+.clue{margin:10px auto 0;background:linear-gradient(90deg,#3a2b95,#5b46c9,#3a2b95);color:#fff;border-radius:12px;padding:7px 14px;text-align:center;font-family:var(--ff-d);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:1.02rem;box-shadow:0 0 0 2px var(--gold)}
+.called{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:5px;margin-top:8px;font-size:.85rem;font-weight:800;color:var(--mut)}
+.called span{margin-right:2px}.called i{font-weight:700}
+.called b{font-family:var(--ff-d);min-width:24px;text-align:center;padding:1px 6px;border-radius:7px;font-size:.95rem}
+.called b.y{background:var(--ok);color:#fff}
+.called b.n{background:var(--card2);color:var(--mut);text-decoration:line-through}
+/* wheel */
+.wheelbox{position:relative;width:min(78vw,300px);margin:14px auto 4px}
+.wheelbox svg.wh{display:block;width:100%;height:auto;transition:transform 3.4s cubic-bezier(.12,.67,.15,1)}
+.wclip{border-radius:50%;overflow:hidden}
+.ptr{position:absolute;left:50%;top:-6px;transform:translateX(-50%);width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-top:26px solid var(--ko);filter:drop-shadow(0 2px 2px rgba(0,0,0,.3));z-index:2}
+.msg{text-align:center;font-family:var(--ff-d);font-weight:600;font-size:1.15rem;min-height:1.6em;margin:8px 0 4px}
+.msg b{color:var(--pri)}
+.acts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:8px}
+.acts button{padding:12px 6px;font-size:.98rem;line-height:1.15}
+.acts button small{display:block;font-family:var(--ff-b);font-weight:700;font-size:.72rem;opacity:.9}
+.kb{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px}
+.kb button{padding:10px 0;font-size:1.15rem;background:var(--card);color:var(--tx);box-shadow:0 3px 0 var(--bd)}
+.kb button.v{background:color-mix(in srgb,var(--gold) 35%,var(--card))}
+.kb button:disabled{box-shadow:none}
+.scores{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:12px}
+.sc{display:flex;align-items:center;gap:8px;background:var(--card);border-radius:16px;padding:6px 12px 6px 6px;box-shadow:0 2px 0 var(--bd);min-width:120px}
+.sc.now{outline:3px solid var(--pri)}
+.sc.out{opacity:.55}
+.sc .nm{display:block;font-weight:800;font-size:.9rem;line-height:1.15}
+.sc .bank{display:block}
+.sc .bank{font-family:var(--ff-d);font-weight:700;font-size:1.1rem;color:var(--ok)}
+.sc small{display:block;color:var(--mut);font-weight:700;font-size:.75rem}
+.tag{font-size:.7rem;background:var(--gold);color:#3a2a00;border-radius:99px;padding:1px 7px;font-weight:800;margin-left:4px}
+.cover{text-align:center;padding:30px 18px}
+.cover .big{font-size:3.4rem}
+.rank{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:2px dashed var(--bd)}
+.rank:last-child{border:0}
+.rank .md{font-size:1.6rem;width:34px;text-align:center}
+.rank .nm{flex:1;font-weight:800;font-size:1.1rem}
+.tmr{height:10px;border-radius:99px;background:var(--card2);overflow:hidden;margin:10px 0}
+.tmr i{display:block;height:100%;background:var(--ok);transition:width .25s linear}
+.confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:9}
+.confetti i{position:absolute;top:-12px;width:9px;height:14px;border-radius:2px;animation:fall 1.4s ease-in forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(540deg)}}
+.pop{animation:pp .3s}
+@keyframes pp{0%{transform:scale(.95);opacity:0}100%{transform:scale(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* orizzontale */
+@media (orientation:landscape) and (min-width:640px){
+  #app{max-width:1180px;padding:6px max(16px,env(safe-area-inset-right)) 10px max(16px,env(safe-area-inset-left))}
+  .play{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;align-items:start}
+  .top{margin:0 0 6px}.top .brand{margin:0}
+  .board{padding:7px;border-radius:16px}
+  .grid{gap:2px}
+  .c{font-size:clamp(11px,min(2.1vw,4.6vh),26px)}
+  .clue{margin-top:6px;padding:4px 12px;font-size:.92rem}
+  .called{margin-top:5px}
+  .scores{margin-top:8px;gap:6px}
+  .sc{min-width:0;padding:4px 10px 4px 4px}
+  .sc .av{width:30px;height:30px;font-size:1.05rem}
+  .side{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:center}
+  .side .wheelbox{grid-row:span 2;width:min(44vh,26vw,340px);margin:12px 0 0}
+  .side .msg{font-size:1rem;margin:4px 0;text-align:left}
+  .side .ctl{grid-column:1/-1}
+  .side.big .wheelbox{grid-column:1/-1;grid-row:auto;width:min(52vh,36vw,440px);margin:12px auto 0}
+  .side.big .msg{text-align:center;grid-column:1/-1}
+  .acts{margin-top:4px}.acts button{padding:9px 4px;font-size:.92rem}
+  .kb{gap:5px;margin-top:4px}.kb button{padding:6px 0;font-size:1rem}
+  .setup{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+  .setup .card{margin:8px 0}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+'use strict';
+// ── DATI E COSTANTI ────────────────────────────────────────────────────────
+var FR=window.FRASI||[];
+var W=[12,14,14,12];                       // lettere per riga del tabellone
+var VOW='AEIOU';
+var CONS='BCDFGHJKLMNPQRSTVWXYZ';
+var FREQ='NRTLSCDPMVGBFZHQKJWXY';            // consonanti più usate in italiano
+var VFREQ='EAIOU';
+var VOWEL_COST=400;
+var AV=['🦊','🐼','🐸','🦁','🐙','🦄'];
+var CPU_AV='🤖';
+var SEG=[1000,300,'PASSA',400,200,600,500,300,'PERDE',400,700,200,'JOLLY',300,500,800,'PASSA',200,400,600,1000,300,500,700];
+var SEGC=['#ef4444','#f59e0b','#94a3b8','#22c55e','#3b82f6','#a855f7','#ec4899','#14b8a6','#111827','#f97316','#6366f1','#eab308','#fde047','#10b981','#e11d48','#0ea5e9','#94a3b8','#84cc16','#8b5cf6','#f43f5e','#ef4444','#06b6d4','#d946ef','#f59e0b'];
+var PRIZES=[5000,10000,15000,25000];
+
+var USED=[];try{USED=JSON.parse(localStorage.getItem('rf_used')||'[]')}catch(e){}
+function markUsed(p){USED.push(p);if(USED.length>FR.length-20)USED=USED.slice(-Math.floor(FR.length/2));try{localStorage.setItem('rf_used',JSON.stringify(USED))}catch(e){}}
+
+var S={ps:[],cpu:false,lvl:'m',mode:'sys',nMan:5,fin:true};
+try{var sv=JSON.parse(localStorage.getItem('rf_setup')||'null');if(sv){S.cpu=!!sv.cpu;S.lvl=sv.lvl||'m';S.mode=sv.mode||'sys';S.nMan=sv.nMan||5;S.fin=sv.fin!==false;S.ps=(sv.names||[]).map(function(n,i){return {n:n,av:AV[i]};});}}catch(e){}
+function saveSetup(){try{localStorage.setItem('rf_setup',JSON.stringify({cpu:S.cpu,lvl:S.lvl,mode:S.mode,nMan:S.nMan,fin:S.fin,names:S.ps.filter(function(p){return !p.cpu}).map(function(p){return p.n})}))}catch(e){}}
+
+var app=document.getElementById('app');
+var M=null;            // manche in corso
+var TOK=0;             // invalida i timer del computer quando cambia schermata
+var wheelRot=0;
+
+// ── UTILITÀ ────────────────────────────────────────────────────────────────
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function base(ch){return ch.normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase();}
+function letters(s){return base(s).replace(/[^A-Z]/g,'');}
+function eur(n){return n.toLocaleString('it-IT')+' €';}
+function render(h){app.innerHTML=h;window.scrollTo(0,0);}
+function rnd(a){return a[Math.floor(Math.random()*a.length)];}
+function cleanPhrase(s){return s.toUpperCase().replace(/[’`]/g,"'").replace(/[^A-ZÀÈÉÌÒÙ' ]/g,' ').replace(/\s+/g,' ').trim();}
+function logoSVG(){
+  var s='<svg viewBox="0 0 40 40" aria-hidden="true">';
+  for(var i=0;i<12;i++){s+='<path d="'+arc(20,20,0,19,i*30,(i+1)*30)+'" fill="'+SEGC[(i*2)%SEGC.length]+'"/>';}
+  s+='<circle cx="20" cy="20" r="6" fill="#fff" stroke="#2a1f6e" stroke-width="2"/><path d="M15 1 L25 1 L20 9 Z" fill="#e5484d"/>';
+  return s+'</svg>';
+}
+function brand(sm){return '<div class="brand'+(sm?' sm':'')+'">'+logoSVG()+'<h1>RuotaFamilyPX</h1></div>';}
+function pt(cx,cy,r,a){var t=(a-90)*Math.PI/180;return [cx+r*Math.cos(t),cy+r*Math.sin(t)];}
+function arc(cx,cy,r0,r1,a0,a1){
+  var p0=pt(cx,cy,r1,a0),p1=pt(cx,cy,r1,a1),large=(a1-a0)>180?1:0;
+  if(r0<=0)return 'M'+cx+' '+cy+' L'+p0[0]+' '+p0[1]+' A'+r1+' '+r1+' 0 '+large+' 1 '+p1[0]+' '+p1[1]+' Z';
+  var q0=pt(cx,cy,r0,a1),q1=pt(cx,cy,r0,a0);
+  return 'M'+p0[0]+' '+p0[1]+' A'+r1+' '+r1+' 0 '+large+' 1 '+p1[0]+' '+p1[1]+' L'+q0[0]+' '+q0[1]+' A'+r0+' '+r0+' 0 '+large+' 0 '+q1[0]+' '+q1[1]+' Z';
+}
+function confetti(){
+  var box=document.createElement('div');box.className='confetti';
+  var cols=['#ef4444','#f59e0b','#22c55e','#3b82f6','#a855f7','#ec4899'];
+  for(var i=0;i<60;i++){var c=document.createElement('i');c.style.left=Math.random()*100+'%';c.style.background=cols[i%6];c.style.animationDelay=Math.random()*.5+'s';box.appendChild(c);}
+  document.body.appendChild(box);setTimeout(function(){box.remove();},2200);
+}
+
+// ── TABELLONE ──────────────────────────────────────────────────────────────
+// Dispone le parole sulle 4 righe (12-14-14-12), centrate come in TV.
+function layout(ph){
+  var words=ph.split(' ');
+  var sets={1:[[1]],2:[[1,2]],3:[[0,1,2],[1,2,3]],4:[[0,1,2,3]]};
+  for(var k=1;k<=4;k++){
+    for(var si=0;si<sets[k].length;si++){
+      var rows=sets[k][si],lines=[],cur='',ri=0,ok=true;
+      for(var wi=0;wi<words.length;wi++){
+        var w=words[wi],cand=cur?cur+' '+w:w;
+        if(ri>=rows.length){ok=false;break;}
+        if(cand.length<=W[rows[ri]])cur=cand;
+        else{
+          if(!cur){ok=false;break;}
+          lines.push(cur);ri++;cur=w;
+          if(ri>=rows.length||w.length>W[rows[ri]]){ok=false;break;}
+        }
+      }
+      if(ok&&cur&&ri<rows.length){
+        lines.push(cur);
+        var cells=[];for(var r=0;r<4;r++){cells.push([]);for(var c=0;c<14;c++)cells[r].push((r===0||r===3)&&(c===0||c===13)?null:' ');}
+        lines.forEach(function(ln,i){
+          var r=rows[i],off=(r===0||r===3)?1:0,st=off+Math.floor((W[r]-ln.length)/2);
+          for(var j=0;j<ln.length;j++)cells[r][st+j]=ln[j];
+        });
+        return cells;
+      }
+    }
+  }
+  return null;
+}
+function fits(ph){return !!layout(ph);}
+function boardHTML(){
+  var h='<div class="board"><div class="grid">';
+  for(var r=0;r<4;r++)for(var c=0;c<14;c++){
+    var ch=M.cells[r][c],id='c'+r+'_'+c;
+    if(ch===null)h+='<div class="c no"></div>';
+    else if(ch===' ')h+='<div class="c off"></div>';
+    else{
+      var b=base(ch),shown=!/[A-Z]/.test(b)||M.rev[b];
+      h+='<div class="c '+(shown?'show':'hid')+'" id="'+id+'">'+(shown?esc(ch):'')+'</div>';
+    }
+  }
+  h+='</div></div><div class="clue">'+esc(M.hint)+'</div>';
+  if(M.used){
+    var ks=Object.keys(M.used);
+    h+='<div class="called"><span>Lettere chiamate:</span>'+(ks.length?ks.map(function(L){var n=M.cells&&countOf(L);return '<b class="'+(n?'y':'n')+(VOW.indexOf(L)>=0?' vw':'')+'">'+L+'</b>';}).join(''):'<i>nessuna</i>')+'</div>';
+  }
+  return h;
+}
+function countOf(L){var n=0;M.cells.forEach(function(r){r.forEach(function(ch){if(ch&&ch!==' '&&base(ch)===L)n++;});});return n;}
+function hiddenOf(set){var o={};M.cells.forEach(function(r){r.forEach(function(ch){if(ch&&ch!==' '){var b=base(ch);if(set.indexOf(b)>=0&&!M.rev[b])o[b]=(o[b]||0)+1;}});});return o;}
+function revealRatio(){var t=0,s=0;M.cells.forEach(function(r){r.forEach(function(ch){if(ch&&ch!==' '){var b=base(ch);if(/[A-Z]/.test(b)){t++;if(M.rev[b])s++;}}});});return t?s/t:1;}
+// rivela una lettera con l'effetto "casella blu che si gira"
+function revealAnim(L,done){
+  M.rev[L]=true;M.used[L]=true;
+  var cells=[];
+  for(var r=0;r<4;r++)for(var c=0;c<14;c++){var ch=M.cells[r][c];if(ch&&ch!==' '&&base(ch)===L)cells.push([r,c,ch]);}
+  var i=0,tk=TOK;
+  (function nx(){
+    if(tk!==TOK)return;
+    if(i>=cells.length){setTimeout(function(){if(tk===TOK)done(cells.length);},cells.length?250:0);return;}
+    var e=document.getElementById('c'+cells[i][0]+'_'+cells[i][1]);
+    if(e){e.className='c flash';(function(el,ch){setTimeout(function(){el.className='c show';el.textContent=ch;},320);})(e,cells[i][2]);}
+    i++;setTimeout(nx,380);
+  })();
+}
+
+// ── RUOTA ──────────────────────────────────────────────────────────────────
+function wheelSVG(){
+  var n=SEG.length,step=360/n,s='<svg class="wh" id="wh" viewBox="0 0 300 300" style="transform:rotate('+wheelRot+'deg)">';
+  s+='<circle cx="150" cy="150" r="148" fill="#2a1f6e"/>';
+  for(var i=0;i<n;i++){
+    var a0=i*step,a1=a0+step,v=SEG[i],col=SEGC[i];
+    s+='<path d="'+arc(150,150,0,140,a0,a1)+'" fill="'+col+'" stroke="#2a1f6e" stroke-width="1"/>';
+    var dark=(col==='#fde047'||col==='#eab308'||col==='#84cc16'||col==='#f59e0b'||col==='#94a3b8');
+    var txt=typeof v==='number'?String(v):v;
+    var fs=typeof v==='number'?15:12.5,fill=dark?'#1d1640':'#fff';
+    s+='<g transform="rotate('+(a0+step/2)+' 150 150)" font-family="Fredoka,sans-serif" font-weight="700" font-size="'+fs+'" fill="'+fill+'" text-anchor="middle">';
+    for(var j=0;j<txt.length;j++)s+='<text x="150" y="'+(26+j*fs*.98)+'">'+txt[j]+'</text>';
+    s+='</g>';
+  }
+  s+='<circle cx="150" cy="150" r="26" fill="#fff" stroke="#ffc83d" stroke-width="6"/>';
+  for(var k=0;k<n;k++){var p=pt(150,150,144,k*step);s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="2.4" fill="#ffc83d"/>';}
+  return s+'</svg>';
+}
+function spinTo(cb){
+  var n=SEG.length,step=360/n,idx=Math.floor(Math.random()*n);
+  var center=idx*step+step/2,jit=(Math.random()-.5)*step*.7;
+  var cur=((wheelRot%360)+360)%360;
+  var target=(360-center-jit-cur+720)%360;
+  wheelRot+=360*4+target;
+  var el=document.getElementById('wh');if(el)el.style.transform='rotate('+wheelRot+'deg)';
+  var tk=TOK;setTimeout(function(){if(tk===TOK)cb(SEG[idx]);},3500);
+}
+
+// ── SCHERMATA INIZIALE ─────────────────────────────────────────────────────
+function setup(){
+  TOK++;
+  var humans=S.ps.filter(function(p){return !p.cpu;});
+  render(
+    brand()+'<p class="sub">Gira la ruota, scegli le lettere, indovina la frase!</p><p class="ver">Database: '+FR.length+' frasi</p>'+
+    '<div class="setup"><div>'+
+    '<div class="card"><h2>Chi gioca?</h2>'+
+      '<div class="row"><input id="nm" placeholder="Nome del giocatore" maxlength="12" autocomplete="off"><button id="add" style="flex:0 0 auto">+ Aggiungi</button></div>'+
+      '<div class="players" id="pl"></div>'+
+      '<div class="lbl">Il computer gioca?</div>'+
+      '<div class="switch" id="cpu"><button data-v="0" class="'+(S.cpu?'':'on')+'">No</button><button data-v="e" class="'+(S.cpu&&S.lvl==='e'?'on':'')+'">🤖 Facile</button><button data-v="m" class="'+(S.cpu&&S.lvl==='m'?'on':'')+'">🤖 Medio</button><button data-v="h" class="'+(S.cpu&&S.lvl==='h'?'on':'')+'">🤖 Difficile</button></div>'+
+      '<p class="err" id="er"></p>'+
+    '</div></div><div>'+
+    '<div class="card"><h2>Regole della partita</h2>'+
+      '<div class="lbl">Chi sceglie la frase?</div>'+
+      '<div class="switch" id="mode"><button data-v="sys" class="'+(S.mode==='sys'?'on':'')+'">Il gioco</button><button data-v="ply" class="'+(S.mode==='ply'?'on':'')+'">A turno un giocatore</button></div>'+
+      '<p class="hint" id="mh"></p>'+
+      '<div class="lbl">Quante manche?</div>'+
+      '<div class="switch" id="nman">'+[3,5,7,10].map(function(n){return '<button data-v="'+n+'" class="'+(S.nMan===n?'on':'')+'">'+n+'</button>';}).join('')+'</div>'+
+      '<div class="lbl">Finalissima per chi vince?</div>'+
+      '<div class="switch" id="fin"><button data-v="1" class="'+(S.fin?'on':'')+'">Sì</button><button data-v="0" class="'+(S.fin?'':'on')+'">No</button></div>'+
+    '</div>'+
+    '</div></div>'+
+    '<button id="go" class="wide cta">▶ Inizia la partita!</button>'+
+    '<details class="card" style="font-size:.95rem"><summary style="font-weight:800;cursor:pointer">📖 Come si gioca</summary>'+
+      '<p style="margin-top:8px">Al tuo turno puoi <b>girare la ruota</b>, <b>comprare una vocale</b> (400 €) o <b>dare la soluzione</b>.</p>'+
+      '<p style="margin-top:6px">Se giri e scegli una consonante, vinci l\'importo uscito per ogni volta che compare nella frase e giochi ancora. Se non c\'è, il turno passa.</p>'+
+      '<p style="margin-top:6px"><b>PASSA</b>: tocca al prossimo. <b>PERDE</b>: perdi i soldi di questa manche. <b>JOLLY</b>: scegli una consonante, vale 1000 € per ogni volta che c\'è e poi il tuo montepremi della manche <b>raddoppia</b>.</p>'+
+      '<p style="margin-top:6px">Chi indovina la frase mette in cassa i soldi della manche (minimo 1000 €); gli altri li perdono. Alla fine vince chi ha più soldi in cassa e, se attiva, gioca la <b>finalissima</b>.</p>'+
+    '</details>'
+  );
+  function sw(id,fn){document.querySelectorAll('#'+id+' button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('#'+id+' button').forEach(function(x){x.classList.toggle('on',x===b);});fn(b.dataset.v);saveSetup();upd();});});}
+  sw('cpu',function(v){if(v==='0')S.cpu=false;else{S.cpu=true;S.lvl=v;}});
+  sw('mode',function(v){S.mode=v;});
+  sw('nman',function(v){S.nMan=+v;});
+  sw('fin',function(v){S.fin=v==='1';});
+  function list(){
+    var hs=S.ps.filter(function(p){return !p.cpu;});
+    document.getElementById('pl').innerHTML=hs.map(function(p,i){
+      return '<div class="pchip"><span class="av">'+p.av+'</span><span class="nm">'+esc(p.n)+'</span><button class="x" data-i="'+i+'" aria-label="Togli '+esc(p.n)+'">✕</button></div>';
+    }).join('')+(hs.length?'':'<p class="hint">Aggiungi da 1 a 6 giocatori.</p>');
+    document.querySelectorAll('#pl .x').forEach(function(b){b.addEventListener('click',function(){S.ps.splice(+b.dataset.i,1);S.ps.forEach(function(p,i){p.av=AV[i];});saveSetup();list();upd();});});
+  }
+  function upd(){
+    var hs=S.ps.length;
+    document.getElementById('mh').textContent=S.mode==='ply'?'A ogni manche un giocatore scrive la frase (o la pesca dal database) e fa il presentatore: quella manche non gioca. In due si gioca a turno contro il tabellone con 3 errori a disposizione e un numero pari di manche.':'Il gioco pesca le frasi dal suo database.';
+    document.getElementById('er').textContent='';
+  }
+  document.getElementById('add').addEventListener('click',function(){
+    var nm=document.getElementById('nm');var v=nm.value.trim();
+    if(!v){nm.focus();return;}
+    if(S.ps.length>=6){document.getElementById('er').textContent='Massimo 6 giocatori.';return;}
+    S.ps.push({n:v,av:AV[S.ps.length]});nm.value='';saveSetup();list();upd();nm.focus();
+  });
+  document.getElementById('nm').addEventListener('keydown',function(e){if(e.key==='Enter')document.getElementById('add').click();});
+  document.getElementById('go').addEventListener('click',function(){
+    var er=document.getElementById('er');
+    if(!S.ps.length){er.textContent='Aggiungi almeno un giocatore!';document.getElementById('nm').focus();return;}
+    if(S.mode==='ply'&&S.ps.length<2){er.textContent='Per scegliere la frase a turno servono almeno 2 giocatori.';return;}
+    if(S.ps.length===1&&!S.cpu&&S.mode==='sys'){/* gioco in solitaria: va bene */}
+    startGame();
+  });
+  list();upd();
+}
+
+// ── PARTITA ────────────────────────────────────────────────────────────────
+var P=[];        // giocatori in partita
+var MAN=0;       // numero manche (0-based)
+var NM=5;        // manche effettive della partita
+function startGame(){
+  P=S.ps.map(function(p,i){return {n:p.n,av:AV[i],cpu:false,tot:0,bank:0};});
+  if(S.cpu)P.push({n:'Robo',av:CPU_AV,cpu:true,lvl:S.lvl,tot:0,bank:0});
+  NM=S.nMan;
+  if(S.mode==='ply'&&S.ps.length===2&&NM%2)NM++;   // in due: stesso numero di frasi a testa
+  MAN=0;nextManche();
+}
+function pickPhrase(){
+  var pool=FR.filter(function(f){return USED.indexOf(f[1])<0;});
+  if(!pool.length)pool=FR;
+  var f=rnd(pool);markUsed(f[1]);return {hint:f[0],ph:f[1]};
+}
+function nextManche(){
+  TOK++;
+  if(MAN>=NM){return S.fin?finalIntro():end();}
+  P.forEach(function(p){p.bank=0;});
+  if(S.mode==='ply'){
+    var hs=P.filter(function(p){return !p.cpu;});
+    var setter=hs[MAN%hs.length];
+    setterScreen(setter);
+  } else beginManche(pickPhrase(),null);
+}
+function beginManche(f,setter){
+  TOK++;
+  var active=P.filter(function(p){return p!==setter;});
+  M={hint:f.hint,ph:f.ph,cells:layout(f.ph),rev:{},used:{},active:active,t:MAN%active.length,setter:setter,state:'choose',val:0,solo:active.length===1,err:0};
+  render(brand(true)+'<div class="card cover pop"><div class="big">🎡</div><h2>Manche '+(MAN+1)+' di '+NM+'</h2>'+
+    (setter?'<p style="font-weight:800">'+setter.av+' '+esc(setter.n)+' fa il presentatore 🎤</p>':'')+
+    (active.length===1?'<p class="hint">'+esc(active[0].n)+' gioca da solo: hai 3 errori (consonante o vocale che non c\'è, PASSA, PERDE, soluzione sbagliata). Al terzo perdi la manche.</p>':'')+
+    '<p class="hint">Indizio: <b>'+esc(f.hint)+'</b></p><button class="wide cta" id="go" style="margin-top:16px">Si parte!</button></div>');
+  document.getElementById('go').addEventListener('click',function(){play('Tocca a <b>'+esc(cur().n)+'</b>');});
+}
+function cur(){return M.active[M.t];}
+
+// ── FRASE SCELTA DA UN GIOCATORE ───────────────────────────────────────────
+function setterScreen(p){
+  render(brand(true)+'<div class="card cover pop"><div class="big">🙈</div><h2>Tocca a '+p.av+' '+esc(p.n)+' scegliere la frase</h2>'+
+    '<p class="hint">Gli altri non guardino lo schermo!</p><button class="wide cta" id="go" style="margin-top:16px">Sono '+esc(p.n)+', inizio</button></div>');
+  document.getElementById('go').addEventListener('click',function(){setterForm(p);});
+}
+function setterForm(p){
+  render(brand(true)+'<div class="card pop"><h2>✍️ Scrivi la frase</h2>'+
+    '<div class="lbl">Frase da indovinare</div><textarea id="ph" rows="3" maxlength="60" placeholder="ES. CHI DORME NON PIGLIA PESCI"></textarea>'+
+    '<div class="lbl">Indizio</div><input id="hi" maxlength="30" placeholder="Es. Proverbio">'+
+    '<p class="hint">Solo lettere e apostrofi; parole lunghe al massimo 14 lettere. Oppure pescane una:</p>'+
+    '<button class="sec wide" id="rand" style="margin-top:8px">🎲 Pesca dal database</button>'+
+    '<div id="pv" style="margin-top:12px"></div><p class="err" id="er"></p>'+
+    '<button class="wide cta" id="ok" style="margin-top:12px">✔ Conferma e nascondi</button></div>');
+  var ph=document.getElementById('ph'),hi=document.getElementById('hi'),er=document.getElementById('er');
+  function prev(){
+    var v=cleanPhrase(ph.value),c=v?layout(v):null;
+    if(!v){document.getElementById('pv').innerHTML='';return;}
+    if(!c){document.getElementById('pv').innerHTML='';er.textContent='La frase non entra nel tabellone: accorciala.';return;}
+    er.textContent='';
+    var save=M;M={cells:c,rev:{},hint:hi.value||'…'};
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){M.rev[L]=true;});
+    document.getElementById('pv').innerHTML=boardHTML();M=save;
+  }
+  ph.addEventListener('input',prev);hi.addEventListener('input',prev);
+  document.getElementById('rand').addEventListener('click',function(){var f=pickPhrase();ph.value=f.ph;hi.value=f.hint;prev();});
+  document.getElementById('ok').addEventListener('click',function(){
+    var v=cleanPhrase(ph.value);
+    if(letters(v).length<3){er.textContent='Scrivi una frase più lunga.';return;}
+    if(!layout(v)){er.textContent='La frase non entra nel tabellone: accorciala.';return;}
+    var h=hi.value.trim()||'Frase misteriosa';
+    render(brand(true)+'<div class="card cover pop"><div class="big">📱</div><h2>Frase pronta!</h2><p>Passa il telefono agli altri giocatori.</p>'+
+      '<button class="wide cta" id="go" style="margin-top:16px">Il telefono è passato</button></div>');
+    document.getElementById('go').addEventListener('click',function(){beginManche({hint:h,ph:v},p);});
+  });
+  ph.focus();
+}
+
+// ── SCHERMO DI GIOCO ───────────────────────────────────────────────────────
+function scoresHTML(){
+  return '<div class="scores">'+P.map(function(p){
+    var out=M&&M.setter===p;
+    return '<div class="sc'+(M&&cur()===p&&!out?' now':'')+(out?' out':'')+'"><span class="av">'+p.av+'</span><span><span class="nm">'+esc(p.n)+(out?' 🎤':'')+'</span>'+
+      '<span class="bank">'+eur(p.bank)+'</span><small>In cassa: '+eur(p.tot)+'</small>'+
+      (M&&M.solo&&cur()===p&&!out?'<small>Errori: '+'❌'.repeat(M.err)+'⬜'.repeat(3-M.err)+'</small>':'')+'</span></div>';
+  }).join('')+'</div>';
+}
+function play(msg){
+  var p=cur(),human=!p.cpu;
+  var hc=hiddenOf(CONS),hv=hiddenOf(VOW);
+  var anyC=Object.keys(hc).length>0,anyV=Object.keys(hv).length>0;
+  var canSpin=human&&M.state==='choose'&&anyC;
+  var canVow=human&&M.state==='choose'&&anyV&&p.bank>=VOWEL_COST;
+  var canSol=human&&M.state==='choose';
+  var ctl='';
+  if(M.state==='choose'&&human){
+    ctl='<div class="acts">'+
+      '<button id="bSpin"'+(canSpin?'':' disabled')+'>🎡 Gira<small>'+(anyC?'la ruota':'consonanti finite')+'</small></button>'+
+      '<button id="bVow"'+(canVow?'':' disabled')+'>🛒 Vocale<small>costa 400 €</small></button>'+
+      '<button id="bSol"'+(canSol?'':' disabled')+'>💡 Soluzione<small>la so!</small></button></div>';
+  } else if((M.state==='cons'||M.state==='jolly')&&human){
+    ctl='<div class="kb">'+CONS.split('').map(function(L){return '<button data-l="'+L+'"'+(M.used[L]?' disabled':'')+'>'+L+'</button>';}).join('')+'</div>';
+  } else if(M.state==='vow'&&human){
+    ctl='<div class="kb">'+VOW.split('').map(function(L){return '<button class="v" data-l="'+L+'"'+(M.used[L]?' disabled':'')+'>'+L+'</button>';}).join('')+
+      '<button class="sec" id="bBack" style="grid-column:span 2;font-size:.9rem">Annulla</button></div>';
+  } else if(M.state==='solve'&&human){
+    ctl='<div style="margin-top:10px"><input id="sol" placeholder="Scrivi la soluzione" autocomplete="off" autocapitalize="characters" style="text-transform:uppercase">'+
+      '<div class="row" style="margin-top:8px"><button class="sec" id="bBack">Annulla</button><button id="bOk">Conferma</button></div></div>';
+  }
+  render(
+    '<div class="top"><span class="pill">Manche '+(MAN+1)+'/'+NM+'</span>'+brand(true)+'<span class="pill">'+(S.mode==='ply'?'🎤':'🎲')+'</span></div>'+
+    '<div class="play"><div>'+boardHTML()+scoresHTML()+'</div><div class="side'+(human&&M.state!=='choose'?'':' big')+'">'+
+    '<div class="wheelbox"><div class="ptr"></div><div class="wclip">'+wheelSVG()+'</div></div>'+
+    '<div class="msg" id="msg">'+(msg||'')+'</div><div class="ctl">'+ctl+
+    (human||M.state==='done'?'':'<p class="hint">'+p.av+' '+esc(p.n)+' sta pensando…</p>')+
+    '</div></div></div>'
+  );
+  var b;
+  if((b=document.getElementById('bSpin')))b.addEventListener('click',doSpin);
+  if((b=document.getElementById('bVow')))b.addEventListener('click',function(){M.state='vow';play('Quale vocale compri, <b>'+esc(p.n)+'</b>?');});
+  if((b=document.getElementById('bSol')))b.addEventListener('click',function(){M.state='solve';play('Qual è la frase, <b>'+esc(p.n)+'</b>?');var i=document.getElementById('sol');if(i)i.focus();});
+  if((b=document.getElementById('bBack')))b.addEventListener('click',function(){M.state='choose';play('Tocca a <b>'+esc(p.n)+'</b>');});
+  if((b=document.getElementById('bOk')))b.addEventListener('click',function(){trySolve(document.getElementById('sol').value);});
+  if((b=document.getElementById('sol')))b.addEventListener('keydown',function(e){if(e.key==='Enter')trySolve(b.value);});
+  document.querySelectorAll('.kb button[data-l]').forEach(function(k){k.addEventListener('click',function(){
+    var L=k.dataset.l;
+    if(M.state==='vow')buyVowel(L);else pickCons(L);
+  });});
+  if(!human&&M.state==='choose')cpuTurn();
+}
+function setMsg(h){var m=document.getElementById('msg');if(m)m.innerHTML=h;}
+function nextPlayer(why){
+  if(M.solo){
+    M.err++;M.state='choose';
+    if(M.err>=3){var tk0=TOK;setMsg((why||'')+'<br>Terzo errore!');setTimeout(function(){if(tk0===TOK)loseManche();},1300);return;}
+    var tk1=TOK;setMsg(why||'');
+    setTimeout(function(){if(tk1===TOK)play((why?why+'<br>':'')+'Errore '+M.err+' di 3: continua <b>'+esc(cur().n)+'</b>');},1300);
+    return;
+  }
+  M.state='choose';M.t=(M.t+1)%M.active.length;
+  var tk=TOK;
+  setTimeout(function(){if(tk===TOK)play((why?why+'<br>':'')+'Tocca a <b>'+esc(cur().n)+'</b>');},why?1300:0);
+  if(why)setMsg(why);
+}
+function doSpin(){
+  var p=cur();M.state='spin';
+  document.querySelectorAll('.acts button').forEach(function(b){b.disabled=true;});
+  setMsg(esc(p.n)+' gira la ruota…');
+  spinTo(function(v){
+    if(v==='PASSA'){M.state='x';nextPlayer('🔁 <b>PASSA</b>! Il turno passa.');}
+    else if(v==='PERDE'){p.bank=0;M.state='x';nextPlayer('💥 <b>PERDE</b>! '+esc(p.n)+' perde i soldi della manche.');}
+    else if(v==='JOLLY'){M.state='jolly';M.val=1000;play('🃏 <b>JOLLY</b>! Ogni consonante vale 1000 € e poi il montepremi raddoppia. Scegli!');if(p.cpu)cpuCons();}
+    else{M.state='cons';M.val=v;play('È uscito <b>'+eur(v)+'</b>. '+(p.cpu?'':'Scegli una consonante!'));if(p.cpu)cpuCons();}
+  });
+}
+function pickCons(L){
+  var p=cur(),jolly=M.state==='jolly';M.state='reveal';
+  document.querySelectorAll('.kb button').forEach(function(b){b.disabled=true;});
+  setMsg(esc(p.n)+' dice <b>'+L+'</b>…');
+  revealAnim(L,function(n){
+    if(!n){nextPlayer('❌ La <b>'+L+'</b> non c\'è.');return;}
+    var won=n*M.val;p.bank+=won;
+    var txt='✅ '+n+' × '+L+' = <b>+'+eur(won)+'</b>';
+    if(jolly){p.bank*=2;txt+='<br>🃏 Montepremi raddoppiato: <b>'+eur(p.bank)+'</b>';}
+    M.state='choose';play(txt);
+  });
+}
+function buyVowel(L){
+  var p=cur();p.bank-=VOWEL_COST;M.state='reveal';
+  document.querySelectorAll('.kb button').forEach(function(b){b.disabled=true;});
+  setMsg(esc(p.n)+' compra la <b>'+L+'</b>…');
+  revealAnim(L,function(n){
+    if(!n){nextPlayer('❌ La <b>'+L+'</b> non c\'è.');return;}
+    M.state='choose';play('✅ Ci sono '+n+' <b>'+L+'</b>.');
+  });
+}
+function trySolve(txt){
+  var p=cur();
+  if(letters(txt)===letters(M.ph)){winManche(p);}
+  else{M.state='x';nextPlayer('❌ «'+esc(txt.toUpperCase()||'…')+'» non è giusta.');}
+}
+function loseManche(){
+  TOK++;M.state='done';
+  var p=cur();p.bank=0;
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){M.rev[L]=true;});
+  render(
+    '<div class="top"><span class="pill">Manche '+(MAN+1)+'/'+NM+'</span>'+brand(true)+'<span class="pill">🏁</span></div>'+
+    '<div class="play"><div>'+boardHTML()+'</div><div>'+
+    '<div class="card cover pop" style="padding:20px"><div class="big">😮</div><h2>3 errori: manche persa!</h2>'+
+    '<p style="font-weight:800">'+esc(p.n)+' non mette niente in cassa.</p>'+
+    '<button class="wide cta" id="go" style="margin-top:14px">'+(MAN+1<NM?'Prossima manche ➜':(S.fin?'⭐ Vai alla finalissima':'🏆 Classifica'))+'</button></div>'+
+    scoresHTML()+'</div></div>'
+  );
+  document.getElementById('go').addEventListener('click',function(){MAN++;M=null;nextManche();});
+}
+function winManche(p){
+  TOK++;M.state='done';
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){M.rev[L]=true;});
+  var prize=Math.max(p.bank,1000);
+  P.forEach(function(q){q.bank=0;});
+  p.tot+=prize;
+  render(
+    '<div class="top"><span class="pill">Manche '+(MAN+1)+'/'+NM+'</span>'+brand(true)+'<span class="pill">🏁</span></div>'+
+    '<div class="play"><div>'+boardHTML()+'</div><div>'+
+    '<div class="card cover pop" style="padding:20px"><div class="big">🎉</div><h2>'+p.av+' '+esc(p.n)+' ha indovinato!</h2>'+
+    '<p style="font-weight:800">Mette in cassa <span style="color:var(--ok)">'+eur(prize)+'</span></p>'+
+    '<button class="wide cta" id="go" style="margin-top:14px">'+(MAN+1<NM?'Prossima manche ➜':(S.fin?'⭐ Vai alla finalissima':'🏆 Classifica'))+'</button></div>'+
+    scoresHTML()+'</div></div>'
+  );
+  confetti();
+  document.getElementById('go').addEventListener('click',function(){MAN++;M=null;nextManche();});
+}
+
+// ── COMPUTER ───────────────────────────────────────────────────────────────
+var LV={e:{know:.25,solve:.9,vow:.2},m:{know:.5,solve:.75,vow:.35},h:{know:.75,solve:.6,vow:.5}};
+function cpuTurn(){
+  var p=cur(),lv=LV[p.lvl],tk=TOK;
+  setTimeout(function(){
+    if(tk!==TOK)return;
+    var hc=hiddenOf(CONS),hv=hiddenOf(VOW),anyC=Object.keys(hc).length,anyV=Object.keys(hv).length;
+    var r=revealRatio();
+    if(r>=lv.solve||(!anyC&&(!anyV||p.bank<VOWEL_COST))){
+      M.state='solve';setMsg(p.av+' '+esc(p.n)+': «Vorrei dare la soluzione!»');
+      setTimeout(function(){if(tk===TOK)trySolve(M.ph);},1400);return;
+    }
+    if(anyV&&p.bank>=VOWEL_COST&&(!anyC||Math.random()<lv.vow)){
+      var L;
+      if(Math.random()<lv.know){L=Object.keys(hv).sort(function(a,b){return hv[b]-hv[a];})[0];}
+      else L=VFREQ.split('').filter(function(x){return !M.used[x];})[0];
+      M.state='vow';setMsg(esc(p.n)+' compra una vocale…');
+      setTimeout(function(){if(tk===TOK)buyVowel(L);},900);return;
+    }
+    doSpin();
+  },1200);
+}
+function cpuCons(){
+  var p=cur(),lv=LV[p.lvl],tk=TOK;
+  setTimeout(function(){
+    if(tk!==TOK)return;
+    var hc=hiddenOf(CONS),L;
+    if(Math.random()<lv.know&&Object.keys(hc).length)L=Object.keys(hc).sort(function(a,b){return hc[b]-hc[a]||FREQ.indexOf(a)-FREQ.indexOf(b);})[0];
+    else L=FREQ.split('').filter(function(x){return !M.used[x];})[0];
+    pickCons(L);
+  },1300);
+}
+
+// ── FINALISSIMA ────────────────────────────────────────────────────────────
+var F=null;
+function leader(){return P.slice().sort(function(a,b){return b.tot-a.tot;})[0];}
+function finalIntro(){
+  TOK++;
+  var w=leader();
+  render(brand(true)+'<div class="card cover pop"><div class="big">⭐</div><h2>Finalissima!</h2>'+
+    '<p style="font-weight:800">'+w.av+' '+esc(w.n)+' va in finale con '+eur(w.tot)+'</p>'+
+    '<p class="hint">Ti regaliamo le consonanti R S T L N. Poi scegli 3 consonanti e 1 vocale, e hai 30 secondi per dare la soluzione. In palio una busta segreta!</p>'+
+    '<button class="wide cta" id="go" style="margin-top:16px">Inizia la finalissima</button></div>');
+  document.getElementById('go').addEventListener('click',function(){
+    var f=pickPhrase();
+    M={hint:f.hint,ph:f.ph,cells:layout(f.ph),rev:{},used:{},active:[w],t:0,setter:null,state:'final'};
+    F={p:w,picks:[],prize:rnd(PRIZES)};
+    'RSTLN'.split('').forEach(function(L){M.rev[L]=true;M.used[L]=true;});
+    finalPick();
+  });
+}
+function finalPick(){
+  TOK++;
+  var p=F.p,nc=F.picks.filter(function(L){return CONS.indexOf(L)>=0;}).length,nv=F.picks.length-nc;
+  var need=nc<3?'cons':(nv<1?'vow':null);
+  render(brand(true)+boardHTML()+
+    '<div class="msg">'+(need==='cons'?'Scegli la consonante '+(nc+1)+' di 3':need==='vow'?'Ora scegli 1 vocale':'')+'</div>'+
+    '<div class="kb">'+(need==='cons'?CONS:VOW).split('').map(function(L){return '<button class="'+(need==='vow'?'v':'')+'" data-l="'+L+'"'+(M.used[L]||F.picks.indexOf(L)>=0?' disabled':'')+'>'+L+'</button>';}).join('')+'</div>'+
+    '<p class="hint">Scelte: '+(F.picks.join(' ')||'—')+'</p>');
+  if(p.cpu){
+    var tk=TOK;setTimeout(function(){if(tk!==TOK)return;var src=need==='cons'?FREQ:VFREQ;F.picks.push(src.split('').filter(function(x){return !M.used[x]&&F.picks.indexOf(x)<0;})[0]);finalNext();},900);
+    return;
+  }
+  document.querySelectorAll('.kb button').forEach(function(k){k.addEventListener('click',function(){F.picks.push(k.dataset.l);finalNext();});});
+}
+function finalNext(){
+  if(F.picks.length<4){finalPick();return;}
+  F.picks.forEach(function(L){M.rev[L]=true;M.used[L]=true;});
+  TOK++;
+  var p=F.p,limit=30,deadline=Date.now()+limit*1000,tk=TOK;
+  render(brand(true)+boardHTML()+
+    '<div class="msg">Hai 30 secondi, '+esc(p.n)+'!</div><div class="tmr"><i id="tb" style="width:100%"></i></div>'+
+    (p.cpu?'<p class="hint">'+p.av+' sta pensando…</p>':'<input id="sol" placeholder="Scrivi la soluzione" autocomplete="off" style="text-transform:uppercase"><button class="wide cta" id="ok" style="margin-top:10px">Conferma</button>'));
+  var iv=setInterval(function(){
+    if(tk!==TOK){clearInterval(iv);return;}
+    var left=Math.max(0,deadline-Date.now()),b=document.getElementById('tb');if(b)b.style.width=(left/(limit*10))+'%';
+    if(left<=0){clearInterval(iv);finalResult(false);}
+  },250);
+  if(p.cpu){var ok=revealRatio()>=LV[p.lvl].solve-.1;setTimeout(function(){if(tk===TOK){clearInterval(iv);finalResult(ok);}},ok?4000:limit*1000+200);return;}
+  var go=function(){clearInterval(iv);finalResult(letters(document.getElementById('sol').value)===letters(M.ph));};
+  document.getElementById('ok').addEventListener('click',go);
+  document.getElementById('sol').addEventListener('keydown',function(e){if(e.key==='Enter')go();});
+  document.getElementById('sol').focus();
+}
+function finalResult(ok){
+  TOK++;
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(L){M.rev[L]=true;});
+  if(ok)F.p.tot+=F.prize;
+  F.ok=ok;
+  render(brand(true)+boardHTML()+'<div class="card cover pop"><div class="big">'+(ok?'🏆':'😮')+'</div>'+
+    '<h2>'+(ok?'Evviva! '+esc(F.p.n)+' vince la busta':'Peccato! Non era la frase giusta')+'</h2>'+'<p style="font-family:var(--ff-d);font-weight:600;margin-top:6px">'+esc(M.ph)+'</p>'+
+    '<p style="font-weight:800">Nella busta c\'erano <span style="color:var(--ok)">'+eur(F.prize)+'</span></p>'+
+    '<button class="wide cta" id="go" style="margin-top:14px">🏆 Classifica finale</button></div>');
+  if(ok)confetti();
+  document.getElementById('go').addEventListener('click',end);
+}
+
+// ── FINE ───────────────────────────────────────────────────────────────────
+function end(){
+  TOK++;M=null;
+  var s=P.slice().sort(function(a,b){return b.tot-a.tot;}),md=['🥇','🥈','🥉'];
+  render(brand(true)+'<div class="card" style="text-align:center"><h2 style="font-size:1.7rem;margin:0">🏆 Classifica</h2>'+
+    '<p style="font-weight:800;margin-top:6px">'+s[0].av+' '+esc(s[0].n)+' vince con '+eur(s[0].tot)+'!</p></div>'+
+    '<div class="card">'+s.map(function(p,i){return '<div class="rank"><span class="md">'+(md[i]||'⭐')+'</span><span class="av">'+p.av+'</span><span class="nm">'+esc(p.n)+'</span><b>'+eur(p.tot)+'</b></div>';}).join('')+'</div>'+
+    '<button class="wide cta" id="again">🔁 Rivincita</button><button class="sec wide" id="new" style="margin-top:10px">👥 Cambia giocatori e regole</button>');
+  confetti();
+  document.getElementById('again').addEventListener('click',startGame);
+  document.getElementById('new').addEventListener('click',setup);
+}
+
+// ── AVVIO ──────────────────────────────────────────────────────────────────
+render(brand()+'<div class="card" style="text-align:center">Carico le frasi…</div>');
+if(FR.length)setup();
+else fetch('frasi.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){FR=d;setup();})
+  .catch(function(){render(brand()+'<div class="card" style="text-align:center"><h2>Non riesco a caricare le frasi 😕</h2><p style="margin-top:8px">Il file <b>frasi.json</b> deve stare nella stessa cartella di questa pagina.</p></div>');});
+</script>
+</body>
+</html>
