@@ -194,6 +194,32 @@ kbd{display:inline-grid;place-items:center;min-width:1.7em;height:1.7em;padding:
 .tt{font-family:var(--ff-d);font-weight:700;background:var(--card2);border-radius:99px;padding:.15em .6em;white-space:nowrap}
 .tt.low{background:var(--ko);color:#fff}
 .ttrow{display:flex;justify-content:center;margin-top:6px;font-size:1.1rem}
+.devs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.dev{display:flex;flex-direction:column;align-items:center;gap:6px;padding:22px 10px;background:var(--card);color:var(--tx);box-shadow:0 4px 0 var(--bd);border-radius:22px;font-size:1.15rem}
+.dev .big{font-size:2.6rem;line-height:1}
+.dev small{font-family:var(--ff-b);font-weight:700;color:var(--mut);font-size:.8rem}
+.dev.on{outline:3px solid var(--pri)}
+@media (orientation:landscape) and (min-width:640px){.devs{grid-template-columns:repeat(4,minmax(0,1fr))}.dev{font-size:clamp(1rem,2.6vh,1.8rem);padding:4vh 1vw}.dev .big{font-size:clamp(2.4rem,8vh,5rem)}}
+.qrbox{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap}
+.qrbox svg{width:min(60vw,42vh,320px);height:auto;background:#fff;border-radius:14px;padding:8px}
+.code{font-family:var(--ff-d);font-weight:700;font-size:clamp(1.6rem,6vh,3.4rem);letter-spacing:.2em}
+.castb{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:800;font-size:.9rem;margin:8px auto 0;background:var(--card);border-radius:99px;padding:4px 14px;width:max-content;max-width:100%;box-shadow:0 2px 0 var(--bd)}
+.castb svg{width:64px;height:64px;background:#fff;border-radius:6px;padding:2px}
+.rc{max-width:560px;margin:0 auto}
+.rc .rbar{font-weight:800;color:var(--mut);font-size:.85rem;text-align:center;margin:4px 0}
+.rc .rt{font-family:var(--ff-d);font-weight:700;font-size:1.35rem;text-align:center;margin:8px 0 4px}
+.rc .rm{text-align:center;font-weight:700;margin-bottom:8px;min-height:1.2em}
+.rc .rgl{font-weight:800;font-size:.8rem;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;margin:12px 0 6px}
+.rc .rbtns{display:flex;flex-direction:column;gap:10px}
+.rc .rbtns.sw{flex-direction:row;flex-wrap:wrap}
+.rc .rbtns.sw button{flex:1;padding:10px 6px;background:var(--card2);color:var(--tx);box-shadow:none}
+.rc .rbtns.sw button.on{background:var(--pri);color:#fff}
+.rc .rkeys{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;margin-top:10px}
+.rc .rkeys button{padding:14px 0;font-size:1.3rem;background:var(--card);color:var(--tx);box-shadow:0 3px 0 var(--bd)}
+.rc .rkeys button:disabled{opacity:.25}
+.rc input,.rc textarea{margin-top:8px}
+.rst{font-size:.8rem;font-weight:800;text-align:center;color:var(--mut)}
+.rst.ok{color:var(--ok)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* orizzontale */
 @media (orientation:landscape) and (min-width:640px){
@@ -457,7 +483,8 @@ function setup(){
   TOK++;
   var humans=S.ps.filter(function(p){return !p.cpu;});
   render(
-    brand()+'<p class="sub">Gira la ruota, scegli le lettere, indovina la frase!</p><p class="ver">Database: '+FR.length+' frasi</p>'+
+    brand()+'<p class="sub">Gira la ruota, scegli le lettere, indovina la frase!</p><p class="ver">Database: '+FR.length+' frasi · '+DEVN[DEV]+' · <a href="#" id="chDev" style="color:inherit">cambia</a></p>'+
+    (DEV==='cast'?castBadge():'')+
     '<div class="setup"><div>'+
     '<div class="card"><h2>Chi gioca?</h2>'+
       '<div class="row"><input id="nm" placeholder="Nome del giocatore" maxlength="12" autocomplete="off"><button id="add" style="flex:0 0 auto">+ Aggiungi</button></div>'+
@@ -490,6 +517,7 @@ function setup(){
       '<p style="margin-top:6px">Da TV o computer: <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> per le mosse, frecce e OK per scegliere, <kbd>0</kbd> punteggi, <kbd>F</kbd> schermo intero, <kbd>M</kbd> suoni.</p>'+
     '</details>'
   );
+  var cd=document.getElementById('chDev');if(cd)cd.addEventListener('click',function(e){e.preventDefault();chooser();});
   function sw(id,fn){document.querySelectorAll('#'+id+' button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('#'+id+' button').forEach(function(x){x.classList.toggle('on',x===b);});fn(b.dataset.v);saveSetup();upd();});});}
   sw('cpu',function(v){if(v==='0')S.cpu=false;else{S.cpu=true;S.lvl=v;}});
   sw('mode',function(v){S.mode=v;});
@@ -1009,11 +1037,164 @@ function end(){
   document.getElementById('new').addEventListener('click',setup);
 }
 
+// ── DOVE SI GIOCA ──────────────────────────────────────────────────────────
+var DEV='';try{DEV=localStorage.getItem('rf_dev')||'';}catch(e){}
+var DEVN={tv:'📺 TV con telecomando',cast:'📺📱 TV + cellulare',phone:'📱 Cellulare',pc:'💻 Computer','':''};
+function chooser(){
+  TOK++;
+  var o=[['tv','📺','TV con telecomando','frecce, OK e tasti 1 2 3'],['cast','📺📱','TV + cellulare','il telefono fa da telecomando'],['phone','📱','Solo cellulare','si gioca toccando lo schermo'],['pc','💻','Computer','mouse o tastiera']];
+  render(brand()+'<p class="sub">Dove giochi?</p><div class="devs">'+o.map(function(x){return '<button class="dev'+(DEV===x[0]?' on':'')+'" data-d="'+x[0]+'"><span class="big">'+x[1]+'</span>'+x[2]+'<small>'+x[3]+'</small></button>';}).join('')+'</div>');
+  document.querySelectorAll('.dev').forEach(function(b){b.addEventListener('click',function(){
+    DEV=b.dataset.d;try{localStorage.setItem('rf_dev',DEV);}catch(e){}
+    if(DEV==='cast')castStart();else setup();
+  });});
+  var on=document.querySelector('.dev.on');if(on)try{on.focus();}catch(e){}
+}
+
+// ── TV + CELLULARE ─────────────────────────────────────────────────────────
+// La TV è la "casa": crea un codice e mostra un QR. Il telefono apre la stessa
+// pagina con ?r=CODICE e diventa un telecomando: riceve l'elenco dei pulsanti
+// che si vedono sulla TV e rimanda i tocchi. Collegamento diretto (WebRTC con
+// PeerJS); con &bc=1 usa un canale locale (per le prove sullo stesso computer).
+var RCODE='',LINK=null,RCONNS=0,RID=0,LASTSNAP='',SNAPT=null;
+function loadScript(src){return new Promise(function(ok,ko){var s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=ko;document.head.appendChild(s);});}
+function newCode(){var a='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',c='';for(var i=0;i<5;i++)c+=a[Math.floor(Math.random()*a.length)];return c;}
+function remoteURL(){return location.origin+location.pathname+'?r='+RCODE+(/[?&]bc=1/.test(location.search)?'&bc=1':'');}
+function qrSVG(text,cell){try{var q=qrcode(0,'M');q.addData(text);q.make();return q.createSvgTag({cellSize:cell||6,margin:2,scalable:true});}catch(e){return '';}}
+function castBadge(){return '<div class="castb">'+qrSVG(remoteURL(),3)+'<span>'+(RCONNS?'📱 Telefono collegato':'📱 Inquadra per usare il telefono')+'<br><span style="letter-spacing:.15em">'+RCODE+'</span></span></div>';}
+function openLink(role,code,onMsg,onStatus){
+  var bc=/[?&]bc=1/.test(location.search);
+  if(bc){
+    var ch=new BroadcastChannel('rf-'+code);
+    ch.onmessage=function(ev){var d=ev.data;if(d.from===role)return;if(d.m.t==='hello'&&role==='host'){RCONNS=1;onStatus('conn');}onMsg(d.m);};
+    setTimeout(function(){onStatus('ready');if(role==='phone')ch.postMessage({from:role,m:{t:'hello'}});},50);
+    return {send:function(m){ch.postMessage({from:role,m:m});}};
+  }
+  var conns=[],link={send:function(m){conns.forEach(function(c){try{if(c.open)c.send(m);}catch(e){}});}};
+  loadScript('lib/peerjs.min.js').then(function(){
+    var peer=role==='host'?new Peer('rfpx-'+code):new Peer();
+    peer.on('error',function(err){onStatus('error',err&&err.type);});
+    peer.on('disconnected',function(){try{peer.reconnect();}catch(e){}});
+    if(role==='host'){
+      peer.on('open',function(){onStatus('ready');});
+      peer.on('connection',function(c){
+        conns.push(c);
+        c.on('open',function(){RCONNS=conns.filter(function(x){return x.open;}).length;onStatus('conn');});
+        c.on('data',onMsg);
+        c.on('close',function(){conns=conns.filter(function(x){return x!==c;});RCONNS=conns.length;onStatus(RCONNS?'conn':'lost');});
+      });
+    } else {
+      peer.on('open',function(){
+        var c=peer.connect('rfpx-'+code,{reliable:true});
+        c.on('open',function(){conns=[c];onStatus('conn');c.send({t:'hello'});});
+        c.on('data',onMsg);
+        c.on('close',function(){onStatus('lost');});
+      });
+    }
+  }).catch(function(){onStatus('error','lib');});
+  return link;
+}
+function castStart(){
+  TOK++;
+  RCODE=RCODE||newCode();
+  render(brand()+'<div class="card cover pop"><h2>Collega il telefono</h2>'+
+    '<div class="qrbox"><div id="qr"></div><div><p>Inquadra il QR con la fotocamera del telefono<br>oppure apri questo indirizzo:</p><p style="font-weight:800;word-break:break-all;margin:8px 0">'+esc(remoteURL())+'</p><p>Codice partita</p><div class="code">'+RCODE+'</div></div></div>'+
+    '<p class="hint" id="cst">Preparo il collegamento…</p>'+
+    '<button class="sec wide" id="skip" style="margin-top:14px">Continua senza telefono</button></div>');
+  document.getElementById('skip').addEventListener('click',function(){setup();});
+  loadScript('lib/qrcode.js').then(function(){var q=document.getElementById('qr');if(q)q.innerHTML=qrSVG(remoteURL(),6);}).catch(function(){});
+  if(!LINK)LINK=openLink('host',RCODE,hostMsg,function(st,why){
+    var el=document.getElementById('cst');
+    if(st==='ready'&&el)el.textContent='In attesa del telefono… (TV e telefono sulla stessa rete Wi-Fi)';
+    if(st==='conn'){sendSnap(true);if(document.getElementById('skip'))setup();}
+    if(st==='error'){
+      if(why==='unavailable-id'){LINK=null;RCODE=newCode();castStart();return;}
+      if(el)el.textContent='Non riesco a collegarmi ('+(why||'errore')+'). Puoi continuare senza telefono.';
+    }
+    var b=document.querySelector('.castb');if(b)b.outerHTML=castBadge();
+  });
+  startMirror();
+}
+// fotografia dei comandi visibili sulla TV, da mandare al telefono
+function snapScope(){return document.getElementById('scov')||document.querySelector('.ov')||app;}
+function txt(e){return e?e.innerText.replace(/\s+/g,' ').trim():'';}
+function buildSnap(){
+  var sc=snapScope(),keys=[],groups=[],inputs=[],cur=null;
+  sc.querySelectorAll('button,input,textarea').forEach(function(e){
+    if(e.offsetParent===null&&!e.closest('.ov,#scov'))return;
+    if(e.classList.contains('bfs')||e.classList.contains('bsnd')||e.closest('.castb'))return;
+    if(!e.dataset.rid)e.dataset.rid=String(++RID);
+    if(e.tagName!=='BUTTON'){inputs.push({r:e.dataset.rid,ph:e.placeholder||'',v:e.value,ta:e.tagName==='TEXTAREA'});return;}
+    var k=e.dataset.l||e.dataset.k;
+    if(k){keys.push({r:e.dataset.rid,l:k==='DEL'?'⌫':k==='OK'?'✓':k,d:e.disabled});return;}
+    var sw=e.closest('.switch'),g=sw?(sw.id||'sw'):'b';
+    if(!cur||cur.g!==g){var lab='';if(sw){var pr=sw.previousElementSibling;while(pr&&!pr.classList.contains('lbl')&&pr.tagName!=='H2')pr=pr.previousElementSibling;lab=txt(pr);}cur={g:g,lab:lab,sw:!!sw,items:[]};groups.push(cur);}
+    cur.items.push({r:e.dataset.rid,l:txt(e),d:e.disabled,on:e.classList.contains('on')});
+  });
+  var bar=document.querySelector('.tvbar');
+  return {t:'snap',bar:bar?['.mn','.who','.err','.tt','.money'].map(function(q){return txt(bar.querySelector(q));}).filter(Boolean).join(' · '):'',
+    title:txt(sc.querySelector('.ovt')||sc.querySelector('h2')),msg:txt(document.getElementById('msg')),keys:keys,groups:groups,inputs:inputs};
+}
+function sendSnap(force){
+  if(!LINK)return;
+  var s=buildSnap(),j=JSON.stringify(s);
+  if(force||j!==LASTSNAP){LASTSNAP=j;LINK.send(s);}
+}
+function startMirror(){
+  if(window._mo)return;
+  window._mo=new MutationObserver(function(){clearTimeout(SNAPT);SNAPT=setTimeout(function(){sendSnap(false);},120);});
+  window._mo.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['disabled','class'],characterData:true});
+}
+function hostMsg(m){
+  if(m.t==='hello'){sendSnap(true);return;}
+  var el=m.r?document.querySelector('[data-rid="'+m.r+'"]'):null;
+  if(m.t==='click'&&el&&!el.disabled){try{el.focus({preventScroll:true});}catch(e){}el.click();}
+  else if(m.t==='input'&&el){el.value=m.v;el.dispatchEvent(new Event('input',{bubbles:true}));}
+  else if(m.t==='enter'&&el){el.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));}
+  else if(m.t==='key'){document.dispatchEvent(new KeyboardEvent('keydown',{key:m.k,bubbles:true}));}
+  setTimeout(function(){sendSnap(false);},60);
+}
+// ── IL TELEFONO COME TELECOMANDO ──
+var RSNAP=null,RLINK=null,RSTAT='Mi collego alla TV…';
+function controller(code){
+  RLINK=openLink('phone',code,function(m){if(m.t==='snap'){RSNAP=m;RSTAT='✅ Collegato alla TV · guarda la TV, comanda da qui';drawRemote();}},function(st,why){
+    RSTAT=st==='conn'?'✅ Collegato alla TV · guarda la TV, comanda da qui':st==='lost'?'⚠️ Collegamento perso: ricarica la pagina':st==='error'?'⚠️ Non riesco a collegarmi ('+(why||'errore')+'). Controlla il codice e che la TV mostri il QR.':'Mi collego alla TV…';
+    var e=document.getElementById('rst');if(e){e.textContent=RSTAT;e.className='rst'+(st==='conn'?' ok':'');}else drawRemote();
+  });
+  drawRemote();
+}
+function drawRemote(){
+  var a=document.activeElement,fr=a&&a.dataset?a.dataset.r:null,fv=fr?a.value:null;
+  var s=RSNAP,h=brand(true)+'<div class="rc"><p class="rst'+(/Collegato/.test(RSTAT)?' ok':'')+'" id="rst">'+esc(RSTAT)+'</p>';
+  if(s){
+    if(s.bar)h+='<p class="rbar">'+esc(s.bar)+'</p>';
+    if(s.title)h+='<p class="rt">'+esc(s.title)+'</p>';
+    h+='<p class="rm">'+esc(s.msg||'')+'</p>';
+    s.inputs.forEach(function(i){h+=i.ta?'<textarea data-r="'+i.r+'" rows="3" placeholder="'+esc(i.ph)+'">'+esc(i.v)+'</textarea>':'<input data-r="'+i.r+'" placeholder="'+esc(i.ph)+'" value="'+esc(i.v)+'" autocomplete="off">';});
+    s.groups.forEach(function(g){
+      if(g.lab)h+='<p class="rgl">'+esc(g.lab)+'</p>';
+      h+='<div class="rbtns'+(g.sw?' sw':'')+'" style="margin-top:10px">'+g.items.map(function(b){return '<button data-b="'+b.r+'" class="'+(b.on?'on ':'')+(g.sw?'':'wide')+'"'+(b.d?' disabled':'')+'>'+esc(b.l)+'</button>';}).join('')+'</div>';
+    });
+    if(s.keys.length)h+='<div class="rkeys">'+s.keys.map(function(k){return '<button data-b="'+k.r+'"'+(k.d?' disabled':'')+'>'+esc(k.l)+'</button>';}).join('')+'</div>';
+  }
+  render(h+'</div>');
+  document.querySelectorAll('[data-b]').forEach(function(b){b.addEventListener('click',function(){RLINK.send({t:'click',r:b.dataset.b});});});
+  document.querySelectorAll('[data-r]').forEach(function(i){
+    i.addEventListener('input',function(){RLINK.send({t:'input',r:i.dataset.r,v:i.value});});
+    i.addEventListener('keydown',function(e){if(e.key==='Enter'&&i.tagName==='INPUT'){e.preventDefault();RLINK.send({t:'enter',r:i.dataset.r});}});
+    if(i.dataset.r===fr){i.value=fv;i.focus();try{i.setSelectionRange(fv.length,fv.length);}catch(e){}}
+  });
+}
+
 // ── AVVIO ──────────────────────────────────────────────────────────────────
 render(brand()+'<div class="card" style="text-align:center">Carico le frasi…</div>');
-if(!FIN.length)fetch('finale.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){FIN=d;}).catch(function(){});
-if(FR.length)setup();
-else fetch('frasi.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){FR=d;setup();})
+if(!/[?&]r=/.test(location.search)&&!FIN.length)fetch('finale.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){FIN=d;}).catch(function(){});
+var RPARAM=(location.search.match(/[?&]r=([A-Z0-9]{4,8})/i)||[])[1];
+var DPARAM=(location.search.match(/[?&]dev=(tv|phone|pc)/)||[])[1];
+function first(){if(DPARAM){DEV=DPARAM;setup();}else chooser();}
+if(RPARAM)controller(RPARAM.toUpperCase());
+else if(FR.length)first();
+else fetch('frasi.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){FR=d;first();})
   .catch(function(){render(brand()+'<div class="card" style="text-align:center"><h2>Non riesco a caricare le frasi 😕</h2><p style="margin-top:8px">Il file <b>frasi.json</b> deve stare nella stessa cartella di questa pagina.</p></div>');});
 </script>
 </body>
