@@ -197,6 +197,12 @@ kbd{display:inline-grid;place-items:center;min-width:1.7em;height:1.7em;padding:
 .tt{font-family:var(--ff-d);font-weight:700;background:var(--card2);border-radius:99px;padding:.15em .6em;white-space:nowrap}
 .tt.low{background:var(--ko);color:#fff}
 .ttrow{display:flex;justify-content:center;margin-top:6px;font-size:1.1rem}
+.ttf{position:fixed;top:max(8px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);z-index:9000;font-family:var(--ff-d);font-weight:700;font-size:clamp(18px,3.2vh,40px);background:#fff;color:#1b1340;border-radius:99px;padding:.15em .8em;box-shadow:0 4px 18px rgba(0,0,0,.35);pointer-events:none;white-space:nowrap}
+.ttf.low{background:var(--ko);color:#fff;animation:ttp .5s ease-in-out infinite alternate}
+@keyframes ttp{to{transform:translateX(-50%) scale(1.12)}}
+.expl{list-style:none;padding:0;margin:10px auto 0;text-align:left;max-width:520px}
+.expl li{padding:6px 10px;border-radius:10px;background:var(--card2);margin-top:6px;font-size:clamp(14px,2vh,26px)}
+.expl b{font-family:var(--ff-d)}
 .devs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
 .dev{display:flex;flex-direction:column;align-items:center;gap:6px;padding:22px 10px;background:var(--card);color:var(--tx);box-shadow:0 4px 0 var(--bd);border-radius:22px;font-size:1.15rem}
 .dev .big{font-size:2.6rem;line-height:1}
@@ -360,8 +366,54 @@ function sfx(n){
   else if(n==='win'){[523,659,784,1047,1319].forEach(function(fq,i){tone(fq,.4,'triangle',.16,i*.11);});}
   else if(n==='buzz'){tone(95,.7,'sawtooth',.22);tone(100,.7,'square',.08);}
   else if(n==='cut'){tone(1800,.06,'square',.12);tone(110,.5,'sawtooth',.14,.05);}
+  else if(n==='gong'){[[98,.22,3.2],[146,.12,2.6],[196,.1,2.2],[261,.07,1.8],[333,.05,1.4],[452,.03,1]].forEach(function(x){tone(x[0],x[2],'sine',x[1]);});}
 }
-function setSnd(v){SND=v;try{localStorage.setItem('rf_snd',v?'1':'0');}catch(e){}document.querySelectorAll('.bsnd').forEach(function(b){b.textContent=v?'🔊':'🔇';});if(v)sfx('ding');}
+// musica di tensione: pulsazione che accelera fino allo scadere del tempo
+var MUS=null,MNOISE=null;
+function musicStop(){
+  if(!MUS)return;var m=MUS;MUS=null;clearInterval(m.iv);
+  try{var t=m.a.currentTime;m.out.gain.cancelScheduledValues(t);m.out.gain.setValueAtTime(m.out.gain.value,t);m.out.gain.linearRampToValueAtTime(0,t+.15);m.oscs.forEach(function(o){o.stop(t+.3);});}catch(e){}
+}
+function musicStart(style,dur,elapsed){
+  musicStop();if(!SND)return;var a=ac();if(!a)return;
+  if(!MNOISE){MNOISE=a.createBuffer(1,Math.floor(a.sampleRate*.05),a.sampleRate);var d=MNOISE.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/d.length,6);}
+  var out=a.createGain();out.gain.setValueAtTime(0,a.currentTime);out.gain.linearRampToValueAtTime(1,a.currentTime+.4);out.connect(a.destination);
+  var lp=a.createBiquadFilter();lp.type='lowpass';lp.frequency.value=260;lp.Q.value=5;lp.connect(out);
+  var dg=a.createGain();dg.gain.value=style==='turn'?.03:.04;dg.connect(lp);
+  var oscs=(style==='turn'?[55,55.6,82.6]:[55,55.5,65.4,110.3]).map(function(f){var o=a.createOscillator();o.type='sawtooth';o.frequency.value=f;o.connect(dg);o.start();return o;});
+  MUS={a:a,out:out,lp:lp,oscs:oscs,style:style,dur:dur||Infinity,t0:a.currentTime-(elapsed||0),next:a.currentTime+.08,beat:0};
+  MUS.iv=setInterval(musTick,40);
+}
+function mNote(m,t,f,d,type,vol){var a=m.a,o=a.createOscillator(),g=a.createGain();o.type=type;o.frequency.setValueAtTime(f,t);g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g);g.connect(m.out);o.start(t);o.stop(t+d+.05);}
+function mKick(m,t,vol){var a=m.a,o=a.createOscillator(),g=a.createGain();o.type='sine';o.frequency.setValueAtTime(120,t);o.frequency.exponentialRampToValueAtTime(42,t+.18);g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.001,t+.3);o.connect(g);g.connect(m.out);o.start(t);o.stop(t+.35);}
+function mTick(m,t,vol,fq){var a=m.a,s=a.createBufferSource(),h=a.createBiquadFilter(),g=a.createGain();s.buffer=MNOISE;h.type='highpass';h.frequency.value=fq||6000;g.gain.value=vol;s.connect(h);h.connect(g);g.connect(m.out);s.start(t);}
+function musTick(){
+  var m=MUS;if(!m)return;var a=m.a,now=a.currentTime;
+  var p=isFinite(m.dur)?Math.min(1,Math.max(0,(now-m.t0)/m.dur)):0;
+  m.lp.frequency.setTargetAtTime(260+p*2200,now,.25);
+  var ARP=[220,261.6,329.6,261.6,220,261.6,349.2,329.6],ARP2=[233.1,277.2,349.2,277.2,233.1,277.2,370,349.2];
+  while(m.next<now+.15){
+    var t=m.next,b=m.beat,iv;
+    if(m.style==='turn'){
+      iv=.34-.24*Math.pow(p,1.4);                        // da ~88 a ~300 battiti al minuto
+      if(b%2===0)mKick(m,t,.5);
+      mTick(m,t,b%2?.10:.05);
+      if(b%8===0)mNote(m,t,b%16?110:116.5,iv*6,'triangle',.07);
+      if(p>.75)mNote(m,t,b%2?1760:1318.5,.06,'square',.03);
+    } else {                                               // finalissima
+      iv=m.style==='fcalm'?.26:.24-.15*Math.pow(p,1.3);
+      var bar=Math.floor(b/8),arp=(bar%4===3)?ARP2:ARP;
+      mNote(m,t,arp[b%8]*(p>.5&&b%2?2:1),iv*1.6,'triangle',m.style==='fcalm'?.05:.06);
+      if(b%4===0)mKick(m,t,m.style==='fcalm'?.35:.5);
+      if(b%4===2&&m.style!=='fcalm')mKick(m,t,.25);
+      mTick(m,t,b%2?.06:.03);
+      if(b%16===0)mNote(m,t,bar%4===3?58.3:55,iv*16,'sawtooth',.05);
+      if(p>.8)mNote(m,t,1760,.05,'square',.025);
+    }
+    m.next+=iv;m.beat++;
+  }
+}
+function setSnd(v){SND=v;if(!v)musicStop();try{localStorage.setItem('rf_snd',v?'1':'0');}catch(e){}document.querySelectorAll('.bsnd').forEach(function(b){b.textContent=v?'🔊':'🔇';});if(v)sfx('ding');}
 function toggleFS(){try{if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen();}catch(e){}}
 function toggleScores(){
   var o=document.getElementById('scov');if(o){o.remove();focusFirst();return;}
@@ -517,6 +569,7 @@ function spinTo(cb){
 
 // ── SCHERMATA INIZIALE ─────────────────────────────────────────────────────
 function setup(){
+  musicStop();stopTurnTimer();
   TOK++;
   var humans=S.ps.filter(function(p){return !p.cpu;});
   render(
@@ -688,7 +741,7 @@ function play(msg){
   var canSol=human&&M.state==='choose';
   var ctl='';
   if(M.state==='choose'&&human){
-    ctl=(S.tmr?'<div class="ttrow">'+ttHTML()+'</div>':'')+'<div class="acts">'+
+    ctl='<div class="acts">'+
       '<button id="bSpin"'+(canSpin?'':' disabled')+'>🎡 Gira<small>'+(anyC?'la ruota':'consonanti finite')+'</small></button>'+
       '<button id="bVow"'+(canVow?'':' disabled')+'>🛒 Vocale<small>costa 400 €</small></button>'+
       '<button id="bSol"'+(canSol?'':' disabled')+'>💡 Soluzione<small>la so!</small></button></div>';
@@ -714,7 +767,7 @@ function play(msg){
   if((b=document.getElementById('bHub')))b.addEventListener('click',doSpin);
   if((b=document.getElementById('bVow')))b.addEventListener('click',function(){M.state='vow';play('Quale vocale compri, <b>'+esc(p.n)+'</b>?');});
   if((b=document.getElementById('bSol')))b.addEventListener('click',function(){M.state='solve';play('Qual è la frase, <b>'+esc(p.n)+'</b>?');var i=document.getElementById('sol');if(i)i.focus();});
-  if((b=document.getElementById('bBack')))b.addEventListener('click',function(){M.state='choose';play('Tocca a <b>'+esc(p.n)+'</b>');});
+  if((b=document.getElementById('bBack')))b.addEventListener('click',backToChoose);
   if((b=document.getElementById('bOk')))b.addEventListener('click',function(){trySolve(document.getElementById('sol').value);});
   if((b=document.getElementById('sol')))b.addEventListener('keydown',function(e){if(e.key==='Enter')trySolve(b.value);});
   document.querySelectorAll('.kb button[data-l]').forEach(function(k){k.addEventListener('click',function(){
@@ -724,26 +777,40 @@ function play(msg){
   if(!human&&M.state==='choose')cpuTurn();
   startTurnTimer();
 }
-// conto alla rovescia per scegliere la mossa
-var turnIv=null;
-function stopTurnTimer(){if(turnIv){clearInterval(turnIv);turnIv=null;}}
-function ttHTML(){return S.tmr?'<span class="tt" id="tt">⏱ '+S.tmr+'</span>':'';}
+// conto alla rovescia: per scegliere la mossa, la consonante, la vocale e per dare la soluzione
+var turnIv=null,TT=null;
+var TIMED={choose:'choose',cons:'cons',jolly:'cons',vow:'vow',solve:'solve'};
+function stopTurnTimer(){if(turnIv){clearInterval(turnIv);turnIv=null;}if(TT){TT=null;musicStop();}var f=document.getElementById('ttf');if(f)f.remove();}
+function ttHTML(){return '';}
 function startTurnTimer(){
+  var st=M&&TIMED[M.state];
+  if(!S.tmr||!st||cur().cpu){if(TT)stopTurnTimer();return;}
+  if(TT&&TT.m===M&&TT.st===st&&TT.tok===TOK)return;           // già in corso
   stopTurnTimer();
-  if(!S.tmr||!M||M.state!=='choose'||cur().cpu)return;
-  var deadline=Date.now()+S.tmr*1000,tk=TOK,ref=M;
-  turnIv=setInterval(function(){
-    var el=document.getElementById('tt');
-    if(tk!==TOK||M!==ref||M.state!=='choose'||!el){stopTurnTimer();return;}
-    var left=Math.max(0,Math.ceil((deadline-Date.now())/1000));
-    el.textContent='⏱ '+left;el.classList.toggle('low',left<=5);
-    if(left<=0){
-      stopTurnTimer();sfx('buzz');
-      if(Object.keys(hiddenOf(CONS)).length){setMsg('⏰ Tempo scaduto! La ruota gira da sola…');setTimeout(function(){if(tk===TOK&&M===ref&&M.state==='choose')doSpin();},900);}
-      else{M.state='x';nextPlayer('⏰ Tempo scaduto!');}
-    }
-  },250);
+  var now=Date.now(),dl=now+S.tmr*1000;
+  if(st==='choose'&&M.resumeDl&&M.resumeDl>now+1500)dl=M.resumeDl;   // "Annulla" non regala tempo
+  M.resumeDl=null;if(st==='choose')M.chooseDl=dl;
+  var tk=TOK,ref=M;TT={m:M,st:st,tok:TOK};
+  var f=document.createElement('div');f.id='ttf';f.className='ttf';document.body.appendChild(f);
+  musicStart('turn',S.tmr,S.tmr-(dl-now)/1000);
+  function tick(){
+    var cs=M&&TIMED[M.state];
+    if(tk!==TOK||M!==ref||cs!==st){stopTurnTimer();return;}
+    var left=Math.max(0,Math.ceil((dl-Date.now())/1000));
+    f.textContent='⏱ '+left;f.classList.toggle('low',left<=5);
+    if(left<=0){stopTurnTimer();sfx('gong');sfx('buzz');timeUp(st,tk,ref);}
+  }
+  tick();turnIv=setInterval(tick,200);
 }
+function timeUp(st,tk,ref){
+  if(st==='choose'&&Object.keys(hiddenOf(CONS)).length){
+    setMsg('⏰ Tempo scaduto! La ruota gira da sola…');
+    setTimeout(function(){if(tk===TOK&&M===ref&&M.state==='choose')doSpin();},900);return;
+  }
+  M.state='x';play('');
+  nextPlayer('⏰ Tempo scaduto!'+(st==='solve'?' Niente soluzione.':st==='choose'?'':' Nessuna lettera scelta.'),true);
+}
+function backToChoose(){M.resumeDl=M.chooseDl;M.state='choose';play('Tocca a <b>'+esc(cur().n)+'</b>');}
 // schermata a tutto schermo con il tabellone in miniatura accanto (o sopra, in verticale)
 function split(right){
   var mini=boardHTML().replace(/ id="c\d+_\d+"/g,'');
@@ -788,7 +855,7 @@ function playTV(msg){
   wireTB();
   if((b=document.getElementById('bVow')))b.addEventListener('click',function(){M.state='vow';play();});
   if((b=document.getElementById('bSol')))b.addEventListener('click',function(){M.state='solve';M.fill=[];play();});
-  if((b=document.getElementById('bBack')))b.addEventListener('click',function(){M.state='choose';play('Tocca a <b>'+esc(p.n)+'</b>');});
+  if((b=document.getElementById('bBack')))b.addEventListener('click',backToChoose);
   document.querySelectorAll('.picker button[data-l]').forEach(function(k){k.addEventListener('click',function(){if(M.state==='vow')buyVowel(k.dataset.l);else pickCons(k.dataset.l);});});
   document.querySelectorAll('#solveov .picker button[data-k]').forEach(function(k){k.addEventListener('click',function(){typeL(k.dataset.k);});});
   if(!human&&st==='choose')cpuTurn();
@@ -834,8 +901,8 @@ function typeL(k){
   var cnt=document.getElementById('solcnt');if(cnt)cnt.textContent=M.fill.length+' di '+n+' lettere · Indizio: '+M.hint;
 }
 function setMsg(h){var m=document.getElementById('msg');if(m)m.innerHTML=h;}
-function nextPlayer(why){
-  if(why)sfx('no');
+function nextPlayer(why,quiet){
+  if(why&&!quiet)sfx('no');
   if(M.solo){
     M.err++;M.state='choose';
     if(M.err>=3){var tk0=TOK;setMsg((why||'')+'<br>Terzo errore!');setTimeout(function(){if(tk0===TOK)loseManche();},1300);return;}
@@ -849,7 +916,7 @@ function nextPlayer(why){
   if(why)setMsg(why);
 }
 function doSpin(){
-  var p=cur();M.state='spin';
+  var p=cur();M.state='spin';stopTurnTimer();
   if(isTV())playTV('');
   document.querySelectorAll('.acts button').forEach(function(b){b.disabled=true;});
   var hb=document.getElementById('bHub');if(hb)hb.remove();
@@ -869,7 +936,7 @@ function doSpin(){
   });
 }
 function pickCons(L){
-  var p=cur(),jolly=M.state==='jolly';M.state='reveal';
+  var p=cur(),jolly=M.state==='jolly';M.state='reveal';stopTurnTimer();
   if(isTV())playTV('');
   document.querySelectorAll('.kb button').forEach(function(b){b.disabled=true;});
   setMsg(esc(p.n)+' dice <b>'+L+'</b>…');
@@ -882,7 +949,7 @@ function pickCons(L){
   });
 }
 function buyVowel(L){
-  var p=cur();p.bank-=VOWEL_COST;M.state='reveal';
+  var p=cur();p.bank-=VOWEL_COST;M.state='reveal';stopTurnTimer();
   if(isTV())playTV('');
   document.querySelectorAll('.kb button').forEach(function(b){b.disabled=true;});
   setMsg(esc(p.n)+' compra la <b>'+L+'</b>…');
@@ -892,7 +959,7 @@ function buyVowel(L){
   });
 }
 function trySolve(txt){
-  var p=cur();
+  var p=cur();M.state='x';stopTurnTimer();
   if(letters(txt)===letters(M.ph)){winManche(p);}
   else{M.state='x';nextPlayer('❌ «'+esc(txt.toUpperCase()||'…')+'» non è giusta.');}
 }
@@ -994,6 +1061,7 @@ function finalIntro(){
     var pool=FIN.filter(function(z){return FUSED.indexOf(z.a)<0;});if(!pool.length){FUSED=[];pool=FIN;}
     var z=rnd(pool);FUSED.push(z.a);try{localStorage.setItem('rf_fin_used',JSON.stringify(FUSED));}catch(e){}
     F={p:w,z:z,k:0,prize:FIN_START,clues:[],txt:'',typing:false};
+    musicStart('fcalm');
     finalPair();
   });
 }
@@ -1031,10 +1099,11 @@ function finalWord(){
       '<p class="hint">Scrivi con la tastiera o scegli le lettere con le frecce. ✓ o Invio per confermare.</p>')+'</div>');
   wireTB();
   F.typing=!p.cpu;
+  musicStart('final',limit);
   var iv=setInterval(function(){
     if(tk!==TOK){clearInterval(iv);return;}
     var left=Math.max(0,deadline-Date.now()),b=document.getElementById('tb');if(b)b.style.width=(left/(limit*10))+'%';
-    if(left<=0){clearInterval(iv);F.typing=false;finalResult(false);}
+    if(left<=0){clearInterval(iv);F.typing=false;musicStop();sfx('gong');finalResult(false,true);}
   },250);
   if(p.cpu){var ok=Math.random()<FIN_LV[p.lvl].solve;setTimeout(function(){if(tk===TOK){clearInterval(iv);if(ok)F.txt=F.z.a;finalResult(ok);}},ok?6000:limit*1000+200);return;}
   document.querySelectorAll('.picker button[data-k]').forEach(function(k){k.addEventListener('click',function(){typeF(k.dataset.k);});});
@@ -1046,18 +1115,22 @@ function typeF(k){
   else if(F.txt.length<16)F.txt+=k;
   var a=document.getElementById('ans');if(a)a.textContent=F.txt||' ';
 }
-function finalResult(ok){
-  TOK++;F.typing=false;
+function explHTML(){
+  if(!F.z.c.some(function(x){return x[2];}))return '';
+  return '<p style="margin-top:10px;font-weight:800">Ecco come si legavano gli indizi:</p><ul class="expl">'+F.z.c.map(function(x){return '<li><b>'+esc(x[0])+'</b> → '+esc(x[2]||'')+'</li>';}).join('')+'</ul>';
+}
+function finalResult(ok,late){
+  TOK++;F.typing=false;musicStop();
   if(ok)F.p.tot+=F.prize;
   F.ok=ok;
   render(finHead()+'<div class="fin">'+cluesHTML()+'<div class="card cover pop"><div class="big">'+(ok?'🏆':'😮')+'</div>'+
     '<h2>'+(ok?'Esatto! '+esc(F.p.n)+' vince '+eur(F.prize):'Peccato, niente premio!')+'</h2>'+
-    '<p style="margin-top:6px">La parola finale era</p><div class="ans" style="margin:8px auto">'+esc(F.z.a)+'</div>'+
+    '<p style="margin-top:6px">La parola finale era</p><div class="ans" style="margin:8px auto">'+esc(F.z.a)+'</div>'+explHTML()+
     (!ok&&F.txt?'<p class="hint">Hai scritto: '+esc(F.txt)+'</p>':'')+
     (TRY?'<button class="wide cta" id="again" style="margin-top:14px">🔁 Un\'altra finalissima</button><button class="sec wide" id="go" style="margin-top:10px">Torna all\'inizio</button>':
     '<button class="wide cta" id="go" style="margin-top:14px">🏆 Classifica finale</button>')+'</div></div>');
   wireTB();
-  if(ok){sfx('win');confetti();}else sfx('no');
+  if(ok){sfx('win');confetti();}else if(!late)sfx('no');
   if(TRY){document.getElementById('again').addEventListener('click',function(){P[0].tot=0;finalIntro();});
     document.getElementById('go').addEventListener('click',function(){TRY=false;F=null;P=[];setup();});return;}
   document.getElementById('go').addEventListener('click',end);
@@ -1065,7 +1138,7 @@ function finalResult(ok){
 
 // ── FINE ───────────────────────────────────────────────────────────────────
 function end(){
-  TOK++;M=null;F=null;
+  TOK++;M=null;F=null;musicStop();stopTurnTimer();
   var s=P.slice().sort(function(a,b){return b.tot-a.tot;}),md=['🥇','🥈','🥉'];
   render(brand(true)+'<div class="card" style="text-align:center"><h2 style="font-size:1.7rem;margin:0">🏆 Classifica</h2>'+
     '<p style="font-weight:800;margin-top:6px">'+s[0].av+' '+esc(s[0].n)+' vince con '+eur(s[0].tot)+'!</p></div>'+
@@ -1171,7 +1244,8 @@ function buildSnap(){
     cur.items.push({r:e.dataset.rid,l:txt(e),d:e.disabled,on:e.classList.contains('on')});
   });
   var bar=document.querySelector('.tvbar');
-  return {t:'snap',bar:bar?['.mn','.who','.err','.tt','.money'].map(function(q){return txt(bar.querySelector(q));}).filter(Boolean).join(' · '):'',
+  var ttf=document.getElementById('ttf');
+  return {t:'snap',bar:(bar?['.mn','.who','.err','.money'].map(function(q){return txt(bar.querySelector(q));}).filter(Boolean).join(' · '):'')+(ttf?' · '+txt(ttf):''),
     title:txt(sc.querySelector('.ovt')||sc.querySelector('h2')),msg:txt(document.getElementById('msg')),keys:keys,groups:groups,inputs:inputs};
 }
 function sendSnap(force){
