@@ -369,10 +369,6 @@
 ],
 [
 "Luoghi d'Italia",
-"LE DOLOMITI"
-],
-[
-"Luoghi d'Italia",
 "LA COSTIERA AMALFITANA"
 ],
 [
@@ -1501,10 +1497,6 @@
 ],
 [
 "Luoghi d'Italia",
-"IL CERVINO"
-],
-[
-"Luoghi d'Italia",
 "LE TRE CIME DI LAVAREDO"
 ],
 [
@@ -1789,10 +1781,6 @@
 ],
 [
 "Fiabe e favole",
-"LA SIRENETTA"
-],
-[
-"Fiabe e favole",
 "LA BELLA E LA BESTIA"
 ],
 [
@@ -1949,19 +1937,7 @@
 ],
 [
 "Cartoni animati",
-"BAMBI"
-],
-[
-"Cartoni animati",
 "IL GOBBO DI NOTRE DAME"
-],
-[
-"Cartoni animati",
-"MULAN"
-],
-[
-"Cartoni animati",
-"OCEANIA"
 ],
 [
 "Cartoni animati",
@@ -1981,23 +1957,7 @@
 ],
 [
 "Cartoni animati",
-"RATATOUILLE"
-],
-[
-"Cartoni animati",
 "INSIDE OUT"
-],
-[
-"Cartoni animati",
-"ZOOTROPOLIS"
-],
-[
-"Cartoni animati",
-"ENCANTO"
-],
-[
-"Cartoni animati",
-"COCO"
 ],
 [
 "Cartoni animati",
@@ -2009,19 +1969,11 @@
 ],
 [
 "Cartoni animati",
-"MADAGASCAR"
-],
-[
-"Cartoni animati",
 "KUNG FU PANDA"
 ],
 [
 "Cartoni animati",
 "CATTIVISSIMO ME"
-],
-[
-"Cartoni animati",
-"I MINIONS"
 ],
 [
 "Cartoni animati",
@@ -2065,10 +2017,6 @@
 ],
 [
 "Cartoni animati",
-"I PUFFI"
-],
-[
-"Cartoni animati",
 "HEIDI E NONNO"
 ],
 [
@@ -2089,10 +2037,6 @@
 ],
 [
 "Cartoni animati",
-"I SIMPSON"
-],
-[
-"Cartoni animati",
 "SPONGEBOB E PATRICK"
 ],
 [
@@ -2110,10 +2054,6 @@
 [
 "Cartoni animati",
 "CAPITAN HARLOCK"
-],
-[
-"Cartoni animati",
-"DORAEMON"
 ],
 [
 "Cartoni animati",
@@ -2173,19 +2113,7 @@
 ],
 [
 "Film",
-"IL PADRINO"
-],
-[
-"Film",
 "INDIANA JONES"
-],
-[
-"Film",
-"LO SQUALO"
-],
-[
-"Film",
-"LA LA LAND"
 ],
 [
 "Film",
@@ -2226,10 +2154,6 @@
 [
 "Film",
 "BEN HUR"
-],
-[
-"Film",
-"SUPERMAN"
 ],
 [
 "Personaggi famosi",
@@ -2442,10 +2366,6 @@
 [
 "Storia",
 "IL VIAGGIO DI MARCO POLO"
-],
-[
-"Storia",
-"LE CROCIATE"
 ],
 [
 "Storia",
@@ -2733,10 +2653,6 @@
 ],
 [
 "Natura",
-"LA ROSA ROSSA"
-],
-[
-"Natura",
 "LA MARGHERITA M'AMA NON M'AMA"
 ],
 [
@@ -2750,10 +2666,6 @@
 [
 "Natura",
 "LE ONDE DEL MARE"
-],
-[
-"Natura",
-"IL SOLE SPLENDE"
 ],
 [
 "Natura",
@@ -2989,19 +2901,11 @@
 ],
 [
 "Scuola",
-"LA LAUREA"
-],
-[
-"Scuola",
 "IL BANCO DI SCUOLA"
 ],
 [
 "Scuola",
 "LA RECITA DI NATALE"
-],
-[
-"Scuola",
-"IL DETTATO"
 ],
 [
 "Scuola",
@@ -3041,15 +2945,7 @@
 ],
 [
 "Oggetti di casa",
-"IL TOSTAPANE"
-],
-[
-"Oggetti di casa",
 "LA TAZZA DELLA COLAZIONE"
-],
-[
-"Oggetti di casa",
-"LE PANTOFOLE"
 ],
 [
 "Oggetti di casa",
@@ -3125,10 +3021,6 @@
 ],
 [
 "Oggetti di casa",
-"LO STENDINO"
-],
-[
-"Oggetti di casa",
 "IL TERMOSIFONE"
 ],
 [
@@ -3145,27 +3037,11 @@
 ],
 [
 "Mestieri",
-"L'INFERMIERA"
-],
-[
-"Mestieri",
 "IL PARRUCCHIERE"
 ],
 [
 "Mestieri",
-"IL MECCANICO"
-],
-[
-"Mestieri",
-"L'IDRAULICO"
-],
-[
-"Mestieri",
 "L'ELETTRICISTA"
-],
-[
-"Mestieri",
-"IL FALEGNAME"
 ],
 [
 "Mestieri",
@@ -3181,10 +3057,6 @@
 ],
 [
 "Mestieri",
-"IL CAPOTRENO"
-],
-[
-"Mestieri",
 "IL GIARDINIERE"
 ],
 [
@@ -3193,15 +3065,7 @@
 ],
 [
 "Mestieri",
-"IL DENTISTA"
-],
-[
-"Mestieri",
 "IL FARMACISTA"
-],
-[
-"Mestieri",
-"L'ARCHITETTO"
 ],
 [
 "Mestieri",
@@ -3209,31 +3073,7 @@
 ],
 [
 "Mestieri",
-"IL FOTOGRAFO"
-],
-[
-"Mestieri",
 "IL PASTICCIERE"
-],
-[
-"Mestieri",
-"IL GELATAIO"
-],
-[
-"Mestieri",
-"IL MURATORE"
-],
-[
-"Mestieri",
-"IL SARTO"
-],
-[
-"Mestieri",
-"IL CALZOLAIO"
-],
-[
-"Mestieri",
-"IL BAGNINO"
 ],
 [
 "Mestieri",
@@ -3437,10 +3277,6 @@
 ],
 [
 "Al mare",
-"LE INFRADITO"
-],
-[
-"Al mare",
 "IL TELO MARE"
 ],
 [
@@ -3461,15 +3297,7 @@
 ],
 [
 "In montagna",
-"LA SEGGIOVIA"
-],
-[
-"In montagna",
 "GLI SCARPONI DA SCI"
-],
-[
-"In montagna",
-"LA FUNIVIA"
 ],
 [
 "In montagna",
@@ -3521,10 +3349,6 @@
 ],
 [
 "In vacanza",
-"IL CAMPER"
-],
-[
-"In vacanza",
 "LA PRENOTAZIONE IN ALBERGO"
 ],
 [
@@ -3533,19 +3357,11 @@
 ],
 [
 "In vacanza",
-"L'AEROPORTO"
-],
-[
-"In vacanza",
 "LA GITA FUORI PORTA"
 ],
 [
 "In vacanza",
 "IL PICNIC SUL PRATO"
-],
-[
-"In vacanza",
-"I SOUVENIR"
 ],
 [
 "Giochi",
@@ -3577,14 +3393,6 @@
 ],
 [
 "Giochi",
-"LA DAMA"
-],
-[
-"Giochi",
-"IL MONOPOLI"
-],
-[
-"Giochi",
 "LA TOMBOLA E IL TABELLONE"
 ],
 [
@@ -3593,15 +3401,7 @@
 ],
 [
 "Giochi",
-"LA BRISCOLA"
-],
-[
-"Giochi",
 "SCOPA E SETTEBELLO"
-],
-[
-"Giochi",
-"IL DOMINO"
 ],
 [
 "Giochi",
@@ -3625,10 +3425,6 @@
 ],
 [
 "Giochi",
-"IL FLIPPER"
-],
-[
-"Giochi",
 "LA CACCIA AL TESORO"
 ],
 [
@@ -3646,10 +3442,6 @@
 [
 "Giochi",
 "L'ALTALENA AL PARCO"
-],
-[
-"Giochi",
-"LO SCIVOLO"
 ],
 [
 "Giochi",
@@ -3741,10 +3533,6 @@
 ],
 [
 "Mezzi di trasporto",
-"LA VESPA"
-],
-[
-"Mezzi di trasporto",
 "LA GONDOLA VENEZIANA"
 ],
 [
@@ -3754,10 +3542,6 @@
 [
 "Mezzi di trasporto",
 "LA MONGOLFIERA"
-],
-[
-"Mezzi di trasporto",
-"L'ELICOTTERO"
 ],
 [
 "Mezzi di trasporto",
@@ -3777,14 +3561,6 @@
 ],
 [
 "Mezzi di trasporto",
-"IL TRATTORE"
-],
-[
-"Mezzi di trasporto",
-"L'AMBULANZA"
-],
-[
-"Mezzi di trasporto",
 "IL CAMION DEI POMPIERI"
 ],
 [
@@ -3794,10 +3570,6 @@
 [
 "Mezzi di trasporto",
 "LA FUNICOLARE"
-],
-[
-"Mezzi di trasporto",
-"IL TRAM"
 ],
 [
 "Il corpo umano",
@@ -3817,10 +3589,6 @@
 ],
 [
 "Il corpo umano",
-"LO SCHELETRO"
-],
-[
-"Il corpo umano",
 "IL GOMITO E IL GINOCCHIO"
 ],
 [
@@ -3834,10 +3602,6 @@
 [
 "Il corpo umano",
 "GLI OCCHI AZZURRI"
-],
-[
-"Il corpo umano",
-"IL SORRISO"
 ],
 [
 "Scienza",
@@ -3869,10 +3633,6 @@
 ],
 [
 "Scienza",
-"LA CALAMITA"
-],
-[
-"Scienza",
 "L'ENERGIA SOLARE"
 ],
 [
@@ -3882,14 +3642,6 @@
 [
 "Scienza",
 "IL TERMOMETRO"
-],
-[
-"Scienza",
-"LA BUSSOLA"
-],
-[
-"Scienza",
-"IL DNA"
 ],
 [
 "Scienza",
@@ -3912,18 +3664,6 @@
 "L'INTELLIGENZA ARTIFICIALE"
 ],
 [
-"Scienza",
-"IL COMPUTER PORTATILE"
-],
-[
-"Scienza",
-"LO SMARTPHONE"
-],
-[
-"Scienza",
-"LA RETE WIFI"
-],
-[
 "Musica",
 "IL PIANOFORTE A CODA"
 ],
@@ -3933,27 +3673,11 @@
 ],
 [
 "Musica",
-"IL VIOLINO"
-],
-[
-"Musica",
-"LA BATTERIA"
-],
-[
-"Musica",
 "IL FLAUTO DOLCE"
 ],
 [
 "Musica",
 "LA FISARMONICA"
-],
-[
-"Musica",
-"L'ARPA"
-],
-[
-"Musica",
-"LA TROMBA"
 ],
 [
 "Musica",
@@ -3981,19 +3705,7 @@
 ],
 [
 "Musica",
-"IL KARAOKE"
-],
-[
-"Musica",
 "L'OPERA LIRICA"
-],
-[
-"Musica",
-"IL MICROFONO"
-],
-[
-"Musica",
-"LE CUFFIE"
 ],
 [
 "Tempo libero",
@@ -4037,23 +3749,11 @@
 ],
 [
 "Tempo libero",
-"LO ZOO"
-],
-[
-"Tempo libero",
-"L'ACQUARIO"
-],
-[
-"Tempo libero",
 "IL CIRCO E I CLOWN"
 ],
 [
 "Tempo libero",
 "IL TEATRO DEI BURATTINI"
-],
-[
-"Tempo libero",
-"L'APERITIVO"
 ],
 [
 "Tempo libero",
@@ -4086,10 +3786,6 @@
 [
 "Frasi celebri",
 "EPPUR SI MUOVE"
-],
-[
-"Frasi celebri",
-"OBBEDISCO"
 ],
 [
 "Frasi celebri",
@@ -4273,14 +3969,6 @@
 ],
 [
 "Frutta e verdura",
-"IL KIWI"
-],
-[
-"Frutta e verdura",
-"IL MELOGRANO"
-],
-[
-"Frutta e verdura",
 "I FICHI D'INDIA"
 ],
 [
@@ -4333,47 +4021,11 @@
 ],
 [
 "Frutta e verdura",
-"IL CETRIOLO"
-],
-[
-"Frutta e verdura",
 "I PEPERONI GIALLI"
 ],
 [
 "Frutta e verdura",
 "LA MELANZANA VIOLA"
-],
-[
-"Frutta e verdura",
-"IL MAIS"
-],
-[
-"Frutta e verdura",
-"LE CASTAGNE"
-],
-[
-"Frutta e verdura",
-"IL COCCO"
-],
-[
-"Frutta e verdura",
-"L'AVOCADO"
-],
-[
-"Frutta e verdura",
-"I LAMPONI"
-],
-[
-"Frutta e verdura",
-"LA PRUGNA"
-],
-[
-"Frutta e verdura",
-"IL MANGO"
-],
-[
-"Frutta e verdura",
-"GLI ASPARAGI"
 ],
 [
 "Frutta e verdura",
@@ -4386,10 +4038,6 @@
 [
 "Frutta e verdura",
 "LE LENTICCHIE"
-],
-[
-"Frutta e verdura",
-"I CECI"
 ],
 [
 "Al supermercato",
@@ -4410,10 +4058,6 @@
 [
 "Al supermercato",
 "LA CASSA AUTOMATICA"
-],
-[
-"Al supermercato",
-"LO SCONTRINO"
 ],
 [
 "Al supermercato",
@@ -4485,15 +4129,7 @@
 ],
 [
 "Bevande",
-"LA CAMOMILLA"
-],
-[
-"Bevande",
 "IL SUCCO DI FRUTTA"
-],
-[
-"Bevande",
-"LA LIMONATA"
 ],
 [
 "Bevande",
@@ -4510,10 +4146,6 @@
 [
 "Bevande",
 "IL LATTE CON IL CACAO"
-],
-[
-"Bevande",
-"LO SPUMANTE"
 ],
 [
 "Bevande",
@@ -4549,10 +4181,6 @@
 ],
 [
 "Formaggi e salumi",
-"LA FONTINA"
-],
-[
-"Formaggi e salumi",
 "LA BURRATA PUGLIESE"
 ],
 [
@@ -4569,27 +4197,11 @@
 ],
 [
 "Formaggi e salumi",
-"LA BRESAOLA"
-],
-[
-"Formaggi e salumi",
-"IL SALAME"
-],
-[
-"Formaggi e salumi",
 "LA PORCHETTA DI ARICCIA"
 ],
 [
 "Formaggi e salumi",
-"LO SPECK"
-],
-[
-"Formaggi e salumi",
 "LA NDUJA CALABRESE"
-],
-[
-"Formaggi e salumi",
-"IL CULATELLO"
 ],
 [
 "Città italiane",
@@ -4606,10 +4218,6 @@
 [
 "Città italiane",
 "TORINO E IL PO"
-],
-[
-"Città italiane",
-"PALERMO"
 ],
 [
 "Città italiane",
@@ -4649,14 +4257,6 @@
 ],
 [
 "Città italiane",
-"ASSISI"
-],
-[
-"Città italiane",
-"SPOLETO"
-],
-[
-"Città italiane",
 "GUBBIO E LA CORSA DEI CERI"
 ],
 [
@@ -4673,43 +4273,7 @@
 ],
 [
 "Città italiane",
-"PARMA"
-],
-[
-"Città italiane",
-"MODENA"
-],
-[
-"Città italiane",
 "RAVENNA E I MOSAICI"
-],
-[
-"Città italiane",
-"RIMINI"
-],
-[
-"Città italiane",
-"ANCONA"
-],
-[
-"Città italiane",
-"URBINO"
-],
-[
-"Città italiane",
-"L'AQUILA"
-],
-[
-"Città italiane",
-"PESCARA"
-],
-[
-"Città italiane",
-"CAGLIARI"
-],
-[
-"Città italiane",
-"SASSARI"
 ],
 [
 "Città italiane",
@@ -4717,15 +4281,7 @@
 ],
 [
 "Città italiane",
-"MATERA"
-],
-[
-"Città italiane",
 "LECCE BAROCCA"
-],
-[
-"Città italiane",
-"TARANTO"
 ],
 [
 "Città italiane",
@@ -4733,63 +4289,7 @@
 ],
 [
 "Città italiane",
-"AGRIGENTO"
-],
-[
-"Città italiane",
-"TRENTO"
-],
-[
-"Città italiane",
-"BOLZANO"
-],
-[
-"Città italiane",
-"AOSTA"
-],
-[
-"Città italiane",
-"COMO"
-],
-[
-"Città italiane",
 "BERGAMO ALTA"
-],
-[
-"Città italiane",
-"BRESCIA"
-],
-[
-"Città italiane",
-"MANTOVA"
-],
-[
-"Città italiane",
-"PADOVA"
-],
-[
-"Città italiane",
-"VICENZA"
-],
-[
-"Città italiane",
-"TREVISO"
-],
-[
-"Città italiane",
-"UDINE"
-],
-[
-"Città italiane",
-"LA SPEZIA"
-],
-[
-"Città italiane",
-"SANREMO"
-],
-[
-"Città italiane",
-"ORVIETO"
 ],
 [
 "Regioni",
@@ -4805,63 +4305,11 @@
 ],
 [
 "Regioni",
-"LA TOSCANA"
-],
-[
-"Regioni",
 "L'UMBRIA CUORE VERDE D'ITALIA"
 ],
 [
 "Regioni",
-"LE MARCHE"
-],
-[
-"Regioni",
-"IL LAZIO"
-],
-[
-"Regioni",
-"L'ABRUZZO"
-],
-[
-"Regioni",
-"IL MOLISE"
-],
-[
-"Regioni",
-"LA CAMPANIA"
-],
-[
-"Regioni",
-"LA PUGLIA"
-],
-[
-"Regioni",
 "LA BASILICATA"
-],
-[
-"Regioni",
-"LA CALABRIA"
-],
-[
-"Regioni",
-"LA SICILIA"
-],
-[
-"Regioni",
-"LA LIGURIA"
-],
-[
-"Regioni",
-"LA LOMBARDIA"
-],
-[
-"Regioni",
-"IL PIEMONTE"
-],
-[
-"Regioni",
-"IL VENETO"
 ],
 [
 "Capitali del mondo",
@@ -4869,83 +4317,7 @@
 ],
 [
 "Capitali del mondo",
-"MADRID"
-],
-[
-"Capitali del mondo",
-"LISBONA"
-],
-[
-"Capitali del mondo",
-"LONDRA"
-],
-[
-"Capitali del mondo",
-"BERLINO"
-],
-[
-"Capitali del mondo",
-"VIENNA"
-],
-[
-"Capitali del mondo",
-"ATENE"
-],
-[
-"Capitali del mondo",
-"AMSTERDAM"
-],
-[
-"Capitali del mondo",
-"BRUXELLES"
-],
-[
-"Capitali del mondo",
-"COPENAGHEN"
-],
-[
-"Capitali del mondo",
-"STOCCOLMA"
-],
-[
-"Capitali del mondo",
-"OSLO"
-],
-[
-"Capitali del mondo",
-"HELSINKI"
-],
-[
-"Capitali del mondo",
-"DUBLINO"
-],
-[
-"Capitali del mondo",
-"PRAGA"
-],
-[
-"Capitali del mondo",
-"BUDAPEST"
-],
-[
-"Capitali del mondo",
-"VARSAVIA"
-],
-[
-"Capitali del mondo",
-"TOKYO"
-],
-[
-"Capitali del mondo",
-"PECHINO"
-],
-[
-"Capitali del mondo",
 "NUOVA DELHI"
-],
-[
-"Capitali del mondo",
-"IL CAIRO"
 ],
 [
 "Capitali del mondo",
@@ -4953,35 +4325,7 @@
 ],
 [
 "Capitali del mondo",
-"WASHINGTON"
-],
-[
-"Capitali del mondo",
-"OTTAWA"
-],
-[
-"Capitali del mondo",
-"CANBERRA"
-],
-[
-"Capitali del mondo",
 "CITTÀ DEL MESSICO"
-],
-[
-"Capitali del mondo",
-"BRASILIA"
-],
-[
-"Capitali del mondo",
-"NAIROBI"
-],
-[
-"Capitali del mondo",
-"BERNA"
-],
-[
-"Capitali del mondo",
-"LUBIANA"
 ],
 [
 "Supereroi e fumetti",
@@ -5010,10 +4354,6 @@
 [
 "Supereroi e fumetti",
 "THOR E IL MARTELLO"
-],
-[
-"Supereroi e fumetti",
-"GLI AVENGERS"
 ],
 [
 "Supereroi e fumetti",
@@ -5058,10 +4398,6 @@
 [
 "Supereroi e fumetti",
 "LUPO ALBERTO"
-],
-[
-"Supereroi e fumetti",
-"PAPERINIK"
 ],
 [
 "Supereroi e fumetti",
@@ -5121,10 +4457,6 @@
 ],
 [
 "Nello spazio",
-"L'ASTRONAVE"
-],
-[
-"Nello spazio",
 "LA TUTA SPAZIALE"
 ],
 [
@@ -5181,15 +4513,7 @@
 ],
 [
 "Nello spazio",
-"LA GALASSIA"
-],
-[
-"Nello spazio",
 "IL BIG BANG"
-],
-[
-"Nello spazio",
-"L'ASTEROIDE"
 ],
 [
 "Nello spazio",
@@ -5256,15 +4580,15 @@
 "NARCISO E IL SUO RIFLESSO"
 ],
 [
-"Mitologia",
+"La Bibbia",
 "L'ARCA DI NOÈ"
 ],
 [
-"Mitologia",
+"La Bibbia",
 "DAVIDE E GOLIA"
 ],
 [
-"Mitologia",
+"La Bibbia",
 "LA TORRE DI BABELE"
 ],
 [
@@ -5445,18 +4769,6 @@
 ],
 [
 "In fattoria",
-"L'ASINELLO"
-],
-[
-"In fattoria",
-"LA CAPRETTA"
-],
-[
-"In fattoria",
-"IL FIENILE"
-],
-[
-"In fattoria",
 "IL CANE PASTORE"
 ],
 [
@@ -5465,35 +4777,15 @@
 ],
 [
 "In fattoria",
-"LA MUNGITURA"
-],
-[
-"In fattoria",
 "L'OCA GIULIVA"
-],
-[
-"In fattoria",
-"IL TACCHINO"
-],
-[
-"In fattoria",
-"LA VENDEMMIA"
 ],
 [
 "In fattoria",
 "LA RACCOLTA DELLE OLIVE"
 ],
 [
-"In fattoria",
-"IL FRANTOIO"
-],
-[
 "In giardino",
 "IL PRATO ALL'INGLESE"
-],
-[
-"In giardino",
-"IL TOSAERBA"
 ],
 [
 "In giardino",
@@ -5502,10 +4794,6 @@
 [
 "In giardino",
 "LA SIEPE DI ALLORO"
-],
-[
-"In giardino",
-"IL GAZEBO"
 ],
 [
 "In giardino",
@@ -5541,19 +4829,7 @@
 ],
 [
 "Insetti",
-"LA LUCCIOLA"
-],
-[
-"Insetti",
-"LA LIBELLULA"
-],
-[
-"Insetti",
 "LA ZANZARA TIGRE"
-],
-[
-"Insetti",
-"IL CALABRONE"
 ],
 [
 "Insetti",
@@ -5561,19 +4837,7 @@
 ],
 [
 "Insetti",
-"LO SCARABEO"
-],
-[
-"Insetti",
 "LA MANTIDE RELIGIOSA"
-],
-[
-"Insetti",
-"L'ALVEARE"
-],
-[
-"Insetti",
-"IL FORMICAIO"
 ],
 [
 "Uccelli",
@@ -5581,23 +4845,7 @@
 ],
 [
 "Uccelli",
-"IL PICCHIO"
-],
-[
-"Uccelli",
 "IL CIGNO BIANCO"
-],
-[
-"Uccelli",
-"IL GABBIANO"
-],
-[
-"Uccelli",
-"LA RONDINE"
-],
-[
-"Uccelli",
-"IL COLIBRÌ"
 ],
 [
 "Uccelli",
@@ -5609,19 +4857,7 @@
 ],
 [
 "Uccelli",
-"LA CIVETTA"
-],
-[
-"Uccelli",
 "IL CANARINO GIALLO"
-],
-[
-"Uccelli",
-"IL TUCANO"
-],
-[
-"Uccelli",
-"LO STRUZZO"
 ],
 [
 "Uccelli",
@@ -5641,27 +4877,7 @@
 ],
 [
 "Fiori e piante",
-"LA VIOLETTA"
-],
-[
-"Fiori e piante",
 "IL GIGLIO BIANCO"
-],
-[
-"Fiori e piante",
-"L'ORCHIDEA"
-],
-[
-"Fiori e piante",
-"LA LAVANDA"
-],
-[
-"Fiori e piante",
-"IL GELSOMINO"
-],
-[
-"Fiori e piante",
-"IL CACTUS"
 ],
 [
 "Fiori e piante",
@@ -5673,15 +4889,7 @@
 ],
 [
 "Fiori e piante",
-"IL BONSAI"
-],
-[
-"Fiori e piante",
 "IL PINO MARITTIMO"
-],
-[
-"Fiori e piante",
-"L'ULIVO"
 ],
 [
 "Fiori e piante",
@@ -5689,31 +4897,7 @@
 ],
 [
 "Fiori e piante",
-"LA BETULLA"
-],
-[
-"Fiori e piante",
-"L'ABETE"
-],
-[
-"Fiori e piante",
-"LA PALMA"
-],
-[
-"Fiori e piante",
-"IL BAOBAB"
-],
-[
-"Fiori e piante",
 "LA SEQUOIA GIGANTE"
-],
-[
-"Fiori e piante",
-"IL CIPRESSO"
-],
-[
-"Fiori e piante",
-"LA MIMOSA"
 ],
 [
 "Vita di tutti i giorni",
@@ -5825,19 +5009,7 @@
 ],
 [
 "Saluti e frasi gentili",
-"GRAZIE MILLE"
-],
-[
-"Saluti e frasi gentili",
-"PER FAVORE"
-],
-[
-"Saluti e frasi gentili",
 "SCUSA IL RITARDO"
-],
-[
-"Saluti e frasi gentili",
-"A PRESTO"
 ],
 [
 "Saluti e frasi gentili",
@@ -5846,10 +5018,6 @@
 [
 "Saluti e frasi gentili",
 "BUON APPETITO"
-],
-[
-"Saluti e frasi gentili",
-"SALUTE"
 ],
 [
 "Saluti e frasi gentili",
@@ -5869,19 +5037,11 @@
 ],
 [
 "Saluti e frasi gentili",
-"BENVENUTI"
-],
-[
-"Saluti e frasi gentili",
 "TI VOGLIO BENE"
 ],
 [
 "Saluti e frasi gentili",
 "BUONA DOMENICA"
-],
-[
-"Saluti e frasi gentili",
-"CIN CIN"
 ],
 [
 "Emozioni",
@@ -5910,30 +5070,6 @@
 [
 "Emozioni",
 "LA NOSTALGIA DI CASA"
-],
-[
-"Emozioni",
-"LA GELOSIA"
-],
-[
-"Emozioni",
-"LA CURIOSITÀ"
-],
-[
-"Emozioni",
-"LA SORPRESA"
-],
-[
-"Emozioni",
-"LA TIMIDEZZA"
-],
-[
-"Emozioni",
-"LA PAZIENZA"
-],
-[
-"Emozioni",
-"LA FELICITÀ"
 ],
 [
 "Emozioni",
@@ -5989,14 +5125,6 @@
 ],
 [
 "Il tempo atmosferico",
-"IL TORNADO"
-],
-[
-"Il tempo atmosferico",
-"L'URAGANO"
-],
-[
-"Il tempo atmosferico",
 "LE POZZANGHERE"
 ],
 [
@@ -6045,10 +5173,6 @@
 ],
 [
 "Colori",
-"ARANCIONE"
-],
-[
-"Colori",
 "MARRONE CIOCCOLATO"
 ],
 [
@@ -6085,18 +5209,6 @@
 ],
 [
 "Tecnologia",
-"IL SELFIE"
-],
-[
-"Tecnologia",
-"LA STAMPANTE"
-],
-[
-"Tecnologia",
-"IL TABLET"
-],
-[
-"Tecnologia",
 "LA CHIAVETTA USB"
 ],
 [
@@ -6113,14 +5225,6 @@
 ],
 [
 "Tecnologia",
-"IL DRONE"
-],
-[
-"Tecnologia",
-"IL ROBOT"
-],
-[
-"Tecnologia",
 "LA REALTÀ VIRTUALE"
 ],
 [
@@ -6134,10 +5238,6 @@
 [
 "In automobile",
 "LA PATENTE DI GUIDA"
-],
-[
-"In automobile",
-"IL VOLANTE"
 ],
 [
 "In automobile",
@@ -6169,10 +5269,6 @@
 ],
 [
 "In automobile",
-"IL CLACSON"
-],
-[
-"In automobile",
 "LA RETROMARCIA"
 ],
 [
@@ -6182,10 +5278,6 @@
 [
 "In automobile",
 "LA MACCHINA ELETTRICA"
-],
-[
-"In automobile",
-"LA ROTONDA"
 ],
 [
 "In automobile",
@@ -6209,10 +5301,6 @@
 ],
 [
 "In ufficio",
-"LA GRAFFETTA"
-],
-[
-"In ufficio",
 "L'AGENDA DEGLI APPUNTAMENTI"
 ],
 [
@@ -6230,14 +5318,6 @@
 [
 "In ufficio",
 "IL CAPO REPARTO"
-],
-[
-"In ufficio",
-"LE FERIE ESTIVE"
-],
-[
-"In ufficio",
-"LO STIPENDIO"
 ],
 [
 "In ufficio",
@@ -6281,10 +5361,6 @@
 ],
 [
 "Matematica",
-"LE FRAZIONI"
-],
-[
-"Matematica",
 "LA CALCOLATRICE"
 ],
 [
@@ -6294,14 +5370,6 @@
 [
 "Matematica",
 "IL GONIOMETRO"
-],
-[
-"Matematica",
-"IL COMPASSO"
-],
-[
-"Matematica",
-"IL MILIONE"
 ],
 [
 "Matematica",
@@ -6321,14 +5389,6 @@
 ],
 [
 "Grammatica",
-"LA VIRGOLA"
-],
-[
-"Grammatica",
-"L'ALFABETO"
-],
-[
-"Grammatica",
 "IL VOCABOLARIO"
 ],
 [
@@ -6345,15 +5405,7 @@
 ],
 [
 "Grammatica",
-"LA DOPPIA"
-],
-[
-"Grammatica",
 "LA LETTERA MAIUSCOLA"
-],
-[
-"Geografia",
-"L'EQUATORE"
 ],
 [
 "Geografia",
@@ -6362,10 +5414,6 @@
 [
 "Geografia",
 "LA PENISOLA ITALIANA"
-],
-[
-"Geografia",
-"LO STIVALE"
 ],
 [
 "Geografia",
@@ -6397,15 +5445,7 @@
 ],
 [
 "Geografia",
-"L'ANTARTIDE"
-],
-[
-"Geografia",
 "I CINQUE CONTINENTI"
-],
-[
-"Geografia",
-"L'ARCIPELAGO"
 ],
 [
 "Geografia",
@@ -6825,10 +5865,6 @@
 ],
 [
 "Modo di dire",
-"IL GIOCO DEL SILENZIO"
-],
-[
-"Modo di dire",
 "UN PEZZO DA NOVANTA"
 ],
 [
@@ -6858,10 +5894,6 @@
 [
 "Modo di dire",
 "UN TUFFO AL CUORE"
-],
-[
-"Modo di dire",
-"L'ALBA DI UN NUOVO GIORNO"
 ],
 [
 "Stagioni e mesi",
@@ -6945,23 +5977,7 @@
 ],
 [
 "Opera lirica",
-"LA TRAVIATA"
-],
-[
-"Opera lirica",
 "AIDA DI GIUSEPPE VERDI"
-],
-[
-"Opera lirica",
-"IL RIGOLETTO"
-],
-[
-"Opera lirica",
-"LA BOHÈME"
-],
-[
-"Opera lirica",
-"TOSCA"
 ],
 [
 "Opera lirica",
@@ -6973,27 +5989,11 @@
 ],
 [
 "Opera lirica",
-"NABUCCO"
-],
-[
-"Opera lirica",
 "LE NOZZE DI FIGARO"
 ],
 [
 "Opera lirica",
 "IL FLAUTO MAGICO"
-],
-[
-"Opera lirica",
-"LA CARMEN"
-],
-[
-"Opera lirica",
-"TURANDOT"
-],
-[
-"Invenzioni",
-"LA RUOTA"
 ],
 [
 "Invenzioni",
@@ -7029,15 +6029,7 @@
 ],
 [
 "Invenzioni",
-"IL TELEGRAFO"
-],
-[
-"Invenzioni",
 "LA PENICILLINA"
-],
-[
-"Invenzioni",
-"IL VACCINO"
 ],
 [
 "Invenzioni",
@@ -7050,10 +6042,6 @@
 [
 "Invenzioni",
 "L'OROLOGIO A PENDOLO"
-],
-[
-"Invenzioni",
-"LA CARTA"
 ],
 [
 "Invenzioni",
@@ -7081,14 +6069,6 @@
 ],
 [
 "Personaggi famosi",
-"GIOTTO"
-],
-[
-"Personaggi famosi",
-"CARAVAGGIO"
-],
-[
-"Personaggi famosi",
 "GIAN LORENZO BERNINI"
 ],
 [
@@ -7106,10 +6086,6 @@
 [
 "Personaggi famosi",
 "ENRICO CARUSO"
-],
-[
-"Personaggi famosi",
-"TOTÒ"
 ],
 [
 "Personaggi famosi",
@@ -7134,10 +6110,6 @@
 [
 "Personaggi famosi",
 "AUGUSTO IMPERATORE"
-],
-[
-"Personaggi famosi",
-"NERONE"
 ],
 [
 "Personaggi famosi",
@@ -7197,10 +6169,6 @@
 ],
 [
 "Personaggi famosi",
-"I BEATLES"
-],
-[
-"Personaggi famosi",
 "JOHANN SEBASTIAN BACH"
 ],
 [
@@ -7224,11 +6192,11 @@
 "AGATHA CHRISTIE"
 ],
 [
-"Personaggi famosi",
+"Personaggi di fantasia",
 "SHERLOCK HOLMES"
 ],
 [
-"Personaggi famosi",
+"Personaggi di fantasia",
 "IL COMMISSARIO MONTALBANO"
 ],
 [
@@ -7249,10 +6217,6 @@
 ],
 [
 "Personaggi famosi",
-"PELÉ"
-],
-[
-"Personaggi famosi",
 "ROBERTO BAGGIO"
 ],
 [
@@ -7261,19 +6225,7 @@
 ],
 [
 "Film",
-"TITANIC"
-],
-[
-"Film",
-"AVATAR"
-],
-[
-"Film",
 "IL MONDO DI NARNIA"
-],
-[
-"Film",
-"LO HOBBIT"
 ],
 [
 "Film",
@@ -7297,19 +6249,7 @@
 ],
 [
 "Film",
-"I GOONIES"
-],
-[
-"Film",
 "KARATE KID"
-],
-[
-"Film",
-"ROCKY"
-],
-[
-"Film",
-"GREASE"
 ],
 [
 "Film",
@@ -7337,10 +6277,6 @@
 ],
 [
 "Film",
-"IL POSTINO"
-],
-[
-"Film",
 "PANE E TULIPANI"
 ],
 [
@@ -7350,10 +6286,6 @@
 [
 "Film",
 "C'ERA UNA VOLTA IN AMERICA"
-],
-[
-"Film",
-"IL SORPASSO"
 ],
 [
 "Film",
@@ -7369,15 +6301,7 @@
 ],
 [
 "Film",
-"SPIDERMAN"
-],
-[
-"Film",
 "BATMAN IL CAVALIERE OSCURO"
-],
-[
-"Film",
-"MATRIX"
 ],
 [
 "Film",
@@ -7385,35 +6309,7 @@
 ],
 [
 "Film",
-"UP"
-],
-[
-"Film",
-"SOUL"
-],
-[
-"Film",
-"LUCA"
-],
-[
-"Film",
-"IL GRINCH"
-],
-[
-"Film",
-"PADDINGTON"
-],
-[
-"Film",
 "BABE MAIALINO CORAGGIOSO"
-],
-[
-"Film",
-"FLUBBER"
-],
-[
-"Film",
-"JUMANJI"
 ],
 [
 "Cartoni animati",
@@ -7425,23 +6321,7 @@
 ],
 [
 "Cartoni animati",
-"POCAHONTAS"
-],
-[
-"Cartoni animati",
-"HERCULES"
-],
-[
-"Cartoni animati",
-"TARZAN"
-],
-[
-"Cartoni animati",
 "LILO E STITCH"
-],
-[
-"Cartoni animati",
-"RIO"
 ],
 [
 "Cartoni animati",
@@ -7465,22 +6345,6 @@
 ],
 [
 "Cartoni animati",
-"WISH"
-],
-[
-"Cartoni animati",
-"ELEMENTAL"
-],
-[
-"Cartoni animati",
-"ONWARD"
-],
-[
-"Cartoni animati",
-"SING"
-],
-[
-"Cartoni animati",
 "PETS VITA DA ANIMALI"
 ],
 [
@@ -7489,15 +6353,7 @@
 ],
 [
 "Cartoni animati",
-"PIMPA"
-],
-[
-"Cartoni animati",
 "LA FAMIGLIA ADDAMS"
-],
-[
-"Cartoni animati",
-"BARBAPAPÀ"
 ],
 [
 "Cartoni animati",
@@ -7526,10 +6382,6 @@
 [
 "Cartoni animati",
 "LA PANTERA ROSA"
-],
-[
-"Cartoni animati",
-"BARBIE"
 ],
 [
 "Cartoni animati",
@@ -7709,10 +6561,6 @@
 ],
 [
 "Cucina regionale",
-"LA CASSOEULA"
-],
-[
-"Cucina regionale",
 "IL BOLLITO MISTO"
 ],
 [
@@ -7761,14 +6609,6 @@
 ],
 [
 "Hobby",
-"L'UNCINETTO"
-],
-[
-"Hobby",
-"IL BRICOLAGE"
-],
-[
-"Hobby",
 "LA PESCA SUL LAGO"
 ],
 [
@@ -7794,18 +6634,6 @@
 [
 "Hobby",
 "IL CRUCIVERBA"
-],
-[
-"Hobby",
-"IL SUDOKU"
-],
-[
-"Hobby",
-"L'ORIGAMI"
-],
-[
-"Hobby",
-"IL TREKKING"
 ],
 [
 "Hobby",
@@ -7937,10 +6765,6 @@
 ],
 [
 "Sport",
-"IL CURLING"
-],
-[
-"Sport",
 "L'HOCKEY SU GHIACCIO"
 ],
 [
@@ -7953,23 +6777,7 @@
 ],
 [
 "Sport",
-"IL PUGILATO"
-],
-[
-"Sport",
 "LA LOTTA LIBERA"
-],
-[
-"Sport",
-"IL JUDO"
-],
-[
-"Sport",
-"IL BADMINTON"
-],
-[
-"Sport",
-"IL PADEL"
 ],
 [
 "Giochi",
@@ -7978,10 +6786,6 @@
 [
 "Giochi",
 "IL TELEFONO SENZA FILI"
-],
-[
-"Giochi",
-"STRAPPAPELO"
 ],
 [
 "Giochi",
@@ -8013,10 +6817,6 @@
 ],
 [
 "Giochi",
-"LA TROTTOLA"
-],
-[
-"Giochi",
 "IL CAVALLO A DONDOLO"
 ],
 [
@@ -8033,35 +6833,11 @@
 ],
 [
 "Giochi",
-"IL MEMORY"
-],
-[
-"Giochi",
-"L'IMPICCATO"
-],
-[
-"Giochi",
 "LA BATTAGLIA NAVALE"
 ],
 [
 "Giochi",
-"IL TRIS"
-],
-[
-"Giochi",
 "INDOVINA CHI"
-],
-[
-"Giochi",
-"LO SHANGAI"
-],
-[
-"Giochi",
-"IL RISIKO"
-],
-[
-"Giochi",
-"IL CLUEDO"
 ],
 [
 "Casa",
@@ -8069,35 +6845,7 @@
 ],
 [
 "Casa",
-"IL SALOTTO"
-],
-[
-"Casa",
-"LA SOFFITTA"
-],
-[
-"Casa",
-"LA CANTINA"
-],
-[
-"Casa",
-"IL GARAGE"
-],
-[
-"Casa",
 "IL BALCONE FIORITO"
-],
-[
-"Casa",
-"LA TERRAZZA"
-],
-[
-"Casa",
-"LE SCALE"
-],
-[
-"Casa",
-"L'ASCENSORE"
 ],
 [
 "Casa",
@@ -8129,10 +6877,6 @@
 ],
 [
 "Casa",
-"IL TRASLOCO"
-],
-[
-"Casa",
 "LA CASA AL MARE"
 ],
 [
@@ -8146,5 +6890,1853 @@
 [
 "Nazioni",
 "LA REPUBBLICA DI SAN MARINO"
+],
+[
+"Modo di dire",
+"CERCARE UN AGO NEL PAGLIAIO A OCCHI CHIUSI"
+],
+[
+"Modo di dire",
+"FARE BUON VISO A CATTIVO GIOCO"
+],
+[
+"Modo di dire",
+"PRENDERE UN ABBAGLIO CLAMOROSO"
+],
+[
+"Modo di dire",
+"ENTRARCI COME IL CAVOLO A MERENDA"
+],
+[
+"Modo di dire",
+"NON AVERE NÉ ARTE NÉ PARTE"
+],
+[
+"Modo di dire",
+"CAMMINARE SUL FILO DEL RASOIO"
+],
+[
+"Modo di dire",
+"ANDARE A CARTE QUARANTOTTO"
+],
+[
+"Modo di dire",
+"STARE COME UN TOPO NEL FORMAGGIO"
+],
+[
+"Modo di dire",
+"PIANTARE IN ASSO QUALCUNO"
+],
+[
+"Modo di dire",
+"CADERE DALLA PADELLA NELLA BRACE"
+],
+[
+"Modo di dire",
+"ESSERE NATO CON LA CAMICIA"
+],
+[
+"Modo di dire",
+"AVERE LE MANI IN PASTA DAPPERTUTTO"
+],
+[
+"Modo di dire",
+"FARSI UN BAFFO DI TUTTO"
+],
+[
+"Modo di dire",
+"PARLARE A VANVERA SENZA PENSARE"
+],
+[
+"Modo di dire",
+"ANDARE IN VISIBILIO PER UN CONCERTO"
+],
+[
+"Modo di dire",
+"SBARCARE IL LUNARIO CON FATICA"
+],
+[
+"Modo di dire",
+"TIRARE ACQUA AL PROPRIO MULINO"
+],
+[
+"Modo di dire",
+"AVERE IL BERNOCCOLO DEGLI AFFARI"
+],
+[
+"Modo di dire",
+"UNA BELLA GATTA DA PELARE"
+],
+[
+"Modo di dire",
+"PRENDERE FISCHI PER FIASCHI"
+],
+[
+"Modo di dire",
+"FINIRE IN UN VICOLO CIECO"
+],
+[
+"Modo di dire",
+"PARLARE A RUOTA LIBERA"
+],
+[
+"Modo di dire",
+"FARE IL GIOCO DELLE TRE CARTE"
+],
+[
+"Modo di dire",
+"ALZARE BANDIERA BIANCA"
+],
+[
+"Modo di dire",
+"FARE CARTE FALSE PUR DI RIUSCIRCI"
+],
+[
+"Modo di dire",
+"PERDERE LE STAFFE PER UN NONNULLA"
+],
+[
+"Modo di dire",
+"RIMANERE CON UN PALMO DI NASO"
+],
+[
+"Modo di dire",
+"MANGIARE A QUATTRO PALMENTI"
+],
+[
+"Modo di dire",
+"TROVARE IL BANDOLO DELLA MATASSA"
+],
+[
+"Modo di dire",
+"ESSERE ORMAI AGLI SGOCCIOLI"
+],
+[
+"Modo di dire",
+"RIDI RIDI CHE LA MAMMA HA FATTO GLI GNOCCHI"
+],
+[
+"Modo di dire",
+"AVERE LA COSCIENZA SPORCA"
+],
+[
+"Modo di dire",
+"FARE UN BUCO NELL'ACQUA DOPO L'ALTRO"
+],
+[
+"Modo di dire",
+"NON SAPERE PIÙ CHE PESCI PRENDERE"
+],
+[
+"Modo di dire",
+"ESSERE IL FANALINO DI CODA"
+],
+[
+"Modo di dire",
+"PORTARE ACQUA AL MARE"
+],
+[
+"Modo di dire",
+"DARE UN COLPO AL CERCHIO E UNO ALLA BOTTE"
+],
+[
+"Modo di dire",
+"FARE LA PARTE DEL LEONE"
+],
+[
+"Modo di dire",
+"ANDARE A FAGIOLO A TUTTI"
+],
+[
+"Modo di dire",
+"CHIUDERE UN OCCHIO SULLE MARACHELLE"
+],
+[
+"Modo di dire",
+"INDORARE LA PILLOLA"
+],
+[
+"Modo di dire",
+"AVERE UNO SCHELETRO NELL'ARMADIO"
+],
+[
+"Modo di dire",
+"METTERE I PUNTINI SULLE I"
+],
+[
+"Modo di dire",
+"ANDARE CON I PIEDI DI PIOMBO"
+],
+[
+"Proverbio",
+"CHI NON HA TESTA ABBIA GAMBE"
+],
+[
+"Proverbio",
+"IL BUE DICE CORNUTO ALL'ASINO"
+],
+[
+"Proverbio",
+"CHI ROMPE PAGA E I COCCI SONO SUOI"
+],
+[
+"Proverbio",
+"QUANDO LA PERA È MATURA CASCA DA SÉ"
+],
+[
+"Proverbio",
+"CHI SI SCUSA SI ACCUSA"
+],
+[
+"Proverbio",
+"IL GIOCO È BELLO QUANDO DURA POCO"
+],
+[
+"Proverbio",
+"I PANNI SPORCHI SI LAVANO IN FAMIGLIA"
+],
+[
+"Proverbio",
+"OGNI MEDAGLIA HA IL SUO ROVESCIO"
+],
+[
+"Proverbio",
+"CHI TARDI ARRIVA MALE ALLOGGIA"
+],
+[
+"Proverbio",
+"CHI DI SPERANZA VIVE DISPERATO MUORE"
+],
+[
+"Proverbio",
+"LA LINGUA BATTE DOVE IL DENTE DUOLE"
+],
+[
+"Proverbio",
+"CASA MIA CASA MIA PER PICCINA CHE TU SIA"
+],
+[
+"Proverbio",
+"ANCHE L'OCCHIO VUOLE LA SUA PARTE"
+],
+[
+"Proverbio",
+"CHI SI FA I FATTI SUOI CAMPA CENT'ANNI"
+],
+[
+"Proverbio",
+"NON SI PUÒ CANTARE E PORTARE LA CROCE"
+],
+[
+"Proverbio",
+"CHI HA AVUTO HA AVUTO CHI HA DATO HA DATO"
+],
+[
+"Proverbio",
+"LA GATTA FRETTOLOSA FA I GATTINI CIECHI"
+],
+[
+"Proverbio",
+"CHI MANGIA SOLO CREPA SOLO"
+],
+[
+"Proverbio",
+"CHI LASCIA LA STRADA VECCHIA PER LA NUOVA"
+],
+[
+"Proverbio",
+"SE SON ROSE FIORIRANNO E SE SON SPINE PUNGERANNO"
+],
+[
+"Proverbio",
+"CHI DISPREZZA COMPRA E CHI LODA VENDE"
+],
+[
+"Proverbio",
+"AL CONTADINO NON FAR SAPERE"
+],
+[
+"Proverbio",
+"LA FAME CACCIA IL LUPO DAL BOSCO"
+],
+[
+"Proverbio",
+"DEI GUSTI NON SI DISCUTE"
+],
+[
+"Parole difficili",
+"UN APPROCCIO EMPIRICO PER UN BANCHETTO LUCULLIANO"
+],
+[
+"Parole difficili",
+"UN DISCORSO PROLISSO E ALTISONANTE"
+],
+[
+"Parole difficili",
+"LA SERENDIPITÀ DELLE SCOPERTE SCIENTIFICHE"
+],
+[
+"Parole difficili",
+"UN LAVORO DI PAZIENZA CERTOSINA"
+],
+[
+"Parole difficili",
+"UN ERUDITO DALLA MEMORIA PRODIGIOSA"
+],
+[
+"Parole difficili",
+"L'ARGUZIA DI UN VECCHIO CANTASTORIE"
+],
+[
+"Parole difficili",
+"UNA CONVERSAZIONE GARBATA E FORBITA"
+],
+[
+"Parole difficili",
+"UN CAVILLO BUROCRATICO INSORMONTABILE"
+],
+[
+"Parole difficili",
+"L'ETIMOLOGIA DI UNA PAROLA ANTICA"
+],
+[
+"Parole difficili",
+"UNA PERIFRASI ARZIGOGOLATA"
+],
+[
+"Parole difficili",
+"L'IPERBOLE DI UN TIFOSO ENTUSIASTA"
+],
+[
+"Parole difficili",
+"UN OSSIMORO COME GHIACCIO BOLLENTE"
+],
+[
+"Parole difficili",
+"IL PANEGIRICO DEL SINDACO USCENTE"
+],
+[
+"Parole difficili",
+"LA MAGNANIMITÀ DEL VINCITORE"
+],
+[
+"Parole difficili",
+"UNA SCHERMAGLIA DIALETTICA BRILLANTE"
+],
+[
+"Parole difficili",
+"UN PIGLIO DECISO E AUTOREVOLE"
+],
+[
+"Parole difficili",
+"LA PROSOPOPEA DEL SAPIENTONE"
+],
+[
+"Parole difficili",
+"LO ZIBALDONE DI PENSIERI SPARSI"
+],
+[
+"Parole difficili",
+"UN GUAZZABUGLIO DI IDEE CONFUSE"
+],
+[
+"Parole difficili",
+"LA PEDANTERIA DEL CORRETTORE DI BOZZE"
+],
+[
+"Parole difficili",
+"UNA LUNGA DISQUISIZIONE FILOSOFICA"
+],
+[
+"Parole difficili",
+"UN PANDEMONIO DI VOCI E SCHIAMAZZI"
+],
+[
+"Parole difficili",
+"L'IRRUENZA DI UN CUCCIOLO DI LABRADOR"
+],
+[
+"Parole difficili",
+"UNO SPROLOQUIO SENZA CAPO NÉ CODA"
+],
+[
+"Parole difficili",
+"UN COACERVO DI CONTRADDIZIONI"
+],
+[
+"Scienza e natura",
+"LA METAMORFOSI NOTTURNA DEI LEPIDOTTERI"
+],
+[
+"Scienza e natura",
+"LA FOTOSINTESI CLOROFILLIANA DELLE FOGLIE"
+],
+[
+"Scienza e natura",
+"IL LETARGO INVERNALE DEL GHIRO"
+],
+[
+"Scienza e natura",
+"LE STALATTITI DI UNA GROTTA CARSICA"
+],
+[
+"Scienza e natura",
+"LA DERIVA DEI CONTINENTI"
+],
+[
+"Scienza e natura",
+"LA DOPPIA ELICA DEL DNA"
+],
+[
+"Scienza e natura",
+"LA SCOPERTA DEL BOSONE DI HIGGS"
+],
+[
+"Scienza e natura",
+"LA TEORIA DELLA RELATIVITÀ DI EINSTEIN"
+],
+[
+"Scienza e natura",
+"LA SIMBIOSI TRA PESCE PAGLIACCIO E ANEMONE"
+],
+[
+"Scienza e natura",
+"IL MIMETISMO DEL CAMALEONTE"
+],
+[
+"Scienza e natura",
+"LO SCIOGLIMENTO DEI GHIACCIAI ALPINI"
+],
+[
+"Scienza e natura",
+"LA PIOGGIA DI METEORE DI SAN LORENZO"
+],
+[
+"Scienza e natura",
+"I RIFLESSI CANGIANTI DELLA MADREPERLA"
+],
+[
+"Scienza e natura",
+"LA SPIRALE PERFETTA DEL NAUTILUS"
+],
+[
+"Scienza e natura",
+"L'ESPLOSIONE DI UNA SUPERNOVA"
+],
+[
+"Scienza e natura",
+"IL PRINCIPIO DI ARCHIMEDE NELLA VASCA"
+],
+[
+"Scienza e natura",
+"LA LEGGE DI GRAVITAZIONE UNIVERSALE"
+],
+[
+"Scienza e natura",
+"LA VELOCITÀ DEL SUONO NELL'ARIA"
+],
+[
+"Scienza e natura",
+"LA CATENA ALIMENTARE DELLA SAVANA"
+],
+[
+"Scienza e natura",
+"L'EVAPORAZIONE DELL'ACQUA DEI MARI"
+],
+[
+"Scienza e natura",
+"IL GEYSER CHE SPRUZZA ACQUA BOLLENTE"
+],
+[
+"Scienza e natura",
+"LA RIFRAZIONE DELLA LUCE NEL PRISMA"
+],
+[
+"Scienza e natura",
+"I CERCHI DI ACCRESCIMENTO DEL TRONCO"
+],
+[
+"Scienza e natura",
+"LE SPORE DEI FUNGHI NEL SOTTOBOSCO"
+],
+[
+"Scienza e natura",
+"IL PAPÀ CAVALLUCCIO MARINO PORTA LE UOVA"
+],
+[
+"Arte e spettacolo",
+"RIFLETTORI PUNTATI SUL DEBUTTO TEATRALE"
+],
+[
+"Arte e spettacolo",
+"IL SIPARIO SI ALZA SUL PRIMO ATTO"
+],
+[
+"Arte e spettacolo",
+"UN APPLAUSO SCROSCIANTE A FINE CONCERTO"
+],
+[
+"Arte e spettacolo",
+"LA PRIMA DELLA SCALA A SANT'AMBROGIO"
+],
+[
+"Arte e spettacolo",
+"IL TAPPETO ROSSO DELLA MOSTRA DEL CINEMA"
+],
+[
+"Arte e spettacolo",
+"UN ASSOLO DI VIOLINO STRUGGENTE"
+],
+[
+"Arte e spettacolo",
+"IL MONOLOGO DI AMLETO CON IL TESCHIO"
+],
+[
+"Arte e spettacolo",
+"LA COREOGRAFIA DEL LAGO DEI CIGNI"
+],
+[
+"Arte e spettacolo",
+"UNA SCENOGRAFIA MOZZAFIATO"
+],
+[
+"Arte e spettacolo",
+"IL BIS RICHIESTO DAL PUBBLICO IN DELIRIO"
+],
+[
+"Arte e spettacolo",
+"LE PROVE GENERALI DELLA COMMEDIA"
+],
+[
+"Arte e spettacolo",
+"IL DIETRO LE QUINTE DI UNA SFILATA"
+],
+[
+"Arte e spettacolo",
+"IL CONCERTO DI CAPODANNO A VIENNA"
+],
+[
+"Arte e spettacolo",
+"L'ORCHESTRA ACCORDA GLI STRUMENTI"
+],
+[
+"Arte e spettacolo",
+"LA COMMEDIA DELL'ARTE E LE SUE MASCHERE"
+],
+[
+"Arte e spettacolo",
+"IL CHIAROSCURO DI CARAVAGGIO"
+],
+[
+"Arte e spettacolo",
+"LA PROSPETTIVA DI PIERO DELLA FRANCESCA"
+],
+[
+"Arte e spettacolo",
+"GLI AFFRESCHI DI GIOTTO AD ASSISI"
+],
+[
+"Arte e spettacolo",
+"I MOSAICI BIZANTINI DI RAVENNA"
+],
+[
+"Arte e spettacolo",
+"LA STATUA EQUESTRE DI MARCO AURELIO"
+],
+[
+"Arte e spettacolo",
+"IL TENORE CHE CANTA NESSUN DORMA"
+],
+[
+"Arte e spettacolo",
+"UN'OVAZIONE IN PIEDI DEL PUBBLICO"
+],
+[
+"Arte e spettacolo",
+"IL GOLFO MISTICO DEL TEATRO DELL'OPERA"
+],
+[
+"Arte e spettacolo",
+"IL SUGGERITORE NASCOSTO NELLA BUCA"
+],
+[
+"Umbria e tradizioni",
+"IL PROFUMO DEL TARTUFO NERO TRA I BOSCHI"
+],
+[
+"Umbria e tradizioni",
+"LA CORSA DEI CERI PER LE VIE DI GUBBIO"
+],
+[
+"Umbria e tradizioni",
+"IL FESTIVAL DEI DUE MONDI DI SPOLETO"
+],
+[
+"Umbria e tradizioni",
+"UMBRIA JAZZ NELLE PIAZZE DI PERUGIA"
+],
+[
+"Umbria e tradizioni",
+"LE LENTICCHIE DI CASTELLUCCIO DI NORCIA"
+],
+[
+"Umbria e tradizioni",
+"LA FIORITURA SUL PIAN GRANDE"
+],
+[
+"Umbria e tradizioni",
+"IL SAGRANTINO DI MONTEFALCO"
+],
+[
+"Umbria e tradizioni",
+"LA GIOSTRA DELLA QUINTANA DI FOLIGNO"
+],
+[
+"Umbria e tradizioni",
+"IL CALENDIMAGGIO DI ASSISI"
+],
+[
+"Umbria e tradizioni",
+"IL POZZO DI SAN PATRIZIO A ORVIETO"
+],
+[
+"Umbria e tradizioni",
+"L'ISOLA MAGGIORE DEL TRASIMENO"
+],
+[
+"Umbria e tradizioni",
+"I SOTTERRANEI DELLA ROCCA PAOLINA"
+],
+[
+"Umbria e tradizioni",
+"L'ACQUEDOTTO MEDIEVALE DI PERUGIA"
+],
+[
+"Umbria e tradizioni",
+"LE INFIORATE DEL CORPUS DOMINI DI SPELLO"
+],
+[
+"Umbria e tradizioni",
+"IL PALIO DELLA BALESTRA DI GUBBIO"
+],
+[
+"Umbria e tradizioni",
+"LA TORTA AL TESTO CON IL PROSCIUTTO"
+],
+[
+"Umbria e tradizioni",
+"LA FESTA DELLA CIPOLLA DI CANNARA"
+],
+[
+"Umbria e tradizioni",
+"LE FONTI DEL CLITUNNO"
+],
+[
+"Umbria e tradizioni",
+"IL TARTUFO BIANCO DI CITTÀ DI CASTELLO"
+],
+[
+"Umbria e tradizioni",
+"IL TORCOLO DI SAN COSTANZO"
+],
+[
+"Umbria e tradizioni",
+"LA ROCCIATA CON LE NOCI E L'UVETTA"
+],
+[
+"Umbria e tradizioni",
+"IL PANPEPATO DI TERNI"
+],
+[
+"Umbria e tradizioni",
+"LE CIRIOLE ALLA TERNANA"
+],
+[
+"Umbria e tradizioni",
+"LA BASILICA DI SANTA MARIA DEGLI ANGELI"
+],
+[
+"Umbria e tradizioni",
+"IL CANTICO DELLE CREATURE DI SAN FRANCESCO"
+],
+[
+"Umbria e tradizioni",
+"L'EREMO DELLE CARCERI SUL MONTE SUBASIO"
+],
+[
+"Umbria e tradizioni",
+"LA PORCHETTA AL MERCATO DEL SABATO"
+],
+[
+"Umbria e tradizioni",
+"LE MURA ETRUSCHE DI PERUGIA"
+],
+[
+"Umbria e tradizioni",
+"IL LAGO DI PIEDILUCO"
+],
+[
+"Umbria e tradizioni",
+"LA FIERA DEI MORTI DI PERUGIA"
+],
+[
+"Feste e tradizioni",
+"LA REGATA STORICA SUL CANAL GRANDE"
+],
+[
+"Feste e tradizioni",
+"LA NOTTE DELLA TARANTA IN SALENTO"
+],
+[
+"Feste e tradizioni",
+"LA PROCESSIONE DEI MISTERI DI TRAPANI"
+],
+[
+"Feste e tradizioni",
+"LA FESTA DI SANT'AGATA A CATANIA"
+],
+[
+"Feste e tradizioni",
+"LA BATTAGLIA DELLE ARANCE DI IVREA"
+],
+[
+"Feste e tradizioni",
+"LA TRANSUMANZA DELLE PECORE IN ABRUZZO"
+],
+[
+"Feste e tradizioni",
+"IL GIOCO DEL PONTE DI PISA"
+],
+[
+"Feste e tradizioni",
+"LO SCOPPIO DEL CARRO A FIRENZE"
+],
+[
+"Feste e tradizioni",
+"IL CALCIO STORICO FIORENTINO"
+],
+[
+"Feste e tradizioni",
+"LA FESTA DEI GIGLI DI NOLA"
+],
+[
+"Feste e tradizioni",
+"IL PALIO DI SIENA IN PIAZZA DEL CAMPO"
+],
+[
+"Feste e tradizioni",
+"LA FESTA DEL REDENTORE A VENEZIA"
+],
+[
+"Feste e tradizioni",
+"IL MIRACOLO DI SAN GENNARO A NAPOLI"
+],
+[
+"Feste e tradizioni",
+"IL FALÒ DI SANT'ANTONIO ABATE"
+],
+[
+"Storia",
+"LA DISFIDA DI BARLETTA TRA ITALIANI E FRANCESI"
+],
+[
+"Storia",
+"IL SACCO DI ROMA DEI LANZICHENECCHI"
+],
+[
+"Storia",
+"LA BATTAGLIA DI CANNE CONTRO ANNIBALE"
+],
+[
+"Storia",
+"CESARE ATTRAVERSA IL RUBICONE"
+],
+[
+"Storia",
+"L'ASSASSINIO DI CESARE ALLE IDI DI MARZO"
+],
+[
+"Storia",
+"LA CONGIURA DEI PAZZI A FIRENZE"
+],
+[
+"Storia",
+"IL CONGRESSO DI VIENNA"
+],
+[
+"Storia",
+"LA BRECCIA DI PORTA PIA"
+],
+[
+"Storia",
+"I MOTI RIVOLUZIONARI DEL QUARANTOTTO"
+],
+[
+"Storia",
+"LA SPEDIZIONE DI NAPOLEONE IN EGITTO"
+],
+[
+"Storia",
+"LA BATTAGLIA DI LEPANTO"
+],
+[
+"Storia",
+"IL REGNO DELLE DUE SICILIE"
+],
+[
+"Storia",
+"LE REPUBBLICHE MARINARE E I LORO STEMMI"
+],
+[
+"Storia",
+"LA PESTE NERA DEL TRECENTO"
+],
+[
+"Storia",
+"IL GIRO DEL MONDO DI MAGELLANO"
+],
+[
+"Storia",
+"LA CORSA ALL'ORO IN CALIFORNIA"
+],
+[
+"Storia",
+"LA RIVOLUZIONE D'OTTOBRE IN RUSSIA"
+],
+[
+"Storia",
+"L'IMPERO BIZANTINO DI COSTANTINOPOLI"
+],
+[
+"Storia",
+"I VICHINGHI SBARCANO IN GROENLANDIA"
+],
+[
+"Storia",
+"L'EDITTO DI COSTANTINO"
+],
+[
+"Storia",
+"LA STELE DI ROSETTA E I GEROGLIFICI"
+],
+[
+"Storia",
+"IL CODICE DI HAMMURABI"
+],
+[
+"Storia",
+"LA TOMBA DEL FARAONE TUTANKHAMON"
+],
+[
+"Storia",
+"IL PRIMO VOTO DELLE DONNE IN ITALIA"
+],
+[
+"Storia",
+"LA LUNGA MARCIA DI MAO"
+],
+[
+"Storia",
+"IL PIANO MARSHALL DEL DOPOGUERRA"
+],
+[
+"Storia",
+"LA GUERRA DEI CENT'ANNI"
+],
+[
+"Storia",
+"LA MAGNA CHARTA LIBERTATUM"
+],
+[
+"Letteratura",
+"I PROMESSI SPOSI E LA MONACA DI MONZA"
+],
+[
+"Letteratura",
+"IL CONTE UGOLINO E LA TORRE DELLA FAME"
+],
+[
+"Letteratura",
+"PAOLO E FRANCESCA NEL QUINTO CANTO"
+],
+[
+"Letteratura",
+"L'INFINITO DI GIACOMO LEOPARDI"
+],
+[
+"Letteratura",
+"IL GATTOPARDO DI TOMASI DI LAMPEDUSA"
+],
+[
+"Letteratura",
+"IL FU MATTIA PASCAL DI PIRANDELLO"
+],
+[
+"Letteratura",
+"LA COSCIENZA DI ZENO DI ITALO SVEVO"
+],
+[
+"Letteratura",
+"I MALAVOGLIA E LA CASA DEL NESPOLO"
+],
+[
+"Letteratura",
+"IL VISCONTE DIMEZZATO DI CALVINO"
+],
+[
+"Letteratura",
+"LE CITTÀ INVISIBILI DI ITALO CALVINO"
+],
+[
+"Letteratura",
+"ORLANDO FURIOSO E L'IPPOGRIFO"
+],
+[
+"Letteratura",
+"ASTOLFO SULLA LUNA A CERCARE IL SENNO"
+],
+[
+"Letteratura",
+"IL DECAMERONE DI BOCCACCIO"
+],
+[
+"Letteratura",
+"LE NOTTI BIANCHE DI DOSTOEVSKIJ"
+],
+[
+"Letteratura",
+"DELITTO E CASTIGO"
+],
+[
+"Letteratura",
+"IL RITRATTO DI DORIAN GRAY"
+],
+[
+"Letteratura",
+"LO STRANO CASO DEL DOTTOR JEKYLL"
+],
+[
+"Letteratura",
+"IL MASTINO DEI BASKERVILLE"
+],
+[
+"Letteratura",
+"CENT'ANNI DI SOLITUDINE"
+],
+[
+"Letteratura",
+"IL SIGNORE DELLE MOSCHE"
+],
+[
+"Letteratura",
+"FRANKENSTEIN O IL MODERNO PROMETEO"
+],
+[
+"Letteratura",
+"VIAGGIO AL CENTRO DELLA TERRA"
+],
+[
+"Letteratura",
+"LE AVVENTURE DI HUCKLEBERRY FINN"
+],
+[
+"Letteratura",
+"IL CANTO NOTTURNO DI UN PASTORE ERRANTE"
+],
+[
+"Letteratura",
+"IL SABATO DEL VILLAGGIO"
+],
+[
+"Letteratura",
+"LA PIOGGIA NEL PINETO DI D'ANNUNZIO"
+],
+[
+"Letteratura",
+"UNO NESSUNO E CENTOMILA"
+],
+[
+"Film",
+"C'ERA UNA VOLTA IL WEST"
+],
+[
+"Film",
+"PER QUALCHE DOLLARO IN PIÙ"
+],
+[
+"Film",
+"LA MEGLIO GIOVENTÙ"
+],
+[
+"Film",
+"MEDITERRANEO DI GABRIELE SALVATORES"
+],
+[
+"Film",
+"RICOMINCIO DA TRE"
+],
+[
+"Film",
+"NON CI RESTA CHE PIANGERE"
+],
+[
+"Film",
+"FANTOZZI CONTRO TUTTI"
+],
+[
+"Film",
+"L'ARMATA BRANCALEONE"
+],
+[
+"Film",
+"I SOLITI IGNOTI"
+],
+[
+"Film",
+"MATRIMONIO ALL'ITALIANA"
+],
+[
+"Film",
+"IERI OGGI E DOMANI"
+],
+[
+"Film",
+"LA FINESTRA SUL CORTILE"
+],
+[
+"Film",
+"IL SILENZIO DEGLI INNOCENTI"
+],
+[
+"Film",
+"QUALCUNO VOLÒ SUL NIDO DEL CUCULO"
+],
+[
+"Film",
+"INCONTRI RAVVICINATI DEL TERZO TIPO"
+],
+[
+"Film",
+"IL FAVOLOSO MONDO DI AMÉLIE"
+],
+[
+"Film",
+"LA CITTÀ INCANTATA DI MIYAZAKI"
+],
+[
+"Film",
+"IL MIO VICINO TOTORO"
+],
+[
+"Film",
+"IL CASTELLO ERRANTE DI HOWL"
+],
+[
+"Film",
+"HARRY POTTER E IL PRIGIONIERO DI AZKABAN"
+],
+[
+"Film",
+"IL CURIOSO CASO DI BENJAMIN BUTTON"
+],
+[
+"Film",
+"LA LEGGENDA DEL PIANISTA SULL'OCEANO"
+],
+[
+"Film",
+"PROFUMO DI DONNA"
+],
+[
+"Film",
+"IL GRANDE LEBOWSKI"
+],
+[
+"Cartoni animati",
+"CHI HA INCASTRATO ROGER RABBIT"
+],
+[
+"Cartoni animati",
+"IL PIANETA DEL TESORO"
+],
+[
+"Cartoni animati",
+"ATLANTIS L'IMPERO PERDUTO"
+],
+[
+"Cartoni animati",
+"KIKI CONSEGNE A DOMICILIO"
+],
+[
+"Cartoni animati",
+"PONYO SULLA SCOGLIERA"
+],
+[
+"Cartoni animati",
+"ALLA RICERCA DI DORY"
+],
+[
+"Cartoni animati",
+"PIOVONO POLPETTE"
+],
+[
+"Cartoni animati",
+"MOSTRI CONTRO ALIENI"
+],
+[
+"Cartoni animati",
+"IL GIGANTE DI FERRO"
+],
+[
+"Cartoni animati",
+"IL ROBOT SELVAGGIO"
+],
+[
+"Cartoni animati",
+"LE AVVENTURE DI BIANCA E BERNIE"
+],
+[
+"Cartoni animati",
+"RED E TOBY NEMICIAMICI"
+],
+[
+"Cartoni animati",
+"OLIVER E COMPANY"
+],
+[
+"Cartoni animati",
+"LA PRINCIPESSA MONONOKE"
+],
+[
+"Cartoni animati",
+"IL CASTELLO NEL CIELO"
+],
+[
+"Personaggi famosi",
+"ARTEMISIA GENTILESCHI PITTRICE BAROCCA"
+],
+[
+"Personaggi famosi",
+"IPAZIA MATEMATICA DI ALESSANDRIA"
+],
+[
+"Personaggi famosi",
+"ADA LOVELACE PRIMA PROGRAMMATRICE"
+],
+[
+"Personaggi famosi",
+"NIKOLA TESLA E LA CORRENTE ALTERNATA"
+],
+[
+"Personaggi famosi",
+"LEONARDO FIBONACCI E LA SUA SUCCESSIONE"
+],
+[
+"Personaggi famosi",
+"GIROLAMO SAVONAROLA E IL FALÒ DELLE VANITÀ"
+],
+[
+"Personaggi famosi",
+"FEDERICO DA MONTEFELTRO DUCA DI URBINO"
+],
+[
+"Personaggi famosi",
+"ELEONORA DUSE LA DIVINA"
+],
+[
+"Personaggi famosi",
+"GRAZIA DELEDDA PREMIO NOBEL"
+],
+[
+"Personaggi famosi",
+"ENNIO MORRICONE E LE COLONNE SONORE"
+],
+[
+"Personaggi famosi",
+"MARCO AURELIO IMPERATORE FILOSOFO"
+],
+[
+"Personaggi famosi",
+"TAZIO NUVOLARI IL MANTOVANO VOLANTE"
+],
+[
+"Personaggi famosi",
+"PIETRO MENNEA LA FRECCIA DEL SUD"
+],
+[
+"Personaggi famosi",
+"SARA SIMEONI E IL SALTO IN ALTO"
+],
+[
+"Personaggi famosi",
+"FEDERICA PELLEGRINI REGINA DEL NUOTO"
+],
+[
+"Personaggi famosi",
+"PIETRO PERUGINO MAESTRO DI RAFFAELLO"
+],
+[
+"Personaggi famosi",
+"JACOPONE DA TODI"
+],
+[
+"Personaggi famosi",
+"SANTA CHIARA D'ASSISI"
+],
+[
+"Animali",
+"LA SALAMANDRA PEZZATA NEL SOTTOBOSCO"
+],
+[
+"Animali",
+"L'ORNITORINCO CON IL BECCO D'ANATRA"
+],
+[
+"Animali",
+"IL FORMICHIERE GIGANTE SUDAMERICANO"
+],
+[
+"Animali",
+"LA LONTRA CHE GALLEGGIA SUL DORSO"
+],
+[
+"Animali",
+"IL BRADIPO APPESO A TESTA IN GIÙ"
+],
+[
+"Animali",
+"LO SCARABEO STERCORARIO"
+],
+[
+"Animali",
+"IL GECO CHE CAMMINA SUL SOFFITTO"
+],
+[
+"Animali",
+"IL CAMOSCIO D'ABRUZZO SULLE ROCCE"
+],
+[
+"Animali",
+"L'ORSO BRUNO MARSICANO NEL PARCO"
+],
+[
+"Animali",
+"L'AIRONE CENERINO NELLO STAGNO"
+],
+[
+"Animali",
+"IL CANTO DELL'USIGNOLO AL CREPUSCOLO"
+],
+[
+"Animali",
+"IL NARVALO E IL SUO LUNGHISSIMO DENTE"
+],
+[
+"Animali",
+"L'AXOLOTL CHE RIGENERA LE ZAMPE"
+],
+[
+"Animali",
+"IL PESCE PALLA CHE SI GONFIA"
+],
+[
+"Animali",
+"IL PICCHIO MURATORE SUL TRONCO"
+],
+[
+"Animali",
+"LA FALENA ATTRATTA DALLA LAMPADINA"
+],
+[
+"Animali",
+"LO SCOIATTOLO VOLANTE CHE PLANA"
+],
+[
+"Animali",
+"IL CANGURO CON IL PICCOLO NEL MARSUPIO"
+],
+[
+"In cucina",
+"I VINCISGRASSI MARCHIGIANI"
+],
+[
+"In cucina",
+"LA ZUPPA INGLESE CON L'ALCHERMES"
+],
+[
+"In cucina",
+"LO ZABAIONE AL MARSALA"
+],
+[
+"In cucina",
+"IL CARPACCIO CON SCAGLIE DI GRANA"
+],
+[
+"In cucina",
+"LA PEPERONATA CON LE OLIVE NERE"
+],
+[
+"In cucina",
+"LA PASTA ALLA GRICIA"
+],
+[
+"In cucina",
+"I PICI CACIO E PEPE"
+],
+[
+"In cucina",
+"IL VITELLO TONNATO PIEMONTESE"
+],
+[
+"In cucina",
+"IL BACCALÀ MANTECATO ALLA VENEZIANA"
+],
+[
+"In cucina",
+"LE SARDE IN SAOR"
+],
+[
+"In cucina",
+"IL RISOTTO AL NERO DI SEPPIA"
+],
+[
+"In cucina",
+"GLI SPAGHETTI ALLO SCOGLIO"
+],
+[
+"In cucina",
+"LA CAPONATA DI MELANZANE"
+],
+[
+"In cucina",
+"IL PESTO ALLA TRAPANESE"
+],
+[
+"In cucina",
+"I CROSTINI DI FEGATINI TOSCANI"
+],
+[
+"In cucina",
+"IL TORTINO DAL CUORE FONDENTE"
+],
+[
+"In cucina",
+"IL MONTE BIANCO DI CASTAGNE E PANNA"
+],
+[
+"In cucina",
+"LO STRACOTTO AL BAROLO"
+],
+[
+"In cucina",
+"LA FRITTATA DI ASPARAGI SELVATICI"
+],
+[
+"In cucina",
+"IL CIAMBELLONE ALLO YOGURT"
+],
+[
+"In cucina",
+"LA TORTA DI RISO BOLOGNESE"
+],
+[
+"Sport",
+"LA VOLATA SUL LUNGOMARE DI SANREMO"
+],
+[
+"Sport",
+"IL TIE BREAK AL QUINTO SET"
+],
+[
+"Sport",
+"LA ROVESCIATA ALL'ULTIMO SECONDO"
+],
+[
+"Sport",
+"IL SORPASSO ALLA PARABOLICA DI MONZA"
+],
+[
+"Sport",
+"LA SCALATA DEL MORTIROLO IN MAGLIA ROSA"
+],
+[
+"Sport",
+"IL TRIPLO AXEL DEL PATTINAGGIO"
+],
+[
+"Sport",
+"IL RIGORE PARATO A TEMPO SCADUTO"
+],
+[
+"Sport",
+"LA COPPA DAVIS VINTA DALL'ITALIA"
+],
+[
+"Sport",
+"IL GIRO DI BOA DELLA REGATA"
+],
+[
+"Sport",
+"LA FUGA SOLITARIA SULLO STELVIO"
+],
+[
+"Sport",
+"IL PIT STOP PIÙ VELOCE DELLA STAGIONE"
+],
+[
+"Sport",
+"IL TERZO TEMPO DEL RUGBY"
+],
+[
+"Geografia",
+"IL DESERTO DEL GOBI IN MONGOLIA"
+],
+[
+"Geografia",
+"LO STRETTO DEL BOSFORO A ISTANBUL"
+],
+[
+"Geografia",
+"IL LAGO BAJKAL IN SIBERIA"
+],
+[
+"Geografia",
+"LE CASCATE VITTORIA SUL FIUME ZAMBESI"
+],
+[
+"Geografia",
+"IL FIUME MISSISSIPPI"
+],
+[
+"Geografia",
+"LA CORDIGLIERA DELLE ANDE"
+],
+[
+"Geografia",
+"L'ARCIPELAGO DELLE GALAPAGOS"
+],
+[
+"Geografia",
+"IL TROPICO DEL CANCRO"
+],
+[
+"Geografia",
+"IL KILIMANGIARO IN TANZANIA"
+],
+[
+"Geografia",
+"LA FOSSA DELLE MARIANNE"
+],
+[
+"Geografia",
+"LA PENISOLA SCANDINAVA"
+],
+[
+"Geografia",
+"I FARAGLIONI DI CAPRI"
+],
+[
+"Geografia",
+"IL DELTA DEL PO E LE SUE VALLI"
+],
+[
+"Geografia",
+"LE ISOLE TREMITI NELL'ADRIATICO"
+],
+[
+"Geografia",
+"L'ARCIPELAGO DELLA MADDALENA"
+],
+[
+"Geografia",
+"IL LAGO DI BOLSENA E LE SUE ISOLE"
+],
+[
+"Geografia",
+"LA LINEA DEL CAMBIO DI DATA"
+],
+[
+"Mitologia",
+"ORFEO ED EURIDICE NEGLI INFERI"
+],
+[
+"Mitologia",
+"IL GIUDIZIO DI PARIDE E LA MELA D'ORO"
+],
+[
+"Mitologia",
+"GIASONE E GLI ARGONAUTI"
+],
+[
+"Mitologia",
+"LA CONQUISTA DEL VELLO D'ORO"
+],
+[
+"Mitologia",
+"PERSEO E LA TESTA DI MEDUSA"
+],
+[
+"Mitologia",
+"CERBERO IL CANE A TRE TESTE"
+],
+[
+"Mitologia",
+"SISIFO E IL MASSO"
+],
+[
+"Mitologia",
+"IL SUPPLIZIO DI TANTALO"
+],
+[
+"Mitologia",
+"L'INDOVINELLO DELLA SFINGE"
+],
+[
+"Mitologia",
+"EDIPO RE DI TEBE"
+],
+[
+"Mitologia",
+"APOLLO E DAFNE TRASFORMATA IN ALLORO"
+],
+[
+"Mitologia",
+"IL RATTO DI PROSERPINA"
+],
+[
+"Mitologia",
+"ODINO E I SUOI DUE CORVI"
+],
+[
+"Mitologia",
+"LA SPADA EXCALIBUR NELLA ROCCIA"
+],
+[
+"La Bibbia",
+"IL PASSAGGIO DEL MAR ROSSO"
+],
+[
+"La Bibbia",
+"GIONA NELLA PANCIA DELLA BALENA"
+],
+[
+"La Bibbia",
+"SANSONE E DALILA"
+],
+[
+"La Bibbia",
+"LE TAVOLE DELLA LEGGE DI MOSÈ"
+],
+[
+"Musica",
+"LE QUATTRO STAGIONI DI VIVALDI"
+],
+[
+"Musica",
+"LA NONA SINFONIA DI BEETHOVEN"
+],
+[
+"Musica",
+"IL VALZER SUL BEL DANUBIO BLU"
+],
+[
+"Musica",
+"IL BOLERO DI RAVEL"
+],
+[
+"Musica",
+"LA TOCCATA E FUGA DI BACH"
+],
+[
+"Musica",
+"NEL BLU DIPINTO DI BLU"
+],
+[
+"Musica",
+"IL CONCERTO PER PIANOFORTE E ORCHESTRA"
+],
+[
+"Musica",
+"LO SPARTITO SUL LEGGIO"
+],
+[
+"Musica",
+"IL METRONOMO CHE BATTE IL TEMPO"
+],
+[
+"Musica",
+"UN ACCORDO DI SETTIMA DIMINUITA"
+],
+[
+"Opera lirica",
+"LA CAVALLERIA RUSTICANA"
+],
+[
+"Opera lirica",
+"IL TROVATORE DI GIUSEPPE VERDI"
+],
+[
+"Opera lirica",
+"IL VA PENSIERO DEL NABUCCO"
+],
+[
+"Opera lirica",
+"LA DONNA È MOBILE QUAL PIUMA AL VENTO"
+],
+[
+"In ufficio",
+"LA RIUNIONE CHE POTEVA ESSERE UNA MAIL"
+],
+[
+"In ufficio",
+"LA FOTOCOPIATRICE INCEPPATA"
+],
+[
+"In ufficio",
+"IL VERBALE DELLA RIUNIONE"
+],
+[
+"In ufficio",
+"LA SCADENZA DEL PROGETTO"
+],
+[
+"In ufficio",
+"IL BADGE ALL'INGRESSO"
+],
+[
+"In ufficio",
+"LA MACCHINETTA DEL CAFFÈ IN CORRIDOIO"
+],
+[
+"In ufficio",
+"IL FOGLIO DI CALCOLO CON LE FORMULE"
+],
+[
+"In ufficio",
+"LA CALL CON IL MICROFONO SPENTO"
+],
+[
+"In ufficio",
+"LA SCRIVANIA SOMMERSA DALLE PRATICHE"
+],
+[
+"Tecnologia",
+"IL CODICE QR SUL MENU DEL RISTORANTE"
+],
+[
+"Tecnologia",
+"IL BACKUP DEI DATI SUL CLOUD"
+],
+[
+"Tecnologia",
+"IL COMPUTER PORTATILE"
+],
+[
+"Tecnologia",
+"LA BATTERIA SCARICA AL MOMENTO SBAGLIATO"
+],
+[
+"Capitali del mondo",
+"LISBONA E I SUOI TRAM GIALLI"
+],
+[
+"Capitali del mondo",
+"AMSTERDAM E I SUOI CANALI"
+],
+[
+"Capitali del mondo",
+"COPENAGHEN E LA SIRENETTA"
+],
+[
+"Capitali del mondo",
+"PRAGA E IL PONTE CARLO"
+],
+[
+"Capitali del mondo",
+"BUDAPEST SUL DANUBIO"
+],
+[
+"Capitali del mondo",
+"ATENE E IL PARTENONE"
+],
+[
+"Capitali del mondo",
+"VIENNA E LA SACHERTORTE"
+],
+[
+"Capitali del mondo",
+"LONDRA E IL CAMBIO DELLA GUARDIA"
+],
+[
+"Capitali del mondo",
+"BERLINO E LA PORTA DI BRANDEBURGO"
+],
+[
+"Capitali del mondo",
+"MADRID E IL MUSEO DEL PRADO"
+],
+[
+"Capitali del mondo",
+"STOCCOLMA E IL PREMIO NOBEL"
+],
+[
+"Capitali del mondo",
+"DUBLINO E LA FESTA DI SAN PATRIZIO"
+],
+[
+"Capitali del mondo",
+"TOKYO E I CILIEGI IN FIORE"
+],
+[
+"Capitali del mondo",
+"PECHINO E LA CITTÀ PROIBITA"
+],
+[
+"Capitali del mondo",
+"IL CAIRO E LE PIRAMIDI DI GIZA"
+],
+[
+"Capitali del mondo",
+"WASHINGTON E LA CASA BIANCA"
+],
+[
+"Città italiane",
+"PALERMO E I QUATTRO CANTI"
+],
+[
+"Città italiane",
+"ASSISI E LA BASILICA DI SAN FRANCESCO"
+],
+[
+"Città italiane",
+"SPOLETO E IL PONTE DELLE TORRI"
+],
+[
+"Città italiane",
+"PARMA E IL SUO PROSCIUTTO"
+],
+[
+"Città italiane",
+"MODENA E LA GHIRLANDINA"
+],
+[
+"Città italiane",
+"URBINO E IL PALAZZO DUCALE"
+],
+[
+"Città italiane",
+"CAGLIARI E IL POETTO"
+],
+[
+"Città italiane",
+"MATERA CAPITALE DELLA CULTURA"
+],
+[
+"Città italiane",
+"AGRIGENTO E LA VALLE DEI TEMPLI"
+],
+[
+"Città italiane",
+"BOLZANO E I SUOI MERCATINI"
+],
+[
+"Città italiane",
+"MANTOVA E I GONZAGA"
+],
+[
+"Città italiane",
+"PADOVA E LA CAPPELLA DEGLI SCROVEGNI"
+],
+[
+"Città italiane",
+"VICENZA E LE VILLE DEL PALLADIO"
+],
+[
+"Città italiane",
+"ORVIETO SULLA RUPE DI TUFO"
+],
+[
+"Città italiane",
+"TODI E PIAZZA DEL POPOLO"
+],
+[
+"Città italiane",
+"NORCIA E I SUOI NORCINI"
+],
+[
+"Modo di dire",
+"ARRAMPICARSI SUGLI SPECCHI"
+],
+[
+"Proverbio",
+"MEGLIO UN GIORNO DA LEONE"
+],
+[
+"Parole difficili",
+"UNA FLEMMA IMPERTURBABILE"
+],
+[
+"Parole difficili",
+"IL VIZIO DI PROCRASTINARE"
+],
+[
+"Parole difficili",
+"UNA SOFFITTA PIENA DI CIANFRUSAGLIE"
+],
+[
+"Parole difficili",
+"UNA SFILZA DI ACRONIMI OSCURI"
+],
+[
+"Scienza e natura",
+"LE RONDINI MIGRANO VERSO L'AFRICA"
+],
+[
+"Scienza e natura",
+"IL SONAR NATURALE DEI PIPISTRELLI"
+],
+[
+"Scienza e natura",
+"I PESCI LUMINOSI DEGLI ABISSI"
+],
+[
+"Scienza e natura",
+"IL MAGMA INCANDESCENTE SOTTO LA CROSTA"
+],
+[
+"Scienza e natura",
+"LE API OPERAIE IMPOLLINANO I FIORI"
+],
+[
+"Arte e spettacolo",
+"LA TROUPE AL LAVORO SUL SET"
+],
+[
+"Letteratura",
+"GLI IGNAVI E L'ANTINFERNO DI DANTE"
+],
+[
+"In cucina",
+"LA PASTA AMATRICIANA CON IL GUANCIALE"
+],
+[
+"La Bibbia",
+"IL MIRACOLO DEI PANI E DEI PESCI"
+],
+[
+"In ufficio",
+"IL PROTOCOLLO DELLE PRATICHE"
+],
+[
+"Tecnologia",
+"AGGIORNARE IL SISTEMA OPERATIVO"
+],
+[
+"Tecnologia",
+"LA STAMPANTE IN TRE DIMENSIONI"
+],
+[
+"Tecnologia",
+"LA PASSWORD CON DOPPIA VERIFICA"
 ]
 ]
