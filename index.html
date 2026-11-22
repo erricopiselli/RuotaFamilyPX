@@ -92,6 +92,9 @@ button.cta{font-size:1.2rem;padding:15px}
 /* wheel */
 .wheelbox{position:relative;width:min(78vw,300px);margin:14px auto 4px}
 .wheelbox svg.wh{display:block;width:100%;height:auto;transition:transform 3.4s cubic-bezier(.12,.67,.15,1)}
+.hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:19%;aspect-ratio:1;border-radius:50%;padding:0;background:#fff;color:var(--pri);font-size:clamp(.7rem,3.2vw,1rem);font-weight:700;letter-spacing:.04em;border:4px solid var(--gold);box-shadow:0 0 0 0 rgba(124,77,255,.5);animation:hubp 1.6s infinite;z-index:3}
+.hub:active{transform:translate(-50%,-50%) scale(.94)}
+@keyframes hubp{0%{box-shadow:0 0 0 0 rgba(124,77,255,.45)}70%{box-shadow:0 0 0 14px rgba(124,77,255,0)}100%{box-shadow:0 0 0 0 rgba(124,77,255,0)}}
 .wclip{border-radius:50%;overflow:hidden}
 .ptr{position:absolute;left:50%;top:-6px;transform:translateX(-50%);width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-top:26px solid var(--ko);filter:drop-shadow(0 2px 2px rgba(0,0,0,.3));z-index:2}
 .msg{text-align:center;font-family:var(--ff-d);font-weight:600;font-size:1.15rem;min-height:1.6em;margin:8px 0 4px}
@@ -339,10 +342,20 @@ var SND=true;try{SND=localStorage.getItem('rf_snd')!=='0';}catch(e){}
 var AC=null;
 function ac(){if(!AC){try{AC=new (window.AudioContext||window.webkitAudioContext)();}catch(e){return null;}}if(AC.state==='suspended')AC.resume();return AC;}
 function tone(fq,d,type,vol,when){var a=ac();if(!a)return;var t=a.currentTime+(when||0),o=a.createOscillator(),g=a.createGain();o.type=type||'sine';o.frequency.value=fq;g.gain.setValueAtTime(vol||.15,t);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g);g.connect(a.destination);o.start(t);o.stop(t+d+.05);}
+// "tac" del piolo che sbatte sulla linguetta, come nelle ruote delle lotterie
+var NOISE=null;
+function tac(when,vol){
+  if(!SND)return;var a=ac();if(!a)return;
+  if(!NOISE){NOISE=a.createBuffer(1,Math.floor(a.sampleRate*.03),a.sampleRate);var d=NOISE.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/d.length,4);}
+  var t=a.currentTime+when,src=a.createBufferSource(),bp=a.createBiquadFilter(),g=a.createGain();
+  src.buffer=NOISE;bp.type='bandpass';bp.frequency.value=2300;bp.Q.value=1.2;g.gain.value=vol;
+  src.connect(bp);bp.connect(g);g.connect(a.destination);src.start(t);
+  var o=a.createOscillator(),og=a.createGain();o.type='triangle';o.frequency.setValueAtTime(420,t);o.frequency.exponentialRampToValueAtTime(140,t+.03);
+  og.gain.setValueAtTime(vol*.5,t);og.gain.exponentialRampToValueAtTime(.001,t+.04);o.connect(og);og.connect(a.destination);o.start(t);o.stop(t+.05);
+}
 function sfx(n){
   if(!SND)return;
-  if(n==='spin'){var t=0,dt=.045;while(t<3.3){tone(1500,.025,'square',.04,t);t+=dt;dt*=1.07;}}
-  else if(n==='ding'){tone(880,.25,'sine',.18);tone(1320,.3,'sine',.1,.07);}
+  if(n==='ding'){tone(880,.25,'sine',.18);tone(1320,.3,'sine',.1,.07);}
   else if(n==='no'){tone(220,.3,'sawtooth',.1);tone(160,.45,'sawtooth',.09,.18);}
   else if(n==='win'){[523,659,784,1047,1319].forEach(function(fq,i){tone(fq,.4,'triangle',.16,i*.11);});}
   else if(n==='buzz'){tone(95,.7,'sawtooth',.22);tone(100,.7,'square',.08);}
@@ -468,14 +481,38 @@ function wheelSVG(){
   for(var k=0;k<n;k++){var p=pt(150,150,144,k*step);s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="2.4" fill="#ffc83d"/>';}
   return s+'</svg>';
 }
+// La ruota gira con una piccola simulazione: parte veloce, rallenta per attrito,
+// ogni piolo fa "tac" e frena un po'. Alla fine, se è quasi ferma su un piolo,
+// a volte lo supera con un ultimo scatto, a volte rimbalza e si ferma prima.
 function spinTo(cb){
-  var n=SEG.length,step=360/n,idx=Math.floor(Math.random()*n);
-  var center=idx*step+step/2,jit=(Math.random()-.5)*step*.7;
-  var cur=((wheelRot%360)+360)%360;
-  var target=(360-center-jit-cur+720)%360;
-  wheelRot+=360*4+target;sfx('spin');
-  var el=document.getElementById('wh');if(el){el.getBoundingClientRect();el.style.transform='rotate('+wheelRot+'deg)';}
-  var tk=TOK;setTimeout(function(){if(tk===TOK)cb(SEG[idx]);},3500);
+  var el=document.getElementById('wh'),tk=TOK,step=360/SEG.length;
+  var ang=wheelRot,v=780+Math.random()*560,seg=Math.floor(ang/step),last=null,phase='roll',done=false,t0=Date.now();
+  if(el)el.style.transition='none';
+  function finish(){
+    if(done)return;done=true;wheelRot=ang;
+    if(el){el.style.transform='rotate('+ang+'deg)';}
+    var idx=Math.floor((((-ang)%360+360)%360)/step)%SEG.length;
+    setTimeout(function(){if(tk===TOK)cb(SEG[idx]);},450);
+  }
+  function frame(now){
+    if(tk!==TOK||done)return;
+    if(last===null)last=now;
+    var dt=Math.min(.05,(now-last)/1000);last=now;
+    v-=(24+0.5*v)*dt;if(v<0)v=0;
+    var na=ang+v*dt,ns=Math.floor(na/step);
+    if(ns!==seg){
+      if(v<30&&phase!=='stop'){
+        if(phase==='roll'&&Math.random()<.45){seg=ns;tac(0,.26);v=Math.max(v*.55,9);phase='last';}
+        else{tac(0,.2);na=ns*step-.8;v=0;phase='stop';}
+      } else {seg=ns;tac(0,.22);v=Math.max(0,v-2.5);}
+    }
+    ang=na;
+    if(el)el.style.transform='rotate('+ang+'deg)';
+    if(v<=0.4||Date.now()-t0>12000){finish();return;}
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  setTimeout(function(){if(!done&&tk===TOK)finish();},13000);
 }
 
 // ── SCHERMATA INIZIALE ─────────────────────────────────────────────────────
@@ -667,13 +704,14 @@ function play(msg){
   render(
     '<div class="top"><span class="pill">Manche '+(MAN+1)+'/'+NM+'</span>'+brand(true)+'<button class="pill bsnd" style="border:0">'+(SND?'🔊':'🔇')+'</button></div>'+
     '<div class="play"><div>'+boardHTML()+scoresHTML()+'</div><div class="side'+(human&&M.state!=='choose'?'':' big')+'">'+
-    '<div class="wheelbox"><div class="ptr"></div><div class="wclip">'+wheelSVG()+'</div></div>'+
+    '<div class="wheelbox"><div class="ptr"></div><div class="wclip">'+wheelSVG()+'</div>'+(canSpin?'<button class="hub" id="bHub" aria-label="Gira la ruota">GIRA</button>':'')+'</div>'+
     '<div class="msg" id="msg">'+(msg||'')+'</div><div class="ctl">'+ctl+
     (human||M.state==='done'?'':'<p class="hint">'+p.av+' '+esc(p.n)+' sta pensando…</p>')+
     '</div></div></div>'
   );
   var b;wireTB();
   if((b=document.getElementById('bSpin')))b.addEventListener('click',doSpin);
+  if((b=document.getElementById('bHub')))b.addEventListener('click',doSpin);
   if((b=document.getElementById('bVow')))b.addEventListener('click',function(){M.state='vow';play('Quale vocale compri, <b>'+esc(p.n)+'</b>?');});
   if((b=document.getElementById('bSol')))b.addEventListener('click',function(){M.state='solve';play('Qual è la frase, <b>'+esc(p.n)+'</b>?');var i=document.getElementById('sol');if(i)i.focus();});
   if((b=document.getElementById('bBack')))b.addEventListener('click',function(){M.state='choose';play('Tocca a <b>'+esc(p.n)+'</b>');});
@@ -814,6 +852,7 @@ function doSpin(){
   var p=cur();M.state='spin';
   if(isTV())playTV('');
   document.querySelectorAll('.acts button').forEach(function(b){b.disabled=true;});
+  var hb=document.getElementById('bHub');if(hb)hb.remove();
   if(!isTV())setMsg(esc(p.n)+' gira la ruota…');
   spinTo(function(v){
     if(v==='PASSA'){M.state='x';nextPlayer('🔁 <b>PASSA</b>! Il turno passa.');}
