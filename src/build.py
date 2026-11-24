@@ -16,6 +16,12 @@ def fits(ph):
                     if ri>=len(rows) or len(w)>W[rows[ri]]: ok=False;break
             if ok and cur and ri<len(rows): return True
     return False
+STOP=set("IL LO LA I GLI LE L UN UNA UNO DI DEL DELLA DELL DEI DEGLI DELLE A AL ALLA AI DA DAL IN NEL NELLA CON SU SUL PER E O D CHE TRA FRA".split())
+def _w(s): return [w for w in re.split(r"[ ']",''.join(c for c in unicodedata.normalize('NFD',s.upper()) if c.isalpha() or c in " '")) if w and w not in STOP]
+def _st(w): return w[:5] if len(w)>5 else w
+def leak(h,p):  # la frase non può contenere parole dell'indizio
+    hw={_st(w) for w in _w(h)}; return any(_st(w) in hw for w in _w(p))
+MINL=22         # almeno 22 lettere: frasi su più righe, niente risposte banali
 def norm(s): return ''.join(c for c in unicodedata.normalize('NFD',s.upper()) if c.isalpha() and ord(c)<128)
 out=[];seen=set();bad=0
 for fn in sys.argv[1:-1]:
@@ -26,6 +32,8 @@ for fn in sys.argv[1:-1]:
         p=p.upper()
         if re.search(r"[^A-ZÀÈÉÌÒÙ' ]",p): print('CHARS',p);bad+=1;continue
         if not fits(p): print('FIT',p);bad+=1;continue
+        if len(norm(p))<MINL: print('CORTA',p);bad+=1;continue
+        if leak(h,p): print('INDIZIO',h,p);bad+=1;continue
         k=norm(p)
         if k in seen: print('DUP',p);bad+=1;continue
         seen.add(k);out.append([h,p])

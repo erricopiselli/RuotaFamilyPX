@@ -184,7 +184,7 @@ kbd{display:inline-grid;place-items:center;min-width:1.7em;height:1.7em;padding:
 .fin .tmr{width:min(100%,100vh)}
 .fin .card{width:min(100%,640px)}
 #scov .rank{font-size:clamp(16px,3vh,40px)}
-@media (max-width:520px){.tvbar .mn{display:none}.tvbar{gap:8px;font-size:15px;padding:8px 10px}.pw{font-size:1.4rem;padding:18px 6px}.cl{font-size:1rem;min-width:0}}
+@media (max-width:520px){.tvbar .mn{display:none}.tvbar{gap:8px;font-size:15px;padding:8px 10px}.pw{font-size:1.4rem;padding:18px 6px}.pair{grid-template-columns:1fr;gap:12px}.cl{font-size:1rem;min-width:0}}
 .ov.split{flex-direction:row;align-items:center;gap:3vw}
 .ovboard{flex:1 1 50%;max-width:52%;min-width:0}
 .ovboard .c{font-size:clamp(11px,min(1.9vw,4.4vh),52px)}
@@ -750,23 +750,22 @@ function play(msg){
   } else if(M.state==='vow'&&human){
     ctl='<div class="kb">'+VOW.split('').map(function(L){return '<button class="v" data-l="'+L+'"'+(M.used[L]?' disabled':'')+'>'+L+'</button>';}).join('')+
       '<button class="sec" id="bBack" style="grid-column:span 2;font-size:.9rem">Annulla</button></div>';
-  } else if(M.state==='solve'&&human){
-    ctl='<div style="margin-top:10px"><input id="sol" placeholder="Scrivi la soluzione" autocomplete="off" autocapitalize="characters" style="text-transform:uppercase">'+
-      '<div class="row" style="margin-top:8px"><button class="sec" id="bBack">Annulla</button><button id="bOk">Conferma</button></div></div>';
   }
+  var solveOv=(M.state==='solve'&&human)?solveOverlayHTML():'';
   render(
     '<div class="top"><span class="pill">Manche '+(MAN+1)+'/'+NM+'</span>'+brand(true)+'<button class="pill bsnd" style="border:0">'+(SND?'🔊':'🔇')+'</button></div>'+
     '<div class="play"><div>'+boardHTML()+scoresHTML()+'</div><div class="side'+(human&&M.state!=='choose'?'':' big')+'">'+
     '<div class="wheelbox"><div class="ptr"></div><div class="wclip">'+wheelSVG()+'</div>'+(canSpin?'<button class="hub" id="bHub" aria-label="Gira la ruota">GIRA</button>':'')+'</div>'+
     '<div class="msg" id="msg">'+(msg||'')+'</div><div class="ctl">'+ctl+
     (human||M.state==='done'?'':'<p class="hint">'+p.av+' '+esc(p.n)+' sta pensando…</p>')+
-    '</div></div></div>'
+    '</div></div></div>'+solveOv
   );
   var b;wireTB();
   if((b=document.getElementById('bSpin')))b.addEventListener('click',doSpin);
   if((b=document.getElementById('bHub')))b.addEventListener('click',doSpin);
   if((b=document.getElementById('bVow')))b.addEventListener('click',function(){M.state='vow';play('Quale vocale compri, <b>'+esc(p.n)+'</b>?');});
-  if((b=document.getElementById('bSol')))b.addEventListener('click',function(){M.state='solve';play('Qual è la frase, <b>'+esc(p.n)+'</b>?');var i=document.getElementById('sol');if(i)i.focus();});
+  if((b=document.getElementById('bSol')))b.addEventListener('click',function(){M.state='solve';M.fill=[];play('Qual è la frase, <b>'+esc(p.n)+'</b>?');});
+  document.querySelectorAll('#solveov .picker button[data-k]').forEach(function(k){k.addEventListener('click',function(){typeL(k.dataset.k);});});
   if((b=document.getElementById('bBack')))b.addEventListener('click',backToChoose);
   if((b=document.getElementById('bOk')))b.addEventListener('click',function(){trySolve(document.getElementById('sol').value);});
   if((b=document.getElementById('sol')))b.addEventListener('keydown',function(e){if(e.key==='Enter')trySolve(b.value);});
@@ -1059,7 +1058,7 @@ function finalIntro(){
     '<button class="wide cta" id="go" style="margin-top:16px">Inizia la finalissima</button></div>');
   document.getElementById('go').addEventListener('click',function(){
     var pool=FIN.filter(function(z){return FUSED.indexOf(z.a)<0;});if(!pool.length){FUSED=[];pool=FIN;}
-    var z=rnd(pool);FUSED.push(z.a);try{localStorage.setItem('rf_fin_used',JSON.stringify(FUSED));}catch(e){}
+    var z0=rnd(pool),cc=z0.c.slice();for(var q=cc.length-1;q>0;q--){var r=Math.floor(Math.random()*(q+1)),t=cc[q];cc[q]=cc[r];cc[r]=t;}var z={a:z0.a,c:cc};FUSED.push(z.a);try{localStorage.setItem('rf_fin_used',JSON.stringify(FUSED));}catch(e){}
     F={p:w,z:z,k:0,prize:FIN_START,clues:[],txt:'',typing:false};
     musicStart('fcalm');
     finalPair();

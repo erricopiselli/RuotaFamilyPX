@@ -1,31 +1,421 @@
 [
 {
-"a": "PIANO",
+"a": "GIORNO",
 "c": [
 [
-"TERRA",
-"CIELO",
-"piano terra"
+"LUCE",
+"OMBRA",
+"la luce del giorno"
 ],
 [
-"REGOLATORE",
-"ACCELERATORE",
-"piano regolatore"
+"ORDINE",
+"REGOLA",
+"l’ordine del giorno"
 ],
 [
-"FORTE",
-"ROBUSTO",
-"pianoforte"
+"ALTRO",
+"ALTRUI",
+"l’altro giorno"
 ],
 [
-"SEQUENZA",
+"NOTTE",
+"ALBA",
+"dal giorno alla notte"
+],
+[
+"GIUDIZIO",
+"CONDANNA",
+"il giorno del giudizio"
+]
+]
+},
+{
+"a": "TESTA",
+"c": [
+[
+"CALDA",
+"TIEPIDA",
+"testa calda"
+],
+[
+"PIEDI",
+"MANI",
+"dalla testa ai piedi"
+],
+[
 "SERIE",
-"piano sequenza (al cinema)"
+"GARA",
+"testa di serie"
 ],
 [
-"INCLINATO",
+"GIRARE",
+"SALTARE",
+"far girare la testa"
+],
+[
+"PERDERE",
+"VINCERE",
+"perdere la testa"
+]
+]
+},
+{
+"a": "PIEDE",
+"c": [
+[
+"GUERRA",
+"PACE",
+"sul piede di guerra"
+],
+[
+"LIBERO",
+"SCIOLTO",
+"a piede libero"
+],
+[
+"SBAGLIATO",
 "STORTO",
-"piano inclinato"
+"alzarsi con il piede sbagliato"
+],
+[
+"PIOMBO",
+"RAME",
+"andarci con i piedi di piombo"
+],
+[
+"TERRA",
+"ACQUA",
+"mettere piede a terra"
+]
+]
+},
+{
+"a": "MANO",
+"c": [
+[
+"SECONDA",
+"QUARTA",
+"di seconda mano"
+],
+[
+"LAVARE",
+"STIRARE",
+"una mano lava l’altra"
+],
+[
+"FUOCO",
+"FUMO",
+"metterci la mano sul fuoco"
+],
+[
+"PASTA",
+"PANE",
+"avere le mani in pasta"
+],
+[
+"CUORE",
+"FEGATO",
+"la mano sul cuore"
+]
+]
+},
+{
+"a": "OCCHIO",
+"c": [
+[
+"BUE",
+"TORO",
+"occhio di bue"
+],
+[
+"TERZO",
+"QUARTO",
+"il terzo occhio"
+],
+[
+"VISTA",
+"OLFATTO",
+"a vista d’occhio"
+],
+[
+"CROCE",
+"STELLA",
+"a occhio e croce"
+],
+[
+"TESTA",
+"SPALLA",
+"costare un occhio della testa"
+]
+]
+},
+{
+"a": "ACQUA",
+"c": [
+[
+"GOLA",
+"SCHIENA",
+"avere l’acqua alla gola"
+],
+[
+"BOCCA",
+"NASO",
+"acqua in bocca"
+],
+[
+"PASSATA",
+"FUTURA",
+"acqua passata"
+],
+[
+"SANTA",
+"BEATA",
+"acqua santa"
+],
+[
+"FUOCO",
+"FUMO",
+"acqua, fuochino, fuoco (il gioco)"
+]
+]
+},
+{
+"a": "LUNA",
+"c": [
+[
+"MIELE",
+"ZUCCHERO",
+"luna di miele"
+],
+[
+"STORTA",
+"DRITTA",
+"avere la luna storta"
+],
+[
+"CHIARO",
+"LIMPIDO",
+"chiaro di luna"
+],
+[
+"PIENA",
+"VUOTA",
+"luna piena"
+],
+[
+"ABBAIARE",
+"MIAGOLARE",
+"abbaiare alla luna"
+]
+]
+},
+{
+"a": "SOLE",
+"c": [
+[
+"POSTO",
+"SEDILE",
+"un posto al sole"
+],
+[
+"OCCHIALI",
+"GUANTI",
+"occhiali da sole"
+],
+[
+"COLPO",
+"BOTTA",
+"colpo di sole"
+],
+[
+"CHIARO",
+"TORBIDO",
+"chiaro come il sole"
+],
+[
+"GIRA",
+"VOLTA",
+"girasole"
+]
+]
+},
+{
+"a": "CUORE",
+"c": [
+[
+"LEONE",
+"TIGRE",
+"Cuor di Leone"
+],
+[
+"MANO",
+"PIEDE",
+"la mano sul cuore"
+],
+[
+"TUFFO",
+"SALTO",
+"un tuffo al cuore"
+],
+[
+"SACRO",
+"BEATO",
+"Sacro Cuore"
+],
+[
+"INFRANTO",
+"ASCIUTTO",
+"cuore infranto"
+]
+]
+},
+{
+"a": "PAROLA",
+"c": [
+[
+"ORDINE",
+"COMANDO",
+"parola d’ordine"
+],
+[
+"ONORE",
+"GLORIA",
+"parola d’onore"
+],
+[
+"ULTIMA",
+"ESTREMA",
+"l’ultima parola"
+],
+[
+"PASSARE",
+"CORRERE",
+"passare parola"
+],
+[
+"GIOCO",
+"SPORT",
+"gioco di parole"
+]
+]
+},
+{
+"a": "TEMPO",
+"c": [
+[
+"PIENO",
+"CARICO",
+"tempo pieno"
+],
+[
+"AMMAZZARE",
+"FERIRE",
+"ammazzare il tempo"
+],
+[
+"RECORD",
+"PREMIO",
+"tempo record"
+],
+[
+"PERSO",
+"SMARRITO",
+"tempo perso"
+],
+[
+"DENARO",
+"ORO",
+"il tempo è denaro"
+]
+]
+},
+{
+"a": "CAMPO",
+"c": [
+[
+"SANTO",
+"BEATO",
+"camposanto"
+],
+[
+"BASE",
+"TETTO",
+"campo base"
+],
+[
+"MINATO",
+"ESPLOSO",
+"campo minato"
+],
+[
+"VISIVO",
+"OCULARE",
+"campo visivo"
+],
+[
+"CALCIO",
+"NUOTO",
+"campo di calcio"
+]
+]
+},
+{
+"a": "FILO",
+"c": [
+[
+"ROSSO",
+"BLU",
+"il filo rosso (che lega le cose)"
+],
+[
+"RASOIO",
+"COLTELLO",
+"sul filo del rasoio"
+],
+[
+"LOGICO",
+"LUCIDO",
+"il filo logico"
+],
+[
+"VOCE",
+"CANTO",
+"un filo di voce"
+],
+[
+"PERLE",
+"DIAMANTI",
+"filo di perle"
+]
+]
+},
+{
+"a": "PONTE",
+"c": [
+[
+"RADIO",
+"TELEVISIONE",
+"ponte radio"
+],
+[
+"COMANDO",
+"CONTROLLO",
+"ponte di comando"
+],
+[
+"FARE",
+"DARE",
+"fare il ponte (tra due festivi)"
+],
+[
+"BRUCIARE",
+"SPEGNERE",
+"bruciarsi i ponti alle spalle"
+],
+[
+"TIBETANO",
+"CINESE",
+"ponte tibetano"
 ]
 ]
 },
@@ -43,11 +433,6 @@
 "chiave di volta"
 ],
 [
-"SOL",
-"MI",
-"chiave di sol"
-],
-[
 "LETTURA",
 "SCRITTURA",
 "chiave di lettura"
@@ -56,6 +441,161 @@
 "PAROLA",
 "FRASE",
 "parola chiave"
+],
+[
+"SOL",
+"MI",
+"chiave di sol"
+]
+]
+},
+{
+"a": "BANCO",
+"c": [
+[
+"PROVA",
+"TEST",
+"banco di prova"
+],
+[
+"NEBBIA",
+"PIOGGIA",
+"banco di nebbia"
+],
+[
+"PESCI",
+"UCCELLI",
+"banco di pesci"
+],
+[
+"LAVORO",
+"RIPOSO",
+"banco da lavoro"
+],
+[
+"SCUOLA",
+"UFFICIO",
+"banco di scuola"
+]
+]
+},
+{
+"a": "COLPO",
+"c": [
+[
+"GENIO",
+"TALENTO",
+"colpo di genio"
+],
+[
+"FULMINE",
+"TUONO",
+"colpo di fulmine"
+],
+[
+"STATO",
+"NAZIONE",
+"colpo di Stato"
+],
+[
+"SCENA",
+"QUINTA",
+"colpo di scena"
+],
+[
+"GRAZIA",
+"BELLEZZA",
+"colpo di grazia"
+]
+]
+},
+{
+"a": "PUNTO",
+"c": [
+[
+"VISTA",
+"OLFATTO",
+"punto di vista"
+],
+[
+"INCONTRO",
+"SCONTRO",
+"punto d’incontro"
+],
+[
+"MORTO",
+"VIVO",
+"punto morto"
+],
+[
+"CROCE",
+"CERCHIO",
+"punto croce"
+],
+[
+"FERMO",
+"ZITTO",
+"punto fermo"
+]
+]
+},
+{
+"a": "FUOCO",
+"c": [
+[
+"LINEA",
+"RIGA",
+"la linea del fuoco"
+],
+[
+"PALLA",
+"GLOBO",
+"palla di fuoco"
+],
+[
+"LENTO",
+"PIGRO",
+"a fuoco lento"
+],
+[
+"ARMA",
+"SPADA",
+"arma da fuoco"
+],
+[
+"PROVA",
+"CORSA",
+"la prova del fuoco"
+]
+]
+},
+{
+"a": "PIANO",
+"c": [
+[
+"TERRA",
+"CIELO",
+"piano terra"
+],
+[
+"FORTE",
+"ROBUSTO",
+"pianoforte"
+],
+[
+"REGOLATORE",
+"ACCELERATORE",
+"piano regolatore"
+],
+[
+"INCLINATO",
+"STORTO",
+"piano inclinato"
+],
+[
+"STUDI",
+"LETTURE",
+"piano di studi"
 ]
 ]
 },
@@ -68,11 +608,6 @@
 "scala mobile"
 ],
 [
-"RICHTER",
-"NEWTON",
-"scala Richter"
-],
-[
 "REALE",
 "IMPERIALE",
 "scala reale (a poker)"
@@ -83,159 +618,14 @@
 "scala colore (a poker)"
 ],
 [
-"MILANO",
-"TORINO",
-"la Scala di Milano"
-]
-]
-},
-{
-"a": "BANCA",
-"c": [
-[
-"DATI",
-"NUMERI",
-"banca dati"
+"VALORI",
+"SALDI",
+"scala di valori"
 ],
 [
-"SANGUE",
-"SUDORE",
-"banca del sangue"
-],
-[
-"TEMPO",
-"ORA",
-"banca del tempo"
-],
-[
-"SEME",
-"FRUTTO",
-"banca del seme"
-],
-[
-"POPOLARE",
-"FAMOSA",
-"Banca Popolare"
-]
-]
-},
-{
-"a": "TAVOLA",
-"c": [
-[
-"ROTONDA",
-"OVALE",
-"la Tavola Rotonda"
-],
-[
-"CALDA",
-"TIEPIDA",
-"tavola calda"
-],
-[
-"PITAGORICA",
-"EUCLIDEA",
-"tavola pitagorica"
-],
-[
-"PERIODICA",
-"MENSILE",
-"tavola periodica"
-],
-[
-"SURF",
-"SCI",
-"tavola da surf"
-]
-]
-},
-{
-"a": "CORSA",
-"c": [
-[
-"CAMPESTRE",
-"MONTANA",
-"corsa campestre"
-],
-[
-"SACCHI",
-"CESTI",
-"corsa nei sacchi"
-],
-[
-"ARMAMENTI",
-"ARMATURE",
-"corsa agli armamenti"
-],
-[
-"ORO",
-"ARGENTO",
-"corsa all’oro"
-],
-[
-"SEMPLICE",
-"DOPPIA",
-"biglietto di corsa semplice"
-]
-]
-},
-{
-"a": "COLLO",
-"c": [
-[
-"BOTTIGLIA",
-"BICCHIERE",
-"collo di bottiglia"
-],
-[
-"PIEDE",
-"GINOCCHIO",
-"collo del piede"
-],
-[
-"CIGNO",
-"ANATRA",
-"collo di cigno"
-],
-[
-"TORCERE",
-"STRINGERE",
-"torcere il collo"
-],
-[
-"GIRAFFA",
-"ZEBRA",
-"il collo della giraffa"
-]
-]
-},
-{
-"a": "GAMBA",
-"c": [
-[
-"TAVOLO",
-"ARMADIO",
-"la gamba del tavolo"
-],
-[
-"LEGNO",
-"FERRO",
-"gamba di legno"
-],
-[
-"ACCAVALLARE",
-"INTRECCIARE",
-"accavallare le gambe"
-],
-[
-"PASSO",
-"SALTO",
-"fare il passo più lungo della gamba"
-],
-[
-"TESA",
-"STIRATA",
-"entrata a gamba tesa"
+"GRIGI",
+"VERDI",
+"scala di grigi"
 ]
 ]
 },
@@ -248,11 +638,6 @@
 "linea del traguardo"
 ],
 [
-"MAGINOT",
-"NAPOLEON",
-"linea Maginot"
-],
-[
 "DIRETTA",
 "STORTA",
 "in linea diretta"
@@ -260,53 +645,23 @@
 [
 "ORIZZONTE",
 "TRAMONTO",
-"linea dell’orizzonte"
+"la linea dell’orizzonte"
 ],
 [
 "MANTENERE",
 "CONSERVARE",
 "mantenere la linea"
-]
-]
-},
-{
-"a": "CAMPO",
-"c": [
-[
-"SANTO",
-"BEATO",
-"camposanto"
 ],
 [
-"MINATO",
-"ESPLOSO",
-"campo minato"
-],
-[
-"BASE",
-"VETTA",
-"campo base"
-],
-[
-"VISIVO",
-"OCULARE",
-"campo visivo"
-],
-[
-"SCUOLA",
-"LICEO",
-"campo scuola"
+"AEREA",
+"SPAZIALE",
+"linea aerea"
 ]
 ]
 },
 {
 "a": "CROCE",
 "c": [
-[
-"UNCINATA",
-"ARROTOLATA",
-"croce uncinata"
-],
 [
 "PUNTO",
 "LINEA",
@@ -325,28 +680,18 @@
 [
 "SEGNO",
 "GESTO",
-"segno della croce"
+"il segno della croce"
+],
+[
+"ROSSA",
+"GIALLA",
+"Croce Rossa"
 ]
 ]
 },
 {
 "a": "NODO",
 "c": [
-[
-"GORDIANO",
-"TROIANO",
-"nodo gordiano"
-],
-[
-"SCORSOIO",
-"SCORREVOLE",
-"nodo scorsoio"
-],
-[
-"CRAVATTA",
-"CINTURA",
-"nodo della cravatta"
-],
 [
 "PETTINE",
 "SPAZZOLA",
@@ -355,7 +700,22 @@
 [
 "GOLA",
 "PETTO",
-"nodo alla gola"
+"un nodo alla gola"
+],
+[
+"CRAVATTA",
+"CINTURA",
+"il nodo della cravatta"
+],
+[
+"MARINARO",
+"SOLDATO",
+"nodo marinaro"
+],
+[
+"FAZZOLETTO",
+"CALZINO",
+"fare un nodo al fazzoletto (per ricordarsi)"
 ]
 ]
 },
@@ -363,9 +723,9 @@
 "a": "VELA",
 "c": [
 [
-"SPIEGATE",
-"APERTE",
-"a vele spiegate"
+"GONFIE",
+"PIENE",
+"andare a gonfie vele"
 ],
 [
 "BARCA",
@@ -373,319 +733,19 @@
 "barca a vela"
 ],
 [
-"LATINA",
-"GRECA",
-"vela latina"
-],
-[
-"GONFIE",
-"PIENE",
-"a gonfie vele"
+"SPIEGATE",
+"APERTE",
+"a vele spiegate"
 ],
 [
 "MAESTRA",
 "MAESTRO",
 "vela maestra"
-]
-]
-},
-{
-"a": "PONTE",
-"c": [
-[
-"LEVATOIO",
-"LAVATOIO",
-"ponte levatoio"
 ],
 [
-"SOSPIRI",
-"BACI",
-"Ponte dei Sospiri"
-],
-[
-"RADIO",
-"TELEFONO",
-"ponte radio"
-],
-[
-"COMANDO",
-"CONTROLLO",
-"ponte di comando"
-],
-[
-"TIBETANO",
-"CINESE",
-"ponte tibetano"
-]
-]
-},
-{
-"a": "FRONTE",
-"c": [
-[
-"POPOLARE",
-"FAMOSO",
-"Fronte Popolare"
-],
-[
-"CALDO",
-"TIEPIDO",
-"fronte caldo (in meteorologia)"
-],
-[
-"OCCIDENTALE",
-"MERIDIONALE",
-"fronte occidentale"
-],
-[
-"SPAZIOSA",
-"COMODA",
-"fronte spaziosa"
-],
-[
-"FAR",
-"DARE",
-"far fronte"
-]
-]
-},
-{
-"a": "BOLLA",
-"c": [
-[
-"SAPONE",
-"SHAMPOO",
-"bolla di sapone"
-],
-[
-"SPECULATIVA",
-"INVESTITA",
-"bolla speculativa"
-],
-[
-"PAPALE",
-"REALE",
-"bolla papale"
-],
-[
-"ACCOMPAGNAMENTO",
-"SCORTA",
-"bolla di accompagnamento"
-],
-[
-"LIVELLA",
-"SQUADRA",
-"livella a bolla"
-]
-]
-},
-{
-"a": "GALLO",
-"c": [
-[
-"CEDRONE",
-"LIMONE",
-"gallo cedrone"
-],
-[
-"CANTO",
-"VERSO",
-"canto del gallo"
-],
-[
-"COMBATTIMENTO",
-"DUELLO",
-"gallo da combattimento"
-],
-[
-"FORCELLO",
-"RASTRELLO",
-"gallo forcello"
-],
-[
-"NERO",
-"BLU",
-"Gallo Nero (il simbolo del Chianti)"
-]
-]
-},
-{
-"a": "MOSCA",
-"c": [
-[
-"CIECA",
-"SORDA",
-"mosca cieca"
-],
-[
-"BIANCA",
-"GRIGIA",
-"mosca bianca"
-],
-[
-"NASO",
-"ORECCHIO",
-"avere la mosca al naso"
-],
-[
-"PESO",
-"MISURA",
-"peso mosca"
-],
-[
-"CREMLINO",
-"LOUVRE",
-"Mosca e il Cremlino"
-]
-]
-},
-{
-"a": "BUCO",
-"c": [
-[
-"NERO",
-"BIANCO",
-"buco nero"
-],
-[
-"SERRATURA",
-"MANIGLIA",
-"buco della serratura"
-],
-[
-"OZONO",
-"OSSIGENO",
-"buco dell’ozono"
-],
-[
-"ACQUA",
-"FUOCO",
-"fare un buco nell’acqua"
-],
-[
-"CIAMBELLA",
-"TORTA",
-"non tutte le ciambelle riescono col buco"
-]
-]
-},
-{
-"a": "TIRO",
-"c": [
-[
-"ARCO",
-"FRECCIA",
-"tiro con l’arco"
-],
-[
-"SEGNO",
-"PUNTO",
-"tiro a segno"
-],
-[
-"FUNE",
-"CATENA",
-"tiro alla fune"
-],
-[
-"MANCINO",
-"GOFFO",
-"tiro mancino"
-],
-[
-"VOLO",
-"SALTO",
-"tiro al volo"
-]
-]
-},
-{
-"a": "SALTO",
-"c": [
-[
-"BUIO",
-"NERO",
-"salto nel buio"
-],
-[
-"QUALITÀ",
-"QUANTITÀ",
-"salto di qualità"
-],
-[
-"TRIPLO",
-"SESTUPLO",
-"salto triplo"
-],
-[
-"ASTA",
-"MAZZA",
-"salto con l’asta"
-],
-[
-"MORTALE",
-"LETALE",
-"salto mortale"
-]
-]
-},
-{
-"a": "FILA",
-"c": [
-[
-"INDIANA",
-"CINESE",
-"fila indiana"
-],
-[
-"PRIMA",
-"ALTA",
-"prima fila"
-],
-[
-"SERRARE",
-"STRINGERE",
-"serrare le file"
-],
-[
-"CAPO",
-"PIEDE",
-"capofila"
-],
-[
-"POSTA",
-"LETTERA",
-"la fila alla posta"
-]
-]
-},
-{
-"a": "CANNA",
-"c": [
-[
-"PESCA",
-"REMO",
-"canna da pesca"
-],
-[
-"BAMBÙ",
-"QUERCIA",
-"canna di bambù"
-],
-[
-"ORGANO",
-"PIANO",
-"canna d’organo"
-],
-[
-"FUCILE",
-"SPADA",
-"canna del fucile"
-],
-[
-"FUMARIA",
-"FUMOSA",
-"canna fumaria"
+"LATINA",
+"GRECA",
+"vela latina"
 ]
 ]
 },
@@ -708,104 +768,824 @@
 "gioco di prestigio"
 ],
 [
-"OCA",
-"ANATRA",
-"gioco dell’oca"
-],
-[
 "FUORI",
 "DENTRO",
 "fuori gioco"
+],
+[
+"OCA",
+"ANATRA",
+"il gioco dell’oca"
 ]
 ]
 },
 {
-"a": "PALCO",
+"a": "CARTA",
 "c": [
 [
-"REALE",
-"IMPERIALE",
-"palco reale"
+"CANTA",
+"PARLA",
+"carta canta"
 ],
 [
-"SCENICO",
-"COMICO",
-"palcoscenico"
+"BOLLATA",
+"TIMBRATA",
+"carta bollata"
 ],
 [
-"CERVO",
+"VINI",
+"FORMAGGI",
+"la carta dei vini"
+],
+[
+"IDENTITÀ",
+"PERSONALITÀ",
+"carta d’identità"
+],
+[
+"CREDITO",
+"PRESTITO",
+"carta di credito"
+]
+]
+},
+{
+"a": "PALLA",
+"c": [
+[
+"PELO",
+"CODA",
+"palla di pelo"
+],
+[
+"CANNONE",
+"FUCILE",
+"palla di cannone"
+],
+[
+"NEVE",
+"PIOGGIA",
+"palla di neve"
+],
+[
+"BALZO",
+"SALTO",
+"prendere la palla al balzo"
+],
+[
+"CRISTALLO",
+"VETRO",
+"la palla di cristallo"
+]
+]
+},
+{
+"a": "NOTTE",
+"c": [
+[
+"FONDA",
+"PROFONDA",
+"notte fonda"
+],
+[
+"TEMPI",
+"SECOLI",
+"la notte dei tempi"
+],
+[
+"CAMICIA",
+"GONNA",
+"camicia da notte"
+],
+[
+"BIANCA",
+"VERDE",
+"passare la notte in bianco"
+],
+[
+"BUONA",
+"CATTIVA",
+"buonanotte"
+]
+]
+},
+{
+"a": "STELLA",
+"c": [
+[
+"CADENTE",
+"STORTA",
+"stella cadente"
+],
+[
+"COMETA",
+"METEORA",
+"stella cometa"
+],
+[
+"POLARE",
+"TROPICALE",
+"la Stella Polare"
+],
+[
+"CINQUE",
+"SEI",
+"albergo a cinque stelle"
+],
+[
+"STALLE",
+"CASE",
+"dalle stelle alle stalle"
+]
+]
+},
+{
+"a": "MARE",
+"c": [
+[
+"PORTO",
+"STAZIONE",
+"porto di mare"
+],
+[
+"ALTO",
+"MAGRO",
+"in alto mare"
+],
+[
+"GOCCIA",
+"SPRUZZO",
+"una goccia nel mare"
+],
+[
+"MONTI",
+"COLLI",
+"promettere mari e monti"
+],
+[
+"AGITATO",
+"FELICE",
+"mare agitato"
+]
+]
+},
+{
+"a": "LETTO",
+"c": [
+[
+"FIUME",
+"LAGO",
+"il letto del fiume"
+],
+[
+"ROSE",
+"TULIPANI",
+"un letto di rose"
+],
+[
+"CASTELLO",
+"TORRE",
+"letto a castello"
+],
+[
+"PIEDI",
+"MANI",
+"ai piedi del letto"
+],
+[
+"MORTE",
+"VITA",
+"letto di morte"
+]
+]
+},
+{
+"a": "SALTO",
+"c": [
+[
+"BUIO",
+"NERO",
+"un salto nel buio"
+],
+[
+"QUALITÀ",
+"QUANTITÀ",
+"salto di qualità"
+],
+[
+"ASTA",
+"MAZZA",
+"salto con l’asta"
+],
+[
+"MORTALE",
+"LETALE",
+"salto mortale"
+],
+[
+"CORDA",
+"CATENA",
+"salto della corda"
+]
+]
+},
+{
+"a": "CODA",
+"c": [
+[
+"PAGLIA",
+"FIENO",
+"avere la coda di paglia"
+],
+[
+"OCCHIO",
+"NASO",
+"con la coda dell’occhio"
+],
+[
+"CAVALLO",
+"ASINO",
+"coda di cavallo"
+],
+[
+"PIANOFORTE",
+"ORGANO",
+"pianoforte a coda"
+],
+[
+"FANALINO",
+"LAMPIONE",
+"fanalino di coda"
+]
+]
+},
+{
+"a": "FORMA",
+"c": [
+[
+"SMAGLIANTE",
+"BRILLANTE",
+"in forma smagliante"
+],
+[
+"FISICA",
+"CHIMICA",
+"forma fisica"
+],
+[
+"VIZIO",
+"PECCATO",
+"vizio di forma"
+],
+[
+"SCARPE",
+"CALZE",
+"forma per scarpe"
+],
+[
+"PARMIGIANO",
+"RICOTTA",
+"una forma di parmigiano"
+]
+]
+},
+{
+"a": "BOCCA",
+"c": [
+[
+"ACQUA",
+"VINO",
+"acqua in bocca"
+],
+[
 "LUPO",
-"il palco (le corna) del cervo"
+"VOLPE",
+"in bocca al lupo"
 ],
 [
-"ONORE",
-"GLORIA",
-"palco d’onore"
+"ASCIUTTA",
+"BAGNATA",
+"rimanere a bocca asciutta"
 ],
 [
-"CONCERTO",
-"DISCO",
-"palco del concerto"
+"STOMACO",
+"FEGATO",
+"la bocca dello stomaco"
+],
+[
+"ORO",
+"ARGENTO",
+"il mattino ha l’oro in bocca"
 ]
 ]
 },
 {
-"a": "FIAMMA",
+"a": "CANE",
 "c": [
 [
-"OSSIDRICA",
-"IDRAULICA",
-"fiamma ossidrica"
+"SCIOLTO",
+"LEGATO",
+"cane sciolto"
 ],
 [
-"OLIMPICA",
-"OLIMPIONICA",
-"fiamma olimpica"
+"GATTO",
+"TOPO",
+"essere come cane e gatto"
 ],
 [
-"VECCHIA",
-"ANTICA",
-"vecchia fiamma"
+"GUARDIA",
+"LADRO",
+"cane da guardia"
 ],
 [
-"RITORNO",
-"ANDATA",
-"ritorno di fiamma"
+"BASTONATO",
+"PICCHIATO",
+"come un cane bastonato"
 ],
 [
-"GIALLE",
-"VIOLA",
-"Fiamme Gialle"
+"FREDDO",
+"GELIDO",
+"un freddo cane"
 ]
 ]
 },
 {
-"a": "ALBERO",
+"a": "GATTO",
 "c": [
 [
-"MAESTRO",
-"PROFESSORE",
-"albero maestro"
+"NOVE",
+"DIECI",
+"il gatto ha nove vite"
 ],
 [
-"GENEALOGICO",
-"STORICO",
-"albero genealogico"
+"STIVALI",
+"GUANTI",
+"Il gatto con gli stivali"
 ],
 [
-"NATALE",
-"PASQUA",
-"albero di Natale"
+"SACCO",
+"BORSA",
+"non dire gatto se non ce l’hai nel sacco"
 ],
 [
-"MOTORE",
-"PISTONE",
-"albero motore"
+"NERO",
+"VERDE",
+"gatto nero"
 ],
+[
+"VOLPE",
+"LUPO",
+"il Gatto e la Volpe"
+]
+]
+},
+{
+"a": "LUPO",
+"c": [
+[
+"MARE",
+"OCEANO",
+"lupo di mare"
+],
+[
+"SOLITARIO",
+"SOLO",
+"lupo solitario"
+],
+[
+"PELO",
+"CODA",
+"il lupo perde il pelo ma non il vizio"
+],
+[
+"BOCCA",
+"NASO",
+"in bocca al lupo"
+],
+[
+"FAME",
+"SETE",
+"una fame da lupi"
+]
+]
+},
+{
+"a": "ORO",
+"c": [
+[
+"NOZZE",
+"FESTA",
+"nozze d’oro"
+],
+[
+"FEBBRE",
+"TOSSE",
+"la febbre dell’oro"
+],
+[
+"CUORE",
+"ANIMA",
+"un cuore d’oro"
+],
+[
+"SILENZIO",
+"RUMORE",
+"il silenzio è d’oro"
+],
+[
+"VITELLO",
+"AGNELLO",
+"il vitello d’oro"
+]
+]
+},
+{
+"a": "FERRO",
+"c": [
+[
+"BRACCIO",
+"GOMITO",
+"braccio di ferro"
+],
+[
+"PUGNO",
+"SCHIAFFO",
+"pugno di ferro"
+],
+[
+"CORTINA",
+"TENDA",
+"la cortina di ferro"
+],
+[
+"BATTERE",
+"CUCIRE",
+"battere il ferro finché è caldo"
+],
+[
+"TOCCARE",
+"SFIORARE",
+"toccare ferro"
+]
+]
+},
+{
+"a": "VENTO",
+"c": [
+[
+"QUATTRO",
+"SEI",
+"ai quattro venti"
+],
+[
+"CONTRO",
+"SOPRA",
+"controvento"
+],
+[
+"GALLERIA",
+"TUNNEL",
+"galleria del vento"
+],
+[
+"MULINI",
+"CASTELLI",
+"mulini a vento"
+],
+[
+"SEMINARE",
+"PIANTARE",
+"chi semina vento raccoglie tempesta"
+]
+]
+},
+{
+"a": "NEVE",
+"c": [
+[
+"PALLA",
+"SFERA",
+"palla di neve"
+],
+[
+"BIANCA",
+"CHIARA",
+"Biancaneve"
+],
+[
+"CATENE",
+"CORDE",
+"catene da neve"
+],
+[
+"UOMO",
+"BAMBINO",
+"l’uomo delle nevi"
+],
+[
+"PUPAZZO",
+"BAMBOLA",
+"pupazzo di neve"
+]
+]
+},
+{
+"a": "LIBRO",
+"c": [
+[
+"APERTO",
+"STRAPPATO",
+"essere un libro aperto"
+],
+[
+"NERO",
+"SCURO",
+"il libro nero"
+],
+[
+"PAGA",
+"CONTO",
+"il libro paga"
+],
+[
+"CUORE",
+"ANIMA",
+"il libro Cuore"
+],
+[
+"SOGNI",
+"DESIDERI",
+"il libro dei sogni"
+]
+]
+},
+{
+"a": "LINGUA",
+"c": [
+[
+"MADRE",
+"PADRE",
+"lingua madre"
+],
+[
+"PELI",
+"CAPELLI",
+"non avere peli sulla lingua"
+],
+[
+"MORDERSI",
+"MANGIARSI",
+"mordersi la lingua"
+],
+[
+"PUNTA",
+"CIMA",
+"sulla punta della lingua"
+],
+[
+"GATTO",
+"CANE",
+"lingua di gatto (il biscotto)"
+]
+]
+},
+{
+"a": "DENTE",
+"c": [
+[
+"LATTE",
+"MIELE",
+"dente da latte"
+],
+[
+"GIUDIZIO",
+"SENTENZA",
+"dente del giudizio"
+],
+[
+"AVVELENATO",
+"VELENOSO",
+"avere il dente avvelenato"
+],
+[
+"PASTA",
+"CARNE",
+"pasta al dente"
+],
+[
+"LEONE",
+"TIGRE",
+"dente di leone (il soffione)"
+]
+]
+},
+{
+"a": "PELLE",
+"c": [
+[
+"OCA",
+"ANATRA",
+"pelle d’oca"
+],
+[
+"SALVARE",
+"LAVARE",
+"salvare la pelle"
+],
+[
+"FIOR",
+"FOGLIA",
+"a fior di pelle"
+],
+[
+"ORSO",
+"LUPO",
+"vendere la pelle dell’orso"
+],
+[
+"AMICI",
+"FRATELLI",
+"amici per la pelle"
+]
+]
+},
+{
+"a": "SANGUE",
+"c": [
+[
+"BLU",
+"VERDE",
+"sangue blu"
+],
+[
+"FREDDO",
+"TIEPIDO",
+"a sangue freddo"
+],
+[
+"ACQUA",
+"LATTE",
+"il sangue non è acqua"
+],
+[
+"SUDORE",
+"FATICA",
+"sangue, sudore e lacrime"
+],
+[
+"BUON",
+"BEL",
+"buon sangue non mente"
+]
+]
+},
+{
+"a": "VITA",
+"c": [
+[
+"DOLCE",
+"SALATA",
+"La dolce vita"
+],
+[
+"CANI",
+"GATTI",
+"una vita da cani"
+],
+[
+"TRENO",
+"AUTOBUS",
+"treno di vita"
+],
+[
+"ALBERO",
+"RAMO",
+"l’albero della vita"
+],
+[
+"SCUOLA",
+"CLASSE",
+"scuola di vita"
+]
+]
+},
+{
+"a": "TORRE",
+"c": [
+[
+"AVORIO",
+"EBANO",
+"torre d’avorio"
+],
+[
+"CONTROLLO",
+"COMANDO",
+"torre di controllo"
+],
+[
+"PENDENTE",
+"CADENTE",
+"la torre pendente"
+],
+[
+"SCACCHI",
+"DAMA",
+"la torre degli scacchi"
+],
+[
+"CAMPANARIA",
+"CORALE",
+"torre campanaria"
+]
+]
+},
+{
+"a": "NAVE",
+"c": [
+[
+"SCUOLA",
+"LICEO",
+"nave scuola"
+],
+[
+"FANTASMA",
+"SPETTRO",
+"nave fantasma"
+],
+[
+"CROCIERA",
+"GITA",
+"nave da crociera"
+],
+[
+"BOTTIGLIA",
+"VASO",
+"nave in bottiglia"
+],
+[
+"PIRATA",
+"LADRO",
+"nave pirata"
+]
+]
+},
+{
+"a": "TRENO",
+"c": [
 [
 "VITA",
-"MORTE",
-"albero della vita"
+"STILE",
+"treno di vita"
+],
+[
+"MERCI",
+"BAGAGLI",
+"treno merci"
+],
+[
+"PERDERE",
+"SBAGLIARE",
+"perdere il treno"
+],
+[
+"LUMACA",
+"FORMICA",
+"treno lumaca"
+],
+[
+"VAPORE",
+"FUMO",
+"treno a vapore"
+]
+]
+},
+{
+"a": "BOTTE",
+"c": [
+[
+"PIENA",
+"VUOTA",
+"volere la botte piena e la moglie ubriaca"
+],
+[
+"FERRO",
+"ACCIAIO",
+"essere in una botte di ferro"
+],
+[
+"PICCOLA",
+"SOTTILE",
+"nella botte piccola c’è il vino buono"
+],
+[
+"CERCHIO",
+"QUADRATO",
+"un colpo al cerchio e uno alla botte"
+],
+[
+"VINO",
+"LATTE",
+"botte di vino"
 ]
 ]
 },
@@ -833,129 +1613,69 @@
 "tetto apribile"
 ],
 [
-"VIOLINISTA",
-"CHITARRISTA",
-"Il violinista sul tetto"
+"STESSO",
+"MEDESIMO",
+"sotto lo stesso tetto"
 ]
 ]
 },
 {
-"a": "PENNA",
+"a": "MURO",
 "c": [
 [
-"STILOGRAFICA",
-"STENOGRAFICA",
-"penna stilografica"
+"PIANTO",
+"LACRIME",
+"il Muro del Pianto"
 ],
 [
-"NERE",
-"BIANCHE",
-"le Penne Nere (gli alpini)"
+"SECCO",
+"BAGNATO",
+"muro a secco"
 ],
 [
-"SFERA",
-"CUBO",
-"penna a sfera"
+"SUONO",
+"RUMORE",
+"il muro del suono"
 ],
 [
-"AMICI",
-"COMPAGNI",
-"amici di penna"
+"SPALLE",
+"BRACCIA",
+"con le spalle al muro"
 ],
 [
-"LASCIARCI",
-"PERDERCI",
-"lasciarci le penne"
+"PARLARE",
+"URLARE",
+"parlare al muro"
 ]
 ]
 },
 {
-"a": "PELLE",
+"a": "PORTA",
 "c": [
 [
-"OCA",
-"ANATRA",
-"pelle d’oca"
+"SERVIZIO",
+"CORTESIA",
+"porta di servizio"
 ],
 [
-"TAMBURO",
-"TROMBA",
-"la pelle del tamburo"
-],
-[
-"SALVARE",
+"SBATTERE",
 "LAVARE",
-"salvare la pelle"
+"sbattere la porta in faccia"
 ],
 [
-"FIOR",
-"FOGLIA",
-"a fior di pelle"
+"FINESTRA",
+"BALCONE",
+"porta-finestra"
 ],
 [
-"ORSO",
-"LUPO",
-"vendere la pelle dell’orso prima di averlo ucciso"
-]
-]
-},
-{
-"a": "CORONA",
-"c": [
-[
-"SPINE",
-"CHIODI",
-"corona di spine"
+"CHIUSE",
+"STRETTE",
+"a porte chiuse"
 ],
 [
-"DENTALE",
-"DENTISTICA",
-"corona dentale"
-],
-[
-"ROSARIO",
-"PREGHIERA",
-"la corona del rosario"
-],
-[
-"SOLARE",
-"SOLITARIA",
-"corona solare"
-],
-[
-"ALLORO",
-"BASILICO",
-"corona d’alloro"
-]
-]
-},
-{
-"a": "MANICA",
-"c": [
-[
-"LARGA",
-"VASTA",
-"essere di manica larga"
-],
-[
-"CANALE",
-"GOLFO",
-"il Canale della Manica"
-],
-[
-"TUNNEL",
-"PONTE",
-"il tunnel della Manica"
-],
-[
-"ASSO",
-"RE",
-"avere un asso nella manica"
-],
-[
-"RIMBOCCARE",
-"RICUCIRE",
-"rimboccarsi le maniche"
+"BUSSARE",
+"CANTARE",
+"bussare alla porta"
 ]
 ]
 },
@@ -983,9 +1703,9 @@
 "specchio deformante"
 ],
 [
-"BRAME",
-"VOGLIE",
-"specchio, specchio delle mie brame"
+"ARRAMPICARSI",
+"SCIVOLARE",
+"arrampicarsi sugli specchi"
 ]
 ]
 },
@@ -993,29 +1713,59 @@
 "a": "PIETRA",
 "c": [
 [
-"FILOSOFALE",
-"TEOLOGALE",
-"pietra filosofale"
-],
-[
-"MILIARE",
-"MILITARE",
-"pietra miliare"
-],
-[
-"POMICE",
-"CALCE",
-"pietra pomice"
-],
-[
-"SCAGLIARE",
-"ROTOLARE",
+"PRIMA",
+"ULTIMA",
 "scagliare la prima pietra"
+],
+[
+"SOPRA",
+"SOTTO",
+"metterci una pietra sopra"
+],
+[
+"CUORE",
+"MENTE",
+"un cuore di pietra"
 ],
 [
 "ANGOLARE",
 "QUADRATA",
 "pietra angolare"
+],
+[
+"PREZIOSA",
+"COSTOSA",
+"pietra preziosa"
+]
+]
+},
+{
+"a": "RUOTA",
+"c": [
+[
+"SCORTA",
+"RISCATTO",
+"ruota di scorta"
+],
+[
+"LIBERA",
+"SCIOLTA",
+"a ruota libera"
+],
+[
+"PAVONE",
+"GALLO",
+"il pavone fa la ruota"
+],
+[
+"PANORAMICA",
+"PAESAGGISTICA",
+"ruota panoramica"
+],
+[
+"QUINTA",
+"SESTA",
+"la quinta ruota del carro"
 ]
 ]
 },
@@ -1043,410 +1793,165 @@
 "salire sul carro del vincitore"
 ],
 [
-"CARNEVALE",
-"QUARESIMA",
-"carro di Carnevale"
+"FUNEBRE",
+"TRISTE",
+"carro funebre"
 ]
 ]
 },
 {
-"a": "RETE",
+"a": "FIORE",
 "c": [
 [
-"STRASCICO",
-"STRASCINO",
-"rete a strascico"
+"OCCHIELLO",
+"ASOLA",
+"fiore all’occhiello"
 ],
 [
-"GONFIARE",
-"SGONFIARE",
-"gonfiare la rete"
+"ETÀ",
+"ANNI",
+"nel fiore dell’età"
 ],
 [
-"MAGLIE",
-"MAGLIONI",
-"le maglie della rete"
+"CAVOLO",
+"RAPA",
+"cavolfiore"
 ],
 [
-"TELEVISIVA",
-"TELEVISORE",
-"rete televisiva"
+"ARANCIO",
+"LIMONE",
+"fiori d’arancio"
 ],
 [
-"LETTO",
-"ARMADIO",
-"la rete del letto"
+"LOTO",
+"LOTTO",
+"fiore di loto"
 ]
 ]
 },
 {
-"a": "VASO",
+"a": "SPINA",
 "c": [
 [
-"PANDORA",
-"ARIANNA",
-"il vaso di Pandora"
+"DORSALE",
+"LOMBARE",
+"spina dorsale"
 ],
 [
-"COMUNICANTI",
-"COMUNICATIVI",
-"vasi comunicanti"
+"PESCE",
+"CARNE",
+"a spina di pesce"
 ],
 [
-"GOCCIA",
-"LACRIMA",
-"la goccia che fa traboccare il vaso"
+"STACCARE",
+"STROPPICCIARE",
+"staccare la spina"
 ],
 [
-"FIORI",
-"FRUTTA",
-"vaso di fiori"
-],
-[
-"NOTTE",
-"GIORNO",
-"vaso da notte"
-]
-]
-},
-{
-"a": "SPALLA",
-"c": [
-[
-"STRINGERSI",
-"CHIUDERSI",
-"stringersi nelle spalle"
-],
-[
-"COTTA",
-"BOLLITA",
-"spalla cotta"
-],
-[
-"LARGHE",
-"ALTE",
-"avere le spalle larghe"
-],
-[
-"MURO",
-"PARETE",
-"con le spalle al muro"
-],
-[
-"VOLTARE",
-"MUOVERE",
-"voltare le spalle"
-]
-]
-},
-{
-"a": "BOTTE",
-"c": [
-[
-"PIENA",
-"VUOTA",
-"volere la botte piena e la moglie ubriaca"
-],
-[
-"FERRO",
-"ACCIAIO",
-"essere in una botte di ferro"
-],
-[
+"BIRRA",
 "VINO",
-"LATTE",
-"botte di vino"
+"birra alla spina"
 ],
 [
-"DIOGENE",
-"SOCRATE",
-"la botte di Diogene"
-],
-[
-"PICCOLA",
-"SOTTILE",
-"nella botte piccola c’è il vino buono"
+"FIANCO",
+"SCHIENA",
+"una spina nel fianco"
 ]
 ]
 },
 {
-"a": "CODA",
+"a": "TAVOLA",
 "c": [
 [
-"PAGLIA",
-"FIENO",
-"avere la coda di paglia"
+"ROTONDA",
+"OVALE",
+"la Tavola Rotonda"
 ],
 [
-"CAVALLO",
-"ASINO",
-"coda di cavallo"
+"CALDA",
+"TIEPIDA",
+"tavola calda"
 ],
 [
-"LUNGA",
-"ALTA",
-"una lunga coda"
+"PERIODICA",
+"MENSILE",
+"tavola periodica"
 ],
 [
-"PIANOFORTE",
-"ORGANO",
-"pianoforte a coda"
+"APPARECCHIARE",
+"SPAZZARE",
+"apparecchiare la tavola"
 ],
 [
-"OCCHIO",
-"NASO",
-"con la coda dell’occhio"
+"CARTE",
+"SOLDI",
+"mettere le carte in tavola"
 ]
 ]
 },
 {
-"a": "MOTORE",
+"a": "GAMBA",
 "c": [
 [
-"RICERCA",
-"INDAGINE",
-"motore di ricerca"
+"TAVOLO",
+"ARMADIO",
+"la gamba del tavolo"
 ],
 [
-"SCOPPIO",
-"BOTTO",
-"motore a scoppio"
+"ACCAVALLARE",
+"INTRECCIARE",
+"accavallare le gambe"
 ],
 [
-"AVVIARE",
-"LANCIARE",
-"avviare il motore"
+"TESA",
+"STIRATA",
+"entrata a gamba tesa"
 ],
 [
-"FUORIBORDO",
-"ENTROBORDO",
-"motore fuoribordo"
+"PASSO",
+"SALTO",
+"fare il passo più lungo della gamba"
 ],
 [
-"REAZIONE",
-"AZIONE",
-"motore a reazione"
-]
-]
-},
-{
-"a": "CIRCOLO",
-"c": [
-[
-"VIZIOSO",
-"VIOLENTO",
-"circolo vizioso"
-],
-[
-"POLARE",
-"TROPICALE",
-"Circolo polare"
-],
-[
-"TENNIS",
-"SURF",
-"circolo del tennis"
-],
-[
-"POLMONARE",
-"RESPIRATORIO",
-"circolo polmonare (la piccola circolazione)"
-],
-[
-"SCACCHI",
-"MONOPOLI",
-"circolo degli scacchi"
-]
-]
-},
-{
-"a": "FASCIA",
-"c": [
-[
-"CAPITANO",
-"SERGENTE",
-"fascia di capitano"
-],
-[
-"ORARIA",
-"MINUTA",
-"fascia oraria"
-],
-[
-"ELASTICA",
-"RIGIDA",
-"fascia elastica"
-],
-[
-"PROTETTA",
-"SICURA",
-"fascia protetta"
-],
-[
-"TRICOLORE",
-"BANDIERA",
-"fascia tricolore (del sindaco)"
-]
-]
-},
-{
-"a": "FONDO",
-"c": [
-[
-"SCI",
-"SLITTA",
-"sci di fondo"
-],
-[
-"DOPPIO",
-"TRIPLO",
-"doppio fondo"
-],
-[
-"INVESTIMENTO",
-"PRESTITO",
-"fondo d’investimento"
-],
-[
-"TOCCARE",
-"PREMERE",
-"toccare il fondo"
-],
-[
-"PERDUTO",
-"SMARRITO",
-"a fondo perduto"
-]
-]
-},
-{
-"a": "PIEDE",
-"c": [
-[
-"PORCO",
-"MAIALE",
-"piede di porco"
-],
-[
-"TERRA",
-"MARE",
-"mettere piede a terra"
-],
-[
-"LIBERO",
-"SCIOLTO",
-"a piede libero"
-],
-[
-"PIOMBO",
+"LEGNO",
 "FERRO",
-"andarci con i piedi di piombo"
-],
-[
-"GUERRA",
-"BATTAGLIA",
-"sul piede di guerra"
+"gamba di legno"
 ]
 ]
 },
 {
-"a": "GUARDIA",
+"a": "COLLO",
 "c": [
 [
-"NAZIONALE",
-"REGIONALE",
-"Guardia Nazionale"
+"BOTTIGLIA",
+"BICCHIERE",
+"collo di bottiglia"
 ],
 [
-"CORPO",
-"MENTE",
-"guardia del corpo"
+"PIEDE",
+"GINOCCHIO",
+"il collo del piede"
 ],
 [
-"ABBASSARE",
-"PERDERE",
-"abbassare la guardia"
+"CIGNO",
+"ANATRA",
+"collo di cigno"
 ],
 [
-"CAMBIO",
-"SCAMBIO",
-"cambio della guardia"
+"TORCERE",
+"STRINGERE",
+"torcere il collo"
 ],
 [
-"SVIZZERA",
-"AUSTRIACA",
-"Guardia Svizzera"
-]
-]
-},
-{
-"a": "CASSA",
-"c": [
-[
-"INTEGRAZIONE",
-"INCLUSIONE",
-"cassa integrazione"
-],
-[
-"TORACICA",
-"ADDOMINALE",
-"cassa toracica"
-],
-[
-"RISPARMIO",
-"SPESA",
-"cassa di risparmio"
-],
-[
-"BATTERE",
-"SUONARE",
-"battere cassa"
-],
-[
-"CONTINUA",
-"PERENNE",
-"cassa continua (in banca)"
-]
-]
-},
-{
-"a": "LETTERA",
-"c": [
-[
-"MAIUSCOLA",
-"GRANDE",
-"lettera maiuscola"
-],
-[
-"RACCOMANDATA",
-"SPEDITA",
-"lettera raccomandata"
-],
-[
-"ANONIMA",
-"IGNOTA",
-"lettera anonima"
-],
-[
-"ALLA",
-"SULLA",
-"alla lettera"
-],
-[
-"SCARLATTA",
-"ROSSA",
-"La lettera scarlatta"
+"ALTO",
+"CORTO",
+"maglione a collo alto"
 ]
 ]
 },
 {
 "a": "SEGNO",
 "c": [
-[
-"ZODIACALE",
-"PLANETARIO",
-"segno zodiacale"
-],
 [
 "LASCIARE",
 "TENERE",
@@ -1458,14 +1963,19 @@
 "tiro a segno"
 ],
 [
-"CROCE",
-"CERCHIO",
-"segno della croce"
-],
-[
 "PIÙ",
 "MOLTO",
 "segno più"
+],
+[
+"CROCE",
+"CERCHIO",
+"il segno della croce"
+],
+[
+"COLPIRE",
+"SALTARE",
+"colpire nel segno"
 ]
 ]
 },
@@ -1483,11 +1993,6 @@
 "battuta di spirito"
 ],
 [
-"ULTIMA",
-"ESTREMA",
-"l’ultima battuta"
-],
-[
 "ARRESTO",
 "FERMO",
 "battuta d’arresto"
@@ -1496,6 +2001,11 @@
 "SERVIZIO",
 "CORTESIA",
 "battuta di servizio (nel tennis)"
+],
+[
+"ULTIMA",
+"ESTREMA",
+"l’ultima battuta"
 ]
 ]
 },
@@ -1523,69 +2033,9 @@
 "togliersi il cappello"
 ],
 [
-"PARLANTE",
-"ASCOLTANTE",
-"il Cappello Parlante (di Harry Potter)"
-]
-]
-},
-{
-"a": "TORRE",
-"c": [
-[
-"CONTROLLO",
-"COMANDO",
-"torre di controllo"
-],
-[
-"AVORIO",
-"EBANO",
-"torre d’avorio"
-],
-[
-"PISA",
-"LUCCA",
-"Torre di Pisa"
-],
-[
-"BABELE",
-"SODOMA",
-"Torre di Babele"
-],
-[
-"PENDENTE",
-"CADENTE",
-"torre pendente"
-]
-]
-},
-{
-"a": "MAPPA",
-"c": [
-[
-"CONCETTUALE",
-"SENTIMENTALE",
-"mappa concettuale"
-],
-[
-"TESORO",
-"FORZIERE",
-"mappa del tesoro"
-],
-[
-"CATASTALE",
-"CATASTROFICA",
-"mappa catastale"
-],
-[
-"STRADALE",
-"STRADINA",
-"mappa stradale"
-],
-[
-"ASTRALE",
-"LUNARE",
-"mappa astrale"
+"FUNGO",
+"FIORE",
+"il cappello del fungo"
 ]
 ]
 },
@@ -1610,42 +2060,12 @@
 [
 "BERSAGLIO",
 "FRECCIA",
-"centro del bersaglio"
+"il centro del bersaglio"
 ],
 [
-"AVANTI",
-"INDIETRO",
-"centroavanti"
-]
-]
-},
-{
-"a": "TRAPPOLA",
-"c": [
-[
-"TOPI",
-"RATTI",
-"trappola per topi"
-],
-[
-"ESPLOSIVA",
-"ESPLOSA",
-"trappola esplosiva"
-],
-[
-"MORTALE",
-"MORTO",
-"trappola mortale"
-],
-[
-"TURISTI",
-"VIAGGIATORI",
-"trappola per turisti"
-],
-[
-"CADERE",
-"SCIVOLARE",
-"cadere in trappola"
+"FARE",
+"DARE",
+"fare centro"
 ]
 ]
 },
@@ -1673,9 +2093,9 @@
 "la radice del male"
 ],
 [
-"LIQUIRIZIA",
-"MENTA",
-"radice di liquirizia"
+"METTERE",
+"TOGLIERE",
+"mettere radici"
 ]
 ]
 },
@@ -1693,9 +2113,9 @@
 "strada facendo"
 ],
 [
-"SBARRARE",
-"SPAZZOLARE",
-"sbarrare la strada"
+"FARSI",
+"DARSI",
+"farsi strada"
 ],
 [
 "FERRATA",
@@ -1703,69 +2123,9 @@
 "strada ferrata"
 ],
 [
-"FARSI",
-"DARSI",
-"farsi strada"
-]
-]
-},
-{
-"a": "FORMA",
-"c": [
-[
-"SMAGLIANTE",
-"BRILLANTE",
-"forma smagliante"
-],
-[
-"PARMIGIANO",
-"GRANA",
-"forma di parmigiano"
-],
-[
-"FISICA",
-"CHIMICA",
-"forma fisica"
-],
-[
-"MENTIS",
-"ANIMI",
-"forma mentis"
-],
-[
-"SCARPE",
-"CALZE",
-"forma per scarpe"
-]
-]
-},
-{
-"a": "COLTELLO",
-"c": [
-[
-"PANE",
-"ZUCCHERO",
-"coltello da pane"
-],
-[
-"MANICO",
-"PUGNO",
-"avere il coltello dalla parte del manico"
-],
-[
-"SERRAMANICO",
-"SERRATURA",
-"coltello a serramanico"
-],
-[
-"SVIZZERO",
-"FRANCESE",
-"coltellino svizzero"
-],
-[
-"GIRARE",
-"SPINGERE",
-"girare il coltello nella piaga"
+"MEZZO",
+"CENTRO",
+"in mezzo alla strada"
 ]
 ]
 },
@@ -1793,39 +2153,9 @@
 "i sei gradi di separazione"
 ],
 [
-"SCOLASTICO",
-"SCOLARO",
-"grado scolastico"
-]
-]
-},
-{
-"a": "BARRIERA",
-"c": [
-[
-"CORALLINA",
-"CORALE",
-"barriera corallina"
-],
-[
-"SUONO",
-"RUMORE",
-"barriera del suono"
-],
-[
-"ARCHITETTONICA",
-"EDILIZIA",
-"barriera architettonica"
-],
-[
-"CALCIO",
-"RIGORE",
-"la barriera su punizione (nel calcio)"
-],
-[
-"DOGANALE",
-"STATALE",
-"barriera doganale"
+"ESSERE",
+"STARE",
+"essere in grado"
 ]
 ]
 },
@@ -1860,36 +2190,6 @@
 ]
 },
 {
-"a": "ASSE",
-"c": [
-[
-"STIRO",
-"LAVATRICE",
-"asse da stiro"
-],
-[
-"TERRESTRE",
-"CELESTE",
-"asse terrestre"
-],
-[
-"EREDITARIO",
-"FAMILIARE",
-"asse ereditario"
-],
-[
-"CARTESIANO",
-"NEWTONIANO",
-"asse cartesiano"
-],
-[
-"PORTANTE",
-"PORTATILE",
-"asse portante"
-]
-]
-},
-{
 "a": "SPIRITO",
 "c": [
 [
@@ -1920,102 +2220,12 @@
 ]
 },
 {
-"a": "TUBO",
-"c": [
-[
-"CATODICO",
-"CATTOLICO",
-"tubo catodico"
-],
-[
-"SCAPPAMENTO",
-"SCAPPATA",
-"tubo di scappamento"
-],
-[
-"CAPIRE",
-"SAPERE",
-"non capire un tubo"
-],
-[
-"DIGERENTE",
-"DIGESTIVO",
-"tubo digerente"
-],
-[
-"DENTIFRICIO",
-"SPAZZOLINO",
-"tubetto del dentifricio"
-]
-]
-},
-{
-"a": "FORO",
-"c": [
-[
-"ROMANO",
-"GRECO",
-"Foro Romano"
-],
-[
-"COMPETENTE",
-"CAPACE",
-"foro competente"
-],
-[
-"ITALICO",
-"LATINO",
-"Foro Italico"
-],
-[
-"INTERIORE",
-"ESTERIORE",
-"foro interiore"
-],
-[
-"PASSANTE",
-"PASSEGGERO",
-"foro passante"
-]
-]
-},
-{
-"a": "FRECCIA",
-"c": [
-[
-"TRICOLORI",
-"COLORATE",
-"Frecce Tricolori"
-],
-[
-"DIREZIONE",
-"STRADA",
-"freccia di direzione"
-],
-[
-"AVVELENATA",
-"VELENOSA",
-"freccia avvelenata"
-],
-[
-"CUPIDO",
-"VENERE",
-"la freccia di Cupido"
-],
-[
-"ROSSA",
-"BLU",
-"Frecciarossa"
-]
-]
-},
-{
 "a": "OMBRA",
 "c": [
 [
 "DUBBIO",
 "SOSPETTO",
-"ombra di dubbio"
+"senza ombra di dubbio"
 ],
 [
 "CONO",
@@ -2063,9 +2273,9 @@
 "a passo di lumaca"
 ],
 [
-"DOPPIO",
-"TRIPLO",
-"passo doppio"
+"INDIETRO",
+"DENTRO",
+"fare un passo indietro"
 ]
 ]
 },
@@ -2093,39 +2303,9 @@
 "voce narrante"
 ],
 [
-"BASSA",
-"CORTA",
-"a voce bassa"
-]
-]
-},
-{
-"a": "FONTE",
-"c": [
-[
-"BATTESIMALE",
-"BATTEZZATA",
-"fonte battesimale"
-],
-[
-"ENERGIA",
-"FORZA",
-"fonte di energia"
-],
-[
-"GIOVINEZZA",
-"VECCHIAIA",
-"la fonte della giovinezza"
-],
-[
-"RINNOVABILE",
-"RICICLABILE",
-"fonte rinnovabile"
-],
-[
-"LUMINOSA",
-"ACCESA",
-"fonte luminosa"
+"GROSSA",
+"LARGA",
+"fare la voce grossa"
 ]
 ]
 },
@@ -2138,14 +2318,9 @@
 "curva sud"
 ],
 [
-"GAUSS",
-"EULERO",
-"curva di Gauss"
-],
-[
 "PARABOLICA",
 "IPERBOLICA",
-"curva parabolica"
+"la curva Parabolica di Monza"
 ],
 [
 "PERICOLOSA",
@@ -2156,6 +2331,11 @@
 "APPRENDIMENTO",
 "INSEGNAMENTO",
 "curva di apprendimento"
+],
+[
+"TIFOSI",
+"GIOCATORI",
+"la curva dei tifosi"
 ]
 ]
 },
@@ -2173,9 +2353,9 @@
 "rosa dei candidati"
 ],
 [
-"PANTERA",
-"TIGRE",
-"La Pantera Rosa"
+"SPINE",
+"FOGLIE",
+"non c’è rosa senza spine"
 ],
 [
 "NOME",
@@ -2183,9 +2363,9 @@
 "Il nome della rosa"
 ],
 [
-"SPINE",
-"FOGLIE",
-"non c’è rosa senza spine"
+"MAGLIA",
+"PODIO",
+"maglia rosa"
 ]
 ]
 },
@@ -2220,426 +2400,6 @@
 ]
 },
 {
-"a": "CUORE",
-"c": [
-[
-"LEONE",
-"AQUILA",
-"Cuor di Leone"
-],
-[
-"MANO",
-"PIEDE",
-"mano sul cuore"
-],
-[
-"INFRANTO",
-"SFASCIATO",
-"cuore infranto"
-],
-[
-"SACRO",
-"BENEDETTO",
-"Sacro Cuore"
-],
-[
-"CARCIOFO",
-"ZUCCHINA",
-"cuore di carciofo"
-]
-]
-},
-{
-"a": "CASA",
-"c": [
-[
-"BIANCA",
-"GRIGIA",
-"Casa Bianca"
-],
-[
-"CURA",
-"TERAPIA",
-"casa di cura"
-],
-[
-"DOLCE",
-"SALATA",
-"dolce casa"
-],
-[
-"POPOLARE",
-"FAMOSA",
-"casa popolare"
-],
-[
-"COLONICA",
-"COLONIALE",
-"casa colonica"
-]
-]
-},
-{
-"a": "TESTA",
-"c": [
-[
-"CALDA",
-"BOLLENTE",
-"testa calda"
-],
-[
-"LISTA",
-"ELENCO",
-"in testa alla lista"
-],
-[
-"SERIE",
-"SEQUENZA",
-"testa di serie"
-],
-[
-"GIRARE",
-"TOCCARE",
-"girare la testa"
-],
-[
-"ARIETE",
-"CAPRONE",
-"testa d’ariete"
-]
-]
-},
-{
-"a": "MANO",
-"c": [
-[
-"MORTA",
-"INERTE",
-"manomorta"
-],
-[
-"LIBERA",
-"SCIOLTA",
-"mano libera"
-],
-[
-"SANTA",
-"BEATA",
-"una mano santa (provvidenziale)"
-],
-[
-"SINISTRA",
-"STORTA",
-"mano sinistra"
-],
-[
-"LAVARE",
-"ASCIUGARE",
-"una mano lava l’altra"
-]
-]
-},
-{
-"a": "OCCHIO",
-"c": [
-[
-"BUE",
-"MUCCA",
-"occhio di bue"
-],
-[
-"PERNICE",
-"QUAGLIA",
-"occhio di pernice"
-],
-[
-"CICLONE",
-"TORNADO",
-"l’occhio del ciclone"
-],
-[
-"TERZO",
-"QUARTO",
-"il terzo occhio"
-],
-[
-"MAGICO",
-"FATATO",
-"L’occhio magico"
-]
-]
-},
-{
-"a": "BOCCA",
-"c": [
-[
-"LEONE",
-"TIGRE",
-"bocca di leone (il fiore)"
-],
-[
-"FUOCO",
-"ACQUA",
-"bocca di fuoco"
-],
-[
-"STOMACO",
-"FEGATO",
-"bocca dello stomaco"
-],
-[
-"VULCANO",
-"MONTAGNA",
-"la bocca del vulcano"
-],
-[
-"ROSA",
-"VIOLA",
-"Bocca di rosa (De André)"
-]
-]
-},
-{
-"a": "PAROLA",
-"c": [
-[
-"ORDINE",
-"COMANDO",
-"parola d’ordine"
-],
-[
-"ONORE",
-"GLORIA",
-"parola d’onore"
-],
-[
-"PASSA",
-"CORRI",
-"passa parola"
-],
-[
-"ULTIMA",
-"ESTREMA",
-"l’ultima parola"
-],
-[
-"MAGICA",
-"STREGATA",
-"parola magica"
-]
-]
-},
-{
-"a": "GIORNO",
-"c": [
-[
-"BUON",
-"SANO",
-"buongiorno"
-],
-[
-"ORDINE",
-"DISPOSIZIONE",
-"ordine del giorno"
-],
-[
-"GIUDIZIO",
-"SENTENZA",
-"il giorno del giudizio"
-],
-[
-"LUCE",
-"LAMPO",
-"la luce del giorno"
-],
-[
-"ALTRO",
-"ALTRUI",
-"l’altro giorno"
-]
-]
-},
-{
-"a": "NOTTE",
-"c": [
-[
-"CAMICIA",
-"GONNA",
-"camicia da notte"
-],
-[
-"TEMPI",
-"SECOLI",
-"la notte dei tempi"
-],
-[
-"MILLE",
-"CENTO",
-"Le mille e una notte"
-],
-[
-"FONDA",
-"PROFONDA",
-"notte fonda"
-],
-[
-"MUSEO",
-"GALLERIA",
-"Una notte al museo"
-]
-]
-},
-{
-"a": "TEMPO",
-"c": [
-[
-"MODERNI",
-"RECENTI",
-"Tempi moderni"
-],
-[
-"PIENO",
-"INTERO",
-"tempo pieno"
-],
-[
-"SCADUTO",
-"CONSUMATO",
-"tempo scaduto"
-],
-[
-"AMMAZZARE",
-"TAGLIARE",
-"ammazzare il tempo"
-],
-[
-"RECORD",
-"PRIMATO",
-"tempo record"
-]
-]
-},
-{
-"a": "MONDO",
-"c": [
-[
-"TETTO",
-"CIMA",
-"il tetto del mondo"
-],
-[
-"GIRO",
-"TOUR",
-"il giro del mondo"
-],
-[
-"OMBELICO",
-"PANCIA",
-"l’ombelico del mondo"
-],
-[
-"VECCHIO",
-"ANZIANO",
-"il Vecchio Mondo"
-],
-[
-"ALTRO",
-"DIVERSO",
-"l’altro mondo"
-]
-]
-},
-{
-"a": "ACQUA",
-"c": [
-[
-"SANTA",
-"BEATA",
-"acqua santa"
-],
-[
-"RAGIA",
-"RAGNA",
-"acqua ragia"
-],
-[
-"COLONIA",
-"PROVINCIA",
-"acqua di colonia"
-],
-[
-"FORTE",
-"ROBUSTA",
-"acquaforte"
-],
-[
-"ALTA",
-"SUPERIORE",
-"acqua alta"
-]
-]
-},
-{
-"a": "FUOCO",
-"c": [
-[
-"LINEA",
-"RIGA",
-"linea del fuoco"
-],
-[
-"CESSATE",
-"FERMATE",
-"cessate il fuoco"
-],
-[
-"PALLA",
-"GLOBO",
-"palla di fuoco"
-],
-[
-"BATTESIMO",
-"CRESIMA",
-"battesimo del fuoco"
-],
-[
-"LENTO",
-"PIGRO",
-"fuoco lento"
-]
-]
-},
-{
-"a": "TERRA",
-"c": [
-[
-"SANTA",
-"BEATA",
-"Terra Santa"
-],
-[
-"COTTA",
-"BOLLITA",
-"terracotta"
-],
-[
-"MEZZO",
-"CENTRO",
-"la Terra di Mezzo"
-],
-[
-"RASO",
-"SETA",
-"rasoterra"
-],
-[
-"NESSUNO",
-"QUALCUNO",
-"terra di nessuno"
-]
-]
-},
-{
 "a": "ARIA",
 "c": [
 [
@@ -2653,469 +2413,49 @@
 "aria fritta"
 ],
 [
-"SPOSTAMENTO",
-"MOVIMENTO",
-"spostamento d’aria"
-],
-[
 "MANCARE",
 "PERDERE",
 "mancare l’aria"
 ],
 [
-"VUOTO",
-"CAVO",
-"vuoto d’aria"
+"CASTELLI",
+"PALAZZI",
+"castelli in aria"
+],
+[
+"CAMBIARE",
+"SPOSTARE",
+"cambiare aria"
 ]
 ]
 },
 {
-"a": "SOLE",
+"a": "TERRA",
 "c": [
 [
-"MEZZANOTTE",
-"MEZZOGIORNO",
-"il sole di mezzanotte"
+"COTTA",
+"BOLLITA",
+"terracotta"
 ],
 [
-"POSTO",
-"SEDILE",
-"un posto al sole"
+"NESSUNO",
+"QUALCUNO",
+"terra di nessuno"
 ],
 [
-"RE",
-"PAPA",
-"il Re Sole"
+"PROMESSA",
+"GIURATA",
+"la Terra Promessa"
 ],
 [
-"BACIATO",
-"ACCAREZZATO",
-"baciato dal sole"
+"RASO",
+"SETA",
+"rasoterra"
 ],
 [
-"LEVANTE",
-"PONENTE",
-"il Sol Levante"
-]
-]
-},
-{
-"a": "LUNA",
-"c": [
-[
-"NUOVA",
-"GIOVANE",
-"luna nuova"
-],
-[
-"LATO",
-"FIANCO",
-"il lato oscuro della luna"
-],
-[
-"ABBAIARE",
-"MIAGOLARE",
-"abbaiare alla luna"
-],
-[
-"CHIARO",
-"SCURO",
-"chiaro di luna"
-],
-[
-"SBARCO",
-"SALTO",
-"lo sbarco sulla Luna"
-]
-]
-},
-{
-"a": "STELLA",
-"c": [
-[
-"DAVID",
-"SALOMONE",
-"stella di David"
-],
-[
-"ALPINA",
-"APPENNINICA",
-"Stella Alpina"
-],
-[
-"MICHELIN",
-"PIRELLI",
-"stella Michelin"
-],
-[
-"COMETA",
-"METEORA",
-"stella cometa"
-],
-[
-"NANA",
-"BASSA",
-"stella nana"
-]
-]
-},
-{
-"a": "MARE",
-"c": [
-[
-"NOSTRUM",
-"VOSTRUM",
-"Mare Nostrum"
-],
-[
-"ALTO",
-"LARGO",
-"in alto mare"
-],
-[
-"ROSSO",
-"VIOLA",
-"Mar Rosso"
-],
-[
-"MORTO",
-"DEFUNTO",
-"Mar Morto"
-],
-[
-"PORTO",
-"STAZIONE",
-"porto di mare"
-]
-]
-},
-{
-"a": "VENTO",
-"c": [
-[
-"CONTRO",
-"SOPRA",
-"controvento"
-],
-[
-"CAMPANE",
-"CHITARRE",
-"campane al vento"
-],
-[
-"QUATTRO",
-"SEI",
-"ai quattro venti"
-],
-[
-"VIA",
-"CORSO",
-"Via col vento"
-],
-[
-"GALLERIA",
-"TUNNEL",
-"galleria del vento"
-]
-]
-},
-{
-"a": "NEVE",
-"c": [
-[
-"CANNONE",
-"FUCILE",
-"cannone sparaneve"
-],
-[
-"BIANCA",
-"LATTEA",
-"Biancaneve"
-],
-[
-"SPAZZA",
-"PULISCI",
-"spazzaneve"
-],
-[
-"ABOMINEVOLE",
-"TERRIBILE",
-"l’abominevole uomo delle nevi"
-],
-[
-"LEOPARDO",
-"GHEPARDO",
-"leopardo delle nevi"
-]
-]
-},
-{
-"a": "ORO",
-"c": [
-[
-"CERCATORE",
-"SCAVATORE",
-"cercatore d’oro"
-],
-[
-"VITELLO",
-"AGNELLO",
-"il vitello d’oro"
-],
-[
-"NOZZE",
-"FESTA",
-"nozze d’oro"
-],
-[
-"RAGAZZO",
-"VECCHIO",
-"ragazzo d’oro"
-],
-[
-"FEBBRE",
-"TOSSE",
-"la febbre dell’oro"
-]
-]
-},
-{
-"a": "FERRO",
-"c": [
-[
-"FILO",
-"CAVO",
-"filo di ferro"
-],
-[
-"CORTINA",
-"TENDA",
-"cortina di ferro"
-],
-[
-"PUGNO",
-"SCHIAFFO",
-"pugno di ferro"
-],
-[
-"ETÀ",
-"EPOCA",
-"l’età del ferro"
-],
-[
-"BRACCIO",
-"GOMITO",
-"braccio di ferro"
-]
-]
-},
-{
-"a": "CARTA",
-"c": [
-[
-"BOLLATA",
-"TIMBRATA",
-"carta bollata"
-],
-[
-"CANTA",
-"PARLA",
-"carta canta"
-],
-[
-"STAGNOLA",
-"STAGNANTE",
-"carta stagnola"
-],
-[
-"FORNO",
-"FRIGO",
-"carta forno"
-],
-[
-"VINI",
-"FORMAGGI",
-"carta dei vini"
-]
-]
-},
-{
-"a": "LIBRO",
-"c": [
-[
-"NERO",
-"SCURO",
-"libro nero"
-],
-[
-"MASTRO",
-"MAESTRO",
-"libro mastro"
-],
-[
-"CUORE",
-"ANIMA",
-"il libro Cuore"
-],
-[
-"GUINNESS",
-"HEINEKEN",
-"il Guinness, il libro dei primati"
-],
-[
-"GIUNGLA",
-"FORESTA",
-"Il libro della giungla"
-]
-]
-},
-{
-"a": "PALLA",
-"c": [
-[
-"MEDICA",
-"INFERMIERA",
-"palla medica"
-],
-[
-"CANNONE",
-"FUCILE",
-"palla di cannone"
-],
-[
-"BIGLIARDO",
-"SCACCHI",
-"palla da biliardo"
-],
-[
-"BOWLING",
-"SCI",
-"palla da bowling"
-],
-[
-"PELO",
-"CODA",
-"palla di pelo (dei gatti)"
-]
-]
-},
-{
-"a": "RUOTA",
-"c": [
-[
-"TORTURA",
-"FORCA",
-"la ruota della tortura"
-],
-[
-"CRICETO",
-"CANARINO",
-"la ruota del criceto"
-],
-[
-"LIBERA",
-"SCIOLTA",
-"ruota libera"
-],
-[
-"DENTATA",
-"DENTUTA",
-"ruota dentata"
-],
-[
-"MULINO",
-"FORNO",
-"la ruota del mulino"
-]
-]
-},
-{
-"a": "PORTA",
-"c": [
-[
-"SERVIZIO",
-"CORTESIA",
-"porta di servizio"
-],
-[
-"SANTA",
-"BEATA",
-"Porta Santa"
-],
-[
-"FINESTRA",
-"BALCONE",
-"porta-finestra"
-],
-[
-"CHIUSE",
-"STRETTE",
-"a porte chiuse"
-],
-[
-"PIA",
-"DEVOTA",
-"Porta Pia"
-]
-]
-},
-{
-"a": "FILO",
-"c": [
-[
-"PIOMBO",
-"STAGNO",
-"filo a piombo"
-],
-[
-"PERLE",
-"DIAMANTI",
-"filo di perle"
-],
-[
-"VOCE",
-"TONO",
-"un filo di voce"
-],
-[
-"CONDUTTORE",
-"PILOTA",
-"filo conduttore"
-],
-[
-"DIRETTO",
-"IMMEDIATO",
-"filo diretto"
-]
-]
-},
-{
-"a": "SALE",
-"c": [
-[
-"INGLESE",
-"FRANCESE",
-"sale inglese"
-],
-[
-"MARINO",
-"MONTANO",
-"sale marino"
-],
-[
-"SPARGERE",
-"VERSARE",
-"spargere sale"
-],
-[
-"BAGNO",
-"DOCCIA",
-"sali da bagno"
-],
-[
-"PEPE",
-"CANNELLA",
-"sale e pepe"
+"PIEDI",
+"MANI",
+"con i piedi per terra"
 ]
 ]
 },
@@ -3126,11 +2466,6 @@
 "DIRE",
 "URLARE",
 "dire pane al pane"
-],
-[
-"CARASAU",
-"SEADAS",
-"pane carasau"
 ],
 [
 "SPEZZARE",
@@ -3146,6 +2481,11 @@
 "GUADAGNARSI",
 "MERITARSI",
 "guadagnarsi il pane"
+],
+[
+"BUONO",
+"BELLO",
+"buono come il pane"
 ]
 ]
 },
@@ -3155,7 +2495,7 @@
 [
 "GINOCCHIA",
 "CAVIGLIE",
-"latte alle ginocchia"
+"far venire il latte alle ginocchia"
 ],
 [
 "MACCHIATO",
@@ -3163,19 +2503,19 @@
 "latte macchiato"
 ],
 [
-"MAIALINO",
-"CONIGLIO",
-"maialino da latte"
-],
-[
 "DENTI",
 "UNGHIE",
 "denti da latte"
 ],
 [
-"SCREMATO",
-"ASCIUGATO",
-"latte scremato"
+"VERSATO",
+"SPARSO",
+"piangere sul latte versato"
+],
+[
+"MIELE",
+"SALE",
+"latte e miele"
 ]
 ]
 },
@@ -3193,2299 +2533,49 @@
 "vin brulè"
 ],
 [
-"VERITAS",
-"LUX",
-"in vino veritas"
-],
-[
-"CASA",
-"FAMIGLIA",
-"vino della casa"
-],
-[
 "TAVOLA",
 "SEDIA",
 "vino da tavola"
-]
-]
-},
-{
-"a": "PASTA",
-"c": [
-[
-"MADRE",
-"PADRE",
-"pasta madre"
-],
-[
-"MANI",
-"PIEDI",
-"avere le mani in pasta"
-],
-[
-"UOMO",
-"DONNA",
-"un uomo di pasta buona"
-],
-[
-"BRISÉ",
-"FLAMBÉ",
-"pasta brisé"
-],
-[
-"MANDORLE",
-"CASTAGNE",
-"pasta di mandorle"
-]
-]
-},
-{
-"a": "SCARPA",
-"c": [
-[
-"CORNO",
-"FLAUTO",
-"calzascarpe (il corno da scarpe)"
-],
-[
-"SUOLA",
-"BASE",
-"la suola della scarpa"
-],
-[
-"TACCO",
-"GOMITO",
-"scarpa col tacco"
-],
-[
-"LUSTRA",
-"LAVA",
-"lustrascarpe"
-],
-[
-"CENERENTOLA",
-"RAPERONZOLO",
-"la scarpetta di Cenerentola"
-]
-]
-},
-{
-"a": "GHIACCIO",
-"c": [
-[
-"SECCO",
-"ARIDO",
-"ghiaccio secco"
-],
-[
-"ROMPERE",
-"TAGLIARE",
-"rompere il ghiaccio"
-],
-[
-"PATTINAGGIO",
-"NUOTO",
-"pattinaggio su ghiaccio"
-],
-[
-"PALAZZO",
-"CASTELLO",
-"palazzo del ghiaccio"
-],
-[
-"HOCKEY",
-"RUGBY",
-"hockey su ghiaccio"
-]
-]
-},
-{
-"a": "FIORE",
-"c": [
-[
-"OCCHIELLO",
-"ASOLA",
-"fiore all’occhiello"
-],
-[
-"LOTO",
-"LOTTO",
-"fiore di loto"
-],
-[
-"CAVOLO",
-"RAPA",
-"cavolfiore"
-],
-[
-"PELLE",
-"OSSA",
-"a fior di pelle"
-],
-[
-"ETÀ",
-"ANNI",
-"nel fiore dell’età"
-]
-]
-},
-{
-"a": "PUNTO",
-"c": [
-[
-"CROCE",
-"CERCHIO",
-"punto croce"
-],
-[
-"VISTA",
-"OLFATTO",
-"punto di vista"
-],
-[
-"ESCLAMATIVO",
-"INTERROGATORIO",
-"punto esclamativo"
-],
-[
-"INCONTRO",
-"SCONTRO",
-"punto d’incontro"
-],
-[
-"MORTO",
-"VIVO",
-"punto morto"
-]
-]
-},
-{
-"a": "BANCO",
-"c": [
-[
-"SCUOLA",
-"UFFICIO",
-"banco di scuola"
-],
-[
-"PROVA",
-"GARA",
-"banco di prova"
-],
-[
-"NEBBIA",
-"PIOGGIA",
-"banco di nebbia"
-],
-[
-"PESCI",
-"UCCELLI",
-"banco di pesci"
-],
-[
-"LAVORO",
-"RIPOSO",
-"banco da lavoro"
-]
-]
-},
-{
-"a": "COLPO",
-"c": [
-[
-"GENIO",
-"TALENTO",
-"colpo di genio"
-],
-[
-"FULMINE",
-"TUONO",
-"colpo di fulmine"
-],
-[
-"STATO",
-"NAZIONE",
-"colpo di stato"
-],
-[
-"SCENA",
-"QUINTA",
-"colpo di scena"
-],
-[
-"TESTA",
-"NUCA",
-"colpo di testa"
-]
-]
-},
-{
-"a": "CHIODO",
-"c": [
-[
-"SCACCIA",
-"CACCIA",
-"chiodo scaccia chiodo"
-],
-[
-"FISSO",
-"STABILE",
-"chiodo fisso"
-],
-[
-"GAROFANO",
-"ROSA",
-"chiodi di garofano"
-],
-[
-"APPENDERE",
-"ATTACCARE",
-"appendere al chiodo"
-],
-[
-"MAGRO",
-"SNELLO",
-"magro come un chiodo"
-]
-]
-},
-{
-"a": "CAPO",
-"c": [
-[
-"STAZIONE",
-"FERMATA",
-"capostazione"
-],
-[
-"SQUADRA",
-"LEGA",
-"caposquadra"
-],
-[
-"SPERANZA",
-"FIDUCIA",
-"Capo di Buona Speranza"
-],
-[
-"ANNO",
-"MESE",
-"Capodanno"
-],
-[
-"LAVORO",
-"IMPIEGO",
-"capolavoro"
-]
-]
-},
-{
-"a": "PIATTO",
-"c": [
-[
-"FORTE",
-"MORBIDO",
-"piatto forte"
-],
-[
-"DOCCIA",
-"VASCA",
-"piatto doccia"
-],
-[
-"BILANCIA",
-"METRO",
-"il piatto della bilancia"
-],
-[
-"PIANGE",
-"RIDE",
-"piange il piatto (a carte)"
-],
-[
-"ARGENTO",
-"LATTA",
-"servire su un piatto d’argento"
-]
-]
-},
-{
-"a": "PESCE",
-"c": [
-[
-"APRILE",
-"MAGGIO",
-"pesce d’aprile"
-],
-[
-"SPADA",
-"COLTELLO",
-"pesce spada"
-],
-[
-"PALLA",
-"PALO",
-"pesce palla"
-],
-[
-"PILOTA",
-"NAVIGATORE",
-"pesce pilota"
-],
-[
-"GROSSO",
-"ENORME",
-"pesce grosso"
-]
-]
-},
-{
-"a": "CANE",
-"c": [
-[
-"SCIOLTO",
-"LEGATO",
-"cane sciolto"
-],
-[
-"FREDDO",
-"GELIDO",
-"freddo cane"
-],
-[
-"GUARDIA",
-"LADRO",
-"cane da guardia"
-],
-[
-"BASTONATO",
-"PICCHIATO",
-"come un cane bastonato"
-],
-[
-"LUPO",
-"ORSO",
-"cane lupo"
-]
-]
-},
-{
-"a": "GATTO",
-"c": [
-[
-"NOVE",
-"DIECI",
-"il gatto ha nove vite"
-],
-[
-"STIVALI",
-"GUANTI",
-"Il gatto con gli stivali"
-],
-[
-"SELVATICO",
-"FEROCE",
-"gatto selvatico"
-],
-[
-"NEVI",
-"GHIACCI",
-"gatto delle nevi"
-],
-[
-"SILVESTRO",
-"TITTI",
-"Gatto Silvestro"
-]
-]
-},
-{
-"a": "TOPO",
-"c": [
-[
-"BIBLIOTECA",
-"SCUOLA",
-"topo di biblioteca"
-],
-[
-"CAMPAGNA",
-"MONTAGNA",
-"topo di campagna"
-],
-[
-"GIGIO",
-"GIGI",
-"Topo Gigio"
-],
-[
-"MUSCHIATO",
-"PROFUMATO",
-"topo muschiato"
-],
-[
-"APPARTAMENTO",
-"CONDOMINIO",
-"topo d’appartamento"
-]
-]
-},
-{
-"a": "LUPO",
-"c": [
-[
-"MARE",
-"OCEANO",
-"lupo di mare"
-],
-[
-"SOLITARIO",
-"SOLO",
-"lupo solitario"
-],
-[
-"MANNARO",
-"MANNA",
-"lupo mannaro"
-],
-[
-"PELO",
-"CODA",
-"il lupo perde il pelo ma non il vizio"
-],
-[
-"BOCCA",
-"NASO",
-"in bocca al lupo"
-]
-]
-},
-{
-"a": "ORSO",
-"c": [
-[
-"POLARE",
-"TROPICALE",
-"orso polare"
-],
-[
-"BRUNO",
-"CASTANO",
-"orso bruno"
-],
-[
-"MARSICANO",
-"MESSICANO",
-"orso marsicano"
-],
-[
-"PELLE",
-"PELLICCIA",
-"vendere la pelle dell’orso"
-],
-[
-"YOGI",
-"GARFIELD",
-"l’orso Yoghi"
-]
-]
-},
-{
-"a": "CAVALLO",
-"c": [
-[
-"BATTAGLIA",
-"LOTTA",
-"cavallo di battaglia"
-],
-[
-"TROIA",
-"SPARTA",
-"cavallo di Troia"
-],
-[
-"DONDOLO",
-"ALTALENA",
-"cavallo a dondolo"
-],
-[
-"VAPORE",
-"FUMO",
-"cavallo a vapore"
-],
-[
-"DONATO",
-"REGALATO",
-"a caval donato non si guarda in bocca"
-]
-]
-},
-{
-"a": "VOLPE",
-"c": [
-[
-"ARGENTATA",
-"DORATA",
-"volpe argentata"
-],
-[
-"DESERTO",
-"OASI",
-"volpe del deserto"
-],
-[
-"UVA",
-"MELA",
-"la volpe e l’uva"
-],
-[
-"GATTO",
-"TOPO",
-"il Gatto e la Volpe"
-],
-[
-"FURBA",
-"SVEGLIA",
-"volpe furba"
-]
-]
-},
-{
-"a": "AQUILA",
-"c": [
-[
-"REALE",
-"REGALE",
-"aquila reale"
-],
-[
-"CALVA",
-"RASATA",
-"aquila calva"
-],
-[
-"NIDO",
-"TANA",
-"nido d’aquila"
-],
-[
-"OCCHIO",
-"ORECCHIO",
-"occhio d’aquila"
-],
-[
-"BICIPITE",
-"TRICIPITE",
-"aquila bicipite (a due teste)"
-]
-]
-},
-{
-"a": "LEONE",
-"c": [
-[
-"MARINO",
-"MONTANO",
-"leone marino"
-],
-[
-"MARCO",
-"LUCA",
-"il leone di San Marco"
-],
-[
-"RE",
-"PRINCIPE",
-"il re leone"
-],
-[
-"PARTE",
-"QUOTA",
-"la parte del leone"
-],
-[
-"CUOR",
-"ANIMO",
-"Cuor di Leone"
-]
-]
-},
-{
-"a": "NERO",
-"c": [
-[
-"SEPPIA",
-"POLPO",
-"nero di seppia"
-],
-[
-"PECORA",
-"CAPRA",
-"pecora nera"
-],
-[
-"LAVORO",
-"MESTIERE",
-"lavoro nero"
-],
-[
-"BIANCO",
-"GRIGIO",
-"bianco e nero"
-],
-[
-"CRONACA",
-"STORIA",
-"cronaca nera"
-]
-]
-},
-{
-"a": "GIALLO",
-"c": [
-[
-"CANARINO",
-"PASSERO",
-"giallo canarino"
-],
-[
-"ROMANZO",
-"SAGGIO",
-"romanzo giallo"
-],
-[
-"PAGINE",
-"FOGLIE",
-"Pagine Gialle"
-],
-[
-"FIAMME",
-"LUCI",
-"Fiamme Gialle"
-],
-[
-"CARTELLINO",
-"BIGLIETTO",
-"cartellino giallo"
-]
-]
-},
-{
-"a": "BLU",
-"c": [
-[
-"NOTTE",
-"SERA",
-"blu notte"
 ],
 [
 "SANGUE",
-"SUDORE",
-"sangue blu"
+"LATTE",
+"il buon vino fa buon sangue"
 ],
 [
-"PUFFI",
-"GNOMI",
-"i Puffi blu"
-],
-[
-"BALENA",
-"SQUALO",
-"balenottera blu"
-],
-[
-"COBALTO",
-"RAME",
-"blu cobalto"
+"BOTTE",
+"BARILE",
+"botte di vino"
 ]
 ]
 },
 {
-"a": "CALDO",
+"a": "SALE",
 "c": [
-[
-"TAVOLA",
-"SEDIA",
-"tavola calda"
-],
-[
-"PUNTO",
-"LINEA",
-"punto caldo"
-],
-[
-"CIOCCOLATA",
-"CARAMELLA",
-"cioccolata calda"
-],
-[
-"AUTUNNO",
-"INVERNO",
-"autunno caldo"
-],
-[
-"TESTA",
-"MANO",
-"testa calda"
-]
-]
-},
-{
-"a": "FREDDO",
-"c": [
-[
-"SANGUE",
-"SUDORE",
-"a sangue freddo"
-],
-[
-"GUERRA",
-"PACE",
-"guerra fredda"
-],
-[
-"DOCCIA",
-"VASCA",
-"doccia fredda"
-],
-[
-"PIATTO",
-"BICCHIERE",
-"piatto freddo"
-],
-[
-"CANE",
-"GATTO",
-"freddo cane"
-]
-]
-},
-{
-"a": "DOPPIO",
-"c": [
-[
-"GIOCO",
-"PARTITA",
-"doppio gioco"
-],
-[
-"SENSO",
-"SIGNIFICATO",
-"doppio senso"
-],
-[
-"FONDO",
-"FINE",
-"doppio fondo"
-],
-[
-"MENTO",
-"NASO",
-"doppio mento"
-],
-[
-"PETTO",
-"SCHIENA",
-"doppiopetto"
-]
-]
-},
-{
-"a": "SACCO",
-"c": [
-[
-"PELO",
-"COPERTA",
-"sacco a pelo"
-],
-[
-"CORSA",
-"GARA",
-"corsa nei sacchi"
-],
-[
-"VUOTO",
-"BUCATO",
-"sacco vuoto (non sta in piedi)"
-],
-[
-"MANI",
-"BRACCIA",
-"con le mani nel sacco"
-],
-[
-"BOXE",
-"SCHERMA",
-"sacco da boxe"
-]
-]
-},
-{
-"a": "BORSA",
-"c": [
-[
-"VALORI",
-"DOLORI",
-"borsa valori"
-],
-[
-"ACQUA",
-"BIRRA",
-"borsa dell’acqua (calda)"
-],
-[
-"STUDIO",
-"STANZA",
-"borsa di studio"
-],
-[
-"NERA",
-"SCURA",
-"borsa nera"
-],
-[
-"GHIACCIO",
-"NEVE",
-"borsa del ghiaccio"
-]
-]
-},
-{
-"a": "MAGLIA",
-"c": [
-[
-"FERRI",
-"CHIODI",
-"maglia ai ferri"
-],
-[
-"RETE",
-"TRAPPOLA",
-"le maglie della rete"
-],
-[
-"CATENA",
-"CORDA",
-"una maglia della catena"
-],
-[
-"INTIMA",
-"PRIVATA",
-"maglia intima"
-],
-[
-"NERA",
-"OSCURA",
-"maglia nera"
-]
-]
-},
-{
-"a": "CAMICIA",
-"c": [
-[
-"FORZA",
-"POTENZA",
-"camicia di forza"
-],
-[
-"NOTTE",
-"SERA",
-"camicia da notte"
-],
-[
-"SUDARE",
-"BAGNARE",
-"sudare sette camicie"
-],
-[
-"MANICHE",
-"BRACCIA",
-"in maniche di camicia"
-],
-[
-"ROSSE",
-"ROSA",
-"Camicie Rosse"
-]
-]
-},
-{
-"a": "ANELLO",
-"c": [
-[
-"FIDANZAMENTO",
-"AMICIZIA",
-"anello di fidanzamento"
-],
-[
-"SIGNORE",
-"PADRONE",
-"Il Signore degli Anelli"
-],
-[
-"SATURNO",
-"MERCURIO",
-"gli anelli di Saturno"
-],
-[
-"MANCANTE",
-"PERSO",
-"l’anello mancante"
-],
-[
-"CONGIUNZIONE",
-"DISGIUNZIONE",
-"anello di congiunzione"
-]
-]
-},
-{
-"a": "SPADA",
-"c": [
-[
-"DAMOCLE",
-"ACHILLE",
-"la spada di Damocle"
-],
-[
-"PESCE",
-"POLPO",
-"pesce spada"
-],
-[
-"ROCCIA",
-"PIETRA",
-"la spada nella roccia"
-],
-[
-"FERISCE",
-"COLPISCE",
-"chi di spada ferisce di spada perisce"
-],
-[
-"SAMURAI",
-"SUMO",
-"la spada del samurai"
-]
-]
-},
-{
-"a": "ARCO",
-"c": [
-[
-"BALENO",
-"TUONO",
-"arcobaleno"
-],
-[
-"TRIONFO",
-"VITTORIA",
-"arco di trionfo"
-],
-[
-"FRECCE",
-"LANCE",
-"arco e frecce"
-],
-[
-"VIOLINO",
-"PIANOFORTE",
-"l’archetto del violino"
-],
-[
-"GOTICO",
-"BAROCCO",
-"arco gotico"
-]
-]
-},
-{
-"a": "CAMPANA",
-"c": [
-[
-"VETRO",
-"LEGNO",
-"campana di vetro"
-],
-[
-"SUONARE",
-"BALLARE",
-"suonare la campana"
-],
-[
-"ALTRA",
-"NUOVA",
-"sentire l’altra campana"
-],
-[
-"SORDO",
-"MUTO",
-"sordo come una campana"
-],
-[
-"NATALE",
-"PASQUA",
-"campane di Natale"
-]
-]
-},
-{
-"a": "MEDAGLIA",
-"c": [
-[
-"ROVESCIO",
-"SMASH",
-"il rovescio della medaglia"
-],
-[
-"BRONZO",
-"STAGNO",
-"medaglia di bronzo"
-],
-[
-"VALORE",
-"CORAGGIO",
-"medaglia al valore"
-],
-[
-"APPUNTARE",
-"CUCIRE",
-"appuntare una medaglia"
-],
-[
-"OLIMPICA",
-"OLIMPIONICA",
-"medaglia olimpica"
-]
-]
-},
-{
-"a": "PROVA",
-"c": [
-[
-"FUOCO",
-"VENTO",
-"prova del fuoco"
-],
-[
-"COSTUME",
-"VESTITO",
-"prova costume"
-],
-[
-"NOVE",
-"OTTO",
-"la prova del nove"
-],
-[
-"GENERALE",
-"COLONNELLO",
-"prova generale"
-],
-[
-"FORZA",
-"POTENZA",
-"prova di forza"
-]
-]
-},
-{
-"a": "CLASSE",
-"c": [
-[
-"CAPO",
-"PIEDE",
-"capoclasse"
-],
-[
-"TURISTICA",
-"VACANZIERA",
-"classe turistica"
-],
-[
-"OPERAIA",
-"IMPIEGATA",
-"classe operaia"
-],
-[
-"PRIMA",
-"MIGLIORE",
-"prima classe"
-],
-[
-"LOTTA",
-"GUERRA",
-"lotta di classe"
-]
-]
-},
-{
-"a": "LETTO",
-"c": [
-[
-"CASTELLO",
-"TORRE",
-"letto a castello"
-],
-[
-"MATRIMONIALE",
-"SPOSATO",
-"letto matrimoniale"
-],
-[
-"FIUME",
-"LAGO",
-"il letto del fiume"
-],
-[
-"ROSE",
-"TULIPANI",
-"un letto di rose"
-],
-[
-"PIEDI",
-"MANI",
-"ai piedi del letto"
-]
-]
-},
-{
-"a": "MURO",
-"c": [
-[
-"BERLINO",
-"PARIGI",
-"il Muro di Berlino"
-],
-[
-"PIANTO",
-"LACRIME",
-"il Muro del Pianto"
-],
-[
-"SECCO",
-"BAGNATO",
-"muro a secco"
-],
-[
-"SUONO",
-"RUMORE",
-"muro del suono"
-],
-[
-"SPALLE",
-"BRACCIA",
-"con le spalle al muro"
-]
-]
-},
-{
-"a": "ANGOLO",
-"c": [
-[
-"COTTURA",
-"CUCINA",
-"angolo cottura"
-],
-[
-"CALCIO",
-"RIGORE",
-"calcio d’angolo"
-],
-[
-"RETTO",
-"DRITTO",
-"angolo retto"
-],
-[
-"OTTUSO",
-"STUPIDO",
-"angolo ottuso"
-],
-[
-"DIETRO",
-"SOTTO",
-"dietro l’angolo"
-]
-]
-},
-{
-"a": "PIAZZA",
-"c": [
-[
-"AFFARI",
-"COMMERCI",
-"Piazza Affari"
-],
-[
-"SCENDERE",
-"SALIRE",
-"scendere in piazza"
-],
-[
-"PULITA",
-"SPORCA",
-"fare piazza pulita"
-],
-[
-"MIRACOLI",
-"PRODIGI",
-"Piazza dei Miracoli (Pisa)"
-],
-[
-"SPAGNA",
-"FRANCIA",
-"Piazza di Spagna"
-]
-]
-},
-{
-"a": "STAZIONE",
-"c": [
-[
-"SERVIZIO",
-"RIPARAZIONE",
-"stazione di servizio"
-],
-[
-"SPAZIALE",
-"ASTRALE",
-"stazione spaziale"
-],
-[
-"SCIISTICA",
-"SCISTICA",
-"stazione sciistica"
-],
-[
-"CAPO",
-"MANO",
-"capostazione"
-],
-[
-"BALNEARE",
-"BALENA",
-"stazione balneare"
-]
-]
-},
-{
-"a": "TRENO",
-"c": [
-[
-"VITA",
-"STILE",
-"treno di vita"
-],
-[
-"MERCI",
-"BAGAGLI",
-"treno merci"
-],
-[
-"REGIONALE",
-"PROVINCIALE",
-"treno regionale"
-],
-[
-"LUMACA",
-"FORMICA",
-"treno lumaca"
-],
-[
-"CARROZZA",
-"AUTO",
-"la carrozza del treno"
-]
-]
-},
-{
-"a": "NAVE",
-"c": [
-[
-"SCUOLA",
-"LICEO",
-"nave scuola"
-],
-[
-"CROCIERA",
-"VIAGGIO",
-"nave da crociera"
-],
-[
-"FANTASMA",
-"SPETTRO",
-"nave fantasma"
-],
-[
-"PIRATA",
-"BANDITO",
-"nave pirata"
-],
-[
-"SPAZIALE",
-"ASTRALE",
-"nave spaziale"
-]
-]
-},
-{
-"a": "AEREO",
-"c": [
-[
-"CARTA",
-"STOFFA",
-"aeroplano di carta"
-],
-[
-"LINEA",
-"RIGA",
-"aereo di linea"
-],
-[
-"PONTE",
-"TUNNEL",
-"ponte aereo"
-],
-[
-"SPAZIO",
-"VUOTO",
-"spazio aereo"
-],
-[
-"CACCIA",
-"PESCA",
-"aereo da caccia"
-]
-]
-},
-{
-"a": "OMBRELLO",
-"c": [
-[
-"NUCLEARE",
-"SOLARE",
-"ombrello nucleare"
-],
-[
-"CHERBOURG",
-"PARIGI",
-"Les parapluies de Cherbourg (Gli ombrelli di Cherbourg)"
-],
-[
-"APRIRE",
-"LAVARE",
-"aprire l’ombrello"
-],
-[
-"PINO",
-"ABETE",
-"pino a ombrello"
-],
-[
-"POPPINS",
-"PINOCCHIO",
-"l’ombrello di Mary Poppins"
-]
-]
-},
-{
-"a": "CATENA",
-"c": [
-[
-"MONTUOSA",
-"ROCCIOSA",
-"catena montuosa"
-],
-[
-"ANTONIO",
-"FRANCESCO",
-"la catena di Sant’Antonio"
-],
-[
-"MONTAGGIO",
-"SMONTAGGIO",
-"catena di montaggio"
-],
-[
-"ALIMENTARE",
-"NUTRIZIONALE",
-"catena alimentare"
-],
-[
-"REAZIONE",
-"AZIONE",
-"reazione a catena"
-]
-]
-},
-{
-"a": "CORDA",
-"c": [
-[
-"SALTARE",
-"CORRERE",
-"saltare la corda"
-],
-[
-"VOCALI",
-"CONSONANTI",
-"corde vocali"
-],
-[
-"TESA",
-"STIRATA",
-"corda tesa"
-],
-[
-"TIRARE",
-"SPINGERE",
-"tirare la corda"
-],
-[
-"IMPICCATO",
-"PRIGIONIERO",
-"non parlare di corda in casa dell’impiccato"
-]
-]
-},
-{
-"a": "NASTRO",
-"c": [
-[
-"AZZURRO",
-"BLU",
-"Nastro Azzurro"
-],
-[
-"ADESIVO",
-"COLLANTE",
-"nastro adesivo"
-],
-[
-"TRASPORTATORE",
-"TRASPORTATO",
-"nastro trasportatore"
-],
-[
-"TAGLIO",
-"CUCITO",
-"il taglio del nastro"
-],
-[
-"MOBIUS",
-"PITAGORA",
-"nastro di Möbius"
-]
-]
-},
-{
-"a": "RE",
-"c": [
-[
-"LEONE",
-"TIGRE",
-"Il re leone"
-],
-[
-"SOLE",
-"LUNA",
-"il Re Sole"
-],
-[
-"MIDA",
-"ZEUS",
-"re Mida"
-],
-[
-"ARTÙ",
-"MERLINO",
-"re Artù"
-],
-[
-"NUDO",
-"SCALZO",
-"il re è nudo"
-]
-]
-},
-{
-"a": "REGINA",
-"c": [
-[
-"NEVI",
-"GHIACCI",
-"la Regina delle Nevi"
-],
-[
-"MADRE",
-"NONNA",
-"regina madre"
-],
-[
-"API",
-"FARFALLE",
-"l’ape regina"
-],
-[
-"CUORI",
-"STELLE",
-"la Regina di Cuori"
-],
-[
-"SCACCHI",
-"BOCCE",
-"la regina degli scacchi"
-]
-]
-},
-{
-"a": "PRINCIPE",
-"c": [
-[
-"AZZURRO",
-"BLU",
-"principe azzurro"
-],
-[
-"PICCOLO",
-"GRANDE",
-"Il piccolo principe"
-],
-[
-"RANOCCHIO",
-"ROSPO",
-"il principe ranocchio"
-],
-[
-"PERSIA",
-"EGITTO",
-"Il principe di Persia"
-],
-[
-"CONSORTE",
-"SPOSO",
-"principe consorte"
-]
-]
-},
-{
-"a": "CASTELLO",
-"c": [
-[
-"SABBIA",
-"SALE",
-"castello di sabbia"
-],
-[
-"CARTE",
-"CARTONE",
-"castello di carte"
-],
-[
-"LETTO",
-"DIVANO",
-"letto a castello"
-],
-[
-"SFORZESCO",
-"SFORZATO",
-"Castello Sforzesco"
-],
-[
-"ARIA",
-"CIELO",
-"castelli in aria"
-]
-]
-},
-{
-"a": "BOMBA",
-"c": [
-[
-"OROLOGERIA",
-"GIOIELLERIA",
-"bomba a orologeria"
-],
-[
-"ACQUA",
-"FUOCO",
-"bomba d’acqua"
-],
-[
-"CALORICA",
-"VITAMINICA",
-"bomba calorica"
-],
-[
-"ATOMICA",
-"MOLECOLARE",
-"bomba atomica"
-],
-[
-"CARTA",
-"FOGLIO",
-"bomba carta (un grosso petardo)"
-]
-]
-},
-{
-"a": "PACE",
-"c": [
-[
-"GIUDICE",
-"AVVOCATO",
-"giudice di pace"
-],
-[
-"NOBEL",
-"OSCAR",
-"Premio Nobel per la Pace"
-],
-[
-"SANTA",
-"BEATA",
-"santa pace"
-],
-[
-"ANIMA",
-"CORPO",
-"anima in pace"
-],
-[
-"COLOMBA",
-"CORNACCHIA",
-"la colomba della pace"
-]
-]
-},
-{
-"a": "GUERRA",
-"c": [
-[
-"STELLARI",
-"SOLARI",
-"Guerre stellari"
-],
-[
-"FREDDA",
-"GELIDA",
-"guerra fredda"
-],
-[
-"NERVI",
-"MUSCOLI",
-"guerra di nervi"
-],
-[
-"PIEDE",
-"MANO",
-"sul piede di guerra"
-],
-[
-"LAMPO",
-"TUONO",
-"guerra lampo"
-]
-]
-},
-{
-"a": "FIUME",
-"c": [
-[
-"PIENA",
-"COLMA",
-"fiume in piena"
-],
-[
-"CARSICO",
-"CALCAREO",
-"fiume carsico"
-],
-[
-"SPONDA",
-"RIVA",
-"la sponda del fiume"
-],
-[
-"PAROLE",
-"FRASI",
-"un fiume di parole"
-],
-[
-"DELTA",
-"GAMMA",
-"il delta del fiume"
-]
-]
-},
-{
-"a": "LAGO",
-"c": [
-[
-"CIGNI",
-"OCHE",
-"Il lago dei cigni"
-],
-[
-"TITICACA",
-"ACAPULCO",
-"lago Titicaca"
-],
-[
-"ARTIFICIALE",
-"FINTO",
-"lago artificiale"
-],
-[
-"MAGGIORE",
-"MINORE",
-"Lago Maggiore"
-],
-[
-"SALATO",
-"DOLCE",
-"lago salato"
-]
-]
-},
-{
-"a": "ISOLA",
-"c": [
-[
-"TESORO",
-"FORZIERE",
-"L’isola del tesoro"
-],
-[
-"PEDONALE",
-"STRADALE",
-"isola pedonale"
-],
-[
-"FAMOSI",
-"CELEBRI",
-"L’isola dei famosi"
-],
-[
-"DESERTA",
-"VUOTA",
-"isola deserta"
-],
-[
-"ECOLOGICA",
-"BIOLOGICA",
-"isola ecologica"
-]
-]
-},
-{
-"a": "MONTE",
-"c": [
-[
-"PREMI",
-"VINCITE",
-"montepremi"
-],
-[
-"PIETÀ",
-"CARITÀ",
-"Monte di Pietà"
-],
-[
-"BIANCO",
-"CANDIDO",
-"Monte Bianco"
-],
-[
-"CARLO",
-"LUIGI",
-"Montecarlo"
-],
-[
-"ANDARE",
-"CADERE",
-"andare a monte"
-]
-]
-},
-{
-"a": "VALLE",
-"c": [
-[
-"LAGRIME",
-"PIANTO",
-"valle di lacrime"
-],
-[
-"TEMPLI",
-"CHIESE",
-"Valle dei Templi"
-],
-[
-"AOSTA",
-"TRENTO",
-"Valle d’Aosta"
-],
-[
-"MONTE",
-"COLLE",
-"a monte e a valle"
-],
-[
-"INCANTATA",
-"STREGATA",
-"Alla ricerca della valle incantata"
-]
-]
-},
-{
-"a": "BOSCO",
-"c": [
-[
-"SOTTO",
-"SOPRA",
-"sottobosco"
-],
-[
-"SACRO",
-"SANTO",
-"bosco sacro"
-],
-[
-"FRUTTI",
-"FIORI",
-"frutti di bosco"
-],
-[
-"VERTICALE",
-"ORIZZONTALE",
-"bosco verticale (Milano)"
-],
-[
-"ADDORMENTATA",
-"SVEGLIATA",
-"La bella addormentata nel bosco"
-]
-]
-},
-{
-"a": "GIARDINO",
-"c": [
-[
-"ZOOLOGICO",
-"BIOLOGICO",
-"giardino zoologico"
-],
-[
-"PENSILE",
-"SOSPESO",
-"giardino pensile"
-],
-[
-"INFANZIA",
-"GIOVENTÙ",
-"giardino d’infanzia"
-],
-[
-"BOBOLI",
-"SISTINA",
-"Giardino di Boboli"
-],
-[
-"EDEN",
-"OLIMPO",
-"il giardino dell’Eden"
-]
-]
-},
-{
-"a": "SEME",
-"c": [
-[
-"DISCORDIA",
-"LITIGIO",
-"il seme della discordia"
-],
-[
-"OLIO",
-"ACETO",
-"olio di semi"
-],
 [
 "ZUCCA",
-"ZUCCHERO",
-"semi di zucca"
-],
-[
-"LINO",
-"SETA",
-"semi di lino"
-],
-[
-"SPARGERE",
-"VERSARE",
-"spargere il seme"
-]
-]
-},
-{
-"a": "FOGLIA",
-"c": [
-[
-"FICO",
-"PERO",
-"foglia di fico"
-],
-[
-"MANGIARE",
-"BERE",
-"mangiare la foglia"
-],
-[
-"TREMARE",
-"VIBRARE",
-"tremare come una foglia"
-],
-[
-"ORO",
-"PLATINO",
-"foglia d’oro"
-],
-[
-"ACERO",
-"SCIROPPO",
-"la foglia d’acero"
-]
-]
-},
-{
-"a": "RAMO",
-"c": [
-[
-"SECCO",
-"ARIDO",
-"ramo secco"
-],
-[
-"SALTARE",
-"CORRERE",
-"saltare di ramo in ramo"
-],
-[
-"QUEL",
-"QUESTO",
-"«Quel ramo del lago di Como…»"
-],
-[
-"AZIENDA",
-"IMPRESA",
-"ramo d’azienda"
-],
-[
-"ULIVO",
-"PINO",
-"un ramo d’ulivo (simbolo di pace)"
-]
-]
-},
-{
-"a": "FRUTTO",
-"c": [
-[
-"PROIBITO",
-"VIETATO",
-"il frutto proibito"
-],
-[
-"PASSIONE",
-"AMORE",
-"frutto della passione"
-],
-[
-"BOSCO",
-"PRATO",
-"frutti di bosco"
-],
-[
-"MARE",
-"LAGO",
-"frutti di mare"
-],
-[
-"LAVORO",
-"FATICA",
-"il frutto del lavoro"
-]
-]
-},
-{
-"a": "MELA",
-"c": [
-[
-"ADAMO",
-"NOÈ",
-"la mela di Adamo (pomo d’Adamo)"
-],
-[
-"NEWTON",
-"EINSTEIN",
-"la mela di Newton"
-],
-[
-"GRANDE",
-"ENORME",
-"la Grande Mela (New York)"
-],
-[
-"AVVELENATA",
-"STREGATA",
-"la mela avvelenata di Biancaneve"
-],
-[
-"COTOGNA",
-"CILIEGIA",
-"mela cotogna"
-]
-]
-},
-{
-"a": "LIMONE",
-"c": [
-[
-"SPREMERE",
-"SCHIACCIARE",
-"spremere il limone"
-],
-[
-"SORRENTO",
-"VENEZIA",
-"i limoni di Sorrento"
-],
-[
-"TÈ",
-"LATTE",
-"tè al limone"
-],
-[
-"SCORZA",
-"BUCCIA",
-"scorza di limone"
-],
-[
-"GIALLO",
-"VERDE",
-"giallo limone"
-]
-]
-},
-{
-"a": "ARANCIA",
-"c": [
-[
-"MECCANICA",
-"ELETTRICA",
-"Arancia meccanica"
-],
-[
-"SICILIA",
-"SARDEGNA",
-"arance di Sicilia"
-],
-[
-"SPREMUTA",
-"FRULLATA",
-"spremuta d’arancia"
-],
-[
-"BUCCIA",
-"GUSCIO",
-"buccia d’arancia"
-],
-[
-"BATTAGLIA",
-"GUERRA",
-"la battaglia delle arance (Ivrea)"
-]
-]
-},
-{
-"a": "PATATA",
-"c": [
-[
-"BOLLENTE",
-"CALDA",
-"patata bollente"
-],
-[
-"SPIRITO",
-"ANIMA",
-"spirito di patata"
-],
-[
-"NOVELLA",
-"VECCHIA",
-"patata novella"
-],
-[
-"AMERICANA",
-"INGLESE",
-"patata americana"
-],
-[
-"SACCO",
-"BORSA",
-"sacco di patate"
-]
-]
-},
-{
-"a": "ZUCCA",
-"c": [
-[
-"SALE",
-"PEPE",
+"TESTA",
 "avere sale in zucca"
 ],
 [
-"CARROZZA",
-"CAVALLO",
-"la zucca che diventa carrozza"
+"MARINO",
+"MONTANO",
+"sale marino"
 ],
 [
-"HALLOWEEN",
-"CARNEVALE",
-"la zucca di Halloween"
+"PEPE",
+"CANNELLA",
+"sale e pepe"
 ],
 [
-"VUOTA",
-"CAVA",
-"zucca vuota"
+"GROSSO",
+"MEDIO",
+"sale grosso"
 ],
 [
-"FIORI",
-"FOGLIE",
-"fiori di zucca"
-]
-]
-},
-{
-"a": "CIPOLLA",
-"c": [
-[
-"TROPEA",
-"CAPRI",
-"cipolla di Tropea"
-],
-[
-"LACRIME",
-"RISATE",
-"lacrime di cipolla"
-],
-[
-"STRATI",
-"PIANI",
-"la cipolla fatta a strati"
-],
-[
-"ANELLI",
-"CERCHI",
-"anelli di cipolla"
-],
-[
-"OROLOGIO",
-"SVEGLIA",
-"orologio a cipolla"
-]
-]
-},
-{
-"a": "OLIO",
-"c": [
-[
-"GOMITO",
-"GINOCCHIO",
-"olio di gomito"
-],
-[
-"SANTO",
-"BEATO",
-"olio santo"
-],
-[
-"PALMA",
-"ABETE",
-"olio di palma"
-],
-[
-"LISCIO",
-"PIATTO",
-"liscio come l’olio"
-],
-[
-"RICINO",
-"FICO",
-"olio di ricino"
-]
-]
-},
-{
-"a": "BURRO",
-"c": [
-[
-"ARACHIDI",
-"NOCI",
-"burro di arachidi"
-],
-[
-"CACAO",
-"CAFFÈ",
-"burro di cacao"
-],
-[
-"MANI",
-"DENTI",
-"mani di burro"
-],
-[
-"SALVIA",
-"BASILICO",
-"burro e salvia"
-],
-[
-"SPALMARE",
-"STENDERE",
-"spalmare il burro"
-]
-]
-},
-{
-"a": "MIELE",
-"c": [
-[
-"LUNA",
-"SOLE",
-"luna di miele"
-],
-[
-"LATTE",
-"CAFFÈ",
-"latte e miele"
-],
-[
-"ACACIA",
-"QUERCIA",
-"miele di acacia"
-],
-[
-"API",
-"VESPE",
-"il miele delle api"
-],
-[
-"POOH",
-"SNOOPY",
-"Winnie the Pooh, goloso di miele"
+"INGLESE",
+"FRANCESE",
+"sale inglese"
 ]
 ]
 },
@@ -5528,11 +2618,6 @@
 "caffè corretto"
 ],
 [
-"MOKA",
-"CAFFETTIERA",
-"caffè con la moka"
-],
-[
 "SOSPESO",
 "APPESO",
 "caffè sospeso"
@@ -5546,6 +2631,11 @@
 "ORZO",
 "GRANO",
 "caffè d’orzo"
+],
+[
+"MACCHIATO",
+"SPORCO",
+"caffè macchiato"
 ]
 ]
 },
@@ -5563,14 +2653,14 @@
 "uovo sodo"
 ],
 [
-"PASQUA",
-"NATALE",
-"uovo di Pasqua"
-],
-[
 "PELO",
 "PIUMA",
 "cercare il pelo nell’uovo"
+],
+[
+"PASQUA",
+"NATALE",
+"uovo di Pasqua"
 ],
 [
 "GALLINA",
@@ -5580,47 +2670,12 @@
 ]
 },
 {
-"a": "POLLO",
-"c": [
-[
-"CURRY",
-"ZAFFERANO",
-"pollo al curry"
-],
-[
-"SPENNARE",
-"PELARE",
-"spennare il pollo"
-],
-[
-"RUSPANTE",
-"SELVATICO",
-"pollo ruspante"
-],
-[
-"BRODO",
-"SALSA",
-"brodo di pollo"
-],
-[
-"ALLEVAMENTO",
-"CACCIA",
-"pollo d’allevamento"
-]
-]
-},
-{
 "a": "BRODO",
 "c": [
 [
-"GIUGGIOLE",
-"CASTAGNE",
-"andare in brodo di giuggiole"
-],
-[
-"CAPPELLETTI",
-"CAPPELLINI",
-"cappelletti in brodo"
+"CULTURA",
+"NATURA",
+"brodo di cultura"
 ],
 [
 "DADO",
@@ -5636,6 +2691,11 @@
 "LASCIARE",
 "METTERE",
 "lasciar cuocere nel proprio brodo"
+],
+[
+"GALLINA",
+"CONIGLIO",
+"brodo di gallina"
 ]
 ]
 },
@@ -5663,9 +2723,9 @@
 "il topo e il formaggio"
 ],
 [
-"SVIZZERO",
-"AUSTRIACO",
-"formaggio svizzero (coi buchi)"
+"BUCHI",
+"FORI",
+"il formaggio con i buchi"
 ]
 ]
 },
@@ -5688,14 +2748,14 @@
 "crema pasticcera"
 ],
 [
-"CARAMEL",
-"CIOCCOLATO",
-"crème caramel"
-],
-[
 "MANI",
 "DENTI",
 "crema per le mani"
+],
+[
+"VISO",
+"NASO",
+"crema per il viso"
 ]
 ]
 },
@@ -5703,14 +2763,14 @@
 "a": "GELATO",
 "c": [
 [
-"COPPA",
-"TAZZA",
-"coppa gelato"
-],
-[
 "CONO",
 "CILINDRO",
 "cono gelato"
+],
+[
+"COPPA",
+"TAZZA",
+"coppa gelato"
 ],
 [
 "ARTIGIANALE",
@@ -5725,37 +2785,7 @@
 [
 "SPAGHETTI",
 "LINGUINE",
-"spaghetti di gelato (spaghettieis)"
-]
-]
-},
-{
-"a": "CIOCCOLATO",
-"c": [
-[
-"FONDENTE",
-"FUSIBILE",
-"cioccolato fondente"
-],
-[
-"FABBRICA",
-"OFFICINA",
-"La fabbrica di cioccolato"
-],
-[
-"BIANCO",
-"GRIGIO",
-"cioccolato bianco"
-],
-[
-"BARRETTA",
-"SBARRA",
-"barretta di cioccolato"
-],
-[
-"MODICA",
-"NOTO",
-"cioccolato di Modica"
+"spaghetti di gelato"
 ]
 ]
 },
@@ -5765,7 +2795,7 @@
 [
 "MALATTIA",
 "FEBBRE",
-"malattia del sonno"
+"la malattia del sonno"
 ],
 [
 "PROFONDO",
@@ -5793,19 +2823,14 @@
 "a": "SOGNO",
 "c": [
 [
+"CASSETTO",
+"ARMADIO",
+"un sogno nel cassetto"
+],
+[
 "AMERICANO",
 "INGLESE",
 "il sogno americano"
-],
-[
-"CASSETTO",
-"ARMADIO",
-"sogno nel cassetto"
-],
-[
-"NOTTE",
-"SERA",
-"Sogno di una notte di mezza estate"
 ],
 [
 "LUCIDO",
@@ -5813,20 +2838,20 @@
 "sogno lucido"
 ],
 [
+"NOTTE",
+"SERA",
+"Sogno di una notte di mezza estate"
+],
+[
 "LIBRO",
 "QUADERNO",
-"il libro dei sogni (la smorfia)"
+"il libro dei sogni"
 ]
 ]
 },
 {
 "a": "BACIO",
 "c": [
-[
-"PERUGINA",
-"FIORENTINA",
-"Bacio Perugina"
-],
 [
 "GIUDA",
 "PIETRO",
@@ -5835,7 +2860,7 @@
 [
 "DAMA",
 "REGINA",
-"bacio della dama (biscotto)"
+"bacio di dama (il biscotto)"
 ],
 [
 "FRANCESE",
@@ -5845,7 +2870,12 @@
 [
 "BUONANOTTE",
 "ARRIVEDERCI",
-"bacio della buonanotte"
+"il bacio della buonanotte"
+],
+[
+"MANDARE",
+"PRESTARE",
+"mandare un bacio"
 ]
 ]
 },
@@ -5855,7 +2885,7 @@
 [
 "PRIMO",
 "SECONDO",
-"primo amore"
+"il primo amore non si scorda mai"
 ],
 [
 "PLATONICO",
@@ -5888,11 +2918,6 @@
 "il miglior amico"
 ],
 [
-"PELOSO",
-"BARBUTO",
-"amico peloso (un animale)"
-],
-[
 "PENNA",
 "MATITA",
 "amico di penna"
@@ -5906,6 +2931,11 @@
 "IMMAGINARIO",
 "IMMAGINATO",
 "amico immaginario"
+],
+[
+"BISOGNO",
+"FRETTA",
+"l’amico si vede nel momento del bisogno"
 ]
 ]
 },
@@ -5928,14 +2958,14 @@
 "fratelli di sangue"
 ],
 [
-"SOLE",
-"STELLE",
-"Fratello Sole, sorella Luna"
-],
-[
 "LATTE",
 "ACQUA",
 "fratello di latte"
+],
+[
+"SOLE",
+"STELLE",
+"Fratello Sole, sorella Luna"
 ]
 ]
 },
@@ -5958,25 +2988,20 @@
 "scheda madre"
 ],
 [
-"TERESA",
-"CHIARA",
-"Madre Teresa"
-],
-[
 "NATURA",
 "AMBIENTE",
 "madre natura"
+],
+[
+"PERLA",
+"CONCHIGLIA",
+"madreperla"
 ]
 ]
 },
 {
 "a": "PADRE",
 "c": [
-[
-"PIO",
-"SANTO",
-"Padre Pio"
-],
 [
 "NOSTRO",
 "VOSTRO",
@@ -5995,7 +3020,12 @@
 [
 "PELLEGRINO",
 "VIANDANTE",
-"padre pellegrino (i Padri Pellegrini)"
+"i Padri Pellegrini"
+],
+[
+"ETERNO",
+"PERENNE",
+"il Padre Eterno"
 ]
 ]
 },
@@ -6013,11 +3043,6 @@
 "figlio di papà"
 ],
 [
-"DIO",
-"SANTO",
-"il Figlio di Dio"
-],
-[
 "UNICO",
 "SOLO",
 "figlio unico"
@@ -6026,36 +3051,11 @@
 "ARTE",
 "MESTIERE",
 "figlio d’arte"
-]
-]
-},
-{
-"a": "NONNA",
-"c": [
-[
-"PAPERA",
-"OCA",
-"Nonna Papera"
 ],
 [
-"TORTA",
-"CROSTATA",
-"la torta della nonna"
-],
-[
-"BIS",
-"TRIS",
-"bisnonna"
-],
-[
-"CAPPUCCETTO",
-"BIANCANEVE",
-"la nonna di Cappuccetto Rosso"
-],
-[
-"RICETTA",
-"CONSIGLIO",
-"la ricetta della nonna"
+"NESSUNO",
+"TUTTI",
+"figlio di nessuno"
 ]
 ]
 },
@@ -6065,7 +3065,7 @@
 [
 "PROMESSA",
 "GIURATA",
-"promessa sposa (I promessi sposi)"
+"promessa sposa"
 ],
 [
 "ABITO",
@@ -6080,7 +3080,7 @@
 [
 "BACIARE",
 "ABBRACCIARE",
-"«Puoi baciare la sposa»"
+"«Può baciare la sposa»"
 ],
 [
 "CADAVERE",
@@ -6098,11 +3098,6 @@
 "l’uomo nero"
 ],
 [
-"RAGNO",
-"TOPO",
-"L’uomo ragno"
-],
-[
 "PAROLA",
 "FRASE",
 "uomo di parola"
@@ -6116,6 +3111,11 @@
 "NEVI",
 "GHIACCI",
 "l’uomo delle nevi"
+],
+[
+"AFFARI",
+"COMMERCIO",
+"uomo d’affari"
 ]
 ]
 },
@@ -6126,11 +3126,6 @@
 "PRODIGIO",
 "MIRACOLO",
 "bambino prodigio"
-],
-[
-"GESÙ",
-"MARIA",
-"Gesù Bambino"
 ],
 [
 "VIZIATO",
@@ -6146,36 +3141,11 @@
 "INTERIORE",
 "INTIMO",
 "il bambino interiore"
-]
-]
-},
-{
-"a": "DOTTORE",
-"c": [
-[
-"STRANAMORE",
-"MALAMORE",
-"Il dottor Stranamore"
 ],
 [
-"JEKYLL",
-"HOLMES",
-"il dottor Jekyll e mister Hyde"
-],
-[
-"HONORIS",
-"GLORIAE",
-"dottore honoris causa"
-],
-[
-"COMMERCIALISTA",
-"RAGIONIERE",
-"dottore commercialista"
-],
-[
-"ZIVAGO",
-"KARENINA",
-"Il dottor Živago"
+"GESÙ",
+"MARIA",
+"Gesù Bambino"
 ]
 ]
 },
@@ -6200,23 +3170,18 @@
 [
 "ELEMENTARI",
 "MEDIE",
-"maestro elementare"
+"maestro delle elementari"
 ],
 [
-"JEDI",
-"SITH",
-"maestro Jedi"
+"COLPO",
+"TIRO",
+"colpo da maestro"
 ]
 ]
 },
 {
 "a": "CAPITANO",
 "c": [
-[
-"UNCINO",
-"AMO",
-"Capitan Uncino"
-],
 [
 "VENTURA",
 "SORTE",
@@ -6228,44 +3193,19 @@
 "Capitani coraggiosi"
 ],
 [
-"NEMO",
-"NESSUNO",
-"il capitano Nemo"
-],
-[
 "FASCIA",
 "BENDA",
 "la fascia di capitano"
-]
-]
-},
-{
-"a": "SOLDATO",
-"c": [
-[
-"IGNOTO",
-"SCONOSCIUTO",
-"il Milite Ignoto (soldato ignoto)"
 ],
 [
-"PIOMBO",
-"STAGNO",
-"soldatino di piombo"
+"NAVE",
+"CAMION",
+"il capitano della nave"
 ],
 [
-"SEMPLICE",
-"FACILE",
-"soldato semplice"
-],
-[
-"RYAN",
-"BOND",
-"Salvate il soldato Ryan"
-],
-[
-"BLU",
-"VIOLA",
-"Soldato blu"
+"MIO",
+"TUO",
+"«O capitano! Mio capitano!»"
 ]
 ]
 },
@@ -6288,44 +3228,14 @@
 "viaggio d’istruzione"
 ],
 [
-"FANTASTICO",
-"MAGICO",
-"Il viaggio fantastico"
-],
-[
 "AFFARI",
 "COMMERCIO",
 "viaggio d’affari"
-]
-]
-},
-{
-"a": "VACANZA",
-"c": [
-[
-"ROMANE",
-"FIORENTINE",
-"Vacanze romane"
 ],
 [
-"STUDIO",
-"LAVORO",
-"vacanza studio"
-],
-[
-"INTELLIGENTI",
-"FURBE",
-"Vacanze intelligenti"
-],
-[
-"PREMIO",
-"PROMESSA",
-"vacanza premio"
-],
-[
-"CASA",
-"ALBERGO",
-"casa vacanze"
+"BUON",
+"CARO",
+"buon viaggio"
 ]
 ]
 },
@@ -6343,109 +3253,19 @@
 "guastare la festa"
 ],
 [
-"MAMMA",
-"SORELLA",
-"Festa della mamma"
-],
-[
-"REPUBBLICA",
-"NAZIONE",
-"Festa della Repubblica"
-],
-[
 "SORPRESA",
 "REGALO",
 "festa a sorpresa"
-]
-]
-},
-{
-"a": "NATALE",
-"c": [
-[
-"BABBO",
-"ZIO",
-"Babbo Natale"
 ],
 [
-"ALBERO",
-"ARBUSTO",
-"albero di Natale"
+"MAMMA",
+"SORELLA",
+"la festa della mamma"
 ],
 [
-"STELLA",
-"LUNA",
-"la stella di Natale"
-],
-[
-"CANTO",
-"BALLO",
-"Canto di Natale (Dickens)"
-],
-[
-"VIGILIA",
-"ANTIVIGILIA",
-"la Vigilia di Natale"
-]
-]
-},
-{
-"a": "CARNEVALE",
-"c": [
-[
-"VENEZIA",
-"FIRENZE",
-"il Carnevale di Venezia"
-],
-[
-"VIAREGGIO",
-"LIVORNO",
-"il Carnevale di Viareggio"
-],
-[
-"SCHERZO",
-"BURLA",
-"a Carnevale ogni scherzo vale"
-],
-[
-"MASCHERE",
-"VOLTI",
-"le maschere di Carnevale"
-],
-[
-"CHIACCHIERE",
-"PAROLE",
-"le chiacchiere (dolci di Carnevale)"
-]
-]
-},
-{
-"a": "BALLO",
-"c": [
-[
-"CORPO",
-"GRUPPO",
-"corpo di ballo"
-],
-[
-"DEBUTTANTE",
-"PRINCIPIANTE",
-"il ballo delle debuttanti"
-],
-[
-"LISCIO",
-"RUVIDO",
-"ballo liscio"
-],
-[
-"SAN VITO",
-"SAN PAOLO",
-"il ballo di San Vito"
-],
-[
-"SALA",
-"CAMERA",
-"sala da ballo"
+"ADDIO",
+"CIAO",
+"festa d’addio"
 ]
 ]
 },
@@ -6480,36 +3300,6 @@
 ]
 },
 {
-"a": "VOTO",
-"c": [
-[
-"CASTITÀ",
-"PUREZZA",
-"voto di castità"
-],
-[
-"FIDUCIA",
-"SPERANZA",
-"voto di fiducia"
-],
-[
-"CONDOTTA",
-"CONDOTTIERO",
-"voto in condotta"
-],
-[
-"PALESE",
-"EVIDENTE",
-"voto palese"
-],
-[
-"LODE",
-"GLORIA",
-"voto con lode"
-]
-]
-},
-{
 "a": "CASO",
 "c": [
 [
@@ -6540,66 +3330,6 @@
 ]
 },
 {
-"a": "DADO",
-"c": [
-[
-"TRATTO",
-"LANCIATO",
-"il dado è tratto"
-],
-[
-"BRODO",
-"SUGO",
-"dado da brodo"
-],
-[
-"BULLONE",
-"CHIODO",
-"dado e bullone"
-],
-[
-"TRUCCATO",
-"TRUFFATO",
-"dadi truccati"
-],
-[
-"FACCE",
-"MUSI",
-"le facce del dado"
-]
-]
-},
-{
-"a": "ASSO",
-"c": [
-[
-"MANICA",
-"TASCA",
-"asso nella manica"
-],
-[
-"PIGLIATUTTO",
-"PIGLIAMOSCHE",
-"asso pigliatutto"
-],
-[
-"CUORI",
-"STELLE",
-"asso di cuori"
-],
-[
-"VOLANTE",
-"MANUBRIO",
-"asso del volante"
-],
-[
-"PICCHE",
-"PALE",
-"asso di picche"
-]
-]
-},
-{
 "a": "CONTO",
 "c": [
 [
@@ -6615,17 +3345,17 @@
 [
 "SALATO",
 "PEPATO",
-"conto salato"
-],
-[
-"TENERE",
-"AVERE",
-"tenere conto"
+"un conto salato"
 ],
 [
 "OSTE",
 "CUOCO",
 "fare i conti senza l’oste"
+],
+[
+"TENERE",
+"AVERE",
+"tenere conto"
 ]
 ]
 },
@@ -6633,29 +3363,29 @@
 "a": "PREZZO",
 "c": [
 [
-"FISSO",
-"STABILE",
-"prezzo fisso"
-],
-[
 "STRACCIATO",
 "STRAPPATO",
 "prezzo stracciato"
 ],
 [
+"FISSO",
+"STABILE",
+"prezzo fisso"
+],
+[
 "GIUSTO",
 "CORRETTO",
-"il prezzo giusto"
+"Il prezzo è giusto"
+],
+[
+"CARO",
+"AMATO",
+"pagarla a caro prezzo"
 ],
 [
 "LISTINO",
 "MENÙ",
 "prezzo di listino"
-],
-[
-"CARO",
-"AMATO",
-"a caro prezzo"
 ]
 ]
 },
@@ -6673,11 +3403,6 @@
 "mercatino delle pulci"
 ],
 [
-"COMUNE",
-"CONDIVISO",
-"Mercato Comune (europeo)"
-],
-[
 "AZIONARIO",
 "AZIONISTA",
 "mercato azionario"
@@ -6686,66 +3411,11 @@
 "RICERCA",
 "INDAGINE",
 "ricerca di mercato"
-]
-]
-},
-{
-"a": "TELEFONO",
-"c": [
-[
-"AZZURRO",
-"ARANCIONE",
-"Telefono Azzurro"
 ],
 [
-"ROSSO",
-"VERDE",
-"telefono rosso (la linea diretta)"
-],
-[
-"FILI",
-"CAVI",
-"telefono senza fili"
-],
-[
-"PUBBLICO",
-"POPOLARE",
-"telefono pubblico"
-],
-[
-"ELENCO",
-"LISTA",
-"elenco telefonico"
-]
-]
-},
-{
-"a": "RADIO",
-"c": [
-[
-"LIBERA",
-"SCIOLTA",
-"Radio Libera"
-],
-[
-"ATTIVITÀ",
-"LAVORO",
-"radioattività"
-],
-[
-"SVEGLIA",
-"OROLOGIO",
-"radiosveglia"
-],
-[
-"GRAFIA",
-"SCRITTURA",
-"radiografia"
-],
-[
-"CRONACA",
-"STORIA",
-"radiocronaca"
+"BUON",
+"CARO",
+"a buon mercato"
 ]
 ]
 },
@@ -6760,12 +3430,12 @@
 [
 "GRANDE",
 "ENORME",
-"grande schermo (il cinema)"
+"il grande schermo (il cinema)"
 ],
 [
 "PICCOLO",
 "MINUSCOLO",
-"piccolo schermo (la TV)"
+"il piccolo schermo (la TV)"
 ],
 [
 "SALVA",
@@ -6806,66 +3476,6 @@
 "ACCENSIONE",
 "IGNIZIONE",
 "tasto di accensione"
-]
-]
-},
-{
-"a": "BOTTONE",
-"c": [
-[
-"ATTACCARE",
-"STACCARE",
-"attaccare bottone"
-],
-[
-"AUTOMATICO",
-"MANUALE",
-"bottone automatico"
-],
-[
-"OCCHI",
-"ORECCHIE",
-"occhi a bottone"
-],
-[
-"ASOLA",
-"FIOCCO",
-"l’asola del bottone"
-],
-[
-"MADREPERLA",
-"PERLA",
-"bottone di madreperla"
-]
-]
-},
-{
-"a": "SPINA",
-"c": [
-[
-"DORSALE",
-"LOMBARE",
-"spina dorsale"
-],
-[
-"PESCE",
-"CARNE",
-"spina di pesce"
-],
-[
-"STACCARE",
-"STROPPICCIARE",
-"staccare la spina"
-],
-[
-"BIRRA",
-"VINO",
-"birra alla spina"
-],
-[
-"ROSA",
-"TULIPANO",
-"non c’è rosa senza spine"
 ]
 ]
 },
@@ -6920,7 +3530,7 @@
 [
 "VERDE",
 "ROSSA",
-"onda verde (i semafori)"
+"onda verde (dei semafori)"
 ],
 [
 "CAVALCARE",
@@ -6960,47 +3570,12 @@
 ]
 },
 {
-"a": "SAPONE",
-"c": [
-[
-"MARSIGLIA",
-"MARINA",
-"sapone di Marsiglia"
-],
-[
-"BOLLE",
-"PALLE",
-"bolle di sapone"
-],
-[
-"ACQUA",
-"ARIA",
-"acqua e sapone"
-],
-[
-"LIQUIDO",
-"GASSOSO",
-"sapone liquido"
-],
-[
-"MANI",
-"LIBRI",
-"lavarsi le mani col sapone"
-]
-]
-},
-{
 "a": "SPUGNA",
 "c": [
 [
 "GETTARE",
 "LANCIARE",
 "gettare la spugna"
-],
-[
-"BOB",
-"BUGS",
-"SpongeBob (Bob la spugna)"
 ],
 [
 "BERE",
@@ -7016,66 +3591,11 @@
 "ABRASIVA",
 "ADESIVA",
 "spugna abrasiva"
-]
-]
-},
-{
-"a": "CUSCINO",
-"c": [
-[
-"ARIA",
-"ACQUA",
-"cuscino d’aria"
 ],
 [
-"SPILLI",
-"BOTTONI",
-"cuscinetto puntaspilli"
-],
-[
-"DIVANO",
-"TAVOLO",
-"i cuscini del divano"
-],
-[
-"PIUME",
-"FOGLIE",
-"cuscino di piume"
-],
-[
-"FEDERA",
-"LENZUOLO",
-"la federa del cuscino"
-]
-]
-},
-{
-"a": "COPERTA",
-"c": [
-[
-"CORTA",
-"STRETTA",
-"la coperta è corta"
-],
-[
-"LINUS",
-"CHARLIE",
-"la copertina di Linus"
-],
-[
-"LANA",
-"FERRO",
-"coperta di lana"
-],
-[
-"ELETTRICA",
-"MAGNETICA",
-"coperta elettrica"
-],
-[
-"NAVE",
-"AEREO",
-"la coperta della nave (il ponte)"
+"COLPO",
+"TIRO",
+"un colpo di spugna"
 ]
 ]
 },
@@ -7110,66 +3630,6 @@
 ]
 },
 {
-"a": "POLTRONA",
-"c": [
-[
-"RELAX",
-"STRESS",
-"poltrona relax"
-],
-[
-"SACCO",
-"BORSA",
-"poltrona sacco"
-],
-[
-"LETTO",
-"DIVANO",
-"poltrona letto"
-],
-[
-"FRAU",
-"ZANUSSI",
-"poltrona Frau"
-],
-[
-"ATTACCATO",
-"CUCITO",
-"attaccato alla poltrona"
-]
-]
-},
-{
-"a": "CUCINA",
-"c": [
-[
-"ALTA",
-"SUPERIORE",
-"alta cucina"
-],
-[
-"CASALINGA",
-"SINGLE",
-"cucina casalinga"
-],
-[
-"FUSION",
-"FISSIONE",
-"cucina fusion"
-],
-[
-"COMPONIBILE",
-"COMPOSTA",
-"cucina componibile"
-],
-[
-"ANGOLO",
-"LATO",
-"angolo cucina"
-]
-]
-},
-{
 "a": "FORNO",
 "c": [
 [
@@ -7188,14 +3648,14 @@
 "forno ventilato"
 ],
 [
-"CREMATORIO",
-"CIMITERO",
-"forno crematorio"
-],
-[
 "PASTA",
 "INSALATA",
 "pasta al forno"
+],
+[
+"FRESCO",
+"SECCO",
+"fresco di forno"
 ]
 ]
 },
@@ -7208,19 +3668,19 @@
 "pentola a pressione"
 ],
 [
-"BOLLIRE",
-"FRIGGERE",
-"far bollire la pentola"
-],
-[
 "ORO",
 "DIAMANTE",
-"la pentola d’oro (in fondo all’arcobaleno)"
+"la pentola d’oro in fondo all’arcobaleno"
 ],
 [
 "DIAVOLO",
 "ANGELO",
 "il diavolo fa le pentole ma non i coperchi"
+],
+[
+"BOLLIRE",
+"FRIGGERE",
+"qualcosa bolle in pentola"
 ],
 [
 "BATTERIA",
@@ -7235,7 +3695,7 @@
 [
 "PIENO",
 "SAZIO",
-"bicchiere mezzo pieno"
+"il bicchiere mezzo pieno"
 ],
 [
 "STAFFA",
@@ -7255,7 +3715,7 @@
 [
 "ALZARE",
 "ABBASSARE",
-"alzare il bicchiere (brindare)"
+"alzare il bicchiere"
 ]
 ]
 },
@@ -7273,11 +3733,6 @@
 "messaggio in bottiglia"
 ],
 [
-"NAVE",
-"TRENO",
-"nave in bottiglia"
-],
-[
 "GENIO",
 "FOLLETTO",
 "il genio della bottiglia"
@@ -7286,36 +3741,11 @@
 "TAPPO",
 "SPINA",
 "tappo di bottiglia"
-]
-]
-},
-{
-"a": "CUCCHIAIO",
-"c": [
-[
-"ARGENTO",
-"RAME",
-"cucchiaio d’argento"
 ],
 [
-"LEGNO",
-"FERRO",
-"cucchiaio di legno"
-],
-[
-"DOLCE",
-"SALATO",
-"cucchiaino da dolce"
-],
-[
-"RIGORE",
-"PUNIZIONE",
-"rigore a cucchiaio"
-],
-[
-"UOVO",
-"MELA",
-"uovo al cucchiaio"
+"NAVE",
+"TRENO",
+"nave in bottiglia"
 ]
 ]
 },
@@ -7358,54 +3788,24 @@
 "La storia infinita"
 ],
 [
-"ARTE",
-"MESTIERE",
-"storia dell’arte"
-],
-[
 "PASSARE",
 "SALIRE",
 "passare alla storia"
 ],
 [
-"TOY",
-"GAME",
-"Toy Story"
-],
-[
 "NATURALE",
 "ARTIFICIALE",
 "storia naturale"
-]
-]
-},
-{
-"a": "FAVOLA",
-"c": [
-[
-"ESOPO",
-"OMERO",
-"le favole di Esopo"
 ],
 [
-"MORALE",
-"ETICA",
-"la morale della favola"
+"ARTE",
+"MESTIERE",
+"storia dell’arte"
 ],
 [
-"FEDRO",
-"PLATONE",
-"le favole di Fedro"
-],
-[
-"VIVERE",
-"RACCONTARE",
-"vivere una favola"
-],
-[
-"BELLA",
-"BUONA",
-"bella come una favola"
+"VECCHIA",
+"GIOVANE",
+"la solita vecchia storia"
 ]
 ]
 },
@@ -7455,7 +3855,7 @@
 [
 "ROTTO",
 "SPEZZATO",
-"disco rotto"
+"sembrare un disco rotto"
 ],
 [
 "ORO",
@@ -7466,36 +3866,6 @@
 "RIGIDO",
 "SOFFICE",
 "disco rigido"
-]
-]
-},
-{
-"a": "TEATRO",
-"c": [
-[
-"TENDA",
-"CAPANNA",
-"teatro tenda"
-],
-[
-"BURATTINI",
-"SOLDATINI",
-"teatro dei burattini"
-],
-[
-"POSA",
-"PAUSA",
-"teatro di posa"
-],
-[
-"OPERAZIONI",
-"MANOVRE",
-"teatro delle operazioni"
-],
-[
-"ASSURDO",
-"STRANO",
-"teatro dell’assurdo"
 ]
 ]
 },
@@ -7548,14 +3918,14 @@
 "cambiare musica"
 ],
 [
-"MAESTRO",
-"DIRETTORE",
-"maestro di musica"
-],
-[
 "SACRA",
 "BEATA",
 "musica sacra"
+],
+[
+"CARTA",
+"FOGLIO",
+"carta da musica"
 ]
 ]
 },
@@ -7568,16 +3938,6 @@
 "premio di consolazione"
 ],
 [
-"OSCAR",
-"ERNESTO",
-"Premio Oscar"
-],
-[
-"MONTE",
-"COLLE",
-"monte premi"
-],
-[
 "CARRIERA",
 "LAVORO",
 "premio alla carriera"
@@ -7586,6 +3946,16 @@
 "PRODUZIONE",
 "RACCOLTA",
 "premio di produzione"
+],
+[
+"MONTE",
+"COLLE",
+"montepremi"
+],
+[
+"FEDELTÀ",
+"AMICIZIA",
+"premio fedeltà"
 ]
 ]
 },
@@ -7673,39 +4043,9 @@
 "squadra omicidi"
 ],
 [
-"CAPO",
-"CODA",
-"caposquadra"
-]
-]
-},
-{
-"a": "PORTIERE",
-"c": [
-[
-"NOTTE",
-"SERA",
-"portiere di notte"
-],
-[
-"CALCIO",
-"TENNIS",
-"portiere di calcio"
-],
-[
-"CONDOMINIO",
-"VILLA",
-"portiere del condominio"
-],
-[
-"VOLANTE",
-"ALATO",
-"portiere volante"
-],
-[
-"ALBERGO",
-"OSPEDALE",
-"portiere d’albergo"
+"GIOCO",
+"SPORT",
+"gioco di squadra"
 ]
 ]
 },
@@ -7723,11 +4063,6 @@
 "il dischetto del rigore"
 ],
 [
-"CALCIO",
-"PIEDE",
-"calcio di rigore"
-],
-[
 "INVERNO",
 "ESTATE",
 "i rigori dell’inverno"
@@ -7736,6 +4071,11 @@
 "PARATA",
 "SFILATA",
 "parare un rigore"
+],
+[
+"CALCIO",
+"PIEDE",
+"calcio di rigore"
 ]
 ]
 },
@@ -7746,11 +4086,6 @@
 "TURISTICA",
 "VACANZIERA",
 "meta turistica"
-],
-[
-"RUGBY",
-"HOCKEY",
-"meta nel rugby"
 ],
 [
 "RAGGIUNGERE",
@@ -7766,6 +4101,11 @@
 "FORA",
 "BUCA",
 "metafora"
+],
+[
+"RUGBY",
+"HOCKEY",
+"fare meta nel rugby"
 ]
 ]
 },
@@ -7788,14 +4128,14 @@
 "scuola di magia"
 ],
 [
-"NATALE",
-"PASQUA",
-"la magia del Natale"
-],
-[
 "BIANCA",
 "CANDIDA",
 "magia bianca"
+],
+[
+"NATALE",
+"PASQUA",
+"la magia del Natale"
 ]
 ]
 },
@@ -7808,40 +4148,30 @@
 "caccia alle streghe"
 ],
 [
-"LIQUORE",
-"AMARO",
-"il liquore Strega"
-],
-[
-"BIANCANEVE",
-"CENERENTOLA",
-"la strega di Biancaneve"
-],
-[
 "SCOPA",
 "RASTRELLO",
 "la scopa della strega"
 ],
 [
-"BENEVENTO",
-"AVELLINO",
-"le streghe di Benevento"
+"LIQUORE",
+"AMARO",
+"il liquore Strega"
+],
+[
+"COMANDA",
+"ORDINA",
+"strega comanda color…"
+],
+[
+"BIANCANEVE",
+"CENERENTOLA",
+"la strega di Biancaneve"
 ]
 ]
 },
 {
 "a": "FATA",
 "c": [
-[
-"TURCHINA",
-"VIOLA",
-"la Fata Turchina"
-],
-[
-"MORGANA",
-"ARIANNA",
-"Fata Morgana"
-],
 [
 "MADRINA",
 "ZIA",
@@ -7856,66 +4186,16 @@
 "BACCHETTA",
 "SCETTRO",
 "la bacchetta della fata"
-]
-]
-},
-{
-"a": "DRAGO",
-"c": [
-[
-"GIORGIO",
-"MARCO",
-"San Giorgio e il drago"
 ],
 [
-"KOMODO",
-"BALI",
-"il drago di Komodo"
+"MORGANA",
+"ARIANNA",
+"Fata Morgana"
 ],
 [
-"CINESE",
-"INDIANO",
-"drago cinese"
-],
-[
-"TRAINER",
-"TEACHER",
-"Dragon Trainer"
-],
-[
-"SPUTAFUOCO",
-"MANGIAFUOCO",
-"drago sputafuoco"
-]
-]
-},
-{
-"a": "MOSTRO",
-"c": [
-[
-"SACRO",
-"BEATO",
-"mostro sacro"
-],
-[
-"FRANKENSTEIN",
-"DORIAN",
-"il mostro di Frankenstein"
-],
-[
-"MARINO",
-"MONTANO",
-"mostro marino"
-],
-[
-"BRAVURA",
-"TALENTO",
-"un mostro di bravura"
-],
-[
-"LETTO",
-"TAVOLO",
-"il mostro sotto il letto"
+"TURCHINA",
+"VIOLA",
+"la Fata Turchina"
 ]
 ]
 },
@@ -7928,14 +4208,14 @@
 "angelo custode"
 ],
 [
-"AZZURRO",
-"ROSA",
-"L’angelo azzurro"
-],
-[
 "CADUTO",
 "SCIVOLATO",
 "angelo caduto"
+],
+[
+"AZZURRO",
+"ROSA",
+"L’angelo azzurro"
 ],
 [
 "CASTEL",
@@ -7946,66 +4226,6 @@
 "CHARLIE",
 "LUCY",
 "Charlie’s Angels (Gli angeli di Charlie)"
-]
-]
-},
-{
-"a": "SANTO",
-"c": [
-[
-"SUBITO",
-"PRESTO",
-"«Santo subito!»"
-],
-[
-"PATRONO",
-"PADRONE",
-"santo patrono"
-],
-[
-"GRAAL",
-"CALICE",
-"il Santo Graal"
-],
-[
-"SPIRITO",
-"ANIMA",
-"lo Spirito Santo"
-],
-[
-"CIELO",
-"MARE",
-"santo cielo!"
-]
-]
-},
-{
-"a": "INFERNO",
-"c": [
-[
-"DANTE",
-"PETRARCA",
-"l’Inferno di Dante"
-],
-[
-"CERCHIO",
-"QUADRATO",
-"i cerchi dell’Inferno"
-],
-[
-"STRADA",
-"VIA",
-"la strada per l’inferno è lastricata di buone intenzioni"
-],
-[
-"CRISTALLO",
-"VETRO",
-"L’inferno di cristallo"
-],
-[
-"SCENDERE",
-"SALIRE",
-"scendere all’inferno"
 ]
 ]
 },
@@ -8023,11 +4243,6 @@
 "paradiso terrestre"
 ],
 [
-"CINEMA",
-"TEATRO",
-"Nuovo Cinema Paradiso"
-],
-[
 "UCCELLO",
 "PESCE",
 "uccello del paradiso"
@@ -8035,7 +4250,12 @@
 [
 "PERDUTO",
 "SMARRITO",
-"Paradiso perduto (Milton)"
+"Paradiso perduto"
+],
+[
+"CINEMA",
+"TEATRO",
+"Nuovo Cinema Paradiso"
 ]
 ]
 },
@@ -8058,44 +4278,14 @@
 "Paesi Bassi"
 ],
 [
-"VAI",
-"VIENI",
-"paese che vai, usanza che trovi"
-],
-[
 "CUCCAGNA",
 "CAMPAGNA",
 "il Paese della cuccagna"
-]
-]
-},
-{
-"a": "CITTÀ",
-"c": [
-[
-"ETERNA",
-"PERENNE",
-"la Città Eterna (Roma)"
 ],
 [
-"STUDI",
-"LIBRI",
-"città degli studi"
-],
-[
-"SOLE",
-"LUNA",
-"La città del Sole (Campanella)"
-],
-[
-"VATICANO",
-"QUIRINALE",
-"Città del Vaticano"
-],
-[
-"DORMITORIO",
-"LETTO",
-"città dormitorio"
+"VAI",
+"VIENI",
+"paese che vai, usanza che trovi"
 ]
 ]
 },
@@ -8105,7 +4295,7 @@
 [
 "COLPO",
 "BOTTA",
-"colpo di stato"
+"colpo di Stato"
 ],
 [
 "SALUTE",
@@ -8133,11 +4323,6 @@
 "a": "LEGGE",
 "c": [
 [
-"MURPHY",
-"SMITH",
-"la legge di Murphy"
-],
-[
 "MARZIALE",
 "MARZIANA",
 "legge marziale"
@@ -8156,6 +4341,11 @@
 "TAGLIONE",
 "TAGLIERE",
 "legge del taglione"
+],
+[
+"DETTARE",
+"SCRIVERE",
+"dettare legge"
 ]
 ]
 },
@@ -8190,96 +4380,6 @@
 ]
 },
 {
-"a": "INNO",
-"c": [
-[
-"NAZIONALE",
-"REGIONALE",
-"inno nazionale"
-],
-[
-"GIOIA",
-"FELICITÀ",
-"Inno alla gioia"
-],
-[
-"MAMELI",
-"MAZZINI",
-"inno di Mameli"
-],
-[
-"VITA",
-"MORTE",
-"inno alla vita"
-],
-[
-"GARIBALDI",
-"CAVOUR",
-"inno di Garibaldi"
-]
-]
-},
-{
-"a": "TRONO",
-"c": [
-[
-"SPADE",
-"COPPE",
-"Il trono di spade"
-],
-[
-"EREDE",
-"FIGLIO",
-"erede al trono"
-],
-[
-"SALIRE",
-"CORRERE",
-"salire al trono"
-],
-[
-"PRETENDENTE",
-"CANDIDATO",
-"pretendente al trono"
-],
-[
-"PAVONE",
-"GALLO",
-"il trono del pavone (Persia)"
-]
-]
-},
-{
-"a": "IMPERO",
-"c": [
-[
-"ROMANO",
-"LATINO",
-"Impero romano"
-],
-[
-"COLPISCE",
-"ATTACCA",
-"L’Impero colpisce ancora"
-],
-[
-"SOLE",
-"LUNA",
-"un impero su cui non tramonta mai il sole"
-],
-[
-"STILE",
-"MODO",
-"stile Impero"
-],
-[
-"OTTOMANO",
-"OTTUSO",
-"Impero ottomano"
-]
-]
-},
-{
 "a": "SECOLO",
 "c": [
 [
@@ -8298,14 +4398,14 @@
 "il secolo scorso"
 ],
 [
-"ORO",
-"ARGENTO",
-"il secolo d’oro"
-],
-[
 "MATCH",
 "GAME",
 "il match del secolo"
+],
+[
+"ORO",
+"ARGENTO",
+"il secolo d’oro"
 ]
 ]
 },
@@ -8316,11 +4416,6 @@
 "SILENZIO",
 "RUMORE",
 "minuto di silenzio"
-],
-[
-"NOVANTESIMO",
-"CENTENARIO",
-"novantesimo minuto"
 ],
 [
 "ULTIMO",
@@ -8336,66 +4431,11 @@
 "RECUPERO",
 "RIPOSO",
 "minuti di recupero"
-]
-]
-},
-{
-"a": "SECONDO",
-"c": [
-[
-"PIATTO",
-"BICCHIERE",
-"secondo piatto"
 ],
 [
-"FINI",
-"SCOPI",
-"secondi fini"
-],
-[
-"POSTO",
-"SEDILE",
-"al secondo posto"
-],
-[
-"TEMPO",
-"MINUTO",
-"secondo tempo"
-],
-[
-"LANCETTA",
-"SPILLA",
-"la lancetta dei secondi"
-]
-]
-},
-{
-"a": "CALENDARIO",
-"c": [
-[
-"AVVENTO",
-"QUARESIMA",
-"calendario dell’Avvento"
-],
-[
-"GREGORIANO",
-"GREGARIO",
-"calendario gregoriano"
-],
-[
-"MAYA",
-"SUMO",
-"calendario maya"
-],
-[
-"LUNARE",
-"MARZIANO",
-"calendario lunare"
-],
-[
-"PIRELLI",
-"FIAT",
-"calendario Pirelli"
+"NOVANTESIMO",
+"CENTENARIO",
+"novantesimo minuto"
 ]
 ]
 },
@@ -8405,17 +4445,12 @@
 [
 "PERFETTA",
 "IDEALE",
-"La tempesta perfetta"
+"la tempesta perfetta"
 ],
 [
 "BICCHIERE",
 "BOTTIGLIA",
 "tempesta in un bicchiere d’acqua"
-],
-[
-"SHAKESPEARE",
-"DANTE",
-"La tempesta (Shakespeare)"
 ],
 [
 "QUIETE",
@@ -8426,66 +4461,11 @@
 "ORMONALE",
 "VITAMINICA",
 "tempesta ormonale"
-]
-]
-},
-{
-"a": "NUVOLA",
-"c": [
-[
-"FANTOZZI",
-"VILLAGGIO",
-"Fantozzi e la nuvola dell’impiegato"
 ],
 [
-"TESTA",
-"MANI",
-"avere la testa fra le nuvole"
-],
-[
-"CADERE",
-"SCENDERE",
-"cadere dalle nuvole"
-],
-[
-"FUMO",
-"FIAMMA",
-"nuvola di fumo"
-],
-[
-"CUMULO",
-"MUCCHIO",
-"cumulonembo (la nuvola dei temporali)"
-]
-]
-},
-{
-"a": "FULMINE",
-"c": [
-[
-"SERENO",
-"LIMPIDO",
-"un fulmine a ciel sereno"
-],
-[
-"COLPO",
-"BOTTA",
-"colpo di fulmine"
-],
-[
-"VELOCE",
-"FURBO",
-"veloce come un fulmine"
-],
-[
-"ZEUS",
-"ATENA",
-"i fulmini di Zeus"
-],
-[
-"MCQUEEN",
-"MARIO",
-"Saetta McQueen (in originale Lightning, cioè «fulmine»)"
+"CERVELLI",
+"CUORI",
+"tempesta di cervelli (brainstorming)"
 ]
 ]
 },
@@ -8508,44 +4488,14 @@
 "mezza estate"
 ],
 [
-"ITALIANA",
-"FRANCESE",
-"Un’estate italiana (Notti magiche)"
-],
-[
 "CALDA",
 "TIEPIDA",
 "estate calda"
-]
-]
-},
-{
-"a": "CIRCO",
-"c": [
-[
-"MASSIMO",
-"MINIMO",
-"Circo Massimo"
 ],
 [
-"BARNUM",
-"BARBIE",
-"il circo Barnum"
-],
-[
-"EQUESTRE",
-"EQUINO",
-"circo equestre"
-],
-[
-"TENDONE",
-"OMBRELLONE",
-"il tendone del circo"
-],
-[
-"MEDIATICO",
-"MEDICO",
-"circo mediatico"
+"NOTTI",
+"SERE",
+"notti d’estate"
 ]
 ]
 },
@@ -8585,7 +4535,7 @@
 [
 "AMERICANA",
 "INGLESE",
-"gomma americana (da masticare)"
+"gomma americana"
 ],
 [
 "PANE",
@@ -8606,36 +4556,6 @@
 "MASTICARE",
 "INGOIARE",
 "gomma da masticare"
-]
-]
-},
-{
-"a": "VETRO",
-"c": [
-[
-"SOFFIATO",
-"GONFIATO",
-"vetro soffiato"
-],
-[
-"SMERIGLIATO",
-"LUCIDATO",
-"vetro smerigliato"
-],
-[
-"FIBRA",
-"FILO",
-"fibra di vetro"
-],
-[
-"LANA",
-"COTONE",
-"lana di vetro"
-],
-[
-"MURANO",
-"BURANO",
-"il vetro di Murano"
 ]
 ]
 },
@@ -8663,9 +4583,9 @@
 "cucchiaio di legno"
 ],
 [
-"PINOCCHIO",
-"GEPPETTO",
-"Pinocchio, il burattino di legno"
+"TARLO",
+"RUGGINE",
+"il tarlo del legno"
 ]
 ]
 },
@@ -8695,7 +4615,7 @@
 [
 "SENZA",
 "CON",
-"senza piombo (la benzina)"
+"benzina senza piombo"
 ]
 ]
 },
@@ -8715,47 +4635,17 @@
 [
 "VASSOIO",
 "CESTINO",
-"vassoio d’argento"
+"su un vassoio d’argento"
 ],
 [
-"FRECCIA",
-"LANCIA",
-"la Freccia d’Argento"
+"CUCCHIAIO",
+"FORCHETTA",
+"nato con il cucchiaio d’argento"
 ],
 [
-"SURFISTA",
-"SCIATORE",
-"Silver Surfer (Surfista d’argento)"
-]
-]
-},
-{
-"a": "BRONZO",
-"c": [
-[
-"ETÀ",
-"EPOCA",
-"età del bronzo"
-],
-[
-"FACCIA",
-"MUSO",
-"faccia di bronzo"
-],
-[
-"RIACE",
-"SIBARI",
-"i Bronzi di Riace"
-],
-[
-"MEDAGLIA",
-"COPPA",
-"medaglia di bronzo"
-],
-[
-"FUSIONE",
-"SALDATURA",
-"fusione in bronzo"
+"CAPELLI",
+"OCCHI",
+"capelli d’argento"
 ]
 ]
 },
@@ -8793,9 +4683,9 @@
 "a": "LAMPADA",
 "c": [
 [
-"ALADINO",
-"SINBAD",
-"la lampada di Aladino"
+"TAVOLO",
+"SEDIA",
+"lampada da tavolo"
 ],
 [
 "ABBRONZANTE",
@@ -8820,36 +4710,6 @@
 ]
 },
 {
-"a": "CANZONE",
-"c": [
-[
-"NAPOLETANA",
-"MILANESE",
-"canzone napoletana"
-],
-[
-"PROTESTA",
-"RIVOLTA",
-"canzone di protesta"
-],
-[
-"SANREMO",
-"AMALFI",
-"le canzoni del festival di Sanremo"
-],
-[
-"SOLITA",
-"COMUNE",
-"la solita canzone"
-],
-[
-"DEDICARE",
-"REGALARE",
-"dedicare una canzone"
-]
-]
-},
-{
 "a": "FILM",
 "c": [
 [
@@ -8868,44 +4728,14 @@
 "film di culto"
 ],
 [
-"VISIONE",
-"VISTA",
-"film in prima visione"
-],
-[
 "GIALLO",
 "VIOLA",
 "film giallo"
-]
-]
-},
-{
-"a": "ATTORE",
-"c": [
-[
-"PROTAGONISTA",
-"PROTETTORE",
-"attore protagonista"
 ],
 [
-"COMICO",
-"TRISTE",
-"attore comico"
-],
-[
-"OSCAR",
-"NOBEL",
-"l’Oscar al miglior attore"
-],
-[
-"STUDIO",
-"LABORATORIO",
-"l’Actors Studio, la scuola per attori"
-],
-[
-"MANCATO",
-"FALLITO",
-"attore mancato"
+"DOPPIATO",
+"RADDOPPIATO",
+"film doppiato"
 ]
 ]
 },
@@ -8928,14 +4758,2354 @@
 "birra artigianale"
 ],
 [
-"OKTOBERFEST",
-"CARNEVALE",
-"l’Oktoberfest, la festa della birra"
-],
-[
 "CHIARA",
 "LIMPIDA",
 "birra chiara"
+],
+[
+"ROSSA",
+"VIOLA",
+"birra rossa"
+]
+]
+},
+{
+"a": "OSSO",
+"c": [
+[
+"DURO",
+"MORBIDO",
+"un osso duro"
+],
+[
+"BUCO",
+"FORO",
+"ossobuco"
+],
+[
+"SACRO",
+"SANTO",
+"osso sacro"
+],
+[
+"PELLE",
+"PELO",
+"pelle e ossa"
+],
+[
+"SEPPIA",
+"POLPO",
+"osso di seppia"
+]
+]
+},
+{
+"a": "CIELO",
+"c": [
+[
+"SETTIMO",
+"OTTAVO",
+"al settimo cielo"
+],
+[
+"GRATTA",
+"PULISCI",
+"grattacielo"
+],
+[
+"TOCCARE",
+"INDICARE",
+"toccare il cielo con un dito"
+],
+[
+"PECORELLE",
+"CAPRETTE",
+"cielo a pecorelle, acqua a catinelle"
+],
+[
+"SERENO",
+"SPORCO",
+"cielo sereno"
+]
+]
+},
+{
+"a": "BUCO",
+"c": [
+[
+"NERO",
+"BIANCO",
+"buco nero"
+],
+[
+"SERRATURA",
+"MANIGLIA",
+"il buco della serratura"
+],
+[
+"TAPPARE",
+"VERNICIARE",
+"tappare un buco"
+],
+[
+"ACQUA",
+"FUOCO",
+"fare un buco nell’acqua"
+],
+[
+"CIAMBELLA",
+"TORTA",
+"non tutte le ciambelle riescono col buco"
+]
+]
+},
+{
+"a": "TIRO",
+"c": [
+[
+"ARCO",
+"FRECCIA",
+"tiro con l’arco"
+],
+[
+"SEGNO",
+"PUNTO",
+"tiro a segno"
+],
+[
+"FUNE",
+"CATENA",
+"tiro alla fune"
+],
+[
+"GIOCARE",
+"DIRE",
+"giocare un brutto tiro"
+],
+[
+"VOLO",
+"SALTO",
+"tiro al volo"
+]
+]
+},
+{
+"a": "FILA",
+"c": [
+[
+"INDIANA",
+"CINESE",
+"in fila indiana"
+],
+[
+"PRIMA",
+"ALTA",
+"in prima fila"
+],
+[
+"SERRARE",
+"STRINGERE",
+"serrare le file"
+],
+[
+"CAPO",
+"PIEDE",
+"capofila"
+],
+[
+"SALTARE",
+"NUOTARE",
+"saltare la fila"
+]
+]
+},
+{
+"a": "CANNA",
+"c": [
+[
+"PESCA",
+"REMO",
+"canna da pesca"
+],
+[
+"BAMBÙ",
+"QUERCIA",
+"canna di bambù"
+],
+[
+"ORGANO",
+"PIANO",
+"canna d’organo"
+],
+[
+"FUCILE",
+"SPADA",
+"la canna del fucile"
+],
+[
+"ZUCCHERO",
+"MIELE",
+"canna da zucchero"
+]
+]
+},
+{
+"a": "FIAMMA",
+"c": [
+[
+"PILOTA",
+"NAVIGATORE",
+"fiamma pilota"
+],
+[
+"OLIMPICA",
+"OLIMPIONICA",
+"fiamma olimpica"
+],
+[
+"VECCHIA",
+"ANTICA",
+"una vecchia fiamma"
+],
+[
+"RITORNO",
+"ANDATA",
+"ritorno di fiamma"
+],
+[
+"GIALLE",
+"VIOLA",
+"le Fiamme Gialle"
+]
+]
+},
+{
+"a": "ALBERO",
+"c": [
+[
+"MAESTRO",
+"PROFESSORE",
+"albero maestro"
+],
+[
+"GENEALOGICO",
+"STORICO",
+"albero genealogico"
+],
+[
+"NATALE",
+"PASQUA",
+"albero di Natale"
+],
+[
+"MOTORE",
+"PISTONE",
+"albero motore"
+],
+[
+"VITA",
+"MORTE",
+"l’albero della vita"
+]
+]
+},
+{
+"a": "PENNA",
+"c": [
+[
+"NERE",
+"BIANCHE",
+"le Penne Nere (gli alpini)"
+],
+[
+"SFERA",
+"CUBO",
+"penna a sfera"
+],
+[
+"AMICI",
+"COMPAGNI",
+"amici di penna"
+],
+[
+"LASCIARCI",
+"PERDERCI",
+"lasciarci le penne"
+],
+[
+"OCA",
+"ANATRA",
+"penna d’oca"
+]
+]
+},
+{
+"a": "CORONA",
+"c": [
+[
+"SPINE",
+"CHIODI",
+"corona di spine"
+],
+[
+"DENTALE",
+"DENTISTICA",
+"corona dentale"
+],
+[
+"SOLARE",
+"SOLITARIA",
+"corona solare"
+],
+[
+"ALLORO",
+"BASILICO",
+"corona d’alloro"
+],
+[
+"ROSARIO",
+"PREGHIERA",
+"la corona del rosario"
+]
+]
+},
+{
+"a": "MANICA",
+"c": [
+[
+"LARGA",
+"VASTA",
+"essere di manica larga"
+],
+[
+"ASSO",
+"RE",
+"un asso nella manica"
+],
+[
+"RIMBOCCARE",
+"RICUCIRE",
+"rimboccarsi le maniche"
+],
+[
+"CANALE",
+"GOLFO",
+"il Canale della Manica"
+],
+[
+"CORTA",
+"BASSA",
+"maniche corte"
+]
+]
+},
+{
+"a": "VASO",
+"c": [
+[
+"COMUNICANTI",
+"COMUNICATIVI",
+"vasi comunicanti"
+],
+[
+"GOCCIA",
+"LACRIMA",
+"la goccia che fa traboccare il vaso"
+],
+[
+"FIORI",
+"FRUTTA",
+"vaso di fiori"
+],
+[
+"NOTTE",
+"GIORNO",
+"vaso da notte"
+],
+[
+"CRISTALLO",
+"NEBBIA",
+"vaso di cristallo"
+]
+]
+},
+{
+"a": "SPALLA",
+"c": [
+[
+"STRINGERSI",
+"CHIUDERSI",
+"stringersi nelle spalle"
+],
+[
+"COTTA",
+"BOLLITA",
+"spalla cotta"
+],
+[
+"LARGHE",
+"ALTE",
+"avere le spalle larghe"
+],
+[
+"MURO",
+"PARETE",
+"con le spalle al muro"
+],
+[
+"VOLTARE",
+"MUOVERE",
+"voltare le spalle"
+]
+]
+},
+{
+"a": "MOTORE",
+"c": [
+[
+"RICERCA",
+"INDAGINE",
+"motore di ricerca"
+],
+[
+"SCOPPIO",
+"BOTTO",
+"motore a scoppio"
+],
+[
+"AVVIARE",
+"LANCIARE",
+"avviare il motore"
+],
+[
+"REAZIONE",
+"AZIONE",
+"motore a reazione"
+],
+[
+"ACCENDERE",
+"PETTINARE",
+"accendere il motore"
+]
+]
+},
+{
+"a": "CIRCOLO",
+"c": [
+[
+"VIZIOSO",
+"VIOLENTO",
+"circolo vizioso"
+],
+[
+"POLARE",
+"TROPICALE",
+"Circolo polare"
+],
+[
+"TENNIS",
+"SURF",
+"circolo del tennis"
+],
+[
+"SCACCHI",
+"MONOPOLI",
+"circolo degli scacchi"
+],
+[
+"UFFICIALI",
+"SOLDATI",
+"circolo ufficiali"
+]
+]
+},
+{
+"a": "FASCIA",
+"c": [
+[
+"ORARIA",
+"MINUTA",
+"fascia oraria"
+],
+[
+"ELASTICA",
+"RIGIDA",
+"fascia elastica"
+],
+[
+"PROTETTA",
+"SICURA",
+"fascia protetta"
+],
+[
+"TRICOLORE",
+"BANDIERA",
+"la fascia tricolore del sindaco"
+],
+[
+"CAPITANO",
+"SERGENTE",
+"la fascia di capitano"
+]
+]
+},
+{
+"a": "FONDO",
+"c": [
+[
+"SCI",
+"SLITTA",
+"sci di fondo"
+],
+[
+"DOPPIO",
+"TRIPLO",
+"doppio fondo"
+],
+[
+"TOCCARE",
+"PREMERE",
+"toccare il fondo"
+],
+[
+"PERDUTO",
+"SMARRITO",
+"a fondo perduto"
+],
+[
+"INVESTIMENTO",
+"PRESTITO",
+"fondo d’investimento"
+]
+]
+},
+{
+"a": "GUARDIA",
+"c": [
+[
+"NAZIONALE",
+"REGIONALE",
+"Guardia Nazionale"
+],
+[
+"CORPO",
+"MENTE",
+"guardia del corpo"
+],
+[
+"ABBASSARE",
+"PERDERE",
+"abbassare la guardia"
+],
+[
+"CAMBIO",
+"SCAMBIO",
+"cambio della guardia"
+],
+[
+"MEDICA",
+"CHIRURGICA",
+"guardia medica"
+]
+]
+},
+{
+"a": "CASSA",
+"c": [
+[
+"MORTO",
+"VIVO",
+"cassa da morto"
+],
+[
+"RISPARMIO",
+"SPESA",
+"cassa di risparmio"
+],
+[
+"BATTERE",
+"SUONARE",
+"battere cassa"
+],
+[
+"INTEGRAZIONE",
+"INCLUSIONE",
+"cassa integrazione"
+],
+[
+"COMUNE",
+"PRIVATA",
+"cassa comune"
+]
+]
+},
+{
+"a": "LETTERA",
+"c": [
+[
+"MAIUSCOLA",
+"GRANDE",
+"lettera maiuscola"
+],
+[
+"RACCOMANDATA",
+"SPEDITA",
+"lettera raccomandata"
+],
+[
+"ANONIMA",
+"IGNOTA",
+"lettera anonima"
+],
+[
+"ALLA",
+"SULLA",
+"alla lettera"
+],
+[
+"MORTA",
+"VIVA",
+"rimanere lettera morta"
+]
+]
+},
+{
+"a": "MAPPA",
+"c": [
+[
+"LEGGERE",
+"SCRIVERE",
+"leggere la mappa"
+],
+[
+"TESORO",
+"FORZIERE",
+"la mappa del tesoro"
+],
+[
+"CONCETTUALE",
+"SENTIMENTALE",
+"mappa concettuale"
+],
+[
+"STRADALE",
+"STRADINA",
+"mappa stradale"
+],
+[
+"ASTRALE",
+"LUNARE",
+"mappa astrale"
+]
+]
+},
+{
+"a": "GHIACCIO",
+"c": [
+[
+"SECCO",
+"ARIDO",
+"ghiaccio secco"
+],
+[
+"ROMPERE",
+"TAGLIARE",
+"rompere il ghiaccio"
+],
+[
+"PATTINAGGIO",
+"NUOTO",
+"pattinaggio su ghiaccio"
+],
+[
+"PALAZZO",
+"CASTELLO",
+"palazzo del ghiaccio"
+],
+[
+"CUBETTI",
+"CUBI",
+"cubetti di ghiaccio"
+]
+]
+},
+{
+"a": "CHIODO",
+"c": [
+[
+"SCACCIA",
+"CACCIA",
+"chiodo scaccia chiodo"
+],
+[
+"FISSO",
+"STABILE",
+"chiodo fisso"
+],
+[
+"GAROFANO",
+"ROSA",
+"chiodi di garofano"
+],
+[
+"APPENDERE",
+"ATTACCARE",
+"appendere al chiodo"
+],
+[
+"MAGRO",
+"SNELLO",
+"magro come un chiodo"
+]
+]
+},
+{
+"a": "PIATTO",
+"c": [
+[
+"FORTE",
+"MORBIDO",
+"piatto forte"
+],
+[
+"DOCCIA",
+"VASCA",
+"piatto doccia"
+],
+[
+"BILANCIA",
+"METRO",
+"il piatto della bilancia"
+],
+[
+"PIANGE",
+"RIDE",
+"piange il piatto (a carte)"
+],
+[
+"ARGENTO",
+"LATTA",
+"servire su un piatto d’argento"
+]
+]
+},
+{
+"a": "PESCE",
+"c": [
+[
+"APRILE",
+"MAGGIO",
+"pesce d’aprile"
+],
+[
+"SPADA",
+"COLTELLO",
+"pesce spada"
+],
+[
+"PALLA",
+"PALO",
+"pesce palla"
+],
+[
+"PILOTA",
+"NAVIGATORE",
+"pesce pilota"
+],
+[
+"BARILE",
+"BOTTE",
+"fare il pesce in barile"
+]
+]
+},
+{
+"a": "ORSO",
+"c": [
+[
+"POLARE",
+"TROPICALE",
+"orso polare"
+],
+[
+"BRUNO",
+"CASTANO",
+"orso bruno"
+],
+[
+"PELLE",
+"PELLICCIA",
+"vendere la pelle dell’orso"
+],
+[
+"MARSICANO",
+"MESSICANO",
+"orso marsicano"
+],
+[
+"PELUCHE",
+"CARTA",
+"orsetto di peluche"
+]
+]
+},
+{
+"a": "CAVALLO",
+"c": [
+[
+"BATTAGLIA",
+"LOTTA",
+"cavallo di battaglia"
+],
+[
+"DONDOLO",
+"ALTALENA",
+"cavallo a dondolo"
+],
+[
+"VAPORE",
+"FUMO",
+"cavallo vapore"
+],
+[
+"DONATO",
+"REGALATO",
+"a caval donato non si guarda in bocca"
+],
+[
+"CODA",
+"ZAMPA",
+"coda di cavallo"
+]
+]
+},
+{
+"a": "VOLPE",
+"c": [
+[
+"ARGENTATA",
+"DORATA",
+"volpe argentata"
+],
+[
+"DESERTO",
+"OASI",
+"la volpe del deserto"
+],
+[
+"UVA",
+"MELA",
+"la volpe e l’uva"
+],
+[
+"FURBA",
+"SVEGLIA",
+"furba come una volpe"
+],
+[
+"VECCHIA",
+"GIOVANE",
+"una vecchia volpe"
+]
+]
+},
+{
+"a": "LEONE",
+"c": [
+[
+"MARINO",
+"MONTANO",
+"leone marino"
+],
+[
+"PARTE",
+"QUOTA",
+"la parte del leone"
+],
+[
+"CUOR",
+"ANIMO",
+"Cuor di Leone"
+],
+[
+"RE",
+"PRINCIPE",
+"Il re leone"
+],
+[
+"BOCCA",
+"NASO",
+"bocca di leone (il fiore)"
+]
+]
+},
+{
+"a": "NERO",
+"c": [
+[
+"PECORA",
+"CAPRA",
+"pecora nera"
+],
+[
+"LAVORO",
+"MESTIERE",
+"lavoro nero"
+],
+[
+"CRONACA",
+"STORIA",
+"cronaca nera"
+],
+[
+"BIANCO",
+"GRIGIO",
+"bianco e nero"
+],
+[
+"SEPPIA",
+"POLPO",
+"nero di seppia"
+]
+]
+},
+{
+"a": "GIALLO",
+"c": [
+[
+"ROMANZO",
+"SAGGIO",
+"romanzo giallo"
+],
+[
+"PAGINE",
+"FOGLIE",
+"Pagine Gialle"
+],
+[
+"FIAMME",
+"LUCI",
+"Fiamme Gialle"
+],
+[
+"CARTELLINO",
+"BIGLIETTO",
+"cartellino giallo"
+],
+[
+"CANARINO",
+"PASSERO",
+"giallo canarino"
+]
+]
+},
+{
+"a": "BLU",
+"c": [
+[
+"SANGUE",
+"SUDORE",
+"sangue blu"
+],
+[
+"NOTTE",
+"SERA",
+"blu notte"
+],
+[
+"BALENA",
+"SQUALO",
+"balenottera blu"
+],
+[
+"COBALTO",
+"RAME",
+"blu cobalto"
+],
+[
+"DIPINTO",
+"COLORATO",
+"nel blu dipinto di blu"
+]
+]
+},
+{
+"a": "CALDO",
+"c": [
+[
+"TESTA",
+"MANO",
+"testa calda"
+],
+[
+"CIOCCOLATA",
+"CARAMELLA",
+"cioccolata calda"
+],
+[
+"AUTUNNO",
+"INVERNO",
+"autunno caldo"
+],
+[
+"PUNTO",
+"LINEA",
+"punto caldo"
+],
+[
+"TAVOLA",
+"SEDIA",
+"tavola calda"
+]
+]
+},
+{
+"a": "FREDDO",
+"c": [
+[
+"SANGUE",
+"SUDORE",
+"a sangue freddo"
+],
+[
+"GUERRA",
+"PACE",
+"guerra fredda"
+],
+[
+"DOCCIA",
+"VASCA",
+"doccia fredda"
+],
+[
+"PIATTO",
+"BICCHIERE",
+"piatto freddo"
+],
+[
+"CANE",
+"GATTO",
+"un freddo cane"
+]
+]
+},
+{
+"a": "DOPPIO",
+"c": [
+[
+"GIOCO",
+"PARTITA",
+"doppio gioco"
+],
+[
+"SENSO",
+"SIGNIFICATO",
+"doppio senso"
+],
+[
+"MENTO",
+"NASO",
+"doppio mento"
+],
+[
+"PETTO",
+"SCHIENA",
+"doppiopetto"
+],
+[
+"TAGLIO",
+"COLPO",
+"arma a doppio taglio"
+]
+]
+},
+{
+"a": "SACCO",
+"c": [
+[
+"PELO",
+"COPERTA",
+"sacco a pelo"
+],
+[
+"CORSA",
+"GARA",
+"corsa nei sacchi"
+],
+[
+"VUOTO",
+"BUCATO",
+"un sacco vuoto non sta in piedi"
+],
+[
+"MANI",
+"BRACCIA",
+"con le mani nel sacco"
+],
+[
+"BOXE",
+"SCHERMA",
+"sacco da boxe"
+]
+]
+},
+{
+"a": "BORSA",
+"c": [
+[
+"VALORI",
+"DOLORI",
+"borsa valori"
+],
+[
+"STUDIO",
+"STANZA",
+"borsa di studio"
+],
+[
+"NERA",
+"SCURA",
+"borsa nera"
+],
+[
+"GHIACCIO",
+"NEVE",
+"borsa del ghiaccio"
+],
+[
+"ACQUA",
+"BIRRA",
+"borsa dell’acqua calda"
+]
+]
+},
+{
+"a": "MAGLIA",
+"c": [
+[
+"FERRI",
+"CHIODI",
+"lavoro a maglia ai ferri"
+],
+[
+"RETE",
+"TRAPPOLA",
+"le maglie della rete"
+],
+[
+"CATENA",
+"CORDA",
+"una maglia della catena"
+],
+[
+"INTIMA",
+"PRIVATA",
+"maglia intima"
+],
+[
+"ROSA",
+"SALSA",
+"maglia rosa"
+]
+]
+},
+{
+"a": "CAMICIA",
+"c": [
+[
+"FORZA",
+"POTENZA",
+"camicia di forza"
+],
+[
+"NOTTE",
+"SERA",
+"camicia da notte"
+],
+[
+"SUDARE",
+"BAGNARE",
+"sudare sette camicie"
+],
+[
+"MANICHE",
+"BRACCIA",
+"in maniche di camicia"
+],
+[
+"ROSSE",
+"FRITTE",
+"le Camicie Rosse"
+]
+]
+},
+{
+"a": "ANELLO",
+"c": [
+[
+"FIDANZAMENTO",
+"AMICIZIA",
+"anello di fidanzamento"
+],
+[
+"SIGNORE",
+"PADRONE",
+"Il Signore degli Anelli"
+],
+[
+"SATURNO",
+"MERCURIO",
+"gli anelli di Saturno"
+],
+[
+"MANCANTE",
+"PERSO",
+"l’anello mancante"
+],
+[
+"CONGIUNZIONE",
+"DISGIUNZIONE",
+"anello di congiunzione"
+]
+]
+},
+{
+"a": "SPADA",
+"c": [
+[
+"DAMOCLE",
+"ACHILLE",
+"la spada di Damocle"
+],
+[
+"PESCE",
+"POLPO",
+"pesce spada"
+],
+[
+"ROCCIA",
+"PIETRA",
+"la spada nella roccia"
+],
+[
+"FERISCE",
+"COLPISCE",
+"chi di spada ferisce di spada perisce"
+],
+[
+"TRATTA",
+"TIRATA",
+"a spada tratta"
+]
+]
+},
+{
+"a": "ARCO",
+"c": [
+[
+"BALENO",
+"TUONO",
+"arcobaleno"
+],
+[
+"TRIONFO",
+"VITTORIA",
+"arco di trionfo"
+],
+[
+"FRECCE",
+"LANCE",
+"arco e frecce"
+],
+[
+"VIOLINO",
+"PIANOFORTE",
+"l’archetto del violino"
+],
+[
+"GOTICO",
+"BAROCCO",
+"arco gotico"
+]
+]
+},
+{
+"a": "CAMPANA",
+"c": [
+[
+"VETRO",
+"LEGNO",
+"campana di vetro"
+],
+[
+"SUONARE",
+"BALLARE",
+"suonare la campana"
+],
+[
+"ALTRA",
+"NUOVA",
+"sentire l’altra campana"
+],
+[
+"SORDO",
+"MUTO",
+"sordo come una campana"
+],
+[
+"MORTO",
+"VIVO",
+"suonare le campane a morto"
+]
+]
+},
+{
+"a": "MEDAGLIA",
+"c": [
+[
+"ROVESCIO",
+"SMASH",
+"il rovescio della medaglia"
+],
+[
+"BRONZO",
+"STAGNO",
+"medaglia di bronzo"
+],
+[
+"VALORE",
+"CORAGGIO",
+"medaglia al valore"
+],
+[
+"APPUNTARE",
+"CUCIRE",
+"appuntarsi una medaglia"
+],
+[
+"OLIMPICA",
+"OLIMPIONICA",
+"medaglia olimpica"
+]
+]
+},
+{
+"a": "PROVA",
+"c": [
+[
+"FUOCO",
+"VENTO",
+"la prova del fuoco"
+],
+[
+"COSTUME",
+"VESTITO",
+"prova costume"
+],
+[
+"NOVE",
+"OTTO",
+"la prova del nove"
+],
+[
+"GENERALE",
+"COLONNELLO",
+"prova generale"
+],
+[
+"FORZA",
+"POTENZA",
+"prova di forza"
+]
+]
+},
+{
+"a": "CLASSE",
+"c": [
+[
+"CAPO",
+"PIEDE",
+"capoclasse"
+],
+[
+"TURISTICA",
+"VACANZIERA",
+"classe turistica"
+],
+[
+"OPERAIA",
+"IMPIEGATA",
+"classe operaia"
+],
+[
+"PRIMA",
+"MIGLIORE",
+"prima classe"
+],
+[
+"LOTTA",
+"GUERRA",
+"lotta di classe"
+]
+]
+},
+{
+"a": "ANGOLO",
+"c": [
+[
+"COTTURA",
+"CUCINA",
+"angolo cottura"
+],
+[
+"CALCIO",
+"RIGORE",
+"calcio d’angolo"
+],
+[
+"RETTO",
+"DRITTO",
+"angolo retto"
+],
+[
+"OTTUSO",
+"STUPIDO",
+"angolo ottuso"
+],
+[
+"DIETRO",
+"SOTTO",
+"dietro l’angolo"
+]
+]
+},
+{
+"a": "PIAZZA",
+"c": [
+[
+"AFFARI",
+"COMMERCI",
+"Piazza Affari"
+],
+[
+"SCENDERE",
+"SALIRE",
+"scendere in piazza"
+],
+[
+"PULITA",
+"SPORCA",
+"fare piazza pulita"
+],
+[
+"MIRACOLI",
+"PRODIGI",
+"Piazza dei Miracoli"
+],
+[
+"SPAGNA",
+"FRANCIA",
+"Piazza di Spagna"
+]
+]
+},
+{
+"a": "STAZIONE",
+"c": [
+[
+"SERVIZIO",
+"RIPARAZIONE",
+"stazione di servizio"
+],
+[
+"SPAZIALE",
+"ASTRALE",
+"stazione spaziale"
+],
+[
+"METEO",
+"CLIMA",
+"stazione meteo"
+],
+[
+"BALNEARE",
+"BALENA",
+"stazione balneare"
+],
+[
+"CAPO",
+"MANO",
+"capostazione"
+]
+]
+},
+{
+"a": "AEREO",
+"c": [
+[
+"CARTA",
+"STOFFA",
+"aeroplano di carta"
+],
+[
+"LINEA",
+"RIGA",
+"aereo di linea"
+],
+[
+"PONTE",
+"TUNNEL",
+"ponte aereo"
+],
+[
+"SPAZIO",
+"VUOTO",
+"spazio aereo"
+],
+[
+"CACCIA",
+"PESCA",
+"aereo da caccia"
+]
+]
+},
+{
+"a": "OMBRELLO",
+"c": [
+[
+"APRIRE",
+"LAVARE",
+"aprire l’ombrello"
+],
+[
+"PINO",
+"ABETE",
+"pino a ombrello"
+],
+[
+"NUCLEARE",
+"SOLARE",
+"ombrello nucleare"
+],
+[
+"MANICO",
+"BECCO",
+"il manico dell’ombrello"
+],
+[
+"STECCHE",
+"SPILLI",
+"le stecche dell’ombrello"
+]
+]
+},
+{
+"a": "CATENA",
+"c": [
+[
+"MONTUOSA",
+"ROCCIOSA",
+"catena montuosa"
+],
+[
+"MONTAGGIO",
+"SMONTAGGIO",
+"catena di montaggio"
+],
+[
+"ALIMENTARE",
+"NUTRIZIONALE",
+"catena alimentare"
+],
+[
+"REAZIONE",
+"AZIONE",
+"reazione a catena"
+],
+[
+"ANELLO",
+"CERCHIO",
+"l’anello debole della catena"
+]
+]
+},
+{
+"a": "CORDA",
+"c": [
+[
+"SALTARE",
+"CORRERE",
+"saltare la corda"
+],
+[
+"VOCALI",
+"CONSONANTI",
+"corde vocali"
+],
+[
+"TESA",
+"STIRATA",
+"corda tesa"
+],
+[
+"TIRARE",
+"SPINGERE",
+"tirare la corda"
+],
+[
+"IMPICCATO",
+"PRIGIONIERO",
+"non parlare di corda in casa dell’impiccato"
+]
+]
+},
+{
+"a": "NASTRO",
+"c": [
+[
+"ADESIVO",
+"COLLANTE",
+"nastro adesivo"
+],
+[
+"TRASPORTATORE",
+"TRASPORTATO",
+"nastro trasportatore"
+],
+[
+"TAGLIO",
+"CUCITO",
+"il taglio del nastro"
+],
+[
+"AZZURRO",
+"BLU",
+"Nastro Azzurro"
+],
+[
+"REGALO",
+"LETTERA",
+"il nastro del regalo"
+]
+]
+},
+{
+"a": "RE",
+"c": [
+[
+"SOLE",
+"LUNA",
+"il Re Sole"
+],
+[
+"NUDO",
+"SCALZO",
+"il re è nudo"
+],
+[
+"MIDA",
+"ZEUS",
+"re Mida"
+],
+[
+"LEONE",
+"TIGRE",
+"Il re leone"
+],
+[
+"MAGI",
+"SANTI",
+"i Re Magi"
+]
+]
+},
+{
+"a": "REGINA",
+"c": [
+[
+"MADRE",
+"NONNA",
+"regina madre"
+],
+[
+"API",
+"FARFALLE",
+"l’ape regina"
+],
+[
+"CUORI",
+"STELLE",
+"la Regina di Cuori"
+],
+[
+"SCACCHI",
+"BOCCE",
+"la regina degli scacchi"
+],
+[
+"NEVI",
+"GHIACCI",
+"la Regina delle Nevi"
+]
+]
+},
+{
+"a": "PRINCIPE",
+"c": [
+[
+"AZZURRO",
+"BLU",
+"principe azzurro"
+],
+[
+"PICCOLO",
+"GRANDE",
+"Il piccolo principe"
+],
+[
+"RANOCCHIO",
+"ROSPO",
+"il principe ranocchio"
+],
+[
+"CONSORTE",
+"SPOSO",
+"principe consorte"
+],
+[
+"EREDITARIO",
+"FAMILIARE",
+"principe ereditario"
+]
+]
+},
+{
+"a": "CASTELLO",
+"c": [
+[
+"SABBIA",
+"SALE",
+"castello di sabbia"
+],
+[
+"CARTE",
+"CARTONE",
+"castello di carte"
+],
+[
+"ARIA",
+"CIELO",
+"castelli in aria"
+],
+[
+"LETTO",
+"DIVANO",
+"letto a castello"
+],
+[
+"INCANTATO",
+"DORMIENTE",
+"il castello incantato"
+]
+]
+},
+{
+"a": "BOMBA",
+"c": [
+[
+"INNESCARE",
+"ANNAFFIARE",
+"innescare una bomba"
+],
+[
+"ACQUA",
+"FUOCO",
+"bomba d’acqua"
+],
+[
+"CALORICA",
+"VITAMINICA",
+"bomba calorica"
+],
+[
+"ATOMICA",
+"MOLECOLARE",
+"bomba atomica"
+],
+[
+"CARTA",
+"FOGLIO",
+"bomba carta (un grosso petardo)"
+]
+]
+},
+{
+"a": "PACE",
+"c": [
+[
+"GIUDICE",
+"AVVOCATO",
+"giudice di pace"
+],
+[
+"ANIMA",
+"CORPO",
+"anima in pace"
+],
+[
+"SANTA",
+"BEATA",
+"santa pace"
+],
+[
+"COLOMBA",
+"CORNACCHIA",
+"la colomba della pace"
+],
+[
+"TRATTATO",
+"CONTRATTO",
+"trattato di pace"
+]
+]
+},
+{
+"a": "GUERRA",
+"c": [
+[
+"FREDDA",
+"GELIDA",
+"guerra fredda"
+],
+[
+"NERVI",
+"MUSCOLI",
+"guerra di nervi"
+],
+[
+"PIEDE",
+"MANO",
+"sul piede di guerra"
+],
+[
+"LAMPO",
+"TUONO",
+"guerra lampo"
+],
+[
+"STELLARI",
+"SOLARI",
+"Guerre stellari"
+]
+]
+},
+{
+"a": "FIUME",
+"c": [
+[
+"PIENA",
+"COLMA",
+"fiume in piena"
+],
+[
+"SPONDA",
+"RIVA",
+"la sponda del fiume"
+],
+[
+"PAROLE",
+"FRASI",
+"un fiume di parole"
+],
+[
+"DELTA",
+"GAMMA",
+"il delta del fiume"
+],
+[
+"CORSO",
+"VIA",
+"il corso del fiume"
+]
+]
+},
+{
+"a": "LAGO",
+"c": [
+[
+"CIGNI",
+"OCHE",
+"Il lago dei cigni"
+],
+[
+"ARTIFICIALE",
+"FINTO",
+"lago artificiale"
+],
+[
+"MAGGIORE",
+"MINORE",
+"Lago Maggiore"
+],
+[
+"SALATO",
+"DOLCE",
+"lago salato"
+],
+[
+"VULCANICO",
+"MARINO",
+"lago vulcanico"
+]
+]
+},
+{
+"a": "ISOLA",
+"c": [
+[
+"TESORO",
+"FORZIERE",
+"L’isola del tesoro"
+],
+[
+"PEDONALE",
+"STRADALE",
+"isola pedonale"
+],
+[
+"FAMOSI",
+"CELEBRI",
+"L’isola dei famosi"
+],
+[
+"DESERTA",
+"VUOTA",
+"isola deserta"
+],
+[
+"ECOLOGICA",
+"BIOLOGICA",
+"isola ecologica"
+]
+]
+},
+{
+"a": "MONTE",
+"c": [
+[
+"PREMI",
+"VINCITE",
+"montepremi"
+],
+[
+"PIETÀ",
+"CARITÀ",
+"Monte di Pietà"
+],
+[
+"ANDARE",
+"CADERE",
+"andare a monte"
+],
+[
+"BIANCO",
+"CANDIDO",
+"Monte Bianco"
+],
+[
+"CARLO",
+"LUIGI",
+"Montecarlo"
+]
+]
+},
+{
+"a": "VALLE",
+"c": [
+[
+"LAGRIME",
+"PIANTO",
+"valle di lacrime"
+],
+[
+"TEMPLI",
+"CHIESE",
+"la Valle dei Templi"
+],
+[
+"MONTE",
+"COLLE",
+"a monte e a valle"
+],
+[
+"FONDO",
+"CIMA",
+"fondovalle"
+],
+[
+"INCANTATA",
+"STREGATA",
+"Alla ricerca della valle incantata"
+]
+]
+},
+{
+"a": "BOSCO",
+"c": [
+[
+"SOTTO",
+"SOPRA",
+"sottobosco"
+],
+[
+"SACRO",
+"SANTO",
+"bosco sacro"
+],
+[
+"FRUTTI",
+"FIORI",
+"frutti di bosco"
+],
+[
+"VERTICALE",
+"ORIZZONTALE",
+"il Bosco Verticale di Milano"
+],
+[
+"ADDORMENTATA",
+"SVEGLIATA",
+"La bella addormentata nel bosco"
+]
+]
+},
+{
+"a": "GIARDINO",
+"c": [
+[
+"ZOOLOGICO",
+"BIOLOGICO",
+"giardino zoologico"
+],
+[
+"PENSILE",
+"SOSPESO",
+"giardino pensile"
+],
+[
+"INFANZIA",
+"GIOVENTÙ",
+"giardino d’infanzia"
+],
+[
+"EDEN",
+"OLIMPO",
+"il giardino dell’Eden"
+],
+[
+"SEGRETO",
+"ARMATO",
+"Il giardino segreto"
+]
+]
+},
+{
+"a": "SEME",
+"c": [
+[
+"DISCORDIA",
+"LITIGIO",
+"il seme della discordia"
+],
+[
+"OLIO",
+"ACETO",
+"olio di semi"
+],
+[
+"ZUCCA",
+"ZUCCHERO",
+"semi di zucca"
+],
+[
+"LINO",
+"SETA",
+"semi di lino"
+],
+[
+"SPARGERE",
+"VERSARE",
+"spargere il seme"
+]
+]
+},
+{
+"a": "FOGLIA",
+"c": [
+[
+"FICO",
+"PERO",
+"foglia di fico"
+],
+[
+"MANGIARE",
+"BERE",
+"mangiare la foglia"
+],
+[
+"TREMARE",
+"VIBRARE",
+"tremare come una foglia"
+],
+[
+"ORO",
+"PLATINO",
+"foglia d’oro"
+],
+[
+"ACERO",
+"PINO",
+"la foglia d’acero"
+]
+]
+},
+{
+"a": "FRUTTO",
+"c": [
+[
+"PROIBITO",
+"VIETATO",
+"il frutto proibito"
+],
+[
+"PASSIONE",
+"AMORE",
+"frutto della passione"
+],
+[
+"BOSCO",
+"PRATO",
+"frutti di bosco"
+],
+[
+"MARE",
+"LAGO",
+"frutti di mare"
+],
+[
+"LAVORO",
+"FATICA",
+"il frutto del lavoro"
+]
+]
+},
+{
+"a": "MELA",
+"c": [
+[
+"ADAMO",
+"NOÈ",
+"il pomo d’Adamo (la mela di Adamo)"
+],
+[
+"NEWTON",
+"EINSTEIN",
+"la mela di Newton"
+],
+[
+"GRANDE",
+"ENORME",
+"la Grande Mela (New York)"
+],
+[
+"AVVELENATA",
+"STREGATA",
+"la mela avvelenata"
+],
+[
+"COTOGNA",
+"CILIEGIA",
+"mela cotogna"
+]
+]
+},
+{
+"a": "PATATA",
+"c": [
+[
+"BOLLENTE",
+"CALDA",
+"patata bollente"
+],
+[
+"SPIRITO",
+"ANIMA",
+"spirito di patata"
+],
+[
+"NOVELLA",
+"VECCHIA",
+"patata novella"
+],
+[
+"AMERICANA",
+"INGLESE",
+"patata americana"
+],
+[
+"SACCO",
+"BORSA",
+"sacco di patate"
+]
+]
+},
+{
+"a": "ZUCCA",
+"c": [
+[
+"SALE",
+"PEPE",
+"avere sale in zucca"
+],
+[
+"CARROZZA",
+"CAVALLO",
+"la zucca che diventa carrozza"
+],
+[
+"SEMI",
+"FOGLIE",
+"semi di zucca"
+],
+[
+"VUOTA",
+"CAVA",
+"zucca vuota"
+],
+[
+"FIORI",
+"BUCCE",
+"fiori di zucca"
+]
+]
+},
+{
+"a": "CIPOLLA",
+"c": [
+[
+"LACRIME",
+"RISATE",
+"le lacrime della cipolla"
+],
+[
+"STRATI",
+"PIANI",
+"la cipolla fatta a strati"
+],
+[
+"ANELLI",
+"CERCHI",
+"anelli di cipolla"
+],
+[
+"OROLOGIO",
+"SVEGLIA",
+"orologio a cipolla"
+],
+[
+"RAMATA",
+"DORATA",
+"cipolla ramata"
+]
+]
+},
+{
+"a": "OLIO",
+"c": [
+[
+"GOMITO",
+"GINOCCHIO",
+"olio di gomito"
+],
+[
+"SANTO",
+"BEATO",
+"olio santo"
+],
+[
+"PALMA",
+"ABETE",
+"olio di palma"
+],
+[
+"LISCIO",
+"PIATTO",
+"liscio come l’olio"
+],
+[
+"MOTORE",
+"VOLANTE",
+"l’olio del motore"
+]
+]
+},
+{
+"a": "BURRO",
+"c": [
+[
+"ARACHIDI",
+"CASTAGNE",
+"burro di arachidi"
+],
+[
+"CACAO",
+"CAFFÈ",
+"burro di cacao"
+],
+[
+"MANI",
+"DENTI",
+"avere le mani di burro"
+],
+[
+"SALVIA",
+"BASILICO",
+"burro e salvia"
+],
+[
+"SPALMARE",
+"STENDERE",
+"spalmare il burro"
+]
+]
+},
+{
+"a": "MIELE",
+"c": [
+[
+"LUNA",
+"SOLE",
+"luna di miele"
+],
+[
+"LATTE",
+"CAFFÈ",
+"latte e miele"
+],
+[
+"ACACIA",
+"QUERCIA",
+"miele di acacia"
+],
+[
+"API",
+"VESPE",
+"il miele delle api"
+],
+[
+"DOLCE",
+"ACIDO",
+"dolce come il miele"
 ]
 ]
 },
@@ -8960,162 +7130,42 @@
 [
 "CAPPELLAIO",
 "SARTO",
-"il Cappellaio Matto e il suo tè"
+"il tè del Cappellaio Matto"
 ],
 [
-"BOSTON",
-"CHICAGO",
-"Boston Tea Party"
+"TAZZA",
+"BICCHIERE",
+"una tazza di tè"
 ]
 ]
 },
 {
-"a": "OSSO",
+"a": "BANCA",
 "c": [
 [
-"DURO",
-"MORBIDO",
-"osso duro"
+"DATI",
+"NUMERI",
+"banca dati"
 ],
 [
-"BUCO",
-"FORO",
-"osso buco (ossobuco)"
+"SANGUE",
+"SUDORE",
+"banca del sangue"
 ],
 [
-"SACRO",
-"SANTO",
-"osso sacro"
+"TEMPO",
+"ORA",
+"banca del tempo"
 ],
 [
-"PELLE",
-"PELO",
-"pelle e ossa"
+"SEME",
+"FRUTTO",
+"banca del seme"
 ],
 [
-"SEPPIA",
-"POLPO",
-"osso di seppia"
-]
-]
-},
-{
-"a": "DENTE",
-"c": [
-[
-"LEONE",
-"TIGRE",
-"dente di leone (il soffione)"
-],
-[
-"LATTE",
-"MIELE",
-"denti da latte"
-],
-[
-"GIUDIZIO",
-"SENTENZA",
-"dente del giudizio"
-],
-[
-"PASTA",
-"CARNE",
-"pasta al dente"
-],
-[
-"AVVELENATO",
-"VELENOSO",
-"avere il dente avvelenato"
-]
-]
-},
-{
-"a": "LINGUA",
-"c": [
-[
-"MADRE",
-"PADRE",
-"lingua madre"
-],
-[
-"BIFORCUTA",
-"BIFORCATA",
-"lingua biforcuta"
-],
-[
-"GATTO",
-"CANE",
-"lingua di gatto (biscotto)"
-],
-[
-"PELI",
-"CAPELLI",
-"non avere peli sulla lingua"
-],
-[
-"MORDERSI",
-"MANGIARSI",
-"mordersi la lingua"
-]
-]
-},
-{
-"a": "UNGHIA",
-"c": [
-[
-"INCARNITA",
-"INCARNATA",
-"unghia incarnita"
-],
-[
-"SMALTO",
-"COLLA",
-"smalto per unghie"
-],
-[
-"MANGIARSI",
-"LAVARSI",
-"mangiarsi le unghie"
-],
-[
-"DENTI",
-"LABBRA",
-"con le unghie e con i denti"
-],
-[
-"LIMA",
-"RASPA",
-"lima per unghie"
-]
-]
-},
-{
-"a": "CIELO",
-"c": [
-[
-"SETTIMO",
-"OTTAVO",
-"settimo cielo"
-],
-[
-"GRATTA",
-"PULISCI",
-"grattacielo"
-],
-[
-"TOCCARE",
-"INDICARE",
-"toccare il cielo con un dito"
-],
-[
-"PECORELLE",
-"CAPRETTE",
-"cielo a pecorelle, acqua a catinelle"
-],
-[
-"SERENO",
-"SPORCO",
-"cielo sereno"
+"POPOLARE",
+"FAMOSA",
+"Banca Popolare"
 ]
 ]
 }
